@@ -3,7 +3,7 @@
 node_modules
 
 # build artifacts
-public
+_site
 
 # secrets and errors
 .env
@@ -11,3 +11,5 @@ public
 
 # macOS related files
 .DS_Store
+# Local Netlify folder
+.netlify
