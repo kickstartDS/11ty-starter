@@ -1,8 +1,7 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./src/css/");
-  eleventyConfig.addWatchTarget("./src/css/");
+const kdsPlugin = require("@kickstartds/eleventy-plugin-kickstartds");
 
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(kdsPlugin);
 
   return {
     dir: {
