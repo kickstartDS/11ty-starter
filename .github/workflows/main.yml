@@ -14,9 +14,11 @@ jobs:
       - name: Update DS-Agency Package
         run: npm update @kickstartds/ds-agency
       - name: Check for changes
-        run:  echo "HAS_CHANGES=$(git diff-index --quiet HEAD || echo $?)" >> $GITHUB_ENV
+        id: check_changes
+        continue-on-error: true
+        run: test -n "$(git status --porcelain)"
       - name: Push changes
-        if: env.HAS_CHANGES == 1
+        if: steps.check_changes.outcome == 'success'
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
