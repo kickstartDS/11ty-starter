@@ -74,9 +74,7 @@ We're not just building design systems; we're building value. By combining our e
       align="left"
     >
       <TextMedia
-        text={`
-Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.
-`}
+        text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
       />
     </Section>
     
@@ -95,19 +93,19 @@ Founded by passionate digital enthusiasts, Systemics emerged from the desire to 
             description: 'With over 33 years in the industry, we`ve honed our craft and forged a reputation for excellence.',
             icon: 'person',
             label: 'Years of Expertise',
-            value: 33+
+            value: '33+'
           },
           {
             description: 'We`re so great, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results',
             icon: 'home',
             label: 'Successful Projects',
-            value: 200+
+            value: '200+'
           },
           {
             description: 'Thanks to NPS, our client-centric approach ensures we meet and exceed expectations, reflected in our high satisfaction rate',
             icon: 'map',
             label: 'Client Satisfaction',
-            value: 99%
+            value: '99%'
           }
         ]}
       /> 
