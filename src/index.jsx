@@ -9,7 +9,7 @@ import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { CtaText } from "@kickstartds/ds-agency/cta-text";
 
 export const data = {
-  title: "Plugin Test Page",
+  title: "We are Systemics. we build headless design system driven solutions! And, we're great!",
   layout: "base.njk",
 };
 
@@ -20,17 +20,17 @@ export default (props) => (
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
         text={`
-Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
+Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together.`}
         primaryCta={{
           toggle: true,
           label: "Contact us",
-          target: "#",
+          target: "https://app.lemcal.com/@daniel-ley",
           icon: "person",
         }}
         secondaryCta={{
           toggle: true,
           label: "Book a meeting",
-          target: "#",
+          target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
         ctaToggle
@@ -40,6 +40,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
     <Section
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
+      swtichOrder="true"
       width="default"
       align="left"
       mode="list"
@@ -161,13 +162,13 @@ Alex Chen, CEO of LaunchPad Innovations`}
         primaryCta={{
           toggle: true,
           label: "Contact us",
-          target: "#",
+          target: "https://app.lemcal.com/@daniel-ley",
           icon: "person",
         }}
         secondaryCta={{
           toggle: true,
           label: "Book a meeting",
-          target: "#",
+          target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
         ctaToggle
@@ -254,13 +255,13 @@ Alex Chen, CEO of LaunchPad Innovations`}
         primaryCta={{
           toggle: true,
           label: "Contact us",
-          target: "#",
+          target: "#https://app.lemcal.com/@daniel-ley",
           icon: "person",
         }}
         secondaryCta={{
           toggle: true,
           label: "Book a meeting",
-          target: "#",
+          target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
         ctaToggle
