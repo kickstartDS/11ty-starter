@@ -30,6 +30,7 @@ export default (props) => (
         text="We empower Businesses with the Tools they need to thrive in the Digital Landscape."
         sub="Our crystal clear mission:"
         switchOrder
+        content="Test Content"
         level="h2"
         style="h1"
         spaceAfter="minimum"
@@ -49,6 +50,8 @@ export default (props) => (
 
     <Section
       headline="What We Do and How We Do It"
+      text="text text"
+      content="Test Content"
       width="default"
       align="left"
     >
@@ -65,6 +68,8 @@ We're not just building design systems; we're building value. By combining our e
     <Section
       headline="About & History"
       style="accent"
+      text="text text"
+      content="Test Content"
       width="default"
       align="left"
     >
@@ -77,6 +82,8 @@ Founded by passionate digital enthusiasts, Systemics emerged from the desire to 
     
     <Section
       headline="Facts & Figures"
+      text="text text"
+      content="Test Content"
       style="accent"
       width="default"
       align="left"
@@ -106,8 +113,6 @@ Founded by passionate digital enthusiasts, Systemics emerged from the desire to 
       /> 
     </Section>
 
-    
-    
     <Section inverted>
       <CtaText
         align="left"
@@ -128,6 +133,5 @@ Founded by passionate digital enthusiasts, Systemics emerged from the desire to 
         ctaToggle
       />
     </Section>
-
   </PageWrapper>
 );
