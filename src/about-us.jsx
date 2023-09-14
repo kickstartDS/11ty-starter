@@ -92,13 +92,13 @@ Founded by passionate digital enthusiasts, Systemics emerged from the desire to 
       <Stats
         stats={[
           {
-            description: 'With over 33 years in the industry, we've honed our craft and forged a reputation for excellence.',
+            description: 'With over 33 years in the industry, we`ve honed our craft and forged a reputation for excellence.',
             icon: 'person',
             label: 'Years of Expertise',
             value: 33+
           },
           {
-            description: 'We're so great, that we've collaborated with diverse clients, across industries, delivering impactful solutions that drive results',
+            description: 'We`re so great, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results',
             icon: 'home',
             label: 'Successful Projects',
             value: 200+
