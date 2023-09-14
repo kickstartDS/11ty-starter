@@ -85,22 +85,22 @@ Founded by passionate digital enthusiasts, Systemics emerged from the desire to 
       <Stats
         stats={[
           {
-            description: 'eefrw',
+            description: 'With over 33 years in the industry, we've honed our craft and forged a reputation for excellence.',
             icon: 'person',
-            label: 'Stat 1',
-            value: 10
+            label: 'Years of Expertise',
+            value: 33+
           },
           {
-            description: 'werwer',
+            description: 'We're so great, that we've collaborated with diverse clients, across industries, delivering impactful solutions that drive results',
             icon: 'home',
-            label: 'Stat 2',
-            value: 20
+            label: 'Successful Projects',
+            value: 200+
           },
           {
-            description: 'werewr',
+            description: 'Thanks to NPS, our client-centric approach ensures we meet and exceed expectations, reflected in our high satisfaction rate',
             icon: 'map',
-            label: 'Stat 3',
-            value: 30
+            label: 'Client Satisfaction',
+            value: 99%
           }
         ]}
       /> 
