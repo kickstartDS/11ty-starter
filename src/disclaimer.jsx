@@ -17,9 +17,9 @@ export default (props) => (
     <Section width="default">
       <CtaText
         align="left"
-        headline="Experience the Power of kickstartDS: **Our Demo Showcase**"
-        subheadline="Welcome to our Demo Showcase, a testament to the transformative potential of **kickstartDS**-driven websites and **design systems**"
-        text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs. You can contact us, we are experts!`}
+        headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
+        subheadline="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
+        text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs - contact us, we are real experts!`}
         primaryCta={{
           toggle: true,
           label: "Book a meeting",
@@ -99,28 +99,7 @@ We're not just building design systems; we're building value. By combining our e
       align="left"
       mode="tile"
     >
-      <Stats
-        stats={[
-          {
-            description: 'With over 33 years in the industry, we`ve honed our craft and forged a reputation for excellence.',
-            icon: 'person',
-            label: 'Years of Expertise',
-            value: '33+'
-          },
-          {
-            description: 'We`re so great, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results',
-            icon: 'home',
-            label: 'Successful Projects',
-            value: '200+'
-          },
-          {
-            description: 'Thanks to NPS, our client-centric approach ensures we meet and exceed expectations, reflected in our high satisfaction rate',
-            icon: 'map',
-            label: 'Client Satisfaction',
-            value: '99%'
-          }
-        ]}
-      /> 
+      
     </Section>
 
     <Section inverted>
