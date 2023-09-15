@@ -4,12 +4,11 @@ import { PageWrapper } from "@kickstartds/ds-agency/page-wrapper";
 import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
-import { Stats } from "@kickstartds/ds-agency/stats";
 import { CtaText } from "@kickstartds/ds-agency/cta-text";
 import { Headline } from "@kickstartds/ds-agency/headline";
 
 export const data = {
-  title: "About Systemics, your Design System Agency",
+  title: "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
   layout: "base.njk",
 };
 
@@ -18,9 +17,22 @@ export default (props) => (
     <Section width="default">
       <CtaText
         align="left"
-        headline="Crafting Digital Brilliance at **Systemics**"
-        subheadline="Elevating **Headless** Experiences through Innovative **Design Systems**"
-        text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
+        headline="Experience the Power of kickstartDS: **Our Demo Showcase**"
+        subheadline="Welcome to our Demo Showcase, a testament to the transformative potential of **kickstartDS**-driven websites and **design systems**"
+        text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs. You can contact us, we are experts!`}
+        primaryCta={{
+          toggle: true,
+          label: "Book a meeting",
+          target: "https://app.lemcal.com/@daniel-ley",
+          icon: "date",
+        }}
+        secondaryCta={{
+          toggle: true,
+          label: "See our Design System Services",
+          target: "https://www.kickstartds.com/services/",
+          icon: "chevron-right",
+        }}
+        ctaToggle
       />
     </Section>
     
