@@ -65,7 +65,7 @@ Ready to make your digital journey exceptional?`}
         media={[
           {
             image: {
-              src: "img/team.png",
+              src: "/static/img/team.png",
             },
           },
         ]}
@@ -89,7 +89,8 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         media={[
           {
             image: {
-              src: "img/agency.png",
+              src: "/static/img/agency.png",
+              alt: "ALTTEXT"
             },
           },
         ]}
@@ -100,17 +101,17 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
       <TeaserCard
         href="#"
         headline="Lorem Ipsum dolor"
-        text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        text="During more than a decade in the industry, we've been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
         href="#"
         headline="Lorem Ipsum dolor"
-        text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        text="During more than a decade in the industry, we've been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
         href="#"
         headline="Lorem Ipsum dolor"
-        text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        text="During more than a decade in the industry, we've been able to touch almost any aspect of digital products from"
       />
     </Section>
 
@@ -120,7 +121,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         media={[
           {
             image: {
-              src: "img/customer-1.png",
+              src: "/static/img/customer-1.png",
             },
           },
         ]}
@@ -133,7 +134,7 @@ John Smith, Chief Marketing Officer at TechFusion Enterprises`}
         media={[
           {
             image: {
-              src: "img/customer-2.png",
+              src: "/static/img/customer-2.png",
             },
           },
         ]}
@@ -146,7 +147,7 @@ Emily Johnson, Director of Digital Strategy at EcoTech Solutions`}
         media={[
           {
             image: {
-              src: "img/customer-3.png",
+              src: "/static/img/customer-3.png",
             },
           },
         ]}
@@ -208,7 +209,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
           },
           {
             question:
-              "What’s the difference between a Design System and a Style Guide?",
+              "What's the difference between a Design System and a Style Guide?",
             answer:
               "A Style Guide is a subset of a Design System, focusing primarily on the visual aspects of a brand, such as colors, typography, and iconography. A Design System, on the other hand, is a more comprehensive framework that encompasses not only visual elements but also components, patterns, guidelines, and tools for design, development, and content creation.",
           },
