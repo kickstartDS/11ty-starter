@@ -75,7 +75,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
     >
       <TextMedia
         text={`
-By exploring both demos, you can gain a clear understanding of the value proposition offered by kickstartDS, from cost-effective solutions to premium enhancements.        
+### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
         `}
       />
     </Section>
@@ -98,7 +98,18 @@ By exploring both demos, you can gain a clear understanding of the value proposi
           icon="browser"
           target="#"
         />
-        
+        <Button
+          variant="secondary"
+          label="See Open Source Components"
+          icon="chevron-right"
+          target="#"
+        />
+        <Button
+          variant="tertiary"
+          label="Explore OS Storybook"
+          icon="browser"
+          target="#"
+        />
       
     </Section>
 
@@ -111,44 +122,21 @@ By exploring both demos, you can gain a clear understanding of the value proposi
     >
       <TextMedia
         text={`
-## Benefit from the **power of kickstartDS**, as we do too
-We strongly believe in using the best tools to bring our clients exceptional results. That's why we've integrated kickstartDS into our workflow. This code-first framework for design system creation is our secret sauce to saving time, without compromising on quality. kickstartDS allows us to fast-track the development process, ensuring you get a fully functional and polished design system in a fraction of the time it would traditionally take.
+## **The Purpose of this Demo**
+This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
 
-## **Maximizing Value** for Our Clients
-We're not just building design systems; we're building value. By combining our expertise in design systems and headless CMS architecture, we deliver solutions that are not only visually appealing but also inherently functional. This approach ensures that your brand's identity remains consistent across platforms while your content distribution becomes more dynamic and efficient. We firmly believe that a harmonious blend of design systems and headless CMSs unlocks immense potential for businesses, propelling them ahead in the digital race.`}
-      />
-    </Section>
-
-    <Section
-      headline="About & History"
-      style="accent"
-      text="text text"
-      content="Test Content"
-      width="default"
-      align="left"
-    >
-      <TextMedia
-        text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
-      />
-    </Section>
-    
-    <Section
-      headline="Facts & Figures"
-      text="text text"
-      content="Test Content"
-      style="accent"
-      width="default"
-      align="left"
-      mode="tile"
-    >
-      
+## **Disclaimer**
+While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like Storybook or Sanity.io can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
+        `}
+    />
     </Section>
 
     <Section inverted>
       <CtaText
         align="left"
         width="wide"
-        headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
+        headline="Wanna know more?"
+        text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         primaryCta={{
           toggle: true,
           label: "Contact us",
