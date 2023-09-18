@@ -39,12 +39,11 @@ export default (props) => (
     <Section style="accent" width="wide" align="left" mode="list" spaceAfter="small">
       <Headline
         align="left"
-        text="We empower Businesses with the Tools they need to thrive in the Digital Landscape."
-        sub="Our crystal clear mission:"
-        switchOrder
-        content="Test Content"
+        text="Open Source vs. Premium Experience"
+        sub="The two showcases in this demo represent the range of possibilities with kickstartDS. "
+        content=""
         level="h2"
-        style="h1"
+        style="h2"
         spaceAfter="minimum"
       />
     </Section>
@@ -56,8 +55,51 @@ export default (props) => (
       spaceBefore="none"
     >
       <TextMedia
-        text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
+        text={`
+### Open Source Demo
+The website you are browsing is the **first demo**. It is built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrating the robust capabilities you can leverage at no cost. It's a testament to the value that kickstartDS can deliver even with zero investment.
+
+### Premium Experience Demo
+The premium Experience is the [other demo](#) taking it a step further by integrating the **paid** kickstartDS [**content component module**](https://www.kickstartds.com/content-module/). This premium feature enriches the user experience, demonstrating the potential of a small investment. 
+
+It showcases how a modest monthly investment, equivalent to the cost of a developer hour, can significantly elevate the look and feel of your website or content-driven application.
+        `}
       />
+    </Section>
+
+    <Section
+      style="accent"
+      width="default"
+      align="left"
+      spaceBefore="none"
+    >
+      <TextMedia
+        text={`
+By exploring both demos, you can gain a clear understanding of the value proposition offered by kickstartDS, from cost-effective solutions to premium enhancements.        
+        `}
+      />
+    </Section>
+
+    <Section
+      style="accent"
+      width="default"
+      align="left"
+      spaceBefore="none"
+    >
+       <Button
+          variant="primary"
+          label="Browse Premium Demo"
+          icon="chevron-right"
+          target="#"
+        />
+        <Button
+          variant="tertiary"
+          label="Explore Storybook"
+          icon="browser"
+          target="#"
+        />
+        
+      
     </Section>
 
     <Section

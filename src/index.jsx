@@ -75,6 +75,7 @@ Ready to make your digital journey exceptional?`}
           variant="primary"
           label="Reach out today!"
           icon="chevron-right"
+          target="https://app.lemcal.com/@daniel-ley"
         />
       </div>
     </Section>
