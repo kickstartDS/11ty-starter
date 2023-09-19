@@ -4,7 +4,7 @@ import { PageWrapper } from "@kickstartds/ds-agency/page-wrapper";
 import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
-import { CtaText } from "@kickstartds/ds-agency/cta-text";
+import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 
 export const data = {
@@ -116,7 +116,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     </Section>
 
     <Section inverted>
-      <CtaText
+      <Cta
         align="left"
         width="wide"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "

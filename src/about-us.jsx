@@ -5,7 +5,7 @@ import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
 import { Stats } from "@kickstartds/ds-agency/stats";
-import { CtaText } from "@kickstartds/ds-agency/cta-text";
+import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 
 export const data = {
@@ -16,7 +16,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="default">
-      <CtaText
+      <Cta
         align="left"
         headline="Crafting Digital Brilliance at **Systemics**"
         subheadline="Elevating **Headless** Experiences through Innovative **Design Systems**"
@@ -112,7 +112,7 @@ We're not just building design systems; we're building value. By combining our e
     </Section>
 
     <Section inverted>
-      <CtaText
+      <Cta
         align="left"
         width="wide"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."

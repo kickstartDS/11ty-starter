@@ -4,7 +4,7 @@ import { PageWrapper } from "@kickstartds/ds-agency/page-wrapper";
 import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
-import { CtaText } from "@kickstartds/ds-agency/cta-text";
+import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 
 export const data = {
@@ -15,7 +15,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="default">
-      <CtaText
+      <Cta
         align="left"
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
         subheadline="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
@@ -132,7 +132,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
     </Section>
 
     <Section inverted>
-      <CtaText
+      <Cta
         align="left"
         width="wide"
         headline="Wanna know more?"

@@ -6,7 +6,7 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
-import { CtaText } from "@kickstartds/ds-agency/cta-text";
+import { Cta } from "@kickstartds/ds-agency/cta";
 
 export const data = {
   title: "We are Systemics. we build headless design system driven solutions! And, we're great!",
@@ -16,7 +16,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="default">
-      <CtaText
+      <Cta
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
         text={`
@@ -158,7 +158,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
     </Section>
 
     <Section inverted>
-      <CtaText
+      <Cta
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         primaryCta={{
@@ -250,7 +250,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
     </Section>
 
     <Section style="accent">
-      <CtaText
+      <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
