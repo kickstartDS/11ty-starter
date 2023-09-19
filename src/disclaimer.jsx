@@ -1,6 +1,4 @@
-import "@kickstartds/ds-agency/global.client.js";
-
-import { PageWrapper } from "@kickstartds/ds-agency/page-wrapper";
+import { PageWrapper } from "./_includes/PageWrapper";
 import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
@@ -13,7 +11,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper {...props}>
     <Section width="default">
       <Cta
         align="left"

@@ -1,6 +1,4 @@
-import "@kickstartds/ds-agency/global.client.js";
-
-import { PageWrapper } from "@kickstartds/ds-agency/page-wrapper";
+import { PageWrapper } from "./_includes/PageWrapper";
 import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
@@ -9,12 +7,17 @@ import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Cta } from "@kickstartds/ds-agency/cta";
 
 export const data = {
-  title: "We are Systemics. we build headless design system driven solutions! And, we're great!",
+  title:
+    "We are Systemics. we build headless design system driven solutions! And, we're great!",
   layout: "base.njk",
+  eleventyNavigation: {
+    key: "Home",
+    order: 1,
+  },
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper {...props}>
     <Section width="default">
       <Cta
         align="left"
@@ -90,7 +93,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
           {
             image: {
               src: "/static/img/agency.png",
-              alt: "ALTTEXT"
+              alt: "ALTTEXT",
             },
           },
         ]}
