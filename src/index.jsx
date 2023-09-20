@@ -1,7 +1,7 @@
 import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/base/lib/section";
+import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { Button } from "@kickstartds/base/lib/button";
+import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Cta } from "@kickstartds/ds-agency/cta";
