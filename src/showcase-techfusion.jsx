@@ -4,6 +4,7 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
+import { Testimonial } from "@kickstartds/ds-agency/testimonial";
 
 export const data = {
   title:
@@ -75,7 +76,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
     </Section>
 
     <Section
-      style="default"
+      style="narrow"
       width="wide"
       align="left"
       mode="list"
@@ -87,18 +88,11 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
 We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
           `}
       />
-      <TextMedia
-        mediaAlignment="beside-left"
-        media={[
-          {
-            image: {
-              src: "/static/img/customer-1.png",
-            },
-          },
-        ]}
-        text={`**"Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."**
-
-- Emily Johnson, Director of Digital Strategy at EcoTech Solutions`}
+      <Testimonial
+        image="/static/img/customer-1.png"
+        name="- Emily Johnson"
+        quote="**Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.**"
+        title="Director of Digital Strategy at EcoTech Solutions"
       />
     </Section>
 
