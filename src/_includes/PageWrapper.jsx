@@ -1,11 +1,13 @@
 import "@kickstartds/ds-agency/global.client.js";
 
+import { useEleventy } from "@kickstartds/eleventy-plugin-kickstartds/useEleventy";
 import { navigation } from "@11ty/eleventy-navigation";
 import { PageWrapper as Page } from "@kickstartds/ds-agency/page-wrapper";
 import { Header } from "@kickstartds/ds-agency/header";
 
-export const PageWrapper = (props) => {
-  const eleventyNav = navigation.find(props.collections.all);
+export const PageWrapper = ({ children }) => {
+  const data = useEleventy();
+  const eleventyNav = navigation.find(data.collections.all);
   const headerMainNav = eleventyNav.map(({ url, title }) => ({
     href: url,
     label: title,
@@ -22,7 +24,7 @@ export const PageWrapper = (props) => {
         }}
         navItems={headerMainNav}
       />
-      {props.children}
+      {children}
     </Page>
   );
 };
