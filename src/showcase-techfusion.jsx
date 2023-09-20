@@ -17,7 +17,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper {...props}>
+  <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <TextMedia
         text={``}

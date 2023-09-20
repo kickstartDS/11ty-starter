@@ -16,7 +16,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper {...props}>
+  <PageWrapper>
     <Section width="default">
       <Cta
         align="left"
