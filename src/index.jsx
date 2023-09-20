@@ -43,7 +43,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
     <Section
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
-      swtichOrder="true"
+      switchHeadlineOrder
       width="default"
       align="left"
       mode="list"
