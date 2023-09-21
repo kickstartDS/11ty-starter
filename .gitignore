@@ -1,6 +1,7 @@
 
 # dependencies installed by npm
 node_modules
+yarn.lock
 
 # build artifacts
 _site
@@ -11,5 +12,6 @@ _site
 
 # macOS related files
 .DS_Store
+
 # Local Netlify folder
 .netlify

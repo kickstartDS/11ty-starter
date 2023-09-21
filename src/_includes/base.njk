@@ -1,17 +1,25 @@
+{%- set siteName -%}{{ meta.siteName | escape }}{%- endset -%}
+{%- set pageTitle -%}{{ title | escape }}{%- endset -%}
+{%- set pageUrl -%}{{ page.url | absoluteUrl(meta.url) }}{%- endset -%}
+{%- set pageDescription -%}{{ description or meta.siteDescription | escape }}{%- endset -%}
+{%- set pageImage -%}{{ image or meta.image }}{%- endset -%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ pageTitle }}{% if page.url != '/' %} | {{ siteName }}{% endif %}</title>
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <meta name="description" content="{{ pageDescription }}">
+  <link rel="canonical" href={{ pageUrl }}>
+  <meta name="author" content="{{ meta.authorName }}" />
+  {%include "./_opengraph.njk" %}
+  {%include "./_twittercard.njk" %}
 </head>
 <body>
-
   {{ content | safe }}
-
 </body>
 </html>

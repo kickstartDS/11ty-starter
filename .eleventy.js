@@ -1,10 +1,15 @@
 const kdsPlugin = require("@kickstartds/eleventy-plugin-kickstartds");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(kdsPlugin);
-  eleventyConfig.addPassthroughCopy("static/**/*");
-  eleventyConfig.addPassthroughCopy({ "static/img": "img" });
-  eleventyConfig.addPassthroughCopy({ "node_modules/@kickstartds/ds-agency/dist/static/favicon": "/" });
+  eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addPassthroughCopy({
+    "static": "static",
+    "static/img": "img",
+    "node_modules/@kickstartds/ds-agency/dist/static/favicon": "/",
+  });
   return {
     dir: {
       input: "src",
