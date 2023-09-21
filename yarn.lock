@@ -320,18 +320,6 @@
   "resolved" "https://registry.npmjs.org/@iarna/toml/-/toml-2.2.5.tgz"
   "version" "2.2.5"
 
-"@kickstartds/base@2.3.0-canary.1421.6083.0":
-  "integrity" "sha512-uiCSAn0KeaSfbIpygQuwqG2PD1Thf3hYdvOf8qb8w/mCTcTuI94QgvOKjOZPLmRWfwA/SLZlRY3ydwTuLmRyOg=="
-  "resolved" "https://registry.npmjs.org/@kickstartds/base/-/base-2.3.0-canary.1421.6083.0.tgz"
-  "version" "2.3.0-canary.1421.6083.0"
-  dependencies:
-    "@babel/runtime" "^7.21.5"
-    "classnames" "^2.3.2"
-    "focus-visible" "^5.2.0"
-    "markdown-to-jsx" "^7.2.0"
-    "photoswipe" "^5.3.7"
-    "vhtml" "^2.2.0"
-
 "@kickstartds/base@2.3.0-canary.1457.6116.0":
   "integrity" "sha512-iXGAd1jAFaRiZwY7Mx6jCfjiutZAywY9W/6ScQIDhtMc+JrDKJGsntD5py1pHY1Tk8Imq7gWDwqDmFXnCq1Y2Q=="
   "resolved" "https://registry.npmjs.org/@kickstartds/base/-/base-2.3.0-canary.1457.6116.0.tgz"
@@ -362,24 +350,6 @@
     "classnames" "^2.3.2"
     "countup.js" "^2.6.2"
     "lodash-es" "^4.17.21"
-
-"@kickstartds/core@2.3.0-canary.1421.6083.0":
-  "integrity" "sha512-4hzyrZEwDm+ms4H/Az1X53GZKUAy+1xtpyMGSkEyUBygcnzRDeDHdUaC7gP1nm/mFn4DM+mSLN+ouraWRsA97Q=="
-  "resolved" "https://registry.npmjs.org/@kickstartds/core/-/core-2.3.0-canary.1421.6083.0.tgz"
-  "version" "2.3.0-canary.1421.6083.0"
-  dependencies:
-    "@babel/runtime" "^7.21.5"
-    "bourbon" "^7.3.0"
-    "classnames" "^2.3.2"
-    "del" "^6.1.1"
-    "dependency-graph" "^0.11.0"
-    "esbuild" "^0.17.18"
-    "fast-glob" "^3.2.12"
-    "fs-extra" "^11.1.1"
-    "json-schema" "^0.4.0"
-    "lazysizes" "^5.3.2"
-    "pubsub-js" "^1.9.4"
-    "sass" "^1.62.1"
 
 "@kickstartds/core@2.3.0-canary.1457.6116.0":
   "integrity" "sha512-uw2RUzwjW+QCv5B84xdam6d1wsCUvmD/7f9xf48KA+xL7NCQnqJasY6NLO5Cch+SoeN7Y1lscUNwCpd/iUCI5Q=="
