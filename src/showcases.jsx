@@ -3,9 +3,6 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { Testimonial } from "@kickstartds/ds-agency/testimonial";
-import { Button } from "@kickstartds/ds-agency/button";
-import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { LogosPaid } from "@kickstartds/ds-agency/logos";
 
 export const data = {
@@ -22,20 +19,17 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section
-      style="accent"
       width="default"
       align="left"
       mode="list"
-      spaceAfter="default"
     >
       <Headline
-        align="left"
-        text="Transformations powered by Creativity and Innovation"
-        sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises"
+        
+        text="Transformations powered by **💗**, **Innovation** & **Design Systems**"
+        sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
         content=""
-        level="h2"
-        style="h2"
-        spaceAfter="normal"
+        level="h1"
+        style="h1"
       />
       <TextMedia
         text={`
@@ -50,7 +44,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       align="left"
       mode="list"
       headline="**01**"
-      align="left"
     >
       <TextMedia
         media={[
