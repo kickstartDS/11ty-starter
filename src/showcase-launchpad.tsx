@@ -1,20 +1,21 @@
-import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { Button } from "@kickstartds/ds-agency/button";
+
+import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonial } from "@kickstartds/ds-agency/testimonial";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 
+import { PageWrapper } from "./_includes/PageWrapper";
+
 export const data = {
   title:
     "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
-  
+
   layout: "base.njk",
   eleventyNavigation: {
-    key: "Showcase Techfusion",
-    order: 3,
+    key: "Showcase Launchpad",
+    order: 4,
   },
 };
 
@@ -26,7 +27,7 @@ export default (props) => (
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_tfe01.jpg",
+              src: "/static/img/showcases/comp_audio01.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -43,8 +44,8 @@ export default (props) => (
     >
       <Headline
         align="left"
-        text="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**"
-        sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
+        text="Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**"
+        sub="Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth"
         content=""
         level="h2"
         style="h2"
@@ -53,7 +54,7 @@ export default (props) => (
       <TextMedia
         text={`
 ### Briefing:
-TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
+LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future.
           `}
       />
     </Section>
@@ -71,7 +72,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_tfe02.jpg",
+              src: "/static/img/showcases/comp_audio02.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -79,29 +80,22 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       />
     </Section>
 
-    <Section
-      width="wide"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
+    <Section width="wide" align="left" mode="list" spaceAfter="default">
       <TextMedia
         text={`
 ### Our Solution: 
-We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
+We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
 
           `}
       />
     </Section>
-    <Section 
-      spaceBefore="small"
-    > 
+    <Section spaceBefore="small">
       <Testimonial
-        image="/static/img/customer-2.png"
-        /* alt:="Fake Testimonial Portrait" */
-        name="- John Smith"
-        quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
-        title="Chief Marketing Officer at TechFusion Enterprises"
+        image="/static/img/customer-3.png"
+        /* alt:"Fake Testimonial Portrait" */
+        name="- Alex Chen"
+        quote="As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."
+        title="CEO of LaunchPad Innovations"
       />
     </Section>
 
@@ -118,7 +112,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_tfe03.jpg",
+              src: "/static/img/showcases/comp_audio03.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -126,21 +120,11 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="narrow"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
+    <Section style="accent" width="narrow" align="left" mode="list">
       <TextMedia
         text={`
 ## **Result:** 
-The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
-
-**Additional Services:**
-
-We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
+With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
           `}
       />
     </Section>
@@ -158,7 +142,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_tfe04.jpg",
+              src: "/static/img/showcases/comp_audio04.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -169,9 +153,8 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
     <Section inverted>
       <Cta
         align="left"
-        width="wide"
-        headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
-        text="Get in touch today."
+        headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
+        text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."
         primaryCta={{
           toggle: true,
           label: "Contact us",
@@ -184,16 +167,19 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
-    <Section width="wide" headline="More of our Demo Customer Showcases" align="center">
+    <Section
+      width="wide"
+      headline="More of our Demo Customer Showcases"
+      align="center"
+    >
       <TeaserCard
-        target="/showcase-launchpad"
-        headline="Speed and Scale"
-        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        target="/showcase-techfusion"
+        headline="Transformation Love Story"
+        text="See how we saved TechFusions a year's worth of development time"
+        image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         target="/showcase-eco"

@@ -1,14 +1,16 @@
-import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
+
+import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { LogosPaid } from "@kickstartds/ds-agency/logos";
 
+import { PageWrapper } from "./_includes/PageWrapper";
+
 export const data = {
   title:
     "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
-  
+
   layout: "base.njk",
   eleventyNavigation: {
     key: "Showcases",
@@ -18,13 +20,8 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section
-      width="default"
-      align="left"
-      mode="list"
-    >
+    <Section width="default" align="left" mode="list">
       <Headline
-        
         text="Transformations powered by **💗**, **Innovation** & **Design Systems**"
         sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
         content=""
@@ -53,6 +50,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             },
           },
         ]}
+        text=""
       />
       <Cta
         align="left"
@@ -68,14 +66,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section
-      style=""
-      width="wide"
-      align="left"
-      mode="list"
-      headline="**02**"
-      align="left"
-    >
+    <Section width="wide" align="left" mode="list" headline="**02**">
       <TextMedia
         media={[
           {
@@ -84,6 +75,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             },
           },
         ]}
+        text=""
       />
       <Cta
         align="left"
@@ -105,8 +97,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       align="left"
       mode="list"
       headline="**03**"
-      align="left"
-      
     >
       <TextMedia
         media={[
@@ -116,6 +106,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             },
           },
         ]}
+        text=""
       />
       <Cta
         align="left"
@@ -148,7 +139,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
@@ -162,45 +152,45 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         align="center"
         logos={[
           {
-            alt: 'Logo 1',
-            src: '/static/img/logoipsum-212.svg'
+            alt: "Logo 1",
+            src: "/static/img/logoipsum-212.svg",
           },
           {
-            alt: 'Logo 2',
-            src: '/static/img/logoipsum-217.svg'
+            alt: "Logo 2",
+            src: "/static/img/logoipsum-217.svg",
           },
           {
-            alt: 'Logo 3',
-            src: '/static/img/logoipsum-239.svg'
+            alt: "Logo 3",
+            src: "/static/img/logoipsum-239.svg",
           },
           {
-            alt: 'Logo 4',
-            src: '/static/img/logoipsum-244.svg'
+            alt: "Logo 4",
+            src: "/static/img/logoipsum-244.svg",
           },
           {
-            alt: 'Logo 5',
-            src: '/static/img/logoipsum-250.svg'
+            alt: "Logo 5",
+            src: "/static/img/logoipsum-250.svg",
           },
           {
-            alt: 'Logo 6',
-            src: '/static/img/logoipsum-286.svg'
+            alt: "Logo 6",
+            src: "/static/img/logoipsum-286.svg",
           },
           {
-            alt: 'Logo 7',
-            src: '/static/img/logoipsum-212.svg'
+            alt: "Logo 7",
+            src: "/static/img/logoipsum-212.svg",
           },
           {
-            alt: 'Logo 8',
-            src: '/static/img/logoipsum-217.svg'
+            alt: "Logo 8",
+            src: "/static/img/logoipsum-217.svg",
           },
           {
-            alt: 'Logo 9',
-            src: '/static/img/logoipsum-239.svg'
+            alt: "Logo 9",
+            src: "/static/img/logoipsum-239.svg",
           },
           {
-            alt: 'Logo 10',
-            src: '/static/img/logoipsum-244.svg'
-          }
+            alt: "Logo 10",
+            src: "/static/img/logoipsum-244.svg",
+          },
         ]}
         logosPerRow={4}
         tagline=""

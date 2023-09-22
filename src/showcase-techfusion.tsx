@@ -1,19 +1,20 @@
-import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { Button } from "@kickstartds/ds-agency/button";
+
+import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonial } from "@kickstartds/ds-agency/testimonial";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 
+import { PageWrapper } from "./_includes/PageWrapper";
+
 export const data = {
   title:
     "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
-  
+
   layout: "base.njk",
   eleventyNavigation: {
-    key: "Showcase EcoTech",
+    key: "Showcase Techfusion",
     order: 3,
   },
 };
@@ -26,7 +27,7 @@ export default (props) => (
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_eco01.jpg",
+              src: "/static/img/showcases/comp_tfe01.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -36,16 +37,15 @@ export default (props) => (
 
     <Section
       style="accent"
-      width="default"
+      width="wide"
       align="left"
       mode="list"
       spaceAfter="default"
-      inverted
     >
       <Headline
         align="left"
-        text="Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**"
-        sub="**Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web**"
+        text="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**"
+        sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
         content=""
         level="h2"
         style="h2"
@@ -54,7 +54,7 @@ export default (props) => (
       <TextMedia
         text={`
 ### Briefing:
-EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms.
+TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
           `}
       />
     </Section>
@@ -72,7 +72,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_eco02.jpg",
+              src: "/static/img/showcases/comp_tfe02.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -80,25 +80,22 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       />
     </Section>
 
-    <Section
-      style="narrow"
-      width="wide"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
+    <Section width="wide" align="left" mode="list" spaceAfter="default">
       <TextMedia
         text={`
 ### Our Solution: 
-We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
+We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
+
           `}
       />
+    </Section>
+    <Section spaceBefore="small">
       <Testimonial
-        image="/static/img/customer-1.png"
+        image="/static/img/customer-2.png"
         /* alt:="Fake Testimonial Portrait" */
-        name="- Emily Johnson"
-        quote="**Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.**"
-        title="Director of Digital Strategy at EcoTech Solutions"
+        name="- John Smith"
+        quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
+        title="Chief Marketing Officer at TechFusion Enterprises"
       />
     </Section>
 
@@ -115,7 +112,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_eco03.jpg",
+              src: "/static/img/showcases/comp_tfe03.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -126,15 +123,18 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
     <Section
       style="accent"
       width="narrow"
-      align="center"
+      align="left"
       mode="list"
       spaceAfter="default"
-      inverted
     >
       <TextMedia
         text={`
-### **Result:**
-The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
+## **Result:** 
+The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
+
+**Additional Services:**
+
+We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
           `}
       />
     </Section>
@@ -152,7 +152,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_eco04.jpg",
+              src: "/static/img/showcases/comp_tfe04.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -163,9 +163,8 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     <Section inverted>
       <Cta
         align="left"
-        width="wide"
-        headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
-        text="Connect with us to start your journey."
+        headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
+        text="Get in touch today."
         primaryCta={{
           toggle: true,
           label: "Contact us",
@@ -178,22 +177,25 @@ The implementation of the new **Design System** and migration to **Storyblok** t
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
-    <Section width="wide" headline="More of our Demo Customer Showcases" align="center">
-      <TeaserCard
-        target="/showcase-techfusion"
-        headline="Transformation Love Story"
-        text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
-      />
+    <Section
+      width="wide"
+      headline="More of our Demo Customer Showcases"
+      align="center"
+    >
       <TeaserCard
         target="/showcase-launchpad"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
+      />
+      <TeaserCard
+        target="/showcase-eco"
+        headline="Saving Time and Money"
+        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+        image="/static/img/showcases/comp_eco01.jpg"
       />
     </Section>
 

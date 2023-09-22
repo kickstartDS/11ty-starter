@@ -1,11 +1,13 @@
-import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
+
+import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonial } from "@kickstartds/ds-agency/testimonial";
+
+import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
   title:
@@ -37,7 +39,6 @@ Elevate your digital presence with us. We create impactful digital experiences t
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
@@ -83,7 +84,11 @@ Ready to make your digital journey exceptional?`}
         />
       </div>
     </Section>
-    <Section width="default" style="accent" align="left" mode="list"
+    <Section
+      width="default"
+      style="accent"
+      align="left"
+      mode="list"
       headline="Our **Approach** to Design Systems"
       sub="Own a design system without investing years of development. Our approach to design systems"
     >
@@ -102,7 +107,12 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       />
     </Section>
 
-    <Section width="wide" headline="Happy Customers Showcases" sub="We can create something shining for you too!" align="center">
+    <Section
+      width="wide"
+      headline="Happy Customers Showcases"
+      sub="We can create something shining for you too!"
+      align="center"
+    >
       <TeaserCard
         target="/showcase-techfusion"
         headline="Transformation Love Story"
@@ -123,28 +133,34 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       />
     </Section>
 
-    <Section width="wide" mode="list" headline="No Agency site without some shiny happy Customer" sub="AI-generated smiles, as you see them evrywhere nowadays" align="center">
+    <Section
+      width="wide"
+      mode="list"
+      headline="No Agency site without some shiny happy Customer"
+      sub="AI-generated smiles, as you see them evrywhere nowadays"
+      align="center"
+    >
       <Testimonial
-          image="/static/img/customer-1.png"
-          /* alt:="Fake Testimonial Portrait" */
-          name="- Emily Johnson"
-          quote="Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."
-          title="Director of Digital Strategy at EcoTech Solutions"
-        />
-        <Testimonial
-          image="/static/img/customer-2.png"
-          /* alt:="Fake Testimonial Portrait" */
-          name="- John Smith"
-          quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
-          title="Chief Marketing Officer at TechFusion Enterprises"
-        />
-        <Testimonial
-          image="/static/img/customer-3.png"
-          /* alt:="Fake Testimonial Portrait" */
-          name="- Alex Chen"
-          quote="As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."
-          title="CEO of LaunchPad Innovations"
-        />
+        image="/static/img/customer-1.png"
+        /* alt:="Fake Testimonial Portrait" */
+        name="- Emily Johnson"
+        quote="Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."
+        title="Director of Digital Strategy at EcoTech Solutions"
+      />
+      <Testimonial
+        image="/static/img/customer-2.png"
+        /* alt:="Fake Testimonial Portrait" */
+        name="- John Smith"
+        quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
+        title="Chief Marketing Officer at TechFusion Enterprises"
+      />
+      <Testimonial
+        image="/static/img/customer-3.png"
+        /* alt:="Fake Testimonial Portrait" */
+        name="- Alex Chen"
+        quote="As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."
+        title="CEO of LaunchPad Innovations"
+      />
     </Section>
 
     <Section inverted>
@@ -163,13 +179,11 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
-    <Section>
+    <Section headline="Design Systems & Headless FAQs">
       <FAQ
-        headline="Design Systems & Headless FAQs"
         questions={[
           {
             question: "What is a Design System?",
@@ -256,7 +270,6 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
   </PageWrapper>

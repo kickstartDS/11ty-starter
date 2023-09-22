@@ -1,20 +1,21 @@
-import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { Button } from "@kickstartds/ds-agency/button";
+
+import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonial } from "@kickstartds/ds-agency/testimonial";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 
+import { PageWrapper } from "./_includes/PageWrapper";
+
 export const data = {
   title:
     "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
-  
+
   layout: "base.njk",
   eleventyNavigation: {
-    key: "Showcase Launchpad",
-    order: 4,
+    key: "Showcase EcoTech",
+    order: 3,
   },
 };
 
@@ -26,7 +27,7 @@ export default (props) => (
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_audio01.jpg",
+              src: "/static/img/showcases/comp_eco01.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -36,15 +37,16 @@ export default (props) => (
 
     <Section
       style="accent"
-      width="wide"
+      width="default"
       align="left"
       mode="list"
       spaceAfter="default"
+      inverted
     >
       <Headline
         align="left"
-        text="Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**"
-        sub="Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth"
+        text="Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**"
+        sub="**Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web**"
         content=""
         level="h2"
         style="h2"
@@ -53,7 +55,7 @@ export default (props) => (
       <TextMedia
         text={`
 ### Briefing:
-LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future.
+EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms.
           `}
       />
     </Section>
@@ -71,7 +73,7 @@ LaunchPad Audio Innovations, an AI-powered digital audio controller startup, nee
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_audio02.jpg",
+              src: "/static/img/showcases/comp_eco02.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -79,29 +81,19 @@ LaunchPad Audio Innovations, an AI-powered digital audio controller startup, nee
       />
     </Section>
 
-    <Section
-      width="wide"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
+    <Section width="wide" align="left" mode="list" spaceAfter="default">
       <TextMedia
         text={`
 ### Our Solution: 
-We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
-
+We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
           `}
       />
-    </Section>
-    <Section 
-      spaceBefore="small"
-    > 
       <Testimonial
-        image="/static/img/customer-3.png"
-        /* alt:"Fake Testimonial Portrait" */
-        name="- Alex Chen"
-        quote="As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."
-        title="CEO of LaunchPad Innovations"
+        image="/static/img/customer-1.png"
+        /* alt:="Fake Testimonial Portrait" */
+        name="- Emily Johnson"
+        quote="**Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.**"
+        title="Director of Digital Strategy at EcoTech Solutions"
       />
     </Section>
 
@@ -118,7 +110,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_audio03.jpg",
+              src: "/static/img/showcases/comp_eco03.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -129,13 +121,15 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     <Section
       style="accent"
       width="narrow"
-      align="left"
+      align="center"
       mode="list"
+      spaceAfter="default"
+      inverted
     >
       <TextMedia
         text={`
-## **Result:** 
-With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
+### **Result:**
+The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
       />
     </Section>
@@ -153,7 +147,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
         media={[
           {
             image: {
-              src: "/static/img/showcases/comp_audio04.jpg",
+              src: "/static/img/showcases/comp_eco04.jpg",
               alt: "Fake Showcase Mockup Image",
             },
           },
@@ -164,9 +158,8 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     <Section inverted>
       <Cta
         align="left"
-        width="wide"
-        headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
-        text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."
+        headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
+        text="Connect with us to start your journey."
         primaryCta={{
           toggle: true,
           label: "Contact us",
@@ -179,22 +172,25 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
-    <Section width="wide" headline="More of our Demo Customer Showcases" align="center">
-    <TeaserCard
+    <Section
+      width="wide"
+      headline="More of our Demo Customer Showcases"
+      align="center"
+    >
+      <TeaserCard
         target="/showcase-techfusion"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-eco"
-        headline="Saving Time and Money"
-        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        target="/showcase-launchpad"
+        headline="Speed and Scale"
+        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+        image="/static/img/showcases/comp_audio01.jpg"
       />
     </Section>
 

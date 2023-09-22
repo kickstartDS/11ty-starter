@@ -1,22 +1,26 @@
-import { PageWrapper } from "./_includes/PageWrapper";
-import { Section } from "@kickstartds/ds-agency/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
+
+import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 
+import { PageWrapper } from "./_includes/PageWrapper";
+
 export const data = {
-  title: "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
+  title:
+    "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
   layout: "base.njk",
 };
 
 export default (props) => (
   <PageWrapper>
     <Section width="default">
+      Section
       <Cta
         align="left"
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
-        subheadline="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
+        sub="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
         text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs - contact us, we are real experts!`}
         primaryCta={{
           toggle: true,
@@ -30,11 +34,16 @@ export default (props) => (
           target: "https://www.kickstartds.com/services/",
           icon: "chevron-right",
         }}
-        ctaToggle
       />
     </Section>
-    
-    <Section style="accent" width="wide" align="left" mode="list" spaceAfter="small">
+
+    <Section
+      style="accent"
+      width="wide"
+      align="left"
+      mode="list"
+      spaceAfter="small"
+    >
       <Headline
         align="left"
         text="Open Source vs. Premium Experience"
@@ -45,13 +54,8 @@ export default (props) => (
         spaceAfter="minimum"
       />
     </Section>
-    
-    <Section
-      style="accent"
-      width="narrow"
-      align="left"
-      spaceBefore="none"
-    >
+
+    <Section style="accent" width="narrow" align="left" spaceBefore="none">
       <TextMedia
         text={`
 ### Open Source Demo
@@ -65,12 +69,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="default"
-      align="left"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="default" align="left" spaceBefore="none">
       <TextMedia
         text={`
 ### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
@@ -78,43 +77,35 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="default"
-      align="left"
-      spaceBefore="none"
-    >
-       <Button
-          variant="primary"
-          label="Browse Premium Demo"
-          icon="chevron-right"
-          target="#"
-        />
-        <Button
-          variant="tertiary"
-          label="Explore Storybook"
-          icon="browser"
-          target="#"
-        />
-        <Button
-          variant="secondary"
-          label="See Open Source Components"
-          icon="chevron-right"
-          target="#"
-        />
-        <Button
-          variant="tertiary"
-          label="Explore OS Storybook"
-          icon="browser"
-          target="#"
-        />
-      
+    <Section style="accent" width="default" align="left" spaceBefore="none">
+      <Button
+        variant="primary"
+        label="Browse Premium Demo"
+        icon="chevron-right"
+        target="#"
+      />
+      <Button
+        variant="tertiary"
+        label="Explore Storybook"
+        icon="browser"
+        target="#"
+      />
+      <Button
+        variant="secondary"
+        label="See Open Source Components"
+        icon="chevron-right"
+        target="#"
+      />
+      <Button
+        variant="tertiary"
+        label="Explore OS Storybook"
+        icon="browser"
+        target="#"
+      />
     </Section>
 
     <Section
       headline="What We Do and How We Do It"
-      text="text text"
-      content="Test Content"
       width="default"
       align="left"
     >
@@ -126,13 +117,12 @@ This demo is intended to provide a firsthand experience of the capabilities of [
 ## **Disclaimer**
 While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like Storybook or Sanity.io can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
         `}
-    />
+      />
     </Section>
 
     <Section inverted>
       <Cta
         align="left"
-        width="wide"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         primaryCta={{
@@ -147,7 +137,6 @@ While we've strived to provide a comprehensive demonstration, please bear in min
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
   </PageWrapper>
