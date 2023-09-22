@@ -98,7 +98,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     > 
       <Testimonial
         image="/static/img/customer-3.png"
-        /* alt:="Fake Testimonial Portrait" */
+        /* alt:"Fake Testimonial Portrait" */
         name="- Alex Chen"
         quote="As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."
         title="CEO of LaunchPad Innovations"
