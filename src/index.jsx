@@ -5,6 +5,7 @@ import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Cta } from "@kickstartds/ds-agency/cta";
+import { Testimonial } from "@kickstartds/ds-agency/testimonial";
 
 export const data = {
   title:
@@ -82,82 +83,68 @@ Ready to make your digital journey exceptional?`}
         />
       </div>
     </Section>
-    <Section width="default" style="accent" align="left" mode="list">
+    <Section width="default" style="accent" align="left" mode="list"
+      headline="Our **Approach** to Design Systems"
+      sub="Own a design system without investing years of development. Our approach to design systems"
+    >
       <TextMedia
         mediaAlignment="beside-right"
         text={`
-## Our **Approach** to Design Systems
-Own a design system without investing years of development. Our approach to design systems
-We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
+We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
         media={[
           {
             image: {
               src: "/static/img/agency.png",
-              alt: "ALTTEXT",
+              alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
             },
           },
         ]}
       />
     </Section>
 
-    <Section width="wide" headline="3 Customer Show Cases" align="center">
+    <Section width="wide" headline="Happy Customers Showcases" sub="We can create something shining for you too!" align="center">
       <TeaserCard
-        href="#"
-        headline="Lorem Ipsum dolor"
-        text="During more than a decade in the industry, we've been able to touch almost any aspect of digital products from"
+        target="/showcase-techfusion"
+        headline="Transformation Love Story"
+        text="See how we saved TechFusions a year's worth of development time"
+        image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        href="#"
-        headline="Lorem Ipsum dolor"
-        text="During more than a decade in the industry, we've been able to touch almost any aspect of digital products from"
+        target="/showcase-launchpad"
+        headline="Speed and Scale"
+        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+        image="/static/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
-        href="#"
-        headline="Lorem Ipsum dolor"
-        text="During more than a decade in the industry, we've been able to touch almost any aspect of digital products from"
+        target="/showcase-eco"
+        headline="Saving Time and Money"
+        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+        image="/static/img/showcases/comp_eco01.jpg"
       />
     </Section>
 
-    <Section width="default" mode="list" headline="Testimonials" align="center">
-      <TextMedia
-        mediaAlignment="beside-left"
-        media={[
-          {
-            image: {
-              src: "/static/img/customer-1.png",
-            },
-          },
-        ]}
-        text={`**"Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."**
-
-John Smith, Chief Marketing Officer at TechFusion Enterprises`}
-      />
-      <TextMedia
-        mediaAlignment="beside-right"
-        media={[
-          {
-            image: {
-              src: "/static/img/customer-2.png",
-            },
-          },
-        ]}
-        text={`**"Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."**
-
-Emily Johnson, Director of Digital Strategy at EcoTech Solutions`}
-      />
-      <TextMedia
-        mediaAlignment="beside-left"
-        media={[
-          {
-            image: {
-              src: "/static/img/customer-3.png",
-            },
-          },
-        ]}
-        text={`**"As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."**
-
-Alex Chen, CEO of LaunchPad Innovations`}
-      />
+    <Section width="wide" mode="list" headline="No Agency site without some shiny happy Customer" sub="AI-generated smiles, as you see them evrywhere nowadays" align="center">
+      <Testimonial
+          image="/static/img/customer-1.png"
+          /* alt:="Fake Testimonial Portrait" */
+          name="- Emily Johnson"
+          quote="Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."
+          title="Director of Digital Strategy at EcoTech Solutions"
+        />
+        <Testimonial
+          image="/static/img/customer-2.png"
+          /* alt:="Fake Testimonial Portrait" */
+          name="- John Smith"
+          quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
+          title="Chief Marketing Officer at TechFusion Enterprises"
+        />
+        <Testimonial
+          image="/static/img/customer-3.png"
+          /* alt:="Fake Testimonial Portrait" */
+          name="- Alex Chen"
+          quote="As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market."
+          title="CEO of LaunchPad Innovations"
+        />
     </Section>
 
     <Section inverted>
@@ -252,7 +239,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
       />
     </Section>
 
-    <Section style="accent">
+    <Section style="accent" width="wide">
       <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"

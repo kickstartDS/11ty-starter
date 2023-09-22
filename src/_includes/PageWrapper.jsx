@@ -26,8 +26,12 @@ export const PageWrapper = ({ children }) => {
       <Footer
         logo={data.logo}
         navItems={[
+          { label: "Home", href: "/" },
+          { label: "About", href: "/about-us" },
+          { label: "Showcases", href: "/showcases" },
           { label: "Disclaimer", href: "/disclaimer/" },
-          { label: "Page Source", href: gitHubPageUrl },
+          { label: "Storybook", href: "https://main--64f08cbba622af835d382b4f.chromatic.com/", target: "_blank" },
+          { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
         ]}
       />
     </Page>
