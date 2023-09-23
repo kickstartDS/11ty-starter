@@ -37,6 +37,27 @@ npm start
 - `.eleventy.js`: This is the Eleventy config file.
 - `package.json`: This is where your JavaScript dependencies and scripts live.
 
+## Usage
+
+### Design System
+
+Implementation is based on the `@kickstartds/ds-agency` package, which is a pre-configured Design System provided by kickstartDS. It's used as a base in this 11ty starter project to provide a set of ready-to-use components and features, allowing to focus on what makes their project unique.  
+The `@kickstartds/ds-agency` package also provides global styles and scripts ready for import.
+
+`@kickstartds/ds-agency`, in turn, is itself based on the `@kickstartds/ds-starter` package, a starter to create your own, tailer-made (and not necessarily agency based!) Design System. Described in detail [here](https://github.com/kickstartDS/ds-starter). It provides a ready-to-use Design System with pre-configured features such as:
+
+- Semantic token structure
+- Exemplary components (Button, Headline, and TeaserCard)
+- Full page demo, recipe demo, and rudimentary demo docs
+- Storybook integration with hot reload for all code changes
+- Playroom integration for prototyping
+- Bundling of the Design System for use with and without React
+- Automatic, semantic release handling using `auto`
+
+### Menus and Navigation
+
+Navigation is automatically generated from your Eleventy collections. This is done by adding the `eleventyNavigation` object to your front matter data in your `.tsx` files. Assign a unique string to the `key` property inside of `eleventyNavigation` to add the page to the navigation. You can also specify the `order` property to control the order of the navigation items.
+
 ## Customizing
 
 This starter is highly customizable. Here are some files you might want to edit:
