@@ -1,30 +1,78 @@
-# Smol Eleventy Starter
+# 11ty / Eleventy Starter Project
 
-> Extremely minimal Eleventy starter to kickstart a simple multi-page site / a nearly opinionless foundation to continue building on.
+This project is a starter/template for building static websites using the [11ty](https://www.11ty.dev/) (Eleventy) static site generator. It provides a nearly opinionless foundation to continue building on, making it perfect for simple multi-page sites. This project is pre-configured with [@kickstartds/ds-agency](https://github.com/kickstartDS/ds-agency) for global styles and components and uses [@kickstartds/eleventy-plugin-kickstartds](https://github.com/kickstartDS/eleventy-plugin-kickstartds) for additional Eleventy features.
 
-### Quick Start
+## Features
 
-1. [Generate a repo from this template](https://github.com/5t3ph/smol-11ty-starter/generate) which will copy this project into your own new repo. _Note: You must be signed in to GitHub for this link to work_, else [visit the repo directly](https://github.com/5t3ph/smol-11ty-starter/).
+- Minimal setup: Just enough to get you started with 11ty.
+- ES6 and JSX support: Write your templates using modern JavaScript with [Babel](https://babeljs.io/).
+- A simple, customizable base layout.
+- Basic sample pages to get you started.
+- Pre-configured with [@kickstartds/ds-agency](https://github.com/kickstartDS/ds-agency) for global styles and components.
+- Uses [@kickstartds/eleventy-plugin-kickstartds](https://github.com/kickstartDS/eleventy-plugin-kickstartds) for additional Eleventy features.
+- Includes a `PageWrapper` component for consistent page structure.
+- Navigation is automatically generated from your Eleventy collections.
+- Includes a header and footer component with navigation links.
 
-1. Once cloned, run `npm install` to install 11ty. Then run `npm start` to run 11ty in `serve` mode which will create a local server including hot-reload via BrowserSync.
+## Getting Started
 
-   - Use `npm run build` to run a production version.
+1. Clone this repository.
+2. Install dependencies with `npm install`.
+3. Start the development server with `npm start`.
+4. Build the site with `npm run build`.
 
-1. Open `src/_data/meta.js` and adjust the values to your details.
+```
+git clone https://github.com/kickstartDS/11ty-starter.git
+cd 11ty-starter
+npm install
+npm start
+```
 
-1. Edit `index.md` to change the home page, and then create content within `src/pages` using any templating format you prefer to add content.
+## Project Structure
 
-> Review the resources available at [11ty Rocks](https://11ty.rocks) to learn how to apply more customizations, including adding custom data sources and reviewing what template languages are available.
+- `src/`: This is where your 11ty pages, includes, and data live.
+  - `index.tsx`: The main entry point for your site.
+  - `_includes/`: This is where your layouts and partials live.
+  - `_data/`: This is where your 11ty global data files live.
+- `.eleventy.js`: This is the Eleventy config file.
+- `package.json`: This is where your JavaScript dependencies and scripts live.
 
-## Learn More About Eleventy
+## Customizing
 
-- Get the highlights in my [14 minute feature overview](https://youtu.be/p81J7G1qFAM)
-- Enjoy written tutorials? Start with my post on [creating your first Eleventy website](https://11ty.rocks/posts/create-your-first-basic-11ty-website/)
-- Enjoy video tutorials? Learn to [build an Eleventy site including Sass](https://5t3ph.dev/learn-11ty) in my 20 minute egghead course
+This starter is highly customizable. Here are some files you might want to edit:
 
-## Where to go from here?
+1. `src/_data/meta.js`: This file contains metadata for your site, such as the site name, description, and author information. You can edit these values to suit your needs.
 
-- You may want to swap to [use Sass instead of CSS](https://github.com/5t3ph/11ty-sass-skeleton) and include minifying/autoprefixing (you can copy the relevant bits from the config and the package scripts/dependencies)
-- Review [additional common config customizations](https://11ty.rocks/eleventyjs/)
-- Check out some [quick tips](https://11ty.rocks/tips/) to learn more about using Eleventy's features
-- Add automatically generated [social images with my plugin](https://www.npmjs.com/package/@11tyrocks/eleventy-plugin-social-images)
+2. `src/_data/logo.json`: This file defines the logo of your site. You can replace the `src` value with the path to your own logo file.
+
+3. `src/_includes/_opengraph.njk` and `src/_includes/_twittercard.njk`: These files contain meta tags for Open Graph and Twitter Cards, respectively. You can edit these files to customize how your site appears when shared on social media.
+
+4. `src/_includes/base.njk`: This file is the base layout for your site. It includes the HTML `head` and `body` tags, as well as includes for the Open Graph and Twitter Card meta tags. You can customize this file to change the overall layout of your site.
+
+5. `src/_includes/PageWrapper.tsx`: This file is a React component that wraps around the content of each page. It includes the header and footer components. You can customize this file to change the structure of your pages.
+
+6. `src/index.tsx`: This file is the main entry point for your site. It exports a React component that renders the homepage of your site. You can edit this file to customize the content of your homepage, or create new `.tsx` files in the `src/` directory to add more pages to your site.
+
+Remember to run `npm start` to start the development server and see your changes in real time.
+
+## Deploy this to your own site
+
+Deploy this Eleventy site in just a few clicks on these services:
+
+- [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/kickstartDS/11ty-starter)
+- If you run Eleventy locally you can drag your `_site` folder to [`drop.netlify.com`](https://drop.netlify.com/) to upload it without using `git`.
+- [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=kickstartDS%2F11ty-starter)
+- [Try it out on Stackblitz](https://stackblitz.com/github/kickstartDS/11ty-starter)
+- Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is dual licensed under the MIT and Apache 2.0 licenses. For more information, see the `LICENSE` file.
+
+## Questions?
+
+If you have questions, please open an issue and we'll do our best to help.
