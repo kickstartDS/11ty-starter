@@ -1,10 +1,8 @@
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-
 import { Section } from "@kickstartds/ds-agency/section";
 import { Stats } from "@kickstartds/ds-agency/stats";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
