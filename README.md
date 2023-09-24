@@ -41,10 +41,10 @@ npm start
 
 ### Design System
 
-Implementation is based on the `@kickstartds/ds-agency` package, which is a pre-configured Design System provided by kickstartDS. It's used as a base in this 11ty starter project to provide a set of ready-to-use components and features, allowing to focus on what makes their project unique.  
+Implementation is based on the `@kickstartds/ds-agency` package, which is a pre-configured Design System provided by kickstartDS. It's used as a base in this 11ty starter project to provide a set of ready-to-use components and features, allowing you to focus on what makes your project unique.  
 The `@kickstartds/ds-agency` package also provides global styles and scripts ready for import.
 
-`@kickstartds/ds-agency`, in turn, is itself based on the `@kickstartds/ds-starter` package, a starter to create your own, tailer-made (and not necessarily agency based!) Design System. Described in detail [here](https://github.com/kickstartDS/ds-starter). It provides a ready-to-use Design System with pre-configured features such as:
+`@kickstartds/ds-agency` itself is based on the `@kickstartds/ds-starter` package, a starter to create your own, tailer-made (and not necessarily agency based!) Design System. Described in detail [here](https://github.com/kickstartDS/ds-starter). It provides a ready-to-use Design System with pre-configured features such as:
 
 - Semantic token structure
 - Exemplary components (Button, Headline, and TeaserCard)
@@ -75,6 +75,8 @@ This starter is highly customizable. Here are some files you might want to edit:
 6. `src/index.tsx`: This file is the main entry point for your site. It exports a React component that renders the homepage of your site. You can edit this file to customize the content of your homepage, or create new `.tsx` files in the `src/` directory to add more pages to your site.
 
 Remember to run `npm start` to start the development server and see your changes in real time.
+
+##
 
 ## Deploy this to your own site
 
