@@ -38,7 +38,7 @@ export default (props) => (
         text="We empower Businesses with the Tools they need to thrive in the Digital Landscape."
         sub="Our crystal clear mission:"
         switchOrder
-        content="Test Content"
+        content=""
         level="h2"
         style="h1"
         spaceAfter="minimum"
@@ -51,11 +51,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section
-      headline="What We Do and How We Do It"
-      width="default"
-      align="left"
-    >
+    <Section width="default" align="left">
       <TextMedia
         text={`
 ## Benefit from the **power of kickstartDS**, as we do too
@@ -87,21 +83,21 @@ We're not just building design systems; we're building value. By combining our e
         stats={[
           {
             description:
-              "With over 33 years in the industry, we`ve honed our craft and forged a reputation for excellence.",
+              "With over 33 years in the industry, we`ve honed our craft and forged a reputation for **headless excellence** designed in systems.",
             icon: "person",
             label: "Years of Expertise",
             value: "33+",
           },
           {
             description:
-              "We`re so great, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
+              "**We`re so great**, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
             icon: "home",
             label: "Successful Projects",
             value: "200+",
           },
           {
             description:
-              "Thanks to NPS, our client-centric approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
+              "Thanks to **NPS, our client-centric** approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
             icon: "map",
             label: "Client Satisfaction",
             value: "99%",

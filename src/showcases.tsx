@@ -14,7 +14,7 @@ export const data = {
   layout: "base.njk",
   eleventyNavigation: {
     key: "Showcases",
-    order: 2,
+    order: 3,
   },
 };
 

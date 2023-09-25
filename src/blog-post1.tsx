@@ -10,8 +10,8 @@ export const data = {
   title: "Systemics, your Design System Agency Insights",
   layout: "base.njk",
   eleventyNavigation: {
-    key: "Blog",
-    order: 4,
+    key: "Post 1",
+    order: 5,
   },
 };
 
@@ -20,7 +20,7 @@ export default (props) => (
     <Section width="wide">
       <BlogHead
         date="11/05/2023"
-        headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
+        headline="The Future of Digital Experiences"
         image="/static/img/agency.png"
         tags={[
           'Headless',
@@ -29,9 +29,15 @@ export default (props) => (
       />
     </Section>
 
-    <Section>
+    <Section 
+      width="wide"
+      headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
+      align="left"
+    >
       <TextMedia
         text={`
+**#tldr** *Dive into the exciting world of headless architecture with Systemics. This article explores our Headless Websites service, a playground of innovation and creativity for brands seeking to redefine their digital journey. Discover how our experts leverage headless CMS architecture to provide unparalleled flexibility while maintaining design integrity. We make content distribution dynamic and responsive, tailoring it to users' preferences for a seamless journey across devices and platforms.*
+
 ## Behead the Old, Say Hello to Headless!
 Are you tired of being shackled to traditional content management systems (CMS)? Well, chop off the constraints and prepare for a decapitation revolution – welcome to the era of Headless Websites! With our Headless CMS service, brands can enjoy top-notch innovation and creativity. If you're ready to redefine your digital journey, we're just the guys with the right tech-sword. So, buckle up! Just like a great fantasy novel, the world of headless CMS architecture can be both daunting and exhilarating. But don't worry, we promise no dragons...just a lot of awesome design coding!
 

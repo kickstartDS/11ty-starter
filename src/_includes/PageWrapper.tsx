@@ -28,6 +28,7 @@ export const PageWrapper = ({ children }) => {
         navItems={[
           { label: "Home", href: "/" },
           { label: "About", href: "/about-us" },
+          { label: "Services", href: "/services" },
           { label: "Showcases", href: "/showcases" },
           { label: "Blog", href: "/blog" },
           { label: "Disclaimer", href: "/disclaimer/" },
