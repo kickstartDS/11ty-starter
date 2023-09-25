@@ -27,7 +27,7 @@
   "dependencies": {
     "@kickstartds/base": "^2.3.0-next.2",
     "@kickstartds/core": "^2.3.0-next.2",
-    "@kickstartds/ds-agency": "^1.0.0"
+    "@kickstartds/ds-agency": "^1.0.26"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
