@@ -1,10 +1,8 @@
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-
 import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -16,7 +14,6 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="default">
-      Section
       <Cta
         align="left"
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
@@ -98,14 +95,13 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
       <Button
         variant="tertiary"
-        label="Explore OS Storybook"
+        label="Explore open source components"
         icon="browser"
         target="#"
       />
     </Section>
 
     <Section
-      headline="What We Do and How We Do It"
       width="default"
       align="left"
     >
