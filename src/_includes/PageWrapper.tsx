@@ -29,6 +29,7 @@ export const PageWrapper = ({ children }) => {
           { label: "Home", href: "/" },
           { label: "About", href: "/about-us" },
           { label: "Showcases", href: "/showcases" },
+          { label: "Blog", href: "/blog" },
           { label: "Disclaimer", href: "/disclaimer/" },
           { label: "Storybook", href: "https://main--64f08cbba622af835d382b4f.chromatic.com/", target: "_blank" },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },

@@ -5,7 +5,7 @@ import { BlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
-  title: "About Systemics, your Design System Agency",
+  title: "Systemics, your Design System Agency Insights",
   layout: "base.njk",
   eleventyNavigation: {
     key: "Blog",
@@ -56,28 +56,28 @@ We believe in not just keeping up with the digital world, but setting the pace.
 
     <Section
        style="accent"
-       width="default"
+       width="wide"
        mode="list"
     >
       <BlogTeaser
         author={{
           image: '/static/img/customer-1.png',
           name: 'Jane Smith',
-          title: 'Senior AI Researcher'
+          title: 'Black Belt Headless Ninja Warrior'
         }}
         date="12/30/2022"
-        headline="The Future of AI"
+        headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
         image="/static/img/agency.png"
         link={{
           label: 'Read more',
-          url: '/blog-post-1/'
+          url: '/blog-post-1'
         }}
         readingTime="5 min read"
         tags={[
-          'Technology',
-          'AI'
+          'Headless',
+          'CMS'
         ]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+        teaserText="Dive into the exciting world of headless architecture with Systemics. This article explores our Headless Websites service, a playground of innovation and creativity for brands seeking to redefine their digital journey. Discover how our experts leverage headless CMS architecture to provide unparalleled flexibility while maintaining design integrity. We make content distribution dynamic and responsive, tailoring it to users' preferences for a seamless journey across devices and platforms."
       />
       <BlogTeaser
         author={{

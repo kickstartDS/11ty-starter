@@ -61,7 +61,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           toggle: true,
           label: "See Showcase",
           icon: "chevron-right",
-          target: "/showcase-audio/",
+          target: "/showcase-launchpad",
         }}
       />
     </Section>
@@ -86,7 +86,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           toggle: true,
           label: "See Showcase",
           icon: "chevron-right",
-          target: "/showcase-audio/",
+          target: "/showcase-eco",
         }}
       />
     </Section>
@@ -117,7 +117,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           toggle: true,
           label: "See Showcase",
           icon: "chevron-right",
-          target: "/showcase-techfusion/",
+          target: "/showcase-techfusion",
         }}
       />
     </Section>
