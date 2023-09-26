@@ -1,16 +1,13 @@
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { LogosPaid } from "@kickstartds/ds-agency/logos";
-
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
   title:
     "A kickstartDS Demo Showcase: Systemics, your Design System & Headless Agency",
-
   layout: "base.njk",
   eleventyNavigation: {
     key: "Showcases",

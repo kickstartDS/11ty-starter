@@ -79,7 +79,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list" spaceAfter="default">
+    <Section width="default" align="left" mode="list" spaceAfter="default">
       <TextMedia
         text={`
 ### Our Solution: 
@@ -87,10 +87,10 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
           `}
       />
       <Testimonial
-        image="/static/img/customer-1.png"
-        /* alt:="Fake Testimonial Portrait" */
+        image="/static/img/people/author-emily.png"
+        alt="Fake Testimonial Portrait"
         name="- Emily Johnson"
-        quote="**Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.**"
+        quote="Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."
         title="Director of Digital Strategy at EcoTech Solutions"
       />
     </Section>
