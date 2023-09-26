@@ -2,7 +2,7 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { Testimonial } from "@kickstartds/ds-agency/testimonial";
+import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -86,7 +86,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
 We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
           `}
       />
-      <Testimonial
+      <Testimonials
         image="/static/img/people/author-emily.png"
         alt="Fake Testimonial Portrait"
         name="- Emily Johnson"

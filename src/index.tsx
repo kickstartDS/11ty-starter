@@ -4,7 +4,7 @@ import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Cta } from "@kickstartds/ds-agency/cta";
-import { Testimonial } from "@kickstartds/ds-agency/testimonial";
+import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -138,21 +138,21 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       sub="AI-generated smiles, as you see them evrywhere nowadays"
       align="center"
     >
-      <Testimonial
+      <Testimonials
         image="/static/img/people/author-emily.png"
         alt="Fake Testimonial Portrait"
         name="- Emily Johnson"
         quote="Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."
         title="Director of Digital Strategy at EcoTech Solutions"
       />
-      <Testimonial
+      <Testimonials
         image="/static/img/people/author-john.png"
         alt="Fake Testimonial Portrait"
         name="- John Smith"
         quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
         title="Chief Marketing Officer at TechFusion Enterprises"
       />
-      <Testimonial
+      <Testimonials
         image="/static/img/people/author-alex.png"
         alt="Fake Testimonial Portrait"
         name="- Alex Chen"

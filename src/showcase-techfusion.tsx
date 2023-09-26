@@ -2,7 +2,7 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { Testimonial } from "@kickstartds/ds-agency/testimonial";
+import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -88,7 +88,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       />
     </Section>
     <Section spaceBefore="small">
-      <Testimonial
+      <Testimonials
         image="/static/img/people/author-john.png"
         alt="Fake Testimonial Portrait"
         name="- John Smith"

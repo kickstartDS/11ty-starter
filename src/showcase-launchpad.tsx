@@ -2,12 +2,10 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { Testimonial } from "@kickstartds/ds-agency/testimonial";
+import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { PageWrapper } from "./_includes/PageWrapper";
-
-
 
 export const data = {
   title:
@@ -52,13 +50,13 @@ export default (props) => (
         style="h2"
         spaceAfter="large"
       />
-      <Text 
-        layoutVariant="singleColumn" 
+      <Text
+        layoutVariant="singleColumn"
         text={`
 ### Briefing:
 LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future.
           `}
-        />
+      />
     </Section>
 
     <Section
@@ -91,7 +89,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
       />
     </Section>
     <Section spaceBefore="small">
-      <Testimonial
+      <Testimonials
         image="/static/img/people/author-alex.png"
         alt="Fake Testimonial Portrait"
         name="- Alex Chen"
