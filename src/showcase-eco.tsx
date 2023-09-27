@@ -87,11 +87,18 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
           `}
       />
       <Testimonials
-        image="/static/img/people/author-emily.png"
-        alt="Fake Testimonial Portrait"
-        name="- Emily Johnson"
-        quote="Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends."
-        title="Director of Digital Strategy at EcoTech Solutions"
+        testimonials={[
+          {
+            image: {
+              src: "/static/img/people/author-emily.png",
+              alt: "Fake Testimonial Portrait",
+            },
+            name: "- Emily Johnson",
+            quote:
+              "Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.",
+            title: "Director of Digital Strategy at EcoTech Solutions",
+          },
+        ]}
       />
     </Section>
 

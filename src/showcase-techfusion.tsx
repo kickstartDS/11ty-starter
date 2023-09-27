@@ -89,11 +89,18 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
     </Section>
     <Section spaceBefore="small">
       <Testimonials
-        image="/static/img/people/author-john.png"
-        alt="Fake Testimonial Portrait"
-        name="- John Smith"
-        quote="Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating."
-        title="Chief Marketing Officer at TechFusion Enterprises"
+        testimonials={[
+          {
+            image: {
+              src: "/static/img/people/author-john.png",
+              alt: "Fake Testimonial Portrait",
+            },
+            name: "- John Smith",
+            quote:
+              "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
+            title: "Chief Marketing Officer at TechFusion Enterprises",
+          },
+        ]}
       />
     </Section>
 
