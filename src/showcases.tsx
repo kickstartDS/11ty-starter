@@ -143,7 +143,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       align="center"
       headline="**More Sucess Stories incoming**"
     >
-      <Logos
+      <LogosPaid
         align="center"
         logos={[
           {

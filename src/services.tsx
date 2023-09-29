@@ -56,7 +56,6 @@ export default (props) => (
         spaceAfter="default"
       />
       <Text
-        mediaAlignment="beside-right"
         text={`
 ### Design System **Consulting**
 #### Bringing Clarity to Your Vision
@@ -80,8 +79,7 @@ Design System Consulting at Systemics is your compass in the world of design coh
       align="left"
       mode="list"
     >
-      <TextMedia
-        mediaAlignment="beside-left"
+      <Text
         text={`
 ### Design System **Creation**
 #### From Vision to Reality
@@ -106,14 +104,13 @@ Our Design System Creation service is where ideas materialize into tangible resu
       mode="list"
     >
       <Text
-        mediaAlignment="beside-right"
         text={`
 ### Design System **Trainings**
 #### Empower Your Digital Team
 Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
           `}
         />
-        <Picture
+      <Picture
         media={[
           {
             image: {
@@ -132,7 +129,6 @@ Invest in your team's growth with our Design System Trainings. We believe that t
       mode="list"
     >
       <Text
-        mediaAlignment="beside-left"
         text={`
 ### **Headless** Websites
 #### Unleash the Power of Headless Architecture
