@@ -1,8 +1,9 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Stats } from "@kickstartds/ds-agency/stats";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -46,18 +47,19 @@ export default (props) => (
     </Section>
 
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
-      <TextMedia
+      <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
     </Section>
 
     <Section width="default" align="left">
-      <TextMedia
+      <Text layoutVariant="multiColumn"
         text={`
-## Benefit from the **power of kickstartDS**, as we do too
+### Benefit from the **power of kickstartDS**
+**as we do too!**  
 We strongly believe in using the best tools to bring our clients exceptional results. That's why we've integrated kickstartDS into our workflow. This code-first framework for design system creation is our secret sauce to saving time, without compromising on quality. kickstartDS allows us to fast-track the development process, ensuring you get a fully functional and polished design system in a fraction of the time it would traditionally take.
 
-## **Maximizing Value** for Our Clients
+### **Maximizing Value** for Our Clients
 We're not just building design systems; we're building value. By combining our expertise in design systems and headless CMS architecture, we deliver solutions that are not only visually appealing but also inherently functional. This approach ensures that your brand's identity remains consistent across platforms while your content distribution becomes more dynamic and efficient. We firmly believe that a harmonious blend of design systems and headless CMSs unlocks immense potential for businesses, propelling them ahead in the digital race.`}
       />
     </Section>
@@ -68,7 +70,7 @@ We're not just building design systems; we're building value. By combining our e
       width="default"
       align="left"
     >
-      <TextMedia
+      <Text
         text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
       />
     </Section>

@@ -1,9 +1,10 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { BlogHead } from "@kickstartds/ds-agency/blog-head";
 import { BlogAside } from "@kickstartds/ds-agency/blog-aside";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -34,7 +35,7 @@ export default (props) => (
       headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
       align="left"
     >
-      <TextMedia
+      <Text
         text={`
 **#tldr** *Dive into the exciting world of headless architecture with Systemics. This article explores our Headless Websites service, a playground of innovation and creativity for brands seeking to redefine their digital journey. Discover how our experts leverage headless CMS architecture to provide unparalleled flexibility while maintaining design integrity. We make content distribution dynamic and responsive, tailoring it to users' preferences for a seamless journey across devices and platforms.*
 

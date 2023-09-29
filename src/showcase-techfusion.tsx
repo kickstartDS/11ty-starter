@@ -1,9 +1,10 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -20,8 +21,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -49,7 +49,7 @@ export default (props) => (
         style="h2"
         spaceAfter="large"
       />
-      <TextMedia
+      <Text
         text={`
 ### Briefing:
 TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
@@ -65,8 +65,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -79,7 +78,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
     </Section>
 
     <Section width="wide" align="left" mode="list" spaceAfter="default">
-      <TextMedia
+      <Text
         text={`
 ### Our Solution: 
 We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
@@ -112,8 +111,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -132,7 +130,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       mode="list"
       spaceAfter="default"
     >
-      <TextMedia
+      <Text
         text={`
 ## **Result:** 
 The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
@@ -152,8 +150,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -205,7 +202,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
     </Section>
 
     <Section align="center">
-      <TextMedia
+      <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
       />
     </Section>

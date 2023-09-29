@@ -1,10 +1,9 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
-import { Stats } from "@kickstartds/ds-agency/stats";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { FAQ } from "@kickstartds/ds-agency/faq";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -37,7 +36,7 @@ export default (props) => (
     </Section>
 
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
-      <TextMedia
+      <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
     </Section>
@@ -56,13 +55,15 @@ export default (props) => (
         style="h1"
         spaceAfter="default"
       />
-      <TextMedia
+      <Text
         mediaAlignment="beside-right"
         text={`
 ### Design System **Consulting**
 #### Bringing Clarity to Your Vision
 Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
         `}
+      />
+      <Picture
         media={[
           {
             image: {
@@ -86,6 +87,8 @@ Design System Consulting at Systemics is your compass in the world of design coh
 #### From Vision to Reality
 Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system. It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
         `}
+      />
+      <Picture
         media={[
           {
             image: {
@@ -102,13 +105,15 @@ Our Design System Creation service is where ideas materialize into tangible resu
       align="left"
       mode="list"
     >
-      <TextMedia
+      <Text
         mediaAlignment="beside-right"
         text={`
 ### Design System **Trainings**
 #### Empower Your Digital Team
 Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
-        `}
+          `}
+        />
+        <Picture
         media={[
           {
             image: {
@@ -126,13 +131,15 @@ Invest in your team's growth with our Design System Trainings. We believe that t
       align="left"
       mode="list"
     >
-      <TextMedia
+      <Text
         mediaAlignment="beside-left"
         text={`
 ### **Headless** Websites
 #### Unleash the Power of Headless Architecture
 Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. Your content distribution becomes dynamic and responsive, tailored to your users' preferences, making their journey seamless across devices and platforms.
         `}
+      />
+      <Picture
         media={[
           {
             image: {
@@ -150,7 +157,7 @@ Discover the future of digital experiences with our Headless Websites service. B
       sub="Leveraging Open Source Technology to Minimize Investment and Maximize Speed"
       content=""
     >
-      <TextMedia
+      <Text
         text={`**kickstartDS** is a powerful and efficient **open source** technology that organizations should consider when starting a **design system**, due to the following reasons:`}
       />
       <FAQ
@@ -187,7 +194,7 @@ Discover the future of digital experiences with our Headless Websites service. B
           },
         ]}
       />
-      <TextMedia
+      <Text
         text={`In summary, [**kickstartDS**]() is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
       />
     </Section>

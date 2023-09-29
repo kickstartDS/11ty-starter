@@ -1,7 +1,8 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { BlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -20,7 +21,7 @@ export default (props) => (
       headline="Welcome to the **Systemics' Blog** – Your digital transformation **compass**!"
       sub="We are here to guide you through the complex yet exhilarating landscape of digital innovation."
     >
-      <TextMedia
+      <Text
         text={`
 Amid the buzzwords and tech jargon, we seek to create a haven where clarity meets creativity, and theory becomes practice.
 
@@ -40,7 +41,7 @@ From the intricate art of **Design Systems** to the boundary-pushing innovation 
       spaceAfter="small"
       headline="Immerse yourself in our three latest posts:"
     >
-      <TextMedia
+      <Text
         text={`
 We believe in not just keeping up with the digital world, but setting the pace.
 

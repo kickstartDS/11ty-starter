@@ -1,9 +1,10 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -20,8 +21,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -50,7 +50,7 @@ export default (props) => (
         style="h2"
         spaceAfter="large"
       />
-      <TextMedia
+      <Text
         text={`
 ### Briefing:
 EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms.
@@ -66,8 +66,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -80,7 +79,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
     </Section>
 
     <Section width="default" align="left" mode="list" spaceAfter="default">
-      <TextMedia
+      <Text
         text={`
 ### Our Solution: 
 We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
@@ -110,8 +109,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -131,7 +129,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
       spaceAfter="default"
       inverted
     >
-      <TextMedia
+      <Text
         text={`
 ### **Result:**
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
@@ -147,8 +145,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -200,7 +197,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     </Section>
 
     <Section align="center">
-      <TextMedia
+      <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
       />
     </Section>

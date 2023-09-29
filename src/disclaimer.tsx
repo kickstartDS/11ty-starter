@@ -1,8 +1,9 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -53,7 +54,7 @@ export default (props) => (
     </Section>
 
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
-      <TextMedia
+      <Text
         text={`
 ### Open Source Demo
 The website you are browsing is the **first demo**. It is built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrating the robust capabilities you can leverage at no cost. It's a testament to the value that kickstartDS can deliver even with zero investment.
@@ -67,7 +68,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
     </Section>
 
     <Section style="accent" width="default" align="left" spaceBefore="none">
-      <TextMedia
+      <Text
         text={`
 ### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
         `}
@@ -105,7 +106,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       width="default"
       align="left"
     >
-      <TextMedia
+      <Text
         text={`
 ## **The Purpose of this Demo**
 This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.

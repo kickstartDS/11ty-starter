@@ -1,8 +1,9 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { LogosPaid } from "@kickstartds/ds-agency/logos";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -25,7 +26,7 @@ export default (props) => (
         level="h1"
         style="h1"
       />
-      <TextMedia
+      <Text
         text={`
 Welcome to our showcase of success stories. Here, you'll discover how we've partnered with diverse organizations to revolutionize their digital landscapes. From creating bespoke design systems to implementing headless CMSs, our solutions have empowered brands to streamline processes, enhance user experiences, and foster brand consistency. Dive in to explore how we've turned challenges into opportunities, and visions into reality.
           `}
@@ -39,7 +40,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       mode="list"
       headline="**01**"
     >
-      <TextMedia
+      <Picture
         media={[
           {
             image: {
@@ -47,7 +48,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             },
           },
         ]}
-        text=""
       />
       <Cta
         align="left"
@@ -64,7 +64,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     </Section>
 
     <Section width="wide" align="left" mode="list" headline="**02**">
-      <TextMedia
+      <Picture
         media={[
           {
             image: {
@@ -72,7 +72,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             },
           },
         ]}
-        text=""
       />
       <Cta
         align="left"
@@ -95,7 +94,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       mode="list"
       headline="**03**"
     >
-      <TextMedia
+      <Picture
         media={[
           {
             image: {
@@ -103,7 +102,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             },
           },
         ]}
-        text=""
       />
       <Cta
         align="left"
@@ -145,7 +143,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       align="center"
       headline="**More Sucess Stories incoming**"
     >
-      <LogosPaid
+      <Logos
         align="center"
         logos={[
           {
@@ -195,7 +193,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     </Section>
 
     <Section align="center">
-      <TextMedia
+      <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
       />
     </Section>

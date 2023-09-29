@@ -1,8 +1,9 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
+import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
@@ -48,7 +49,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
       align="left"
       mode="list"
     >
-      <TextMedia
+      <Text
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -65,10 +66,13 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?`}
+      />
+      <Picture
         media={[
           {
             image: {
               src: "/static/img/team.png",
+              alt: "Just a decorative illustration"
             },
           },
         ]}
@@ -90,10 +94,11 @@ Ready to make your digital journey exceptional?`}
       headline="Our **Approach** to Design Systems"
       sub="Own a design system without investing years of development. Our approach to design systems"
     >
-      <TextMedia
-        mediaAlignment="beside-right"
+      <Text
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
+        />        
+      <Picture
         media={[
           {
             image: {
@@ -160,7 +165,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
               "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
             title: "Chief Marketing Officer at TechFusion Enterprises",
           },
-          {
+           {
             image: {
               src: "/static/img/people/author-alex.png",
               alt: "Fake Testimonial Portrait",
@@ -169,7 +174,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
             quote:
               "As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.",
             title: "CEO of LaunchPad Innovations",
-          },
+          }
         ]}
       />
     </Section>

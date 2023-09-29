@@ -1,10 +1,10 @@
-import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -21,8 +21,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -67,7 +66,7 @@ LaunchPad Audio Innovations, an AI-powered digital audio controller startup, nee
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
+      <Picture
         media={[
           {
             image: {
@@ -80,11 +79,10 @@ LaunchPad Audio Innovations, an AI-powered digital audio controller startup, nee
     </Section>
 
     <Section width="wide" align="left" mode="list" spaceAfter="default">
-      <TextMedia
+      <Text
         text={`
 ### Our Solution: 
 We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
-
           `}
       />
     </Section>
@@ -113,8 +111,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -127,7 +124,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
 
     <Section style="accent" width="narrow" align="left" mode="list">
-      <TextMedia
+      <Text
         text={`
 ## **Result:** 
 With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
@@ -143,8 +140,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
       spaceAfter="none"
       spaceBefore="none"
     >
-      <TextMedia
-        text={``}
+      <Picture
         media={[
           {
             image: {
@@ -196,7 +192,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     </Section>
 
     <Section align="center">
-      <TextMedia
+      <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
       />
     </Section>
