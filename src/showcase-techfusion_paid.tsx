@@ -1,10 +1,11 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { Testimonials } from "@kickstartds/ds-agency/testimonials";
+import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Picture } from "@kickstartds/ds-agency/picture";
+import { Mosaic } from "@kickstartds/ds-agency/mosaic";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -27,13 +28,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="wide"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
+    <Section width="default" align="left" mode="list" spaceAfter="small">
       <Headline
         align="left"
         text="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**"
@@ -43,39 +38,73 @@ export default (props) => (
         style="h2"
         spaceAfter="large"
       />
-      <Text
-        text={`
-### Briefing:
-TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
-          `}
+    </Section>
+
+    <Section width="wide" spaceBefore="small">
+      <Mosaic
+        tiles={[
+          {
+            backgroundColor: "#81005a",
+            cta: {
+              icon: undefined,
+              label: "Book a meeting",
+              target: undefined,
+              toggle: false,
+            },
+            headline: "**Briefing:**",
+            sub: "Harmonize Techfusions Digital Landscape",
+            image: "/static/img/showcases/mosaic-1-tfe.jpg",
+            text: "TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.",
+            textColor: "#ffffff",
+          },
+          {
+            backgroundColor: "#4d148e",
+            cta: {
+              icon: undefined,
+              label: "Book a meeting",
+              target: undefined,
+              toggle: true,
+            },
+            headline: "Our Solution:",
+            image: "/static/img/showcases/mosaic-2-tfe.jpg",
+            sub: "Design System in 5 Days",
+            text: "We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.",
+            textColor: "#cddffa",
+          },
+          {
+            backgroundColor: "#f7067c",
+            cta: {
+              icon: undefined,
+              label: "Book a meeting",
+              target: undefined,
+              toggle: true,
+            },
+            headline: "Additional Services:",
+            image: "/static/img/showcases/mosaic-3-tfe.jpg",
+            sub: "Help to help yourself",
+            text: "We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.",
+            textColor: "#e4c3e3",
+          },
+        ]}
       />
     </Section>
 
     <Section
       style="accent"
-      width="full"
+      width="default"
       align="left"
       mode="list"
       spaceAfter="none"
-      spaceBefore="none"
     >
-      <Picture
-        src="/static/img/showcases/comp_tfe02.jpg"
-        alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-
-    <Section width="wide" align="left" mode="list" spaceAfter="default">
       <Text
         text={`
-### Our Solution: 
-We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
-
+## **Result:** 
+The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
       />
     </Section>
-    <Section spaceBefore="small">
-      <Testimonials
+    <Section style="accent" width="wide" spaceBefore="small">
+      <TestimonialsPaid
         testimonials={[
           {
             image: {
@@ -94,33 +123,15 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
     <Section
       style="accent"
       width="full"
-      align="left"
+      align="center"
       mode="list"
       spaceAfter="none"
-      spaceBefore="none"
+      spaceBefore="default"
+      headline="Find some inspiration from Techfusion for your next project"
     >
       <Picture
         src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-
-    <Section
-      style="accent"
-      width="narrow"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
-      <Text
-        text={`
-## **Result:** 
-The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
-
-**Additional Services:**
-
-We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
-          `}
       />
     </Section>
 

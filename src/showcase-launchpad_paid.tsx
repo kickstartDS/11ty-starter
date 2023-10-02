@@ -5,6 +5,7 @@ import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Picture } from "@kickstartds/ds-agency/picture";
+import { Mosaic } from "@kickstartds/ds-agency/mosaic";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -27,13 +28,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="wide"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-    >
+    <Section width="wide" align="left" mode="list" spaceAfter="default">
       <Headline
         align="left"
         text="Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**"
@@ -42,13 +37,6 @@ export default (props) => (
         level="h2"
         style="h2"
         spaceAfter="large"
-      />
-      <Text
-        layoutVariant="singleColumn"
-        text={`
-### Briefing:
-LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future.
-          `}
       />
     </Section>
 

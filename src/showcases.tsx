@@ -41,13 +41,8 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       headline="**01**"
     >
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_audio01.jpg",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_audio01.jpg"
+        alt="Huge Logo of that fake reference customer"
       />
       <Cta
         align="left"
@@ -65,13 +60,8 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
 
     <Section width="wide" align="left" mode="list" headline="**02**">
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_eco01.jpg",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_eco01.jpg"
+        alt="Huge Logo of that fake reference customer"
       />
       <Cta
         align="left"
@@ -95,13 +85,8 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       headline="**03**"
     >
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_tfe01.jpg",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_tfe01.jpg"
+        alt="Huge Logo of that fake reference customer"
       />
       <Cta
         align="left"

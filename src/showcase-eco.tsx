@@ -22,14 +22,8 @@ export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_eco01.jpg",
-              alt: "Fake Showcase Mockup Image",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_eco01.jpg"
+        alt="Fake Showcase Mockup Image"
       />
     </Section>
 
@@ -67,14 +61,8 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       spaceBefore="none"
     >
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_eco02.jpg",
-              alt: "Fake Showcase Mockup Image",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_eco02.jpg"
+        alt="Fake Showcase Mockup Image"
       />
     </Section>
 
@@ -110,14 +98,8 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
       spaceBefore="none"
     >
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_eco03.jpg",
-              alt: "Fake Showcase Mockup Image",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_eco03.jpg"
+        alt="Fake Showcase Mockup Image"
       />
     </Section>
 
@@ -146,14 +128,8 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       spaceBefore="none"
     >
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/showcases/comp_eco04.jpg",
-              alt: "Fake Showcase Mockup Image",
-            },
-          },
-        ]}
+        src="/static/img/showcases/comp_eco04.jpg"
+        alt="Fake Showcase Mockup Image"
       />
     </Section>
 
