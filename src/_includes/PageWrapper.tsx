@@ -16,12 +16,12 @@ export const PageWrapper = ({ children }) => {
   }));
   const gitHubPageUrl = path.join(
     "https://github.com/kickstartDS/11ty-starter/blob/main",
-    data.page.inputPath
+    data.page.inputPath,
   );
 
   return (
     <Page>
-      <Header logo={data.logo} navItems={headerMainNav} />
+      <Header logo={data.logo} />
       {children}
       <Footer
         logo={data.logo}
@@ -32,7 +32,11 @@ export const PageWrapper = ({ children }) => {
           { label: "Showcases", href: "/showcases" },
           { label: "Blog", href: "/blog" },
           { label: "Disclaimer", href: "/disclaimer/" },
-          { label: "Storybook", href: "https://main--64f08cbba622af835d382b4f.chromatic.com/", target: "_blank" },
+          {
+            label: "Storybook",
+            href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+            target: "_blank",
+          },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
         ]}
       />

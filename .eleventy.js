@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addPassthroughCopy({
-    "static": "static",
+    static: "static",
     "static/img": "img",
     "node_modules/@kickstartds/ds-agency/dist/static/favicon": "/",
   });

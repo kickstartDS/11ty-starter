@@ -6,5 +6,5 @@ module.exports = {
   siteDescription:
     "A demo showcase to demonstrate the eternal power of kickstartD <3",
   authorName: "Team of kickstartDS", // optional
-  authorTwitter: "@kickstartds"
+  authorTwitter: "@kickstartds",
 };

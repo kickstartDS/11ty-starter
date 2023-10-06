@@ -16,7 +16,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section 
+    <Section
       width="wide"
       headline="Welcome to the **Systemics' Blog** – Your digital transformation **compass**!"
       sub="We are here to guide you through the complex yet exhilarating landscape of digital innovation."
@@ -55,69 +55,56 @@ We believe in not just keeping up with the digital world, but setting the pace.
       />
     </Section>
 
-    <Section
-       style="accent"
-       width="wide"
-       mode="list"
-    >
+    <Section style="accent" width="wide" mode="list">
       <BlogTeaser
         author={{
-          image: '/static/img/customer-1.png',
-          name: 'Jane Smith',
-          title: 'Black Belt Headless Ninja Warrior'
+          image: "/static/img/customer-1.png",
+          name: "Jane Smith",
+          title: "Black Belt Headless Ninja Warrior",
         }}
         date="12/30/2022"
         headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
         image="/static/img/agency.png"
         link={{
-          label: 'Read more',
-          url: '/blog-post-1'
+          label: "Read more",
+          url: "/blog-post-1",
         }}
         readingTime="5 min read"
-        tags={[
-          'Headless',
-          'CMS'
-        ]}
+        tags={["Headless", "CMS"]}
         teaserText="Dive into the exciting world of headless architecture with Systemics. This article explores our Headless Websites service, a playground of innovation and creativity for brands seeking to redefine their digital journey. Discover how our experts leverage headless CMS architecture to provide unparalleled flexibility while maintaining design integrity. We make content distribution dynamic and responsive, tailoring it to users' preferences for a seamless journey across devices and platforms."
       />
       <BlogTeaser
         author={{
-          image: '/static/img/customer-1.png',
-          name: 'Jane Smith',
-          title: 'Senior AI Researcher'
+          image: "/static/img/customer-1.png",
+          name: "Jane Smith",
+          title: "Senior AI Researcher",
         }}
         date="12/30/2022"
         headline="The Future of AI"
         image="/static/img/agency.png"
         link={{
-          label: 'Read more',
-          url: '/blog-post-1/'
+          label: "Read more",
+          url: "/blog-post-1/",
         }}
         readingTime="5 min read"
-        tags={[
-          'Technology',
-          'AI'
-        ]}
+        tags={["Technology", "AI"]}
         teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
       />
       <BlogTeaser
         author={{
-          image: '/static/img/customer-1.png',
-          name: 'Jane Smith',
-          title: 'Senior AI Researcher'
+          image: "/static/img/customer-1.png",
+          name: "Jane Smith",
+          title: "Senior AI Researcher",
         }}
         date="12/30/2022"
         headline="The Future of AI"
         image="/static/img/agency.png"
         link={{
-          label: 'Read more',
-          url: '/blog-post-1/'
+          label: "Read more",
+          url: "/blog-post-1/",
         }}
         readingTime="5 min read"
-        tags={[
-          'Technology',
-          'AI'
-        ]}
+        tags={["Technology", "AI"]}
         teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
       />
     </Section>

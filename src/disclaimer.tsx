@@ -102,10 +102,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section
-      width="default"
-      align="left"
-    >
+    <Section width="default" align="left">
       <Text
         text={`
 ## **The Purpose of this Demo**

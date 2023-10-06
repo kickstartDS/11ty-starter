@@ -21,9 +21,6 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full">
-      
-      
-      
       <Cta
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
@@ -71,14 +68,8 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 Ready to make your digital journey exceptional?`}
       />
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/team.png",
-              alt: "Just a decorative illustration"
-            },
-          },
-        ]}
+        src="/static/img/team.png"
+        alt="Just a decorative illustration"
       />
       <div>
         <Button
@@ -100,16 +91,10 @@ Ready to make your digital journey exceptional?`}
       <Text
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        />        
+      />
       <Picture
-        media={[
-          {
-            image: {
-              src: "/static/img/agency.png",
-              alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
-            },
-          },
-        ]}
+        src="/static/img/agency.png"
+        alt="Just a decorative illustration of nothing special and very generic to let this demo website shine"
       />
     </Section>
 
@@ -168,7 +153,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
               "Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.",
             title: "Chief Marketing Officer at TechFusion Enterprises",
           },
-           {
+          {
             image: {
               src: "/static/img/people/author-alex.png",
               alt: "Fake Testimonial Portrait",
@@ -177,7 +162,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
             quote:
               "As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.",
             title: "CEO of LaunchPad Innovations",
-          }
+          },
         ]}
       />
     </Section>

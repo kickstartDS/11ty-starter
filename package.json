@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy",
+    "format": "prettier --write .",
+    "test": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,8 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@kickstartds/eleventy-plugin-kickstartds": "^0.0.5",
     "@types/node": "^18.16",
-    "@types/react": "^18.2.22"
+    "@types/react": "^18.2.22",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
   }
 }

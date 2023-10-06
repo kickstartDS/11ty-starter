@@ -23,14 +23,11 @@ export default (props) => (
         date="11/05/2023"
         headline="The Future of Digital Experiences"
         image="/static/img/agency.png"
-        tags={[
-          'Headless',
-          'CMS'
-        ]}
+        tags={["Headless", "CMS"]}
       />
     </Section>
 
-    <Section 
+    <Section
       width="wide"
       headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
       align="left"
@@ -73,35 +70,31 @@ So, if you're tired of being held back by traditional CMS and are ready to take 
         `}
       />
       <BlogAside
-          author={{
-            byline: 'CEO at Company',
-            email: 'jane.smith@example.com',
-            image: '/static/img/customer-1.png',
-            name: 'Jane Smith',
-            twitter: 'jane_smith'
-          }}
-          date="12/30/2022"
-          readingTime="5 min read"
-          socialSharing={[
-            {
-              href: 'https://twitter.com/share?text=The%20Future%20of%20AI&url=https://example.com/blog/the-future-of-ai',
-              icon: 'twitter',
-              title: 'Share on Twitter'
-            },
-            {
-              href: 'https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog/the-future-of-ai&title=The%20Future%20of%20AI&summary=The%20Future%20of%20AI&source=LinkedIn',
-              icon: 'linkedin',
-              title: 'Share on LinkedIn'
-            }
-          ]}
-        />
+        author={{
+          byline: "CEO at Company",
+          email: "jane.smith@example.com",
+          image: "/static/img/customer-1.png",
+          name: "Jane Smith",
+          twitter: "jane_smith",
+        }}
+        date="12/30/2022"
+        readingTime="5 min read"
+        socialSharing={[
+          {
+            href: "https://twitter.com/share?text=The%20Future%20of%20AI&url=https://example.com/blog/the-future-of-ai",
+            icon: "twitter",
+            title: "Share on Twitter",
+          },
+          {
+            href: "https://www.linkedin.com/shareArticle?mini=true&url=https://example.com/blog/the-future-of-ai&title=The%20Future%20of%20AI&summary=The%20Future%20of%20AI&source=LinkedIn",
+            icon: "linkedin",
+            title: "Share on LinkedIn",
+          },
+        ]}
+      />
     </Section>
-    
-    <Section
-      width="wide"
-      headline="Matching Showcases"
-      align="center"
-    >
+
+    <Section width="wide" headline="Matching Showcases" align="center">
       <TeaserCard
         target="/showcase-launchpad"
         headline="Speed and Scale"
@@ -115,7 +108,7 @@ So, if you're tired of being held back by traditional CMS and are ready to take 
         image="/static/img/showcases/comp_eco01.jpg"
       />
     </Section>
-    
+
     <Section style="accent">
       <Cta
         align="left"

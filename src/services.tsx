@@ -41,11 +41,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section
-      width="wide"
-      align="left"
-      mode="list"
-    >
+    <Section width="wide" align="left" mode="list">
       <Headline
         align="left"
         text="Our Services"
@@ -53,7 +49,6 @@ export default (props) => (
         content=""
         level="h2"
         style="h1"
-        spaceAfter="default"
       />
       <PictureText
         layout="beside-right"
@@ -69,11 +64,7 @@ Design System Consulting at Systemics is your compass in the world of design coh
       />
     </Section>
 
-    <Section
-      width="wide"
-      align="left"
-      mode="list"
-    >
+    <Section width="wide" align="left" mode="list">
       <PictureText
         layout="beside-left"
         text={`
@@ -87,12 +78,8 @@ Our Design System Creation service is where ideas materialize into tangible resu
         }}
       />
     </Section>
-    
-    <Section
-      width="wide"
-      align="left"
-      mode="list"
-    >
+
+    <Section width="wide" align="left" mode="list">
       <PictureText
         layout="beside-right"
         text={`
@@ -100,19 +87,14 @@ Our Design System Creation service is where ideas materialize into tangible resu
 #### Empower Your Digital Team
 Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
           `}
-          image={{
-            source: "/static/img/agency.png",
-            alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
-          }}
-        />
+        image={{
+          source: "/static/img/agency.png",
+          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
+        }}
+      />
     </Section>
 
-    <Section
-      width="wide"
-      style="accent"
-      align="left"
-      mode="list"
-    >
+    <Section width="wide" style="accent" align="left" mode="list">
       <PictureText
         layout="beside-left"
         text={`
@@ -164,7 +146,7 @@ Discover the future of digital experiences with our Headless Websites service. B
               "kickstartDS facilitates seamless collaboration between design, development, and content teams. By providing a unified framework, team members can work together more efficiently, resulting in a more streamlined workflow and a higher quality end product.",
           },
           {
-            question:"6. Customization",
+            question: "6. Customization",
             answer:
               "kickstartDS offers a high level of customization, allowing organizations to tailor the design system to their specific needs and goals. This ensures that the design system aligns with the organization's brand identity and resonates with its target audience.",
           },

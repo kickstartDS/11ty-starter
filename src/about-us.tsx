@@ -53,7 +53,8 @@ export default (props) => (
     </Section>
 
     <Section width="default" align="left">
-      <Text layoutVariant="multiColumn"
+      <Text
+        layoutVariant="multiColumn"
         text={`
 ### Benefit from the **power of kickstartDS**
 **as we do too!**  
@@ -108,43 +109,39 @@ We're not just building design systems; we're building value. By combining our e
       />
     </Section>
 
-    <Section
-      headline="Super cool Agency Life here"
-      style="accent"
-      width="wide"
-    >
+    <Section headline="Super cool Agency Life here" style="accent" width="wide">
       <Gallery
         images={[
           {
-            alt: 'Alt text Image 1',
-            caption: 'Caption Image 1',
-            url: '/static/img/agency.png'
+            alt: "Alt text Image 1",
+            caption: "Caption Image 1",
+            url: "/static/img/agency.png",
           },
           {
-            alt: 'Alt text Image 2',
-            caption: 'Caption Image 2',
-            url: '/static/img/team.png'
+            alt: "Alt text Image 2",
+            caption: "Caption Image 2",
+            url: "/static/img/team.png",
           },
           {
-            alt: 'Alt text Image 3',
-            caption: 'Caption Image 3',
-            url: '/static/img/agency.png'
+            alt: "Alt text Image 3",
+            caption: "Caption Image 3",
+            url: "/static/img/agency.png",
           },
           {
-            alt: 'Alt text Image 4',
-            caption: 'Caption Image 4',
-            url: '/static/img/agency.png'
+            alt: "Alt text Image 4",
+            caption: "Caption Image 4",
+            url: "/static/img/agency.png",
           },
           {
-            alt: 'Alt text Image 5',
-            caption: 'Caption Image 5',
-            url: '/static/img/team.png'
+            alt: "Alt text Image 5",
+            caption: "Caption Image 5",
+            url: "/static/img/team.png",
           },
           {
-            alt: 'Alt text Image 6',
-            caption: 'Caption Image 6',
-            url: '/static/img/agency.png'
-          }
+            alt: "Alt text Image 6",
+            caption: "Caption Image 6",
+            url: "/static/img/agency.png",
+          },
         ]}
         layout="largeTiles"
       />
