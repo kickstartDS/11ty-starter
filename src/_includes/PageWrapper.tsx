@@ -14,10 +14,7 @@ export const PageWrapper = ({ children }) => {
     href: url,
     label: title,
   }));
-  const gitHubPageUrl = path.join(
-    "https://github.com/kickstartDS/11ty-starter/blob/main",
-    data.page.inputPath,
-  );
+  const gitHubPageUrl = `https://github.com/kickstartDS/11ty-starter/blob/main/${data.page.inputPath}`;
 
   return (
     <Page>
