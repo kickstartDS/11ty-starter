@@ -2,7 +2,6 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { BlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {

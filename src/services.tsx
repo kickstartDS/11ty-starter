@@ -38,6 +38,7 @@ export default (props) => (
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 
@@ -117,6 +118,7 @@ Discover the future of digital experiences with our Headless Websites service. B
     >
       <Text
         text={`**kickstartDS** is a powerful and efficient **open source** technology that organizations should consider when starting a **design system**, due to the following reasons:`}
+        layoutVariant={"singleColumn"}
       />
       <FAQ
         questions={[
@@ -154,6 +156,7 @@ Discover the future of digital experiences with our Headless Websites service. B
       />
       <Text
         text={`In summary, [**kickstartDS**]() is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 

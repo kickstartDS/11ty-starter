@@ -3,7 +3,6 @@ import { Stats } from "@kickstartds/ds-agency/stats";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
 import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -49,6 +48,7 @@ export default (props) => (
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 

@@ -48,6 +48,7 @@ export default (props) => (
 ### Briefing:
 TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 
@@ -72,6 +73,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
 We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
 
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
     <Section spaceBefore="small">
@@ -121,6 +123,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
 
 We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 
@@ -180,6 +183,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
   </PageWrapper>
