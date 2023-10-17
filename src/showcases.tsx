@@ -1,7 +1,7 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { LogosPaid } from "@kickstartds/ds-agency/logos";
+import { LogosPaid } from "@kickstartds/ds-agency/logos-paid";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Picture } from "@kickstartds/ds-agency/picture";
 import { PageWrapper } from "./_includes/PageWrapper";
