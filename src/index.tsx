@@ -66,6 +66,7 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?`}
+        layoutVariant={"singleColumn"}
       />
       <Picture
         src="/static/img/team.png"
@@ -91,6 +92,7 @@ Ready to make your digital journey exceptional?`}
       <Text
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
+        layoutVariant={"singleColumn"}
       />
       <Picture
         src="/static/img/agency.png"

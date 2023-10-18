@@ -30,6 +30,7 @@ export default (props) => (
         text={`
 Welcome to our showcase of success stories. Here, you'll discover how we've partnered with diverse organizations to revolutionize their digital landscapes. From creating bespoke design systems to implementing headless CMSs, our solutions have empowered brands to streamline processes, enhance user experiences, and foster brand consistency. Dive in to explore how we've turned challenges into opportunities, and visions into reality.
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 
@@ -180,6 +181,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
   </PageWrapper>

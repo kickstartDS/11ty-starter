@@ -119,6 +119,7 @@ Ready to make your digital journey exceptional?`}
       <Text
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
+        layoutVariant={"singleColumn"}
       />
       <Picture
         src="/static/img/agency.png"

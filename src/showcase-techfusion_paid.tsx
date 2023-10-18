@@ -101,6 +101,7 @@ export default (props) => (
 ## **Result:** 
 The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
     <Section style="accent" width="wide" spaceBefore="small">
@@ -191,6 +192,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
   </PageWrapper>

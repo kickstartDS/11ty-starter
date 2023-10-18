@@ -5,7 +5,6 @@ import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Picture } from "@kickstartds/ds-agency/picture";
-import { Mosaic } from "@kickstartds/ds-agency/mosaic";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -60,6 +59,7 @@ export default (props) => (
 ### Our Solution: 
 We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
     <Section spaceBefore="small">
@@ -99,6 +99,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
 ## **Result:** 
 With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
           `}
+        layoutVariant={"singleColumn"}
       />
     </Section>
 
@@ -158,6 +159,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
+        layoutVariant={"singleColumn"}
       />
     </Section>
   </PageWrapper>
