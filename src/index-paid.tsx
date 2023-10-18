@@ -4,6 +4,8 @@ import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Picture } from "@kickstartds/ds-agency/picture";
+import { Hero } from "@kickstartds/ds-agency/hero";
+import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
@@ -20,24 +22,50 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="full">
-      <Cta
-        align="left"
-        headline="We simplify the process of building and scaling your **Design System**"
-        text={`
-Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together.`}
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
+    <Section width="full" mode="list">
+      <VideoCurtain
+        cta={{
+          icon: undefined,
           label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
+          target: undefined,
+          toggle: true,
         }}
+        headline="We simplify the process of building your **Design System**"
+        overlay
+        sub="Subheadline"
+        text="Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture."
+        textPosition="center"
+        video={{
+          srcDesktop: "/static/img/video-1080.mp4",
+          srcMobile: "/static/img/video-720.mp4",
+          srcTablet: "/static/img/video-1080.mp4",
+        }}
+      />
+    </Section>
+
+    <Section width="full" mode="list">
+      <Hero
+        cta={{
+          icon: "date",
+          label: "Contact us!",
+          target: "https://app.lemcal.com/@daniel-ley",
+          toggle: true,
+        }}
+        headline="We simplify the process of building and scaling your **Design System**"
+        height="fullImage"
+        image={{
+          alt: undefined,
+          indent: "none",
+          src: "https://picsum.photos/seed/kdsvisual/640/270",
+          srcDesktop: "/static/img/hero-below.png",
+          srcMobile: "/static/img/hero.png",
+          srcTablet: "/static/img/hero-below.png",
+        }}
+        largeHeadline
+        overlay
+        sub="Subheadline"
+        text="Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together."
+        textPosition="below"
       />
     </Section>
 
