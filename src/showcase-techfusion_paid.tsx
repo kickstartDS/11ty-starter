@@ -4,7 +4,7 @@ import { Headline } from "@kickstartds/ds-agency/headline";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
+import { Image } from "@kickstartds/ds-agency/image";
 import { Mosaic } from "@kickstartds/ds-agency/mosaic";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -22,7 +22,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe01.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -101,7 +101,7 @@ export default (props) => (
 ## **Result:** 
 The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
     <Section style="accent" width="wide" spaceBefore="small">
@@ -130,7 +130,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
       spaceBefore="default"
       headline="Find some inspiration from Techfusion for your next project"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -144,7 +144,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe04.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -155,18 +155,18 @@ The implementation of the new Design System resulted in a **year's worth of deve
         align="left"
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         text="Get in touch today."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
 
@@ -192,7 +192,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
   </PageWrapper>

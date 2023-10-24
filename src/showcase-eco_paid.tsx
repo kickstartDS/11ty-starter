@@ -4,7 +4,7 @@ import { Headline } from "@kickstartds/ds-agency/headline";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
+import { Image } from "@kickstartds/ds-agency/image";
 import { Mosaic } from "@kickstartds/ds-agency/mosaic";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -22,7 +22,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Picture
+      <Image
         src="/static/img/showcases/comp_eco01.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -134,7 +134,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_eco04.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -145,18 +145,18 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         align="left"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         text="Connect with us to start your journey."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
 

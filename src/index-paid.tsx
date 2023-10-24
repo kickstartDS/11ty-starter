@@ -3,7 +3,7 @@ import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
+import { Image } from "@kickstartds/ds-agency/image";
 import { Hero } from "@kickstartds/ds-agency/hero";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
@@ -24,12 +24,12 @@ export default (props) => (
   <PageWrapper>
     <Section width="full" mode="list">
       <VideoCurtain
-        cta={[
+        cta={{
           icon: undefined,
           label: "Book a meeting",
           target: undefined,
           toggle: true,
-        ]}
+        }}
         headline="We simplify the process of building your **Design System**"
         overlay
         sub="Subheadline"
@@ -45,12 +45,12 @@ export default (props) => (
 
     <Section width="full" mode="list">
       <Hero
-        cta={[
+        cta={{
           icon: "date",
           label: "Contact us!",
           target: "https://app.lemcal.com/@daniel-ley",
           toggle: true,
-        ]}
+        }}
         headline="We simplify the process of building and scaling your **Design System**"
         height="fullImage"
         image={{
@@ -95,10 +95,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
 Ready to make your digital journey exceptional?`}
       />
-      <Picture
-        src="/static/img/team.png"
-        alt="Just a decorative illustration"
-      />
+      <Image src="/static/img/team.png" alt="Just a decorative illustration" />
       <div>
         <Button
           variant="primary"
@@ -119,9 +116,9 @@ Ready to make your digital journey exceptional?`}
       <Text
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
-      <Picture
+      <Image
         src="/static/img/agency.png"
         alt="Just a decorative illustration of nothing special and very generic to let this demo website shine"
       />
@@ -201,14 +198,16 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         ctas={[
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        },
-        {
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
         ]}
       />
     </Section>
@@ -290,14 +289,16 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         ctas={[
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        },
-        {
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
         ]}
       />
     </Section>

@@ -4,7 +4,7 @@ import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -21,7 +21,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe01.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -48,7 +48,7 @@ export default (props) => (
 ### Briefing:
 TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
           `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
 
@@ -60,7 +60,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe02.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -73,7 +73,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
 We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
 
           `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
     <Section spaceBefore="small">
@@ -101,7 +101,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -123,7 +123,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
 
 We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
           `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
 
@@ -135,7 +135,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_tfe04.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -146,18 +146,18 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
         align="left"
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         text="Get in touch today."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
 
@@ -183,7 +183,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
   </PageWrapper>
