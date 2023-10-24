@@ -148,7 +148,7 @@ We're not just building design systems; we're building value. By combining our e
       <Cta
         align="left"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",

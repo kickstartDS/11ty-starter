@@ -23,12 +23,13 @@ export default (props) => (
   <PageWrapper>
     <Section width="full" mode="list">
       <VideoCurtain
-        cta={{
-          icon: "date",
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          toggle: true,
-        }}
+        buttons={[
+          {
+            icon: "date",
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+          },
+        ]}
         headline="We simplify the process of building your Design System"
         overlay
         sub="With your headless experts"
@@ -169,7 +170,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",
@@ -260,7 +261,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",

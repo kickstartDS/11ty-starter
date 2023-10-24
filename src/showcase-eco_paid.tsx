@@ -6,6 +6,7 @@ import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { Mosaic } from "@kickstartds/ds-agency/mosaic";
+import { Features } from "@kickstartds/ds-agency/features";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -145,7 +146,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         align="left"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         text="Connect with us to start your journey."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",

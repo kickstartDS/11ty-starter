@@ -151,7 +151,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
         align="left"
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         text="Get in touch today."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",

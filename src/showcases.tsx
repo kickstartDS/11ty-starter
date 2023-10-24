@@ -50,7 +50,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         headline="Speed and Scale"
         sub="LaunchPad Audio Innovations"
         text={`Explore how we empowered LaunchPad, an AI-powered digital audio controller startup, with rapid landing page creation for market testing and a robust foundation for future growth.`}
-        ctas={[
+        buttons={[
           {
             label: "See Showcase",
             icon: "chevron-right",
@@ -70,7 +70,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         headline="Savigating the Headless Frontier for Brand Consistency"
         sub="EcoTech Solutions"
         text={`See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time.`}
-        ctas={[
+        buttons={[
           {
             label: "See Showcase",
             icon: "chevron-right",
@@ -96,7 +96,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         headline="A Digital Transformation Love Story"
         sub="TechFusion Enterprises"
         text={`Discover how we revolutionized TechFusion Enterprises' digital landscape by developing a tailored Design System. Our innovative approach saved them a year's worth of development time and harmonized their user experiences across all platforms.`}
-        ctas={[
+        buttons={[
           {
             label: "See Showcase",
             icon: "chevron-right",
@@ -111,7 +111,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "#https://app.lemcal.com/@daniel-ley",

@@ -165,7 +165,7 @@ Discover the future of digital experiences with our Headless Websites service. B
         align="left"
         headline="**Ready** to craft excellence into your digital journey?"
         sub="Dive into our services and let Systemics redefine the way your brand connects with the digital world."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",

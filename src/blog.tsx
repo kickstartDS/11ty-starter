@@ -113,18 +113,18 @@ We believe in not just keeping up with the digital world, but setting the pace.
         align="left"
         headline="Ready to ignite your digital transformation journey?"
         sub="Spark the change with Systemics! Let's chat today and redefine your digital tomorrow."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        buttons={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
   </PageWrapper>

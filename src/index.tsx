@@ -26,7 +26,7 @@ export default (props) => (
         headline="We simplify the process of building and scaling your **Design System**"
         text={`
 Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together.`}
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",
@@ -170,7 +170,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       <Cta
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",
@@ -261,7 +261,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "#https://app.lemcal.com/@daniel-ley",

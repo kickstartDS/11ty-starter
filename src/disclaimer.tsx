@@ -19,18 +19,18 @@ export default (props) => (
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
         sub="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
         text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs - contact us, we are real experts!`}
-        primaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "See our Design System Services",
-          target: "https://www.kickstartds.com/services/",
-          icon: "chevron-right",
-        }}
+        buttons={[
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+          {
+            label: "See our Design System Services",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "chevron-right",
+          },
+        ]}
       />
     </Section>
 
@@ -118,18 +118,18 @@ While we've strived to provide a comprehensive demonstration, please bear in min
         align="left"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        buttons={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
   </PageWrapper>
