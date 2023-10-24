@@ -24,12 +24,12 @@ export default (props) => (
   <PageWrapper>
     <Section width="full" mode="list">
       <VideoCurtain
-        cta={[
+        cta={{
           icon: undefined,
           label: "Book a meeting",
           target: undefined,
           toggle: true,
-        ]}
+        }}
         headline="We simplify the process of building your **Design System**"
         overlay
         sub="Subheadline"
@@ -45,12 +45,12 @@ export default (props) => (
 
     <Section width="full" mode="list">
       <Hero
-        cta={[
+        cta={{
           icon: "date",
           label: "Contact us!",
           target: "https://app.lemcal.com/@daniel-ley",
           toggle: true,
-        ]}
+        }}
         headline="We simplify the process of building and scaling your **Design System**"
         height="fullImage"
         image={{
@@ -197,18 +197,20 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
     </Section>
 
     <Section inverted>
-    <CtaPaid
+      <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         ctas={[
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        },
-        {
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
         ]}
       />
     </Section>
@@ -290,14 +292,16 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         ctas={[
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        },
-        {
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
         ]}
       />
     </Section>
