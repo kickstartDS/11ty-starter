@@ -4,9 +4,8 @@ import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
-import { Hero } from "@kickstartds/ds-agency/hero";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
-import { Testimonials } from "@kickstartds/ds-agency/testimonials";
+import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 
@@ -25,15 +24,15 @@ export default (props) => (
     <Section width="full" mode="list">
       <VideoCurtain
         cta={{
-          icon: undefined,
+          icon: "date",
           label: "Book a meeting",
-          target: undefined,
+          target: "https://app.lemcal.com/@daniel-ley",
           toggle: true,
         }}
-        headline="We simplify the process of building your **Design System**"
+        headline="We simplify the process of building your Design System"
         overlay
-        sub="Subheadline"
-        text="Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture."
+        sub="With your headless experts"
+        text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
         textPosition="center"
         video={{
           srcDesktop: "/static/img/video-1080.mp4",
@@ -43,39 +42,12 @@ export default (props) => (
       />
     </Section>
 
-    <Section width="full" mode="list">
-      <Hero
-        cta={{
-          icon: "date",
-          label: "Contact us!",
-          target: "https://app.lemcal.com/@daniel-ley",
-          toggle: true,
-        }}
-        headline="We simplify the process of building and scaling your **Design System**"
-        height="fullImage"
-        image={{
-          alt: undefined,
-          indent: "none",
-          src: "https://picsum.photos/seed/kdsvisual/640/270",
-          srcDesktop: "/static/img/hero-below.png",
-          srcMobile: "/static/img/hero.png",
-          srcTablet: "/static/img/hero-below.png",
-        }}
-        largeHeadline
-        overlay
-        sub="Subheadline"
-        text="Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together."
-        textPosition="below"
-      />
-    </Section>
-
     <Section
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
       switchHeadlineOrder
       width="default"
       align="left"
-      mode="list"
     >
       <Text
         text={`
@@ -131,19 +103,19 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       align="center"
     >
       <TeaserCard
-        target="/showcase-techfusion"
+        target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-launchpad"
+        target="/showcase-launchpad_paid"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
-        target="/showcase-eco"
+        target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"
@@ -157,7 +129,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       sub="AI-generated smiles, as you see them evrywhere nowadays"
       align="center"
     >
-      <Testimonials
+      <TestimonialsPaid
         testimonials={[
           {
             image: {

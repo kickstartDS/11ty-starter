@@ -61,7 +61,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           {
             label: "See Showcase",
             icon: "chevron-right",
-            target: "/showcase-launchpad/",
+            target: "/showcase-launchpad_paid",
           },
         ]}
         headline="Speed and Scale"
@@ -86,7 +86,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           {
             label: "See Showcase",
             icon: "chevron-right",
-            target: "/showcase-eco",
+            target: "/showcase-eco_paid",
           },
         ]}
       />
@@ -112,7 +112,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
           {
             label: "See Showcase",
             icon: "chevron-right",
-            target: "/showcase-techfusion",
+            target: "/showcase-techfusion_paid",
           },
         ]}
       />

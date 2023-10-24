@@ -6,6 +6,7 @@ import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { Mosaic } from "@kickstartds/ds-agency/mosaic";
+import { Hero } from "@kickstartds/ds-agency/hero";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -21,26 +22,21 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/showcases/comp_tfe01.jpg"
-        alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-
-    <Section width="default" align="left" mode="list" spaceAfter="small">
-      <Headline
-        align="left"
-        text="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**"
+    <Section width="full" mode="list">
+      <Hero
+        height="small"
+        image={{
+          alt: "Fake Showcase Mockup Image",
+          indent: "none",
+          srcMobile: "/static/img/showcases/comp_tfe01.jpg",
+        }}
+        headline="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom Design System"
         sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
-        content=""
-        level="h2"
-        style="h2"
-        spaceAfter="large"
+        textPosition="below"
       />
     </Section>
 
-    <Section width="wide" spaceBefore="small">
+    <Section width="max" spaceBefore="small" style="accent">
       <Mosaic
         tiles={[
           {
@@ -176,13 +172,13 @@ The implementation of the new Design System resulted in a **year's worth of deve
       align="center"
     >
       <TeaserCard
-        target="/showcase-launchpad"
+        target="/showcase-launchpad_paid"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
-        target="/showcase-eco"
+        target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"
