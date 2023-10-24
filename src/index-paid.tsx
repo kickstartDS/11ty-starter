@@ -9,6 +9,7 @@ import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 
 export const data = {
   title:
@@ -24,12 +25,12 @@ export default (props) => (
   <PageWrapper>
     <Section width="full" mode="list">
       <VideoCurtain
-        cta={{
+        cta={[
           icon: undefined,
           label: "Book a meeting",
           target: undefined,
           toggle: true,
-        }}
+        ]}
         headline="We simplify the process of building your **Design System**"
         overlay
         sub="Subheadline"
@@ -45,12 +46,12 @@ export default (props) => (
 
     <Section width="full" mode="list">
       <Hero
-        cta={{
+        cta={[
           icon: "date",
           label: "Contact us!",
           target: "https://app.lemcal.com/@daniel-ley",
           toggle: true,
-        }}
+        ]}
         headline="We simplify the process of building and scaling your **Design System**"
         height="fullImage"
         image={{
@@ -197,21 +198,19 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
     </Section>
 
     <Section inverted>
-      <Cta
+    <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        primaryCta={{
-          toggle: true,
+        Ctas={[
           label: "Contact us",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
+        ]},
+        {[
           label: "Book a meeting",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
-        }}
+        ]}
       />
     </Section>
 
@@ -287,22 +286,20 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
     </Section>
 
     <Section style="accent" width="wide">
-      <Cta
+      <CtaPaid
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        primaryCta={{
-          toggle: true,
+        Ctas={[
           label: "Contact us",
-          target: "#https://app.lemcal.com/@daniel-ley",
+          target: "https://app.lemcal.com/@daniel-ley",
           icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
+        ]},
+        {[
           label: "Book a meeting",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
-        }}
+        ]}
       />
     </Section>
   </PageWrapper>
