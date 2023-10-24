@@ -4,7 +4,7 @@ import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -21,7 +21,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Picture
+      <Image
         src="/static/img/showcases/comp_audio01.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -47,7 +47,7 @@ export default (props) => (
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_audio02.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -59,7 +59,7 @@ export default (props) => (
 ### Our Solution: 
 We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
           `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
     <Section spaceBefore="small">
@@ -87,7 +87,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_audio03.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -99,7 +99,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
 ## **Result:** 
 With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
           `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
 
@@ -111,7 +111,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Picture
+      <Image
         src="/static/img/showcases/comp_audio04.jpg"
         alt="Fake Showcase Mockup Image"
       />
@@ -122,18 +122,18 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
         align="left"
         headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
         text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
 
@@ -159,7 +159,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     <Section align="center">
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
   </PageWrapper>

@@ -3,7 +3,7 @@ import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Picture } from "@kickstartds/ds-agency/picture";
+import { Image } from "@kickstartds/ds-agency/image";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
@@ -26,18 +26,18 @@ export default (props) => (
         headline="We simplify the process of building and scaling your **Design System**"
         text={`
 Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together.`}
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
 
@@ -66,12 +66,9 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
-      <Picture
-        src="/static/img/team.png"
-        alt="Just a decorative illustration"
-      />
+      <Image src="/static/img/team.png" alt="Just a decorative illustration" />
       <div>
         <Button
           variant="primary"
@@ -92,9 +89,9 @@ Ready to make your digital journey exceptional?`}
       <Text
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
-      <Picture
+      <Image
         src="/static/img/agency.png"
         alt="Just a decorative illustration of nothing special and very generic to let this demo website shine"
       />
@@ -173,18 +170,18 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       <Cta
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
 
@@ -264,18 +261,18 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "#https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "#https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
   </PageWrapper>

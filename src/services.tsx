@@ -3,7 +3,7 @@ import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
-import { PictureText } from "@kickstartds/ds-agency/picture-text";
+import { ImageText } from "@kickstartds/ds-agency/image-text";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -38,7 +38,7 @@ export default (props) => (
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
 
@@ -51,7 +51,7 @@ export default (props) => (
         level="h2"
         style="h1"
       />
-      <PictureText
+      <ImageText
         layout="beside-right"
         text={`
 ### Design System **Consulting**
@@ -66,7 +66,7 @@ Design System Consulting at Systemics is your compass in the world of design coh
     </Section>
 
     <Section width="wide" align="left" mode="list">
-      <PictureText
+      <ImageText
         layout="beside-left"
         text={`
 ### Design System **Creation**
@@ -81,7 +81,7 @@ Our Design System Creation service is where ideas materialize into tangible resu
     </Section>
 
     <Section width="wide" align="left" mode="list">
-      <PictureText
+      <ImageText
         layout="beside-right"
         text={`
 ### Design System **Trainings**
@@ -96,7 +96,7 @@ Invest in your team's growth with our Design System Trainings. We believe that t
     </Section>
 
     <Section width="wide" style="accent" align="left" mode="list">
-      <PictureText
+      <ImageText
         layout="beside-left"
         text={`
 ### **Headless** Websites
@@ -118,7 +118,7 @@ Discover the future of digital experiences with our Headless Websites service. B
     >
       <Text
         text={`**kickstartDS** is a powerful and efficient **open source** technology that organizations should consider when starting a **design system**, due to the following reasons:`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
       <FAQ
         questions={[
@@ -156,7 +156,7 @@ Discover the future of digital experiences with our Headless Websites service. B
       />
       <Text
         text={`In summary, [**kickstartDS**]() is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
 
@@ -165,18 +165,18 @@ Discover the future of digital experiences with our Headless Websites service. B
         align="left"
         headline="**Ready** to craft excellence into your digital journey?"
         sub="Dive into our services and let Systemics redefine the way your brand connects with the digital world."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
   </PageWrapper>

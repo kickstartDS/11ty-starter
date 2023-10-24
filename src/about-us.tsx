@@ -48,13 +48,13 @@ export default (props) => (
     <Section style="accent" width="narrow" align="left" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
-        layoutVariant={"singleColumn"}
+        layout="singleColumn"
       />
     </Section>
 
     <Section width="default" align="left">
       <Text
-        layoutVariant="multiColumn"
+        layout="multiColumn"
         text={`
 ### Benefit from the **power of kickstartDS**
 **as we do too!**  
@@ -85,25 +85,22 @@ We're not just building design systems; we're building value. By combining our e
       <Stats
         stats={[
           {
+            number: "33+",
+            title: "Years of Expertise",
             description:
               "With over 33 years in the industry, we`ve honed our craft and forged a reputation for **headless excellence** designed in systems.",
-            icon: "person",
-            label: "Years of Expertise",
-            value: "33+",
           },
           {
+            number: "200+",
+            title: "Successful Projects",
             description:
               "**We`re so great**, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
-            icon: "home",
-            label: "Successful Projects",
-            value: "200+",
           },
           {
+            number: "99%",
+            title: "Client Satisfaction",
             description:
               "Thanks to **NPS, our client-centric** approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
-            icon: "map",
-            label: "Client Satisfaction",
-            value: "99%",
           },
         ]}
       />
@@ -151,18 +148,18 @@ We're not just building design systems; we're building value. By combining our e
       <Cta
         align="left"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
   </PageWrapper>
