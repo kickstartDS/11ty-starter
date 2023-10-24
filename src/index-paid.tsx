@@ -6,7 +6,6 @@ import { Text } from "@kickstartds/ds-agency/text";
 import { Picture } from "@kickstartds/ds-agency/picture";
 import { Hero } from "@kickstartds/ds-agency/hero";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
-import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
@@ -201,12 +200,12 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
     <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        Ctas={[
+        ctas={[
           label: "Contact us",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "person",
-        ]},
-        {[
+        },
+        {
           label: "Book a meeting",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
@@ -290,12 +289,12 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        Ctas={[
+        ctas={[
           label: "Contact us",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "person",
-        ]},
-        {[
+        },
+        {
           label: "Book a meeting",
           target: "https://app.lemcal.com/@daniel-ley",
           icon: "date",
