@@ -1,15 +1,11 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Button } from "@kickstartds/ds-agency/button";
 import { FAQ } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
-import { Text } from "@kickstartds/ds-agency/text";
-import { Image } from "@kickstartds/ds-agency/image";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
-import src from ".";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 
 export const data = {
@@ -51,7 +47,8 @@ export default (props) => (
       sub="Crafting Consistency, Fostering Growth"
       switchHeadlineOrder
       width="full"
-      contentAlign="center"
+      headlineWidth="narrow"
+      headlineAlign="center"
     >
       <ImageStory
         padding
@@ -86,7 +83,6 @@ Ready to make your digital journey exceptional?
         ]}
       />
     </Section>
-
     <Section width="full">
       <Hero
         buttons={[
@@ -117,7 +113,6 @@ Ready to make your digital journey exceptional?
       width="wide"
       headline="Happy Customers Showcases"
       sub="We can create something shining for you too!"
-      contentAlign="center"
     >
       <TeaserCard
         target="/showcase-techfusion_paid"
@@ -143,8 +138,9 @@ Ready to make your digital journey exceptional?
       width="wide"
       mode="list"
       headline="No Agency site without some shiny happy Customer"
+      headlineAlign="center"
+      headlineWidth="narrow"
       sub="AI-generated smiles, as you see them everywhere nowadays"
-      contentAlign="center"
     >
       <TestimonialsPaid
         testimonials={[
