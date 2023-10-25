@@ -18,7 +18,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="default" align="left" mode="list">
+    <Section width="full" align="left" mode="list">
       <Hero
         height="fullImage"
         image={{
@@ -31,15 +31,12 @@ export default (props) => (
         }}
         largeHeadline
         overlay
-        headline="Transformations powered by **💗**, **Innovation** & **Design Systems**"
+        headline="Transformations powered by 💗, Innovation & Design Systems"
         sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
         textPosition="below"
-      />
-      <Text
         text={`
 Welcome to our showcase of success stories. Here, you'll discover how we've partnered with diverse organizations to revolutionize their digital landscapes. From creating bespoke design systems to implementing headless CMSs, our solutions have empowered brands to streamline processes, enhance user experiences, and foster brand consistency. Dive in to explore how we've turned challenges into opportunities, and visions into reality.
           `}
-        layout="singleColumn"
       />
     </Section>
 
