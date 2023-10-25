@@ -114,7 +114,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         buttons={[
           {
             label: "Contact us",
-            target: "#https://app.lemcal.com/@daniel-ley",
+            target: "https://app.lemcal.com/@daniel-ley",
             icon: "person",
           },
           {

@@ -264,7 +264,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         buttons={[
           {
             label: "Contact us",
-            target: "#https://app.lemcal.com/@daniel-ley",
+            target: "https://app.lemcal.com/@daniel-ley",
             icon: "person",
           },
           {
