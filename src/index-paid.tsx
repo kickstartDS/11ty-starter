@@ -8,6 +8,9 @@ import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
+import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
+import src from ".";
+import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 
 export const data = {
   title:
@@ -20,8 +23,8 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
-    <Section width="full" mode="list">
+  <PageWrapper floatingHeader>
+    <Section spaceBefore="none" spaceAfter="none" width="full" mode="list">
       <VideoCurtain
         buttons={[
           {
@@ -47,10 +50,12 @@ export default (props) => (
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
       switchHeadlineOrder
-      width="default"
-      align="left"
+      width="full"
+      align="center"
     >
-      <Text
+      <ImageStory
+        padding
+        layout="imageLeft"
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -66,34 +71,45 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 ### 4. Design System Training
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
-Ready to make your digital journey exceptional?`}
+Ready to make your digital journey exceptional?
+        `}
+        image={{
+          source: "/static/img/team.png",
+          alt: "Just a decorative illustration",
+        }}
+        buttons={[
+          {
+            label: "Reach out today!",
+            icon: "chevron-right",
+            target: "https://app.lemcal.com/@daniel-ley",
+          },
+        ]}
       />
-      <Image src="/static/img/team.png" alt="Just a decorative illustration" />
-      <div>
-        <Button
-          variant="primary"
-          label="Reach out today!"
-          icon="chevron-right"
-          target="https://app.lemcal.com/@daniel-ley"
-        />
-      </div>
     </Section>
-    <Section
-      width="default"
-      style="accent"
-      align="left"
-      mode="list"
-      headline="Our **Approach** to Design Systems"
-      sub="Own a design system without investing years of development. Our approach to design systems"
-    >
-      <Text
-        text={`
-We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        layout="singleColumn"
-      />
-      <Image
-        src="/static/img/agency.png"
-        alt="Just a decorative illustration of nothing special and very generic to let this demo website shine"
+
+    <Section width="full">
+      <Hero
+        buttons={[
+          {
+            icon: "person",
+            label: "Book a meeting",
+            target: undefined,
+          },
+        ]}
+        headline="Our Approach to Design Systems"
+        sub="Own a design system without investing years of development. Our approach to design systems"
+        height="fullImage"
+        image={{
+          alt: undefined,
+          indent: "none",
+          src: "https://picsum.photos/seed/kdsvisual/640/270",
+          srcDesktop: "/static/img/hero-below.png",
+          srcMobile: "/static/img/hero.png",
+          srcTablet: "/static/img/hero-below.png",
+        }}
+        largeHeadline
+        text="We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
+        textPosition="below"
       />
     </Section>
 
@@ -127,7 +143,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       width="wide"
       mode="list"
       headline="No Agency site without some shiny happy Customer"
-      sub="AI-generated smiles, as you see them evrywhere nowadays"
+      sub="AI-generated smiles, as you see them everywhere nowadays"
       align="center"
     >
       <TestimonialsPaid
@@ -256,7 +272,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       />
     </Section>
 
-    <Section style="accent" width="wide">
+    <Section style="accent" width="full">
       <CtaPaid
         align="left"
         headline="Ready to embark on a transformative digital journey?"

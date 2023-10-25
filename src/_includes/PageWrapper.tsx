@@ -7,7 +7,7 @@ import { PageWrapper as Page } from "@kickstartds/ds-agency/page-wrapper";
 import { Header } from "@kickstartds/ds-agency/header";
 import { Footer } from "@kickstartds/ds-agency/footer";
 
-export const PageWrapper = ({ children }) => {
+export const PageWrapper = ({ floatingHeader = false, children }) => {
   const data = useEleventy();
   const eleventyNav = navigation.find(data.collections.all);
   const headerMainNav = eleventyNav.map(({ url, title }) => ({
@@ -18,7 +18,7 @@ export const PageWrapper = ({ children }) => {
 
   return (
     <Page>
-      <Header logo={data.logo} />
+      <Header logo={data.logo} floating={floatingHeader} />
       {children}
       <Footer
         logo={data.logo}
