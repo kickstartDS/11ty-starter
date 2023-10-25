@@ -50,9 +50,8 @@ export default (props) => (
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
       switchHeadlineOrder
-      width="wide"
-      align="center"
-      id="startit"
+      width="full"
+      contentAlign="center"
     >
       <ImageStory
         padding
@@ -118,7 +117,7 @@ Ready to make your digital journey exceptional?
       width="wide"
       headline="Happy Customers Showcases"
       sub="We can create something shining for you too!"
-      align="center"
+      contentAlign="center"
     >
       <TeaserCard
         target="/showcase-techfusion_paid"
@@ -145,7 +144,7 @@ Ready to make your digital journey exceptional?
       mode="list"
       headline="No Agency site without some shiny happy Customer"
       sub="AI-generated smiles, as you see them everywhere nowadays"
-      align="center"
+      contentAlign="center"
     >
       <TestimonialsPaid
         testimonials={[

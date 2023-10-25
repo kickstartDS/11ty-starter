@@ -46,7 +46,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
       sub="Crafting Consistency, Fostering Growth"
       switchHeadlineOrder
       width="default"
-      align="left"
+      contentAlign="left"
       mode="list"
     >
       <Text
@@ -81,7 +81,7 @@ Ready to make your digital journey exceptional?`}
     <Section
       width="default"
       style="accent"
-      align="left"
+      contentAlign="left"
       mode="list"
       headline="Our **Approach** to Design Systems"
       sub="Own a design system without investing years of development. Our approach to design systems"
@@ -101,7 +101,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       width="wide"
       headline="Happy Customers Showcases"
       sub="We can create something shining for you too!"
-      align="center"
+      contentAlign="center"
     >
       <TeaserCard
         target="/showcase-techfusion"
@@ -128,7 +128,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       mode="list"
       headline="No Agency site without some shiny happy Customer"
       sub="AI-generated smiles, as you see them evrywhere nowadays"
-      align="center"
+      contentAlign="center"
     >
       <Testimonials
         testimonials={[
