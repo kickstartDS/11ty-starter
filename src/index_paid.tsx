@@ -28,12 +28,12 @@ export default (props) => (
       <VideoCurtain
         buttons={[
           {
-            icon: "date",
-            label: "Book a meeting",
-            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "chevron-down",
+            label: "What can we do for you?",
+            target: "#startit",
           },
         ]}
-        headline="We simplify the process of building your Design System"
+        headline="Simplify the process of building your Design System"
         overlay
         sub="With your headless experts"
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
@@ -50,8 +50,9 @@ export default (props) => (
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
       switchHeadlineOrder
-      width="full"
+      width="wide"
       align="center"
+      id="startit"
     >
       <ImageStory
         padding
@@ -87,7 +88,7 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section width="full">
+    <Section width="full" style="gradient">
       <Hero
         buttons={[
           {
@@ -272,11 +273,22 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section style="accent" width="full">
+    <Section style="stagelights" width="full">
       <CtaPaid
+        backgroundImage="/static/img/cta-background.png"
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        image={{
+          hAlign: "center",
+          order: {
+            desktopImageLast: false,
+            mobileImageLast: false,
+          },
+          ratio: "none",
+          source: "/static/img/agency.png",
+          vAlign: "center",
+        }}
         buttons={[
           {
             label: "Contact us",
