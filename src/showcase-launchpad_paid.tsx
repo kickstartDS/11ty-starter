@@ -27,23 +27,24 @@ export default (props) => (
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list" spaceAfter="default">
-      <Headline
-        align="left"
-        text="Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**"
-        sub="Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth"
-        content=""
-        level="h2"
-        style="h2"
-        spaceAfter="large"
-      />
-    </Section>
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+      spaceAfter="default"
+      headline={{
+        text: "Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**",
+        sub: "Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth",
+      }}
+    ></Section>
 
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -53,7 +54,13 @@ export default (props) => (
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list" spaceAfter="default">
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+      spaceAfter="default"
+    >
       <Text
         text={`
 ### Our Solution: 
@@ -82,8 +89,9 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -93,7 +101,13 @@ We set up a content-driven Design System and a Sanity-powered website and landin
       />
     </Section>
 
-    <Section style="accent" width="narrow" align="left" mode="list">
+    <Section
+      style="accent"
+      width="narrow"
+      content={{
+        mode: "list",
+      }}
+    >
       <Text
         text={`
 ## **Result:** 
@@ -106,8 +120,9 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -139,8 +154,10 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
 
     <Section
       width="wide"
-      headline="More of our Demo Customer Showcases"
-      align="center"
+      headline={{
+        text: "More of our Demo Customer Showcases",
+        textAlign: "center",
+      }}
     >
       <TeaserCard
         target="/showcase-techfusion_paid"
@@ -156,7 +173,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
       />
     </Section>
 
-    <Section align="center">
+    <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
         layout="singleColumn"

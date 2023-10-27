@@ -5,6 +5,7 @@ import { LogosPaid } from "@kickstartds/ds-agency/logos-paid";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { text } from "stream/consumers";
 
 export const data = {
   title:
@@ -18,7 +19,13 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="full" contentAlign="left" mode="list">
+    <Section
+      width="full"
+      contentAlign="left"
+      content={{
+        mode: "list",
+      }}
+    >
       <Hero
         height="fullImage"
         image={{
@@ -44,8 +51,12 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       style="accent"
       width="wide"
       contentAlign="left"
-      mode="list"
-      headline="**01**"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "**01**",
+      }}
     >
       <Image
         src="/static/img/showcases/comp_audio01.jpg"
@@ -69,7 +80,16 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section width="wide" contentAlign="left" mode="list" headline="**02**">
+    <Section
+      width="wide"
+      contentAlign="left"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "**02**",
+      }}
+    >
       <Image
         src="/static/img/showcases/comp_eco01.jpg"
         alt="Huge Logo of that fake reference customer"
@@ -93,8 +113,12 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       style="accent"
       width="wide"
       contentAlign="left"
-      mode="list"
-      headline="**03**"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "**03**",
+      }}
     >
       <Image
         src="/static/img/showcases/comp_tfe01.jpg"
@@ -139,7 +163,9 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       style="accent"
       width="wide"
       contentAlign="center"
-      headline="**More Sucess Stories incoming**"
+      headline={{
+        text: "**More Sucess Stories incoming**",
+      }}
     >
       <LogosPaid
         align="center"

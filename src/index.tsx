@@ -42,11 +42,15 @@ Elevate your digital presence with us. We create impactful digital experiences t
     </Section>
 
     <Section
-      headline="Design System Services"
-      sub="Crafting Consistency, Fostering Growth"
-      switchHeadlineOrder
+      headline={{
+        text: "Design System Services",
+        sub: "Crafting Consistency, Fostering Growth",
+        switchOrder: true,
+      }}
       width="default"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
     >
       <Text
         text={`
@@ -80,9 +84,13 @@ Ready to make your digital journey exceptional?`}
     <Section
       width="default"
       style="accent"
-      mode="list"
-      headline="Our **Approach** to Design Systems"
-      sub="Own a design system without investing years of development. Our approach to design systems"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "Our **Approach** to Design Systems",
+        sub: "Own a design system without investing years of development. Our approach to design systems",
+      }}
     >
       <Text
         text={`
@@ -97,8 +105,10 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 
     <Section
       width="wide"
-      headline="Happy Customers Showcases"
-      sub="We can create something shining for you too!"
+      headline={{
+        text: "Happy Customers Showcases",
+        sub: "We can create something shining for you too!",
+      }}
     >
       <TeaserCard
         target="/showcase-techfusion"
@@ -122,9 +132,13 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 
     <Section
       width="wide"
-      mode="list"
-      headline="No Agency site without some shiny happy Customer"
-      sub="AI-generated smiles, as you see them evrywhere nowadays"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "No Agency site without some shiny happy Customer",
+        sub: "AI-generated smiles, as you see them evrywhere nowadays",
+      }}
     >
       <Testimonials
         testimonials={[
@@ -181,7 +195,11 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       />
     </Section>
 
-    <Section headline="Design Systems & Headless FAQs">
+    <Section
+      headline={{
+        text: "Design Systems & Headless FAQs",
+      }}
+    >
       <FAQ
         questions={[
           {

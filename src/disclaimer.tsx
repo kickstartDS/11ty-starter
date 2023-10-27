@@ -13,7 +13,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="default">
+    <Section>
       <Cta
         align="left"
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
@@ -37,8 +37,9 @@ export default (props) => (
     <Section
       style="accent"
       width="wide"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="small"
     >
       <Headline
@@ -52,7 +53,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section style="accent" width="narrow" align="left" spaceBefore="none">
+    <Section style="accent" width="narrow" spaceBefore="none">
       <Text
         text={`
 ### Open Source Demo
@@ -66,7 +67,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="accent" width="default" align="left" spaceBefore="none">
+    <Section style="accent" spaceBefore="none">
       <Text
         text={`
 ### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
@@ -74,7 +75,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="accent" width="default" align="left" spaceBefore="none">
+    <Section style="accent" spaceBefore="none">
       <Button
         variant="primary"
         label="Browse Premium Demo"
@@ -101,7 +102,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section width="default" align="left">
+    <Section>
       <Text
         text={`
 ## **The Purpose of this Demo**

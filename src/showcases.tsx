@@ -18,7 +18,12 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="default" align="left" mode="list">
+    <Section
+      width="default"
+      content={{
+        mode: "list",
+      }}
+    >
       <Headline
         text="Transformations powered by **💗**, **Innovation** & **Design Systems**"
         sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
@@ -37,9 +42,12 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     <Section
       style="accent"
       width="wide"
-      align="left"
-      mode="list"
-      headline="**01**"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "**01**",
+      }}
     >
       <Image
         src="/static/img/showcases/comp_audio01.jpg"
@@ -60,7 +68,15 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list" headline="**02**">
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "**02**",
+      }}
+    >
       <Image
         src="/static/img/showcases/comp_eco01.jpg"
         alt="Huge Logo of that fake reference customer"
@@ -83,9 +99,12 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     <Section
       style="accent"
       width="wide"
-      align="left"
-      mode="list"
-      headline="**03**"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "**03**",
+      }}
     >
       <Image
         src="/static/img/showcases/comp_tfe01.jpg"
@@ -129,8 +148,10 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     <Section
       style="accent"
       width="wide"
-      align="center"
-      headline="**More Sucess Stories incoming**"
+      headline={{
+        text: "**More Sucess Stories incoming**",
+        textAlign: "center",
+      }}
     >
       <LogosPaid
         align="center"
@@ -181,7 +202,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section align="center">
+    <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
         layout="singleColumn"

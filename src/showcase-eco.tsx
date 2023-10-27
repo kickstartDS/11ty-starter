@@ -30,20 +30,16 @@ export default (props) => (
     <Section
       style="accent"
       width="default"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="default"
       inverted
+      headline={{
+        text: "Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**",
+        sub: "**Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web**",
+      }}
     >
-      <Headline
-        align="left"
-        text="Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**"
-        sub="**Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web**"
-        content=""
-        level="h2"
-        style="h2"
-        spaceAfter="large"
-      />
       <Text
         text={`
 ### Briefing:
@@ -56,8 +52,9 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -67,7 +64,13 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       />
     </Section>
 
-    <Section width="default" align="left" mode="list" spaceAfter="default">
+    <Section
+      width="default"
+      content={{
+        mode: "list",
+      }}
+      spaceAfter="default"
+    >
       <Text
         text={`
 ### Our Solution: 
@@ -94,8 +97,9 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -108,8 +112,9 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
     <Section
       style="accent"
       width="narrow"
-      align="center"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="default"
       inverted
     >
@@ -125,8 +130,9 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -158,8 +164,10 @@ The implementation of the new **Design System** and migration to **Storyblok** t
 
     <Section
       width="wide"
-      headline="More of our Demo Customer Showcases"
-      align="center"
+      headline={{
+        text: "More of our Demo Customer Showcases",
+        textAlign: "center",
+      }}
     >
       <TeaserCard
         target="/showcase-techfusion"
@@ -175,10 +183,11 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       />
     </Section>
 
-    <Section align="center">
+    <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
         layout="singleColumn"
+        align="center"
       />
     </Section>
   </PageWrapper>

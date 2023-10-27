@@ -20,7 +20,14 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section spaceBefore="none" spaceAfter="none" width="full" mode="list">
+    <Section
+      spaceBefore="none"
+      spaceAfter="none"
+      width="full"
+      content={{
+        mode: "list",
+      }}
+    >
       <VideoCurtain
         buttons={[
           {
@@ -43,12 +50,14 @@ export default (props) => (
     </Section>
 
     <Section
-      headline="Design System Services"
-      sub="Crafting Consistency, Fostering Growth"
-      switchHeadlineOrder
+      headline={{
+        text: "Design System Services",
+        sub: "Crafting Consistency, Fostering Growth",
+        switchOrder: true,
+        width: "narrow",
+        align: "center",
+      }}
       width="full"
-      headlineWidth="narrow"
-      headlineAlign="center"
     >
       <ImageStory
         padding
@@ -112,8 +121,10 @@ Ready to make your digital journey exceptional?
 
     <Section
       width="wide"
-      headline="Happy Customers Showcases"
-      sub="We can create something shining for you too!"
+      headline={{
+        text: "Happy Customers Showcases",
+        sub: "We can create something shining for you too!",
+      }}
     >
       <TeaserCard
         target="/showcase-techfusion_paid"
@@ -137,11 +148,15 @@ Ready to make your digital journey exceptional?
 
     <Section
       width="wide"
-      mode="list"
-      headline="No Agency site without some shiny happy Customer"
-      headlineAlign="center"
-      headlineWidth="narrow"
-      sub="AI-generated smiles, as you see them everywhere nowadays"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "No Agency site without some shiny happy Customer",
+        align: "center",
+        width: "narrow",
+        sub: "AI-generated smiles, as you see them everywhere nowadays",
+      }}
     >
       <TestimonialsPaid
         testimonials={[
@@ -198,7 +213,11 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section headline="Design Systems & Headless FAQs">
+    <Section
+      headline={{
+        text: "Design Systems & Headless FAQs",
+      }}
+    >
       <FAQ
         questions={[
           {

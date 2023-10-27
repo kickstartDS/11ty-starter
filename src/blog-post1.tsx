@@ -28,8 +28,9 @@ export default (props) => (
 
     <Section
       width="wide"
-      headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
-      align="left"
+      headline={{
+        text: "Unleashing Innovation with Headless Websites: The Future of Digital Experiences",
+      }}
     >
       <Text
         text={`
@@ -93,7 +94,12 @@ So, if you're tired of being held back by traditional CMS and are ready to take 
       />
     </Section>
 
-    <Section width="wide" headline="Matching Showcases" align="center">
+    <Section
+      width="wide"
+      headline={{
+        text: "Matching Showcases",
+      }}
+    >
       <TeaserCard
         target="/showcase-launchpad"
         headline="Speed and Scale"

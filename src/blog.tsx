@@ -17,8 +17,10 @@ export default (props) => (
   <PageWrapper>
     <Section
       width="wide"
-      headline="Welcome to the **Systemics' Blog** – Your digital transformation **compass**!"
-      sub="We are here to guide you through the complex yet exhilarating landscape of digital innovation."
+      headline={{
+        text: "Welcome to the **Systemics' Blog** – Your digital transformation **compass**!",
+        sub: "We are here to guide you through the complex yet exhilarating landscape of digital innovation.",
+      }}
     >
       <Text
         text={`
@@ -34,11 +36,13 @@ From the intricate art of **Design Systems** to the boundary-pushing innovation 
 
     <Section
       style="accent"
-      width="default"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="small"
-      headline="Immerse yourself in our three latest posts:"
+      headline={{
+        text: "Immerse yourself in our three latest posts:",
+      }}
     >
       <Text
         text={`
@@ -54,7 +58,13 @@ We believe in not just keeping up with the digital world, but setting the pace.
       />
     </Section>
 
-    <Section style="accent" width="wide" mode="list">
+    <Section
+      style="accent"
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+    >
       <BlogTeaser
         author={{
           image: "/static/img/customer-1.png",

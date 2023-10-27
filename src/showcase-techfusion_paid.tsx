@@ -22,7 +22,12 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="full" mode="list">
+    <Section
+      width="full"
+      content={{
+        mode: "list",
+      }}
+    >
       <Hero
         height="small"
         image={{
@@ -88,8 +93,9 @@ export default (props) => (
     <Section
       style="accent"
       width="default"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
     >
       <Text
@@ -120,11 +126,14 @@ The implementation of the new Design System resulted in a **year's worth of deve
     <Section
       style="accent"
       width="full"
-      align="center"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
-      spaceBefore="default"
-      headline="Find some inspiration from Techfusion for your next project"
+      headline={{
+        text: "Find some inspiration from Techfusion for your next project",
+        textAlign: "center",
+      }}
     >
       <Image
         src="/static/img/showcases/comp_tfe03.jpg"
@@ -135,8 +144,9 @@ The implementation of the new Design System resulted in a **year's worth of deve
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -168,8 +178,10 @@ The implementation of the new Design System resulted in a **year's worth of deve
 
     <Section
       width="wide"
-      headline="More of our Demo Customer Showcases"
-      align="center"
+      headline={{
+        text: "More of our Demo Customer Showcases",
+        textAlign: "center",
+      }}
     >
       <TeaserCard
         target="/showcase-launchpad_paid"
@@ -185,7 +197,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
       />
     </Section>
 
-    <Section align="center">
+    <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
         layout="singleColumn"

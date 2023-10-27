@@ -30,8 +30,9 @@ export default (props) => (
     <Section
       style="accent"
       width="wide"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="default"
     >
       <Headline
@@ -55,8 +56,9 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -66,7 +68,13 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list" spaceAfter="default">
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+      spaceAfter="default"
+    >
       <Text
         text={`
 ### Our Solution: 
@@ -96,8 +104,9 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -110,8 +119,9 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
     <Section
       style="accent"
       width="narrow"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="default"
     >
       <Text
@@ -130,8 +140,9 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -163,8 +174,10 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
 
     <Section
       width="wide"
-      headline="More of our Demo Customer Showcases"
-      align="center"
+      headline={{
+        text: "More of our Demo Customer Showcases",
+        textAlign: "center",
+      }}
     >
       <TeaserCard
         target="/showcase-launchpad"
@@ -180,7 +193,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       />
     </Section>
 
-    <Section align="center">
+    <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
         layout="singleColumn"

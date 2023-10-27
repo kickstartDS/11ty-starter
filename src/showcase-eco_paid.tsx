@@ -1,13 +1,11 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
-import { Mosaic } from "@kickstartds/ds-agency/mosaic";
-import { Features } from "@kickstartds/ds-agency/features";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
+import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 
 export const data = {
   title:
@@ -21,93 +19,114 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/showcases/comp_eco01.jpg"
-        alt="Fake Showcase Mockup Image"
+  <PageWrapper floatingHeader>
+    <Section width="full" spaceAfter="small" spaceBefore="none">
+      <Hero
+        image={{
+          srcMobile: "/static/img/showcases/comp_eco01.jpg",
+          alt: "Fake Showcase Mockup Image",
+        }}
       />
     </Section>
-
     <Section
-      style="accent"
-      width="default"
-      align="left"
-      mode="list"
-      spaceAfter="default"
-      inverted
+      headline={{
+        text: "Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**",
+        sub: "Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web",
+        width: "default",
+        align: "center",
+        large: true,
+      }}
+      width="wide"
+      spaceAfter="none"
+    />
+    <Section
+      width="max"
+      content={{
+        mode: "list",
+      }}
     >
-      <Headline
-        align="left"
-        text="Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**"
-        sub="**Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web**"
-        content=""
-        level="h2"
-        style="h2"
-        spaceAfter="large"
+      <Hero
+        height="fullImage"
+        image={{
+          srcMobile: "/static/img/showcases/comp_eco02.jpg",
+        }}
       />
     </Section>
-
-    <Section width="max" spaceBefore="small" style="accent" inverted>
-      <Mosaic
-        tiles={[
-          {
-            backgroundColor: "#81005a",
-            cta: {
-              icon: undefined,
-              label: "Book a meeting",
-              target: undefined,
-              toggle: false,
-            },
-            headline: "**Briefing:**",
-            sub: "Harmonize Techfusions Digital Landscape",
-            image: "/static/img/showcases/comp_eco02.jpg",
-            text: "EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms.",
-            textColor: "#ffffff",
-          },
-          {
-            backgroundColor: "#4d148e",
-            cta: {
-              icon: undefined,
-              label: "Book a meeting",
-              target: undefined,
-              toggle: true,
-            },
-            headline: "Our Solution:",
-            image: "/static/img/showcases/comp_eco03.jpg",
-            sub: "Design System end to end",
-            text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            textColor: "#cddffa",
-          },
-          {
-            backgroundColor: "#4d148e",
-            cta: {
-              icon: undefined,
-              label: "Book a meeting",
-              target: undefined,
-              toggle: true,
-            },
-            headline: "Headless is best:",
-            image: "/static/img/showcases/comp_eco02.jpg",
-            sub: "Easy adoption thanks Design System",
-            text: "",
-            textColor: "#cddffa",
-          },
-        ]}
+    <Section
+      headline={{
+        text: "Briefing:",
+        sub: "Harmonize Techfusions Digital Landscape",
+      }}
+      spaceBefore="none"
+      width="wide"
+      content={{
+        width: "narrow",
+        align: "left",
+      }}
+    >
+      <Text text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms." />
+    </Section>
+    <Section style="accent" width="max">
+      <Hero
+        height="fullImage"
+        image={{
+          srcMobile: "/static/img/showcases/comp_eco02.jpg",
+        }}
       />
     </Section>
-
+    <Section
+      headline={{
+        text: "Our Solution:",
+        sub: "Design System end to end",
+        width: "narrow",
+        align: "center",
+      }}
+      width="wide"
+      content={{
+        width: "narrow",
+        align: "center",
+      }}
+      style="accent"
+      spaceBefore="none"
+    >
+      <Text text="We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web." />
+    </Section>
+    <Section width="max">
+      <Hero
+        height="fullImage"
+        image={{
+          srcMobile: "/static/img/showcases/comp_eco04.jpg",
+        }}
+      />
+    </Section>
+    <Section
+      spaceBefore="none"
+      width="wide"
+      headline={{
+        text: "Headless is best:",
+        sub: "Easy adoption thanks Design System",
+        width: "narrow",
+        align: "right",
+      }}
+      content={{
+        width: "narrow",
+        align: "right",
+      }}
+    >
+      <Text text="We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web." />
+    </Section>
     <Section
       style="accent"
-      width="default"
-      align="center"
-      mode="list"
       spaceAfter="default"
-      inverted
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "Result:",
+      }}
     >
       <Text
         text={`
-### **Result:**
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
       />
@@ -126,12 +145,12 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         ]}
       />
     </Section>
-
     <Section
       style="accent"
       width="full"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="none"
       spaceBefore="none"
     >
@@ -140,9 +159,8 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         alt="Fake Showcase Mockup Image"
       />
     </Section>
-
-    <Section inverted>
-      <Cta
+    <Section>
+      <CtaPaid
         align="left"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         text="Connect with us to start your journey."
@@ -160,11 +178,12 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         ]}
       />
     </Section>
-
     <Section
       width="wide"
-      headline="More of our Demo Customer Showcases"
-      align="center"
+      headline={{
+        text: "More of our Demo Customer Showcases",
+        textAlign: "center",
+      }}
     >
       <TeaserCard
         target="/showcase-techfusion_paid"
@@ -179,9 +198,9 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         image="/static/img/showcases/comp_audio01.jpg"
       />
     </Section>
-
-    <Section align="center">
+    <Section>
       <Text
+        align="center"
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
       />
     </Section>

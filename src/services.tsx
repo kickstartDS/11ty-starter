@@ -20,8 +20,9 @@ export default (props) => (
     <Section
       style="accent"
       width="wide"
-      align="left"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       spaceAfter="small"
     >
       <Headline
@@ -35,14 +36,19 @@ export default (props) => (
       />
     </Section>
 
-    <Section style="accent" width="narrow" align="left" spaceBefore="none">
+    <Section style="accent" width="narrow" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
         layout="singleColumn"
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list">
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+    >
       <Headline
         align="left"
         text="Our Services"
@@ -65,7 +71,12 @@ Design System Consulting at Systemics is your compass in the world of design coh
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list">
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+    >
       <ImageText
         layout="beside-left"
         text={`
@@ -80,7 +91,12 @@ Our Design System Creation service is where ideas materialize into tangible resu
       />
     </Section>
 
-    <Section width="wide" align="left" mode="list">
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+    >
       <ImageText
         layout="beside-right"
         text={`
@@ -95,7 +111,13 @@ Invest in your team's growth with our Design System Trainings. We believe that t
       />
     </Section>
 
-    <Section width="wide" style="accent" align="left" mode="list">
+    <Section
+      width="wide"
+      style="accent"
+      content={{
+        mode: "list",
+      }}
+    >
       <ImageText
         layout="beside-left"
         text={`
@@ -111,10 +133,13 @@ Discover the future of digital experiences with our Headless Websites service. B
     </Section>
 
     <Section
-      headline="**Our Methodology**"
-      mode="list"
-      sub="Leveraging Open Source Technology to Minimize Investment and Maximize Speed"
-      content=""
+      headline={{
+        text: "**Our Methodology**",
+        sub: "Leveraging Open Source Technology to Minimize Investment and Maximize Speed",
+      }}
+      content={{
+        mode: "list",
+      }}
     >
       <Text
         text={`**kickstartDS** is a powerful and efficient **open source** technology that organizations should consider when starting a **design system**, due to the following reasons:`}

@@ -27,32 +27,27 @@ export default (props) => (
     </Section>
 
     <Section
+      headline={{
+        text: "We empower Businesses with the Tools they need to thrive in the Digital Landscape.",
+        sub: "Our crystal clear mission:",
+        switchOrder: true,
+        width: "default",
+        align: "left",
+      }}
+      content={{
+        width: "default",
+        align: "right",
+      }}
       style="accent"
       width="wide"
-      align="left"
-      mode="list"
-      spaceAfter="small"
     >
-      <Headline
-        align="left"
-        text="We empower Businesses with the Tools they need to thrive in the Digital Landscape."
-        sub="Our crystal clear mission:"
-        switchOrder
-        content=""
-        level="h2"
-        style="h1"
-        spaceAfter="minimum"
-      />
-    </Section>
-
-    <Section style="accent" width="narrow" align="left" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
         layout="singleColumn"
       />
     </Section>
 
-    <Section width="default" align="left">
+    <Section>
       <Text
         layout="multiColumn"
         text={`
@@ -66,10 +61,11 @@ We're not just building design systems; we're building value. By combining our e
     </Section>
 
     <Section
-      headline="About & History"
+      headline={{
+        text: "About & History",
+      }}
       style="accent"
       width="default"
-      align="left"
     >
       <Text
         text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
@@ -77,27 +73,28 @@ We're not just building design systems; we're building value. By combining our e
     </Section>
 
     <Section
-      headline="Facts & Figures"
+      headline={{
+        text: "Facts & Figures",
+      }}
       style="accent"
       width="wide"
-      align="left"
     >
       <Stats
         stats={[
           {
-            number: "33+",
+            number: 33,
             title: "Years of Expertise",
             description:
               "With over 33 years in the industry, we`ve honed our craft and forged a reputation for **headless excellence** designed in systems.",
           },
           {
-            number: "200+",
+            number: 200,
             title: "Successful Projects",
             description:
               "**We`re so great**, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
           },
           {
-            number: "99%",
+            number: 99,
             title: "Client Satisfaction",
             description:
               "Thanks to **NPS, our client-centric** approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
@@ -106,7 +103,13 @@ We're not just building design systems; we're building value. By combining our e
       />
     </Section>
 
-    <Section headline="Super cool Agency Life here" style="accent" width="wide">
+    <Section
+      headline={{
+        text: "Super cool Agency Life here",
+      }}
+      style="accent"
+      width="wide"
+    >
       <Gallery
         images={[
           {
