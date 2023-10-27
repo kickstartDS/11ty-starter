@@ -179,10 +179,22 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section inverted>
+    <Section width="full">
       <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
+        backgroundImage="/static/img/bg/bg_pinky-gradient.svg"
+        backgroundColor="#B9398D"
+        image={{
+          hAlign: "center",
+          order: {
+            desktopImageLast: true,
+            mobileImageLast: false,
+          },
+          ratio: "none",
+          source: "/static/img/bg/bg_get-in-touch.png",
+          vAlign: "center",
+        }}
         buttons={[
           {
             label: "Contact us",
@@ -271,20 +283,10 @@ Ready to make your digital journey exceptional?
 
     <Section style="stagelights" width="full">
       <CtaPaid
-        backgroundImage="/static/img/cta-background.png"
-        align="left"
+        backgroundImage="/static/img/bg/bg_laser-centered.svg"
+        align="center"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        image={{
-          hAlign: "center",
-          order: {
-            desktopImageLast: false,
-            mobileImageLast: false,
-          },
-          ratio: "none",
-          source: "/static/img/agency.png",
-          vAlign: "center",
-        }}
         buttons={[
           {
             label: "Contact us",
