@@ -196,7 +196,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
     <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
-        layout="singleColumn"
+        align="center"
       />
     </Section>
   </PageWrapper>

@@ -46,7 +46,7 @@ export default (props) => (
         tiles={[
           {
             backgroundColor: "#81005a",
-            cta: {
+            button: {
               icon: undefined,
               label: "Book a meeting",
               target: undefined,
@@ -60,7 +60,7 @@ export default (props) => (
           },
           {
             backgroundColor: "#4d148e",
-            cta: {
+            button: {
               icon: undefined,
               label: "Book a meeting",
               target: undefined,
@@ -74,7 +74,7 @@ export default (props) => (
           },
           {
             backgroundColor: "#f7067c",
-            cta: {
+            button: {
               icon: undefined,
               label: "Book a meeting",
               target: undefined,
@@ -200,7 +200,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
     <Section>
       <Text
         text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
-        layout="singleColumn"
+        align="center"
       />
     </Section>
   </PageWrapper>
