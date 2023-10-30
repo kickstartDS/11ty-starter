@@ -156,6 +156,7 @@ Ready to make your digital journey exceptional?
         align: "center",
         width: "narrow",
         sub: "AI-generated smiles, as you see them everywhere nowadays",
+        textAlign: "center",
       }}
     >
       <TestimonialsPaid
