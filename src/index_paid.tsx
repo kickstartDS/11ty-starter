@@ -57,6 +57,8 @@ export default (props) => (
         switchOrder: true,
         width: "narrow",
         align: "center",
+        textAlign: "center",
+        large: "true",
       }}
       width="full"
     >
@@ -64,24 +66,24 @@ export default (props) => (
         padding
         layout="imageLeft"
         text={`
-Here at Systemics, we bring a range of design system services that can make a difference:
+**Here at Systemics, we bring a range of design system services that can make a difference:**
 
-### 1. Design System Consulting
+### 1. Design System **Consulting**
 Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
 
-### 2. Design System Creation & Development
+### 2. Design System **Creation & Development**
 We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
 
-### 3. Headless CMS & Websites
+### 3. Headless **CMS & Websites**
 We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
 
-### 4. Design System Training
+### 4. Design System **Training**
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?
         `}
         image={{
-          source: "/static/img/team.png",
+          source: "/static/img/deco/coding_01_framed.png",
           alt: "Just a decorative illustration",
         }}
         buttons={[
@@ -111,7 +113,7 @@ Ready to make your digital journey exceptional?
           indent: "none",
           src: "",
           srcDesktop: "/static/img/infos/adapt_kickstartds.svg",
-          srcMobile: "/static/img/infos/adapt_kickstartds.svg",
+          srcMobile: "/static/img/infos/adapt_kickstartds_mobile.svg",
           srcTablet: "/static/img/infos/adapt_kickstartds.svg",
         }}
         largeHeadline
@@ -200,7 +202,7 @@ Ready to make your digital journey exceptional?
       <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        backgroundImage="/static/img/bg/bg_pinky-gradient.svg"
+        backgroundImage="/static/img/bg/bg_schrill.svg"
         backgroundColor="#B9398D"
         image={{
           hAlign: "center",
@@ -209,7 +211,7 @@ Ready to make your digital journey exceptional?
             mobileImageLast: false,
           },
           ratio: "none",
-          source: "/static/img/bg/bg_get-in-touch.png",
+          source: "/static/img/deco/contact-us-person-smart.png",
           vAlign: "center",
         }}
         buttons={[
@@ -302,7 +304,7 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section style="stagelights" width="full">
+    <Section style="glow" width="full">
       <CtaPaid
         backgroundImage="/static/img/bg/bg_laser-centered.svg"
         align="center"
