@@ -6,6 +6,8 @@ import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
+import src from ".";
+import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 
 export const data = {
   title:
@@ -22,33 +24,22 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section width="full" spaceAfter="small" spaceBefore="none">
       <Hero
+        height="fullImage"
         image={{
-          srcMobile: "/static/img/showcases/comp_eco01.jpg",
+          srcMobile: "/static/img/showcases/comp_eco01.png",
           alt: "Fake Showcase Mockup Image",
         }}
+        textPosition="below"
+        largeHeadline
+        headline="Powering EcoTech's Digital Transformation with a Design System and Headless CMS"
+        sub="Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web"
       />
     </Section>
-    <Section
-      headline={{
-        text: "Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**",
-        sub: "Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web",
-        width: "default",
-        align: "center",
-        large: true,
-      }}
-      width="wide"
-      spaceAfter="none"
-    />
-    <Section
-      width="max"
-      content={{
-        mode: "list",
-      }}
-    >
+    <Section spaceBefore="small" width="full">
       <Hero
         height="fullImage"
         image={{
-          srcMobile: "/static/img/showcases/comp_eco02.jpg",
+          srcMobile: "/static/img/showcases/comp_eco02.png",
         }}
       />
     </Section>
@@ -56,41 +47,33 @@ export default (props) => (
       headline={{
         text: "Briefing:",
         sub: "Harmonize Techfusions Digital Landscape",
-      }}
-      spaceBefore="none"
-      width="wide"
-      content={{
-        width: "narrow",
+        width: "default",
+        textAlign: "center",
         align: "left",
       }}
+      spaceBefore="none"
+      width="default"
     >
-      <Text text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms." />
-    </Section>
-    <Section style="accent" width="max">
-      <Hero
-        height="fullImage"
-        image={{
-          srcMobile: "/static/img/showcases/comp_eco02.jpg",
-        }}
+      <Text
+        align="center"
+        style="highlight"
+        text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms."
       />
     </Section>
-    <Section
-      headline={{
-        text: "Our Solution:",
-        sub: "Design System end to end",
-        width: "narrow",
-        align: "center",
-      }}
-      width="wide"
-      content={{
-        width: "narrow",
-        align: "center",
-      }}
-      style="accent"
-      spaceBefore="none"
-    >
-      <Text text="We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web." />
+    <Section style="accent" width="full">
+      <Mosaic
+        layout="textLeft"
+        tiles={[
+          {
+            headline: "Our Solution:",
+            sub: "Design System end to end",
+            text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
+            image: "/static/img/showcases/comp_eco03.png",
+          },
+        ]}
+      />
     </Section>
+
     <Section width="max">
       <Hero
         height="fullImage"
@@ -105,12 +88,12 @@ export default (props) => (
       headline={{
         text: "Headless is best:",
         sub: "Easy adoption thanks Design System",
-        width: "narrow",
-        align: "right",
+        width: "default",
+        align: "center",
       }}
       content={{
-        width: "narrow",
-        align: "right",
+        width: "default",
+        align: "center",
       }}
     >
       <Text text="We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web." />
@@ -201,7 +184,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     <Section>
       <Text
         align="center"
-        text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm#query=website%20mockup%20tech&position=0&from_view=search&track=ais).`}
+        text={`Many thanks to Freepik. All website comps by [Freepik](https://www.freepik.com/free-psd/smart-home-app-web-template_16692832.htm).`}
       />
     </Section>
   </PageWrapper>
