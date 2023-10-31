@@ -58,7 +58,7 @@ export default (props) => (
         width: "narrow",
         align: "center",
         textAlign: "center",
-        large: "true",
+        large: true,
       }}
       width="full"
     >
@@ -70,20 +70,26 @@ export default (props) => (
 
 ### 1. Design System **Consulting**
 Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
+<br/><br/>
 
 ### 2. Design System **Creation & Development**
 We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
+<br/><br/>
 
 ### 3. Headless **CMS & Websites**
 We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
+<br/><br/>
 
 ### 4. Design System **Training**
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
+<br/><br/>
 
-Ready to make your digital journey exceptional?
+**Ready to make your digital journey exceptional?**
+<br/><br/><br/>
+
         `}
         image={{
-          source: "/static/img/deco/coding_01_framed.png",
+          src: "/static/img/deco/coding_01_framed.png",
           alt: "Just a decorative illustration",
         }}
         buttons={[
@@ -124,33 +130,7 @@ Ready to make your digital journey exceptional?
 
     <Section
       width="wide"
-      headline={{
-        text: "Happy Customers Showcases",
-        sub: "We can create something shining for you too!",
-      }}
-    >
-      <TeaserCard
-        target="/showcase-techfusion_paid"
-        headline="Transformation Love Story"
-        text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
-      />
-      <TeaserCard
-        target="/showcase-launchpad_paid"
-        headline="Speed and Scale"
-        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
-      />
-      <TeaserCard
-        target="/showcase-eco_paid"
-        headline="Saving Time and Money"
-        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
-      />
-    </Section>
-
-    <Section
-      width="wide"
+      style="accentTransition"
       content={{
         mode: "list",
       }}
@@ -198,7 +178,35 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section width="full">
+    <Section
+      width="wide"
+      style="accent"
+      headline={{
+        text: "Happy Customers Showcases",
+        sub: "We can create something shining for you too!",
+      }}
+    >
+      <TeaserCard
+        target="/showcase-techfusion_paid"
+        headline="Transformation Love Story"
+        text="See how we saved TechFusions a year's worth of development time"
+        image="/static/img/showcases/comp_tfe01.jpg"
+      />
+      <TeaserCard
+        target="/showcase-launchpad_paid"
+        headline="Speed and Scale"
+        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+        image="/static/img/showcases/comp_audio01.jpg"
+      />
+      <TeaserCard
+        target="/showcase-eco_paid"
+        headline="Saving Time and Money"
+        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+        image="/static/img/showcases/comp_eco01.jpg"
+      />
+    </Section>
+
+    <Section width="full" spaceBefore="none">
       <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
@@ -211,7 +219,7 @@ Ready to make your digital journey exceptional?
             mobileImageLast: false,
           },
           ratio: "none",
-          source: "/static/img/deco/contact-us-person-smart.png",
+          src: "/static/img/deco/contact-us-person-smart.png",
           vAlign: "center",
         }}
         buttons={[
@@ -224,6 +232,32 @@ Ready to make your digital journey exceptional?
             label: "Book a meeting",
             target: "https://app.lemcal.com/@daniel-ley",
             icon: "date",
+          },
+        ]}
+      />
+    </Section>
+
+    <Section
+    
+      content={{
+        align: 'left',
+        width: 'narrow'
+      }}
+      headline={{
+        text: "Design Systems & Headless FAQs",
+      }}
+    >
+      <FAQ
+        questions={[
+          {
+            question: "What is a Design System?",
+            answer:
+              "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
+          },
+          {
+            question: "What are the benefits of investing in a Design System?",
+            answer:
+              "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
           },
         ]}
       />
@@ -306,7 +340,6 @@ Ready to make your digital journey exceptional?
 
     <Section style="glow" width="full">
       <CtaPaid
-        backgroundImage="/static/img/bg/bg_laser-centered.svg"
         align="center"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
