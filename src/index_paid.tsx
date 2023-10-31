@@ -50,6 +50,7 @@ export default (props) => (
     </Section>
 
     <Section
+      id="startit"
       headline={{
         text: "Design System Services",
         sub: "Crafting Consistency, Fostering Growth",
@@ -93,7 +94,7 @@ Ready to make your digital journey exceptional?
       />
     </Section>
 
-    <Section width="full" style="gradient">
+    <Section width="full">
       <Hero
         buttons={[
           {
@@ -108,10 +109,10 @@ Ready to make your digital journey exceptional?
         image={{
           alt: undefined,
           indent: "none",
-          src: "https://picsum.photos/seed/kdsvisual/640/270",
-          srcDesktop: "/static/img/hero-below.png",
-          srcMobile: "/static/img/hero.png",
-          srcTablet: "/static/img/hero-below.png",
+          src: "",
+          srcDesktop: "/static/img/infos/adapt_kickstartds.svg",
+          srcMobile: "/static/img/infos/adapt_kickstartds.svg",
+          srcTablet: "/static/img/infos/adapt_kickstartds.svg",
         }}
         largeHeadline
         text="We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
