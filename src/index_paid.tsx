@@ -340,7 +340,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         width: "default",
       }}
     >
-      <FAQ
+      <Faq
         questions={[
           {
             question: "How do Headless CMSs fit into the picture?",
