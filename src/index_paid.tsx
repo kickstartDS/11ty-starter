@@ -1,5 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { FAQ } from "@kickstartds/ds-agency/faq";
+import { Faq } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
@@ -246,9 +246,31 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         text: "Design Systems, all you need to know",
         sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
         large: true,
+        text: "Design Systems & Headless FAQs",
       }}
     >
-      <FAQ
+      <Faq
+        questions={[
+          {
+            question: "What is a Design System?",
+            answer:
+              "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
+          },
+          {
+            question: "What are the benefits of investing in a Design System?",
+            answer:
+              "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
+          },
+        ]}
+      />
+    </Section>
+
+    <Section
+      headline={{
+        text: "Design Systems & Headless FAQs",
+      }}
+    >
+      <Faq
         questions={[
           {
             question: "What is a Design System?",

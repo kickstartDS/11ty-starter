@@ -18,8 +18,9 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section
+      spaceBefore="none"
       width="full"
       content={{
         mode: "list",

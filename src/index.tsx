@@ -1,6 +1,6 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
-import { FAQ } from "@kickstartds/ds-agency/faq";
+import { Faq } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
@@ -200,7 +200,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         text: "Design Systems & Headless FAQs",
       }}
     >
-      <FAQ
+      <Faq
         questions={[
           {
             question: "What is a Design System?",

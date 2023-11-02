@@ -2,11 +2,9 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
-import src from ".";
 import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 
 export const data = {
@@ -52,6 +50,7 @@ export default (props) => (
         align: "left",
       }}
       spaceBefore="none"
+      spaceAfter="small"
       width="default"
     >
       <Text
@@ -60,9 +59,9 @@ export default (props) => (
         text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms."
       />
     </Section>
-    <Section style="accent" width="full">
+    <Section style="boldTransition" width="full">
       <Mosaic
-        layout="textLeft"
+        layout="alternate"
         tiles={[
           {
             headline: "Our Solution:",
@@ -70,36 +69,17 @@ export default (props) => (
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
             image: "/static/img/showcases/comp_eco03.png",
           },
+          {
+            headline: "Headless is best:",
+            sub: "Easy adoption thanks Design System",
+            text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
+            image: "/static/img/showcases/comp_eco04.png",
+          },
         ]}
       />
     </Section>
 
-    <Section width="max">
-      <Hero
-        height="fullImage"
-        image={{
-          srcMobile: "/static/img/showcases/comp_eco04.jpg",
-        }}
-      />
-    </Section>
     <Section
-      spaceBefore="none"
-      width="wide"
-      headline={{
-        text: "Headless is best:",
-        sub: "Easy adoption thanks Design System",
-        width: "default",
-        align: "center",
-      }}
-      content={{
-        width: "default",
-        align: "center",
-      }}
-    >
-      <Text text="We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web." />
-    </Section>
-    <Section
-      style="accent"
       spaceAfter="default"
       content={{
         mode: "list",
@@ -128,25 +108,13 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         ]}
       />
     </Section>
-    <Section
-      style="accent"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="none"
-      spaceBefore="none"
-    >
-      <Image
-        src="/static/img/showcases/comp_eco04.jpg"
-        alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-    <Section>
+    <Section width="wide" inverted spaceBefore="small" spaceAfter="small">
       <CtaPaid
-        align="left"
+        fullWidth
+        largeHeadline
+        align="center"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
-        text="Connect with us to start your journey."
+        sub="Connect with us to start your journey."
         buttons={[
           {
             label: "Contact us",

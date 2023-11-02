@@ -1,7 +1,7 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { FAQ } from "@kickstartds/ds-agency/faq";
+import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
 import { ImageText } from "@kickstartds/ds-agency/image-text";
 import { PageWrapper } from "./_includes/PageWrapper";
@@ -145,7 +145,7 @@ Discover the future of digital experiences with our Headless Websites service. B
         text={`**kickstartDS** is a powerful and efficient **open source** technology that organizations should consider when starting a **design system**, due to the following reasons:`}
         layout="singleColumn"
       />
-      <FAQ
+      <Faq
         questions={[
           {
             question: "1. Time-saving",
