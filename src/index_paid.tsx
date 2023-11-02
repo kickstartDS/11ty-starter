@@ -1,5 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { FAQ } from "@kickstartds/ds-agency/faq";
+import { Faq } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
@@ -247,7 +247,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         text: "Design Systems & Headless FAQs",
       }}
     >
-      <FAQ
+      <Faq
         questions={[
           {
             question: "What is a Design System?",
@@ -268,7 +268,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         text: "Design Systems & Headless FAQs",
       }}
     >
-      <FAQ
+      <Faq
         questions={[
           {
             question: "What is a Design System?",
