@@ -7,6 +7,7 @@ import { PageWrapper } from "./_includes/PageWrapper";
 import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
+import { Image } from "@kickstartds/ds-agency/image";
 
 export const data = {
   title:
@@ -136,10 +137,8 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       }}
       headline={{
         text: "No Agency site without some shiny happy Customer",
-        align: "center",
-        width: "narrow",
         sub: "AI-generated smiles, as you see them everywhere nowadays",
-        textAlign: "center",
+        textAlign: "left",
       }}
     >
       <TestimonialsPaid
@@ -238,34 +237,15 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section
-    
+      width="wide"
       content={{
-        align: 'left',
-        width: 'narrow'
+        align: "center",
+        width: "default",
       }}
       headline={{
-        text: "Design Systems & Headless FAQs",
-      }}
-    >
-      <FAQ
-        questions={[
-          {
-            question: "What is a Design System?",
-            answer:
-              "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
-          },
-          {
-            question: "What are the benefits of investing in a Design System?",
-            answer:
-              "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
-          },
-        ]}
-      />
-    </Section>
-
-    <Section
-      headline={{
-        text: "Design Systems & Headless FAQs",
+        text: "Design Systems, all you need to know",
+        sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
+        large: true,
       }}
     >
       <FAQ
@@ -282,7 +262,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
           },
           {
             question:
-              "How do we help enterprise companies with a complex SaaS product?",
+              "How does it help enterprise companies with complex SaaS products?",
             answer:
               "We assist enterprise companies by creating tailored Design Systems that cater to the unique requirements of their complex SaaS products. Our approach involves understanding the product's goals, user needs, and brand identity, and then crafting a comprehensive Design System that streamlines workflows, enhances collaboration, and ensures a consistent user experience.",
           },
@@ -303,15 +283,44 @@ We empower your digital teams with the knowledge and skills to manage and evolve
               "A Style Guide is a subset of a Design System, focusing primarily on the visual aspects of a brand, such as colors, typography, and iconography. A Design System, on the other hand, is a more comprehensive framework that encompasses not only visual elements but also components, patterns, guidelines, and tools for design, development, and content creation.",
           },
           {
-            question: "Why are Design Systems all the rage these days?",
-            answer:
-              "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development. As organizations recognize the value of a unified brand identity and seamless user experiences, Design Systems have emerged as a crucial tool in achieving these goals while streamlining workflows and fostering collaboration across teams.",
-          },
-          {
             question: "How much does a Design System cost?",
             answer:
               "The cost of a Design System varies depending on factors such as project scope, complexity, and specific requirements. It is essential to view a Design System as a long-term investment that yields significant returns in terms of improved efficiency, reduced rework, and enhanced brand consistency. If you start at zero and the design system should serve at least 5 digital touchpoints, it could take months to years to develop all the code base. We believe in tailored solutions, so get in touch with us to discuss your specific requirements. As we work with kickstartDS, you can save lots of money because all the main concepts and aspects are already covered. Invest in its paid modules is really low in comparison to the development time you normally need to spend. For the rest, we'll provide you with a transparent, customized quote that aligns with your goals.",
           },
+        ]}
+      />
+    </Section>
+
+    <Section
+      width="wide"
+      align="center"
+      spaceBefore="none"
+      spaceAfter="small"
+      content={{
+        width: "wide",
+        align: "center",
+      }}
+    >
+      <Image
+        src="/static/img/deco/office-devider-dotted.png"
+        alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
+      />
+    </Section>
+
+    <Section
+      width="default"
+      content={{
+        width: "default",
+      }}
+      headline={{
+        text: "Headless CMS for the modern web",
+        sub: "Frequently asked questions",
+        align: "right",
+        width: "default",
+      }}
+    >
+      <FAQ
+        questions={[
           {
             question: "How do Headless CMSs fit into the picture?",
             answer:
