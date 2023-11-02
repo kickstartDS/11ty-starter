@@ -246,7 +246,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         text: "Design Systems, all you need to know",
         sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
         large: true,
-        text: "Design Systems & Headless FAQs",
       }}
     >
       <Faq
