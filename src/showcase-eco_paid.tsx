@@ -108,7 +108,13 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         ]}
       />
     </Section>
-    <Section width="wide" inverted spaceBefore="small" spaceAfter="small">
+    <Section
+      width="wide"
+      inverted
+      style="horizontalGradient"
+      spaceBefore="small"
+      spaceAfter="small"
+    >
       <CtaPaid
         fullWidth
         largeHeadline

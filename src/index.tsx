@@ -197,7 +197,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 
     <Section
       headline={{
-        text: "Design Systems & Headless FAQs",
+        text: "Design Systems & Headless Faqs",
       }}
     >
       <Faq

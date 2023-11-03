@@ -266,7 +266,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
     <Section
       headline={{
-        text: "Design Systems & Headless FAQs",
+        text: "Design Systems & Headless Faqs",
       }}
     >
       <Faq
@@ -314,7 +314,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
     <Section
       width="wide"
-      align="center"
       spaceBefore="none"
       spaceAfter="small"
       content={{

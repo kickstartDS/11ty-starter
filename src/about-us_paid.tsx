@@ -1,9 +1,10 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Stats } from "@kickstartds/ds-agency/stats";
-import { Cta } from "@kickstartds/ds-agency/cta";
+import { StatsPaid } from "@kickstartds/ds-agency/stats-paid";
+import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 
 export const data = {
   title: "About Systemics, your Design System Agency",
@@ -15,14 +16,27 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
-    <Section width="default">
-      <Cta
-        align="left"
-        headline="Crafting Digital Brilliance at **Systemics**"
-        sub="Elevating **Headless** Experiences through Innovative **Design Systems**"
+  <PageWrapper floatingHeader>
+    <Section spaceAfter="none" spaceBefore="none" width="full">
+      <Hero
+        image={{
+          srcMobile: "/static/img/agency-ai.png",
+        }}
+        overlay
+        textPosition="left"
+        textbox
+        headline="Crafting Digital Brilliance at Systemics"
+        sub="Elevating Headless Experiences through Innovative Design Systems"
         text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
       />
+      {/* <CtaPaid
+        fullWidth
+        largeHeadline
+        align="left"
+        headline="Crafting Digital Brilliance at **Systemics**"
+        sub="Elevating Headless Experiences through Innovative Design Systems"
+        text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
+      /> */}
     </Section>
 
     <Section
@@ -35,7 +49,7 @@ export default (props) => (
       }}
       content={{
         width: "default",
-        align: "right",
+        align: "center",
       }}
       style="accent"
       width="wide"
@@ -46,7 +60,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section>
+    <Section width="wide">
       <Text
         layout="multiColumn"
         text={`
@@ -78,7 +92,7 @@ We're not just building design systems; we're building value. By combining our e
       style="accent"
       width="wide"
     >
-      <Stats
+      <StatsPaid
         stats={[
           {
             number: 33,
@@ -147,7 +161,7 @@ We're not just building design systems; we're building value. By combining our e
     </Section>
 
     <Section inverted>
-      <Cta
+      <CtaPaid
         align="left"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
         buttons={[

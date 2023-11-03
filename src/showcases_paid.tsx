@@ -5,7 +5,6 @@ import { LogosPaid } from "@kickstartds/ds-agency/logos-paid";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
-import { text } from "stream/consumers";
 
 export const data = {
   title:
@@ -63,7 +62,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
       <CtaPaid
         align="left"
-        backgroundColor="#06081f"
         buttons={[
           {
             label: "See Showcase",
