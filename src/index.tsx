@@ -4,9 +4,12 @@ import { Faq } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
+import { Logos } from "@kickstartds/ds-agency/logos";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { Features } from "@kickstartds/ds-agency/components/features/index.js";
+import { ImageText } from "@kickstartds/ds-agency/image-text";
 
 export const data = {
   title:
@@ -20,17 +23,24 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="default">
+    <Section
+      style="stagelights"
+      width="full"
+      content={{
+        width: "default",
+        mode: "list",
+      }}
+    >
       <Cta
         align="left"
-        headline="We simplify the process of building and scaling your **Design System**"
-        text={`
-Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in **design systems**, **headless** CMSs, and **frontend development**, let's shape your digital future together.`}
+        headline="We simplify the process of building a **Design System**"
+        sub="With your headless experts"
+        text={`Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.`}
         buttons={[
           {
-            label: "Contact us",
-            target: "https://app.lemcal.com/@daniel-ley",
-            icon: "person",
+            label: "What can we do for you?",
+            target: "#startit",
+            icon: "chevron-down",
           },
           {
             label: "Book a meeting",
@@ -42,54 +52,120 @@ Elevate your digital presence with us. We create impactful digital experiences t
     </Section>
 
     <Section
+      id="startit"
       headline={{
         text: "Design System Services",
         sub: "Crafting Consistency, Fostering Growth",
         switchOrder: true,
+        large: true,
       }}
-      width="default"
+      width="wide"
       content={{
         mode: "list",
+        gutter: "large",
       }}
     >
-      <Text
-        text={`
-Here at Systemics, we bring a range of design system services that can make a difference:
+      <ImageText
+        image={{
+          alt: "Photorealistic photography of a hyper modern design & web development agency, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle",
+          src: "/static/img/deco/contact-us-person-smart.png",
+        }}
+        layout="beside-left"
+        text="
+**Ready to make your digital journey exceptional?**
 
-### 1. Design System Consulting
-Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
-
-### 2. Design System Creation & Development
-We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
-
-### 3. Headless CMS & Websites
-We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
-
-### 4. Design System Training
-We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
-
-Ready to make your digital journey exceptional?`}
-        layout="singleColumn"
+## Here at Systemics, we bring a range of design system services that can make a difference."
       />
-      <Image src="/static/img/team.png" alt="Just a decorative illustration" />
-      <div>
-        <Button
-          variant="primary"
-          label="Reach out today!"
-          icon="chevron-right"
-          target="https://app.lemcal.com/@daniel-ley"
-        />
-      </div>
+      <Features
+        ctas={{
+          style: "intext",
+          toggle: true,
+        }}
+        features={[
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "place",
+            text: "Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools!",
+            title: "Design System Consulting",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "first-page",
+            text: "We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms.",
+            title: "Design System Development",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "browser",
+            text: "We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.",
+            title: "Headless CMS & Websites",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "person",
+            text: "We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.",
+            title: "Design System Training",
+          },
+        ]}
+        layout="smallTiles"
+        style="stack"
+      />
     </Section>
+
+    <Section style="accentTransition" width="default">
+      <Logos
+        tagline="Orgs we've helped saving time & money"
+        align="center"
+        logos={[
+          {
+            alt: "Logo 1",
+            src: "img/logoipsum-212.svg",
+          },
+          {
+            alt: "Logo 2",
+            src: "img/logoipsum-217.svg",
+          },
+          {
+            alt: "Logo 3",
+            src: "img/logoipsum-239.svg",
+          },
+          {
+            alt: "Logo 4",
+            src: "img/logoipsum-244.svg",
+          },
+          {
+            alt: "Logo 5",
+            src: "img/logoipsum-250.svg",
+          },
+          {
+            alt: "Logo 6",
+            src: "img/logoipsum-286.svg",
+          },
+        ]}
+      />
+    </Section>
+
     <Section
-      width="default"
+      width="wide"
       style="accent"
       content={{
         mode: "list",
       }}
       headline={{
         text: "Our **Approach** to Design Systems",
-        sub: "Own a design system without investing years of development. Our approach to design systems",
+        sub: "Own a design system without investing years of development.",
       }}
     >
       <Text
@@ -98,8 +174,8 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         layout="singleColumn"
       />
       <Image
-        src="/static/img/agency.png"
-        alt="Just a decorative illustration of nothing special and very generic to let this demo website shine"
+        src="/static/img/infos/adapt_kickstartds_mobile_clear.svg"
+        alt="Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation "
       />
     </Section>
 
@@ -196,8 +272,36 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
     </Section>
 
     <Section
+      width="wide"
+      content={{
+        align: "center",
+        width: "default",
+      }}
       headline={{
-        text: "Design Systems & Headless Faqs",
+        text: "Design Systems, all you need to know",
+        sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
+        large: true,
+      }}
+    >
+      <Faq
+        questions={[
+          {
+            question: "What is a Design System?",
+            answer:
+              "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
+          },
+          {
+            question: "What are the benefits of investing in a Design System?",
+            answer:
+              "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
+          },
+        ]}
+      />
+    </Section>
+
+    <Section
+      headline={{
+        text: "Design Systems & Headless FAQs",
       }}
     >
       <Faq
@@ -214,7 +318,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
           },
           {
             question:
-              "How do we help enterprise companies with a complex SaaS product?",
+              "How does it help enterprise companies with complex SaaS products?",
             answer:
               "We assist enterprise companies by creating tailored Design Systems that cater to the unique requirements of their complex SaaS products. Our approach involves understanding the product's goals, user needs, and brand identity, and then crafting a comprehensive Design System that streamlines workflows, enhances collaboration, and ensures a consistent user experience.",
           },
@@ -235,15 +339,43 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
               "A Style Guide is a subset of a Design System, focusing primarily on the visual aspects of a brand, such as colors, typography, and iconography. A Design System, on the other hand, is a more comprehensive framework that encompasses not only visual elements but also components, patterns, guidelines, and tools for design, development, and content creation.",
           },
           {
-            question: "Why are Design Systems all the rage these days?",
-            answer:
-              "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development. As organizations recognize the value of a unified brand identity and seamless user experiences, Design Systems have emerged as a crucial tool in achieving these goals while streamlining workflows and fostering collaboration across teams.",
-          },
-          {
             question: "How much does a Design System cost?",
             answer:
               "The cost of a Design System varies depending on factors such as project scope, complexity, and specific requirements. It is essential to view a Design System as a long-term investment that yields significant returns in terms of improved efficiency, reduced rework, and enhanced brand consistency. If you start at zero and the design system should serve at least 5 digital touchpoints, it could take months to years to develop all the code base. We believe in tailored solutions, so get in touch with us to discuss your specific requirements. As we work with kickstartDS, you can save lots of money because all the main concepts and aspects are already covered. Invest in its paid modules is really low in comparison to the development time you normally need to spend. For the rest, we'll provide you with a transparent, customized quote that aligns with your goals.",
           },
+        ]}
+      />
+    </Section>
+
+    <Section
+      width="wide"
+      spaceBefore="none"
+      spaceAfter="small"
+      content={{
+        width: "wide",
+        align: "center",
+      }}
+    >
+      <Image
+        src="/static/img/deco/office-devider-dotted.png"
+        alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
+      />
+    </Section>
+
+    <Section
+      width="default"
+      content={{
+        width: "default",
+      }}
+      headline={{
+        text: "Headless CMS for the modern web",
+        sub: "Frequently asked questions",
+        align: "right",
+        width: "default",
+      }}
+    >
+      <Faq
+        questions={[
           {
             question: "How do Headless CMSs fit into the picture?",
             answer:
