@@ -8,6 +8,7 @@ import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { Image } from "@kickstartds/ds-agency/image";
+import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 
 export const data = {
   title:
@@ -205,22 +206,15 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section width="full" spaceBefore="none">
+    <Section inverted width="full" spaceAfter="none" spaceBefore="none">
       <CtaPaid
-        align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        backgroundImage="/static/img/bg/bg_schrill.svg"
-        backgroundColor="#B9398D"
         image={{
-          hAlign: "center",
-          order: {
-            desktopImageLast: true,
-            mobileImageLast: false,
-          },
-          ratio: "none",
-          src: "/static/img/deco/contact-us-person-smart.png",
-          vAlign: "center",
+          src: "/static/img/deco/contact-us-person-smart-freigestellt.png",
+          padding: false,
+          vAlign: "bottom",
         }}
+        backgroundImage="/static/img/deco/agency_office_bg.png"
         buttons={[
           {
             label: "Contact us",
@@ -235,7 +229,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         ]}
       />
     </Section>
-
     <Section
       width="wide"
       content={{
@@ -246,6 +239,8 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         text: "Design Systems, all you need to know",
         sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
         large: true,
+        align: "left",
+        width: "default",
       }}
     >
       <Faq
