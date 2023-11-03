@@ -8,6 +8,7 @@ import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { Image } from "@kickstartds/ds-agency/image";
+import { LogosPaid } from "@kickstartds/ds-agency/components/logos-paid/index.js";
 
 export const data = {
   title:
@@ -47,6 +48,40 @@ export default (props) => (
           srcMobile: "/static/img/video-720.mp4",
           srcTablet: "/static/img/video-1080.mp4",
         }}
+      />
+    </Section>
+
+    <Section width="max">
+      <LogosPaid
+        align="center"
+        tagline="Orgs we've helped saving time & money"
+        logos={[
+          {
+            alt: "Logo 1",
+            src: "/static/img/logoipsum-212.svg",
+          },
+          {
+            alt: "Logo 2",
+            src: "/static/img/logoipsum-217.svg",
+          },
+          {
+            alt: "Logo 3",
+            src: "/static/img/logoipsum-239.svg",
+          },
+          {
+            alt: "Logo 4",
+            src: "/static/img/logoipsum-244.svg",
+          },
+          {
+            alt: "Logo 5",
+            src: "/static/img/logoipsum-250.svg",
+          },
+          {
+            alt: "Logo 6",
+            src: "/static/img/logoipsum-286.svg",
+          },
+        ]}
+        logosPerRow={6}
       />
     </Section>
 
@@ -113,10 +148,10 @@ We empower your digital teams with the knowledge and skills to manage and evolve
           },
         ]}
         headline="Our Approach to Design Systems"
-        sub="Own a design system without investing years of development. Our approach to design systems"
+        sub="Own a design system without investing years of development."
         height="fullImage"
         image={{
-          alt: undefined,
+          alt: "Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation",
           indent: "none",
           src: "",
           srcDesktop: "/static/img/infos/adapt_kickstartds.svg",
@@ -194,6 +229,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       <TeaserCard
         target="/showcase-launchpad_paid"
         headline="Speed and Scale"
+        label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
       />
@@ -266,7 +302,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
     <Section
       headline={{
-        text: "Design Systems & Headless Faqs",
+        text: "Design Systems & Headless FAQs",
       }}
     >
       <Faq
