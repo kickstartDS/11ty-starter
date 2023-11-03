@@ -8,7 +8,6 @@ import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { Image } from "@kickstartds/ds-agency/image";
-import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 
 export const data = {
   title:
@@ -213,6 +212,9 @@ We empower your digital teams with the knowledge and skills to manage and evolve
           src: "/static/img/deco/contact-us-person-smart-freigestellt.png",
           padding: false,
           vAlign: "bottom",
+          order: {
+            mobileImageLast: true,
+          },
         }}
         backgroundImage="/static/img/deco/agency_office_bg.png"
         buttons={[

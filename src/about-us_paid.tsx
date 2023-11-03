@@ -19,9 +19,12 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section spaceBefore="none" width="full">
       <Hero
+        height="fullImage"
         image={{
-          srcMobile: "/static/img/agency-ai.png",
+          srcMobile:
+            "/static/img/colleagues-work-office-using-computers-looking-aside.jpg",
         }}
+        largeHeadline
         textPosition="below"
         headline="Crafting Digital Brilliance at Systemics"
         sub="Elevating Headless Experiences through Innovative Design Systems"
