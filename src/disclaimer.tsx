@@ -12,8 +12,8 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
-    <Section>
+  <PageWrapper floatingHeader>
+    <Section style="glow">
       <Cta
         align="left"
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
@@ -67,7 +67,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="accent" spaceBefore="none">
+    <Section style="horizontalGradient" spaceBefore="small">
       <Text
         text={`
 ### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
@@ -75,7 +75,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="accent" spaceBefore="none">
+    <Section style="horizontalGradient" spaceBefore="none">
       <Button
         variant="primary"
         label="Browse Premium Demo"
@@ -102,7 +102,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section>
+    <Section style="stagelights">
       <Text
         text={`
 ## **The Purpose of this Demo**
@@ -116,7 +116,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
 
     <Section inverted>
       <Cta
-        align="left"
+        align="center"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         buttons={[

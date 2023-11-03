@@ -8,7 +8,6 @@ import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { Image } from "@kickstartds/ds-agency/image";
-import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 import { LogosPaid } from "@kickstartds/ds-agency/components/logos-paid/index.js";
 
 export const data = {
@@ -45,9 +44,9 @@ export default (props) => (
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
         textPosition="center"
         video={{
-          srcDesktop: "/static/img/video-1080.mp4",
-          srcMobile: "/static/img/video-720.mp4",
-          srcTablet: "/static/img/video-1080.mp4",
+          srcDesktop: "/static/img/videos/video-1080.mp4",
+          srcMobile: "/static/img/videos/video-720.mp4",
+          srcTablet: "/static/img/videos/video-1080.mp4",
         }}
       />
     </Section>
@@ -243,11 +242,10 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section inverted width="full" spaceAfter="none" spaceBefore="none">
-      <Mosaic
+      <CtaPaid
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         image={{
           src: "/static/img/deco/contact-us-person-smart-freigestellt.png",
-          padding: false,
           vAlign: "bottom",
         }}
         backgroundImage="/static/img/deco/agency_office_bg.png"
@@ -265,6 +263,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         ]}
       />
     </Section>
+
     <Section
       width="wide"
       content={{
