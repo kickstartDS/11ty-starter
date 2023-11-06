@@ -16,19 +16,14 @@ export default (props) => (
     <Section style="anchorGlow">
       <Cta
         align="left"
-        headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
+        headline="**This is a vibrant Simulation** designed to unveil the potential of **kickstartDS**"
         sub="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
         text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs - contact us, we are real experts!`}
         buttons={[
           {
-            label: "Book a meeting",
+            label: "Talk to us!",
             target: "https://app.lemcal.com/@daniel-ley",
-            icon: "date",
-          },
-          {
-            label: "See our Design System Services",
-            target: "https://app.lemcal.com/@daniel-ley",
-            icon: "chevron-right",
+            icon: "contact",
           },
         ]}
       />
