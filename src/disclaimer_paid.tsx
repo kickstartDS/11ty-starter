@@ -66,7 +66,6 @@ export default (props) => (
         align="left"
         text="Open Source vs. Premium Experience"
         sub="The two showcases in this demo represent the range of possibilities with kickstartDS. "
-        content=""
         level="h2"
         style="h2"
         spaceAfter="minimum"

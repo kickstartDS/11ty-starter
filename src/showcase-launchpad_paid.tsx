@@ -66,7 +66,6 @@ export default (props) => (
 ### Our Solution: 
 We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
           `}
-        layout="singleColumn"
       />
     </Section>
     <Section spaceBefore="small">
@@ -113,7 +112,6 @@ We set up a content-driven Design System and a Sanity-powered website and landin
 ## **Result:** 
 With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
           `}
-        layout="singleColumn"
       />
     </Section>
 

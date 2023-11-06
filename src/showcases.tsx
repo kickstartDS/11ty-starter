@@ -27,7 +27,6 @@ export default (props) => (
       <Headline
         text="Transformations powered by **💗**, **Innovation** & **Design Systems**"
         sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
-        content=""
         level="h1"
         style="h1"
       />
@@ -35,7 +34,6 @@ export default (props) => (
         text={`
 Welcome to our showcase of success stories. Here, you'll discover how we've partnered with diverse organizations to revolutionize their digital landscapes. From creating bespoke design systems to implementing headless CMSs, our solutions have empowered brands to streamline processes, enhance user experiences, and foster brand consistency. Dive in to explore how we've turned challenges into opportunities, and visions into reality.
           `}
-        layout="singleColumn"
       />
     </Section>
 

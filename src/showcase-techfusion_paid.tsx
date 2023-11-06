@@ -103,7 +103,6 @@ export default (props) => (
 ## **Result:** 
 The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
-        layout="singleColumn"
       />
     </Section>
     <Section style="accent" width="wide" spaceBefore="small">

@@ -45,7 +45,6 @@ export default (props) => (
 ### Briefing:
 EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms.
           `}
-        layout="singleColumn"
       />
     </Section>
 
@@ -76,7 +75,6 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
 ### Our Solution: 
 We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
           `}
-        layout="singleColumn"
       />
       <Testimonials
         testimonials={[
@@ -123,7 +121,6 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
 ### **Result:**
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
-        layout="singleColumn"
       />
     </Section>
 

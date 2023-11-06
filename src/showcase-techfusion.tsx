@@ -1,6 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
@@ -19,7 +18,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe01.jpg"
@@ -28,40 +27,29 @@ export default (props) => (
     </Section>
 
     <Section
-      style="accent"
       width="wide"
+      style="glow"
       content={{
-        mode: "list",
+        width: "default",
       }}
       spaceAfter="default"
+      headline={{
+        text: "Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**",
+        sub: "Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency",
+        large: true,
+        textAlign: "center",
+      }}
     >
-      <Headline
-        align="left"
-        text="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**"
-        sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
-        content=""
-        level="h2"
-        style="h2"
-        spaceAfter="large"
-      />
       <Text
         text={`
-### Briefing:
 TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
           `}
-        layout="singleColumn"
+        style="highlight"
+        align="center"
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe02.jpg"
         alt="Fake Showcase Mockup Image"
@@ -71,9 +59,9 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
     <Section
       width="wide"
       content={{
-        mode: "list",
+        width: "default",
+        align: "center",
       }}
-      spaceAfter="default"
     >
       <Text
         text={`
@@ -81,10 +69,9 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
 We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
 
           `}
-        layout="singleColumn"
       />
     </Section>
-    <Section spaceBefore="small">
+    <Section width="wide" spaceBefore="small">
       <Testimonials
         testimonials={[
           {
@@ -101,29 +88,14 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="narrow"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="default"
-    >
+    <Section style="accent">
       <Text
         text={`
 ## **Result:** 
@@ -133,30 +105,21 @@ The implementation of the new Design System resulted in a **year's worth of deve
 
 We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
           `}
-        layout="singleColumn"
       />
     </Section>
 
-    <Section
-      style="accent"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe04.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
 
-    <Section inverted>
+    <Section width="wide" inverted>
       <Cta
-        align="left"
+        align="center"
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
-        text="Get in touch today."
+        sub="Get in touch today."
         buttons={[
           {
             label: "Contact us",
