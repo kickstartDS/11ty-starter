@@ -40,7 +40,7 @@ export default (props) => (
     ></Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="full"
       content={{
         mode: "list",
@@ -86,7 +86,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="full"
       content={{
         mode: "list",
@@ -101,7 +101,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="narrow"
       content={{
         mode: "list",
@@ -116,7 +116,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="full"
       content={{
         mode: "list",

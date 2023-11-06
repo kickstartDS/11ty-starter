@@ -28,7 +28,7 @@ export default (props) => (
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="default"
       content={{
         mode: "list",
@@ -49,7 +49,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="full"
       content={{
         mode: "list",
@@ -93,7 +93,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="full"
       content={{
         mode: "list",
@@ -108,7 +108,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="narrow"
       content={{
         mode: "list",
@@ -125,7 +125,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     </Section>
 
     <Section
-      style="accent"
+      background="accent"
       width="full"
       content={{
         mode: "list",

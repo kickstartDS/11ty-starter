@@ -49,7 +49,12 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       />
     </Section>
 
-    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
+    <Section
+      background="accent"
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+    >
       <Image
         src="/static/img/showcases/comp_tfe02.jpg"
         alt="Fake Showcase Mockup Image"
@@ -67,7 +72,6 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
         text={`
 ### Our Solution: 
 We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
-
           `}
       />
     </Section>
@@ -88,14 +92,19 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       />
     </Section>
 
-    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
+    <Section
+      background="accent"
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+    >
       <Image
         src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
 
-    <Section style="accent">
+    <Section background="accent">
       <Text
         text={`
 ## **Result:** 
@@ -108,7 +117,12 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       />
     </Section>
 
-    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
+    <Section
+      background="accent"
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+    >
       <Image
         src="/static/img/showcases/comp_tfe04.jpg"
         alt="Fake Showcase Mockup Image"

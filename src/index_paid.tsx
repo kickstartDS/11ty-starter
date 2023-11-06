@@ -214,7 +214,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
     <Section
       width="wide"
-      style="accent"
+      background="accent"
       headline={{
         text: "Happy Customers Showcases",
         sub: "We can create something shining for you too!",
