@@ -290,27 +290,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
             answer:
               "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
           },
-        ]}
-      />
-    </Section>
-
-    <Section
-      headline={{
-        text: "Design Systems & Headless FAQs",
-      }}
-    >
-      <Faq
-        questions={[
-          {
-            question: "What is a Design System?",
-            answer:
-              "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
-          },
-          {
-            question: "What are the benefits of investing in a Design System?",
-            answer:
-              "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
-          },
           {
             question:
               "How does it help enterprise companies with complex SaaS products?",

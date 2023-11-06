@@ -1,6 +1,6 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Button } from "@kickstartds/ds-agency/button";
-import { Cta } from "@kickstartds/ds-agency/cta";
+import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Text } from "@kickstartds/ds-agency/text";
@@ -86,11 +86,22 @@ The other demo, built entirely using our [**open-source** modules](https://www.k
       />
     </Section>
 
-    <Section style="horizontalGradient" spaceBefore="small">
-      <Text
-        text={`
-### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
-        `}
+    <Section
+      style="horizontalGradient"
+      spaceBefore="none"
+      spaceAfter="small"
+      width="full"
+      content={{
+        align: "center",
+        mode: "list",
+        width: "max",
+      }}
+    >
+      <CtaPaid
+        align="left"
+        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
+        headline="By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements."
+        sub="Browse the different demos and Storybook to feel it yourself"
       />
     </Section>
 
