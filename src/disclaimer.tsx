@@ -35,7 +35,7 @@ export default (props) => (
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="wide"
       content={{
         mode: "list",
@@ -52,7 +52,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section background="accent" width="narrow" spaceBefore="none">
+    <Section style="accent" width="narrow" spaceBefore="none">
       <Text
         text={`
 ### Open Source Demo

@@ -38,7 +38,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="wide"
       content={{
         mode: "list",
@@ -95,7 +95,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="wide"
       content={{
         mode: "list",
@@ -144,7 +144,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="wide"
       headline={{
         text: "**More Sucess Stories incoming**",

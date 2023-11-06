@@ -28,7 +28,7 @@ export default (props) => (
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="wide"
       content={{
         mode: "list",
@@ -48,7 +48,7 @@ LaunchPad Audio Innovations, an AI-powered digital audio controller startup, nee
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="full"
       content={{
         mode: "list",
@@ -93,7 +93,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="full"
       content={{
         mode: "list",
@@ -108,7 +108,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="narrow"
       content={{
         mode: "list",
@@ -123,7 +123,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="full"
       content={{
         mode: "list",

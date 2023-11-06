@@ -35,7 +35,7 @@ From the intricate art of **Design Systems** to the boundary-pushing innovation 
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       content={{
         mode: "list",
       }}
@@ -59,7 +59,7 @@ We believe in not just keeping up with the digital world, but setting the pace.
     </Section>
 
     <Section
-      background="accent"
+      style="accent"
       width="wide"
       content={{
         mode: "list",

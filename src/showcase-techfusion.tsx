@@ -49,12 +49,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       />
     </Section>
 
-    <Section
-      background="accent"
-      width="full"
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe02.jpg"
         alt="Fake Showcase Mockup Image"
@@ -92,19 +87,14 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       />
     </Section>
 
-    <Section
-      background="accent"
-      width="full"
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
 
-    <Section background="accent">
+    <Section style="accent">
       <Text
         text={`
 ## **Result:** 
@@ -117,12 +107,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       />
     </Section>
 
-    <Section
-      background="accent"
-      width="full"
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section style="accent" width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe04.jpg"
         alt="Fake Showcase Mockup Image"
