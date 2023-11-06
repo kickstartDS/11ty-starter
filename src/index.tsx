@@ -24,7 +24,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section
-      style="stagelights"
+      style="symmetricGlow"
       width="full"
       content={{
         width: "default",
@@ -159,7 +159,7 @@ export default (props) => (
 
     <Section
       width="wide"
-      style="accent"
+      backgroundColor="accent"
       content={{
         mode: "list",
       }}
@@ -402,7 +402,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       />
     </Section>
 
-    <Section style="accent" width="wide">
+    <Section backgroundColor="accent" width="wide">
       <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"

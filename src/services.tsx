@@ -18,7 +18,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section
-      style="accent"
+      backgroundColor="accent"
       width="wide"
       content={{
         mode: "list",
@@ -35,7 +35,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section style="accent" width="narrow" spaceBefore="none">
+    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
@@ -104,7 +104,7 @@ Invest in your team's growth with our Design System Trainings. We believe that t
 
     <Section
       width="wide"
-      style="accent"
+      backgroundColor="accent"
       content={{
         mode: "list",
       }}
@@ -174,7 +174,7 @@ Discover the future of digital experiences with our Headless Websites service. B
       />
     </Section>
 
-    <Section style="accent">
+    <Section backgroundColor="accent">
       <Cta
         align="left"
         headline="**Ready** to craft excellence into your digital journey?"

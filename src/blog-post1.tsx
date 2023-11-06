@@ -114,7 +114,7 @@ So, if you're tired of being held back by traditional CMS and are ready to take 
       />
     </Section>
 
-    <Section style="accent">
+    <Section backgroundColor="accent">
       <Cta
         align="left"
         headline="Ready to ignite your digital transformation journey?"

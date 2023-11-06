@@ -91,7 +91,7 @@ export default (props) => (
         text: "Design System Services",
         sub: "Crafting Consistency, Fostering Growth",
         switchOrder: true,
-        width: "narrow",
+        width: "default",
         align: "center",
         textAlign: "center",
         large: true,
@@ -121,9 +121,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 <br/><br/>
 
 **Ready to make your digital journey exceptional?**
-<br/><br/><br/>
-
-        `}
+<br/><br/>`}
         image={{
           src: "/static/img/deco/coding_01_framed.png",
           alt: "Just a decorative illustration",
@@ -213,8 +211,9 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section
+      backgroundColor="accent"
+      style="boldTransition"
       width="wide"
-      style="accent"
       headline={{
         text: "Happy Customers Showcases",
         sub: "We can create something shining for you too!",
@@ -241,14 +240,14 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section inverted width="full" spaceAfter="none" spaceBefore="none">
+    <Section backgroundColor="bold" width="full">
       <CtaPaid
         headline="Get in touch and chat with us about getting your product or platform to market faster"
+        fullWidth
         image={{
-          src: "/static/img/deco/contact-us-person-smart-freigestellt.png",
-          vAlign: "bottom",
+          src: "/static/img/contact-person.png",
+          padding: false,
         }}
-        backgroundImage="/static/img/deco/agency_office_bg.png"
         buttons={[
           {
             label: "Contact us",
@@ -397,11 +396,13 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section style="glow" width="full">
+    <Section style="anchorGlow" width="wide">
       <CtaPaid
+        fullWidth
+        largeHeadline
         align="center"
         headline="Ready to embark on a transformative digital journey?"
-        text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        sub="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         buttons={[
           {
             label: "Contact us",
