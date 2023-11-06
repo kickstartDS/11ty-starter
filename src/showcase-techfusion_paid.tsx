@@ -41,7 +41,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section width="max" spaceBefore="small" style="accent">
+    <Section width="max" spaceBefore="small" backgroundColor="accent">
       <Mosaic
         tiles={[
           {
@@ -91,7 +91,7 @@ export default (props) => (
     </Section>
 
     <Section
-      style="accent"
+      backgroundColor="accent"
       width="default"
       content={{
         mode: "list",
@@ -105,7 +105,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
           `}
       />
     </Section>
-    <Section style="accent" width="wide" spaceBefore="small">
+    <Section backgroundColor="accent" width="wide" spaceBefore="small">
       <TestimonialsPaid
         testimonials={[
           {
@@ -123,7 +123,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
     </Section>
 
     <Section
-      style="accent"
+      backgroundColor="accent"
       width="full"
       content={{
         mode: "list",
@@ -141,7 +141,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
     </Section>
 
     <Section
-      style="accent"
+      backgroundColor="accent"
       width="full"
       content={{
         mode: "list",

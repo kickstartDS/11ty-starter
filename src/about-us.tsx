@@ -37,7 +37,7 @@ export default (props) => (
         width: "default",
         align: "right",
       }}
-      style="accent"
+      backgroundColor="accent"
       width="wide"
     >
       <Text
@@ -62,7 +62,7 @@ We're not just building design systems; we're building value. By combining our e
       headline={{
         text: "About & History",
       }}
-      style="accent"
+      backgroundColor="accent"
       width="default"
     >
       <Text
@@ -74,7 +74,7 @@ We're not just building design systems; we're building value. By combining our e
       headline={{
         text: "Facts & Figures",
       }}
-      style="accent"
+      backgroundColor="accent"
       width="wide"
     >
       <Stats
@@ -105,7 +105,7 @@ We're not just building design systems; we're building value. By combining our e
       headline={{
         text: "Super cool Agency Life here",
       }}
-      style="accent"
+      backgroundColor="accent"
       width="wide"
     >
       <Gallery

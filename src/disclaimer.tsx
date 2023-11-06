@@ -13,7 +13,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section style="glow">
+    <Section style="anchorGlow">
       <Cta
         align="left"
         headline="**This is a Vibrant Simulation** designed to unveil the impressive potential of **kickstartDS**"
@@ -35,7 +35,7 @@ export default (props) => (
     </Section>
 
     <Section
-      style="accent"
+      backgroundColor="accent"
       width="wide"
       content={{
         mode: "list",
@@ -52,7 +52,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section style="accent" width="narrow" spaceBefore="none">
+    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
       <Text
         text={`
 ### Open Source Demo

@@ -61,7 +61,7 @@ export default (props) => (
         mode: "list",
         gutter: "large",
       }}
-      style="bold"
+      backgroundColor="bold"
       width="wide"
     >
       <ImageStory
@@ -96,7 +96,7 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
       headline={{
         text: "Facts & Figures",
       }}
-      style="accent"
+      backgroundColor="accent"
       width="wide"
     >
       <StatsPaid
@@ -127,7 +127,7 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
       headline={{
         text: "Super cool Agency Life here",
       }}
-      style="accent"
+      backgroundColor="accent"
       width="wide"
     >
       <Gallery
