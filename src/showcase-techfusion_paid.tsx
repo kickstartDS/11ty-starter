@@ -43,11 +43,16 @@ export default (props) => (
       />
     </Section>
 
-    <Section width="max" spaceBefore="small" backgroundColor="accent">
+    <Section
+      width="full"
+      spaceBefore="small"
+      spaceAfter="none"
+      backgroundColor="accent"
+      style="boldTransition"
+    >
       <Mosaic
         tiles={[
           {
-            backgroundColor: "#81005a",
             button: {
               icon: undefined,
               label: "Book a meeting",
@@ -56,12 +61,10 @@ export default (props) => (
             },
             headline: "**Briefing:**",
             sub: "Harmonize Techfusions Digital Landscape",
-            image: "/static/img/showcases/mosaic-1-tfe.jpg",
+            image: "/static/img/showcases/mosaic-1-tfe.png",
             text: "TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.",
-            textColor: "#ffffff",
           },
           {
-            backgroundColor: "#4d148e",
             button: {
               icon: undefined,
               label: "Book a meeting",
@@ -69,13 +72,11 @@ export default (props) => (
               toggle: true,
             },
             headline: "Our Solution:",
-            image: "/static/img/showcases/mosaic-2-tfe.jpg",
+            image: "/static/img/showcases/mosaic-2-tfe.png",
             sub: "Design System in 5 Days",
             text: "We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.",
-            textColor: "#cddffa",
           },
           {
-            backgroundColor: "#f7067c",
             button: {
               icon: undefined,
               label: "Book a meeting",
@@ -83,31 +84,36 @@ export default (props) => (
               toggle: true,
             },
             headline: "Additional Services:",
-            image: "/static/img/showcases/mosaic-3-tfe.jpg",
+            image: "/static/img/showcases/mosaic-3-tfe.png",
             sub: "Help to help yourself",
             text: "We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.",
-            textColor: "#e4c3e3",
           },
         ]}
       />
     </Section>
 
     <Section
-      backgroundColor="accent"
-      width="default"
+      backgroundColor="bold"
+      width="wide"
       content={{
         mode: "list",
       }}
-      spaceAfter="none"
+      spaceBefore="small"
+      style="anchorGlow"
+      headline={{
+        text: "Result",
+        align: "center",
+        textAlign: "center",
+        large: true,
+      }}
     >
       <Text
         text={`
-## **Result:** 
 The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
+        align="center"
+        style="highlight"
       />
-    </Section>
-    <Section backgroundColor="accent" width="wide" spaceBefore="small">
       <TestimonialsPaid
         testimonials={[
           {
@@ -124,36 +130,15 @@ The implementation of the new Design System resulted in a **year's worth of deve
       />
     </Section>
 
-    <Section
-      backgroundColor="accent"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="none"
-      headline={{
-        text: "Find some inspiration from Techfusion for your next project",
-        textAlign: "center",
-      }}
-    >
-      <Image
-        src="/static/img/showcases/comp_tfe03.jpg"
-        alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-
-    <Section
-      backgroundColor="accent"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-      spaceAfter="none"
-      spaceBefore="none"
-    >
-      <Image
-        src="/static/img/showcases/comp_tfe04.jpg"
-        alt="Fake Showcase Mockup Image"
+    <Section width="wide">
+      <Hero
+        height="fullImage"
+        image={{
+          srcMobile: "/static/img/showcases/comp_tfe03.png",
+        }}
+        headline="Find some inspiration from Techfusion for your next project"
+        largeHeadline
+        textPosition="below"
       />
     </Section>
 
