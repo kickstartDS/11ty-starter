@@ -244,6 +244,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       <CtaPaid
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         fullWidth
+        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
         image={{
           src: "/static/img/contact-person.png",
           padding: false,

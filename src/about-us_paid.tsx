@@ -63,13 +63,14 @@ export default (props) => (
       }}
       backgroundColor="bold"
       width="wide"
+      style="anchorGlow"
     >
       <ImageStory
         image={{
-          src: "/static/img/office-building.png",
+          src: "/static/img/deco/office-building-3.png",
         }}
-        text={` ## Benefit from the **power of kickstartDS**
-**as we do too!**
+        headline="Benefit from the **power of kickstartDS**"
+        text={`**as we do too!**
 We strongly believe in using the best tools to bring our clients exceptional results. That's why we've integrated kickstartDS into our workflow. This code-first framework for design system creation is our secret sauce to saving time, without compromising on quality.
 
 kickstartDS allows us to fast-track the development process, ensuring you get a fully functional and polished design system in a fraction of the time it would traditionally take.
@@ -83,20 +84,24 @@ This approach ensures that your brand's identity remains consistent across platf
       <ImageStory
         layout="imageLeft"
         image={{
-          src: "/static/img/office-building.png",
+          src: "/static/img/deco/office-building-2.png",
         }}
         headline="About & History"
-        text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices.
+        text={`### Founded by passionate digital enthusiasts 
+
+Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices.
         
-Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
+Our journey is one of innovation, collaboration, and a relentless pursuit of excellence. **Wann join us?**`}
       />
     </Section>
 
     <Section
       headline={{
         text: "Facts & Figures",
+        textAlign: "center",
       }}
       backgroundColor="accent"
+      style="symmetricGlow"
       width="wide"
     >
       <StatsPaid
@@ -104,18 +109,21 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
           {
             number: 33,
             title: "Years of Expertise",
+            icon: "map",
             description:
               "With over 33 years in the industry, we`ve honed our craft and forged a reputation for **headless excellence** designed in systems.",
           },
           {
             number: 200,
             title: "Successful Projects",
+            icon: "upload",
             description:
               "**We`re so great**, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
           },
           {
             number: 99,
             title: "Client Satisfaction",
+            icon: "star-outline",
             description:
               "Thanks to **NPS, our client-centric** approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
           },
