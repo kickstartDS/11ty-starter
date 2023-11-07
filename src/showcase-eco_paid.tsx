@@ -111,7 +111,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     <Section
       width="wide"
       inverted
-      style="horizontalGradient"
+      style="symmetricGlow"
       spaceBefore="small"
       spaceAfter="small"
     >

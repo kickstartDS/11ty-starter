@@ -1,6 +1,4 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
@@ -8,6 +6,7 @@ import { Image } from "@kickstartds/ds-agency/image";
 import { Mosaic } from "@kickstartds/ds-agency/mosaic";
 import { Hero } from "@kickstartds/ds-agency/hero";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 
 export const data = {
   title:
@@ -21,21 +20,24 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section
+      spaceBefore="none"
       width="full"
+      style="accentTransition"
       content={{
         mode: "list",
       }}
     >
       <Hero
-        height="small"
+        height="fullImage"
         image={{
           alt: "Fake Showcase Mockup Image",
           indent: "none",
-          srcMobile: "/static/img/showcases/comp_tfe01.jpg",
+          srcMobile: "/static/img/showcases/comp_tfe01.png",
         }}
-        headline="Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom Design System"
+        largeHeadline
+        headline="Harmonizing Digital Experiences for TechFusion Enterprises with a Custom Design System"
         sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
         textPosition="below"
       />
@@ -155,11 +157,19 @@ The implementation of the new Design System resulted in a **year's worth of deve
       />
     </Section>
 
-    <Section inverted>
-      <Cta
-        align="left"
+    <Section
+      style="symmetricGlow"
+      width="wide"
+      spaceAfter="none"
+      spaceBefore="none"
+      inverted
+    >
+      <CtaPaid
+        fullWidth
+        align="center"
+        largeHeadline
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
-        text="Get in touch today."
+        sub="Get in touch today."
         buttons={[
           {
             label: "Contact us",
