@@ -1,11 +1,10 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
-import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { TestimonialsPaid } from "@kickstartds/ds-agency/components/testimonials-paid/index.js";
+import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 
 export const data = {
   title:
@@ -36,6 +35,7 @@ export default (props) => (
       headline={{
         text: "Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**",
         sub: "Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth",
+        large: true,
       }}
     ></Section>
 
@@ -69,7 +69,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
       />
     </Section>
     <Section spaceBefore="small">
-      <Testimonials
+      <TestimonialsPaid
         testimonials={[
           {
             image: {
@@ -131,7 +131,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
     </Section>
 
     <Section inverted>
-      <Cta
+      <CtaPaid
         align="left"
         headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
         text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."

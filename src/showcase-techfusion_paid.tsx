@@ -98,8 +98,6 @@ export default (props) => (
       content={{
         mode: "list",
       }}
-      spaceBefore="small"
-      style="anchorGlow"
       headline={{
         text: "Result",
         align: "center",
@@ -130,20 +128,21 @@ The implementation of the new Design System resulted in a **year's worth of deve
       />
     </Section>
 
-    <Section width="wide">
-      <Hero
-        height="fullImage"
+    <Section width="full">
+      <CtaPaid
+        fullWidth
         image={{
-          srcMobile: "/static/img/showcases/comp_tfe03.png",
+          src: "/static/img/showcases/comp_tfe03.png",
+          padding: false,
         }}
+        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
         headline="Find some inspiration from Techfusion for your next project"
         largeHeadline
-        textPosition="below"
       />
     </Section>
 
     <Section
-      style="symmetricGlow"
+      style="anchorGlow"
       width="wide"
       spaceAfter="none"
       spaceBefore="none"
