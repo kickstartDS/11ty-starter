@@ -28,13 +28,19 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
           { label: "Services", href: "/services" },
           { label: "Showcases", href: "/showcases" },
           { label: "Blog", href: "/blog" },
-          { label: "Disclaimer", href: "/disclaimer/" },
+          { label: "Disclaimer", href: "/disclaimer" },
           {
             label: "Storybook",
             href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
             target: "_blank",
           },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
+          { label: "Home-Paid", href: "index_paid" },
+          { label: "About-Paid", href: "/about-us_paid" },
+          { label: "Services-Paid", href: "/services_paid" },
+          { label: "Showcases-Paid", href: "/showcases_paid" },
+          { label: "Blog-Paid", href: "/blog_paid" },
+          { label: "Disclaimer-Paid", href: "/disclaimer_paid" },
         ]}
       />
     </Page>
