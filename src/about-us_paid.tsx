@@ -17,7 +17,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper floatingHeader>
+  <PageWrapper>
     <Section spaceBefore="none" width="full">
       <Hero
         height="fullImage"
