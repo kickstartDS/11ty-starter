@@ -22,8 +22,8 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section
       spaceBefore="none"
+      spaceAfter="none"
       width="full"
-      style="accentTransition"
       content={{
         mode: "list",
       }}
@@ -43,26 +43,50 @@ export default (props) => (
     </Section>
 
     <Section
-      width="full"
-      spaceBefore="small"
+      style="accentTransition"
       spaceAfter="none"
+      spaceBefore="none"
+      width="full"
+    >
+      <Hero
+        height="fullImage"
+        image={{
+          alt: "Fake Showcase Mockup Image",
+          indent: "none",
+          srcMobile: "/static/img/showcases/comp_tfe02.png",
+        }}
+      />
+    </Section>
+
+    <Section
+      width="default"
+      spaceBefore="none"
+      spaceAfter="small"
+      backgroundColor="accent"
+      headline={{
+        text: "Briefing:",
+        sub: "Harmonize Techfusions Digital Landscape",
+        textAlign: "center",
+      }}
+    >
+      <Text
+        text={`
+TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
+          `}
+        style="highlight"
+        align="center"
+      />
+    </Section>
+
+    <Section
+      width="full"
+      spaceBefore="none"
+      spaceAfter="default"
       backgroundColor="accent"
       style="boldTransition"
     >
       <Mosaic
         tiles={[
-          {
-            button: {
-              icon: undefined,
-              label: "Book a meeting",
-              target: undefined,
-              toggle: false,
-            },
-            headline: "**Briefing:**",
-            sub: "Harmonize Techfusions Digital Landscape",
-            image: "/static/img/showcases/mosaic-1-tfe.png",
-            text: "TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.",
-          },
           {
             button: {
               icon: undefined,
@@ -92,16 +116,14 @@ export default (props) => (
     </Section>
 
     <Section
-      backgroundColor="bold"
-      width="wide"
+      width="default"
       content={{
         mode: "list",
       }}
       headline={{
-        text: "Result",
+        text: "**Result:**",
         align: "center",
         textAlign: "center",
-        large: true,
       }}
     >
       <Text
@@ -111,6 +133,8 @@ The implementation of the new Design System resulted in a **year's worth of deve
         align="center"
         style="highlight"
       />
+    </Section>
+    <Section spaceBefore="none" width="wide">
       <TestimonialsPaid
         testimonials={[
           {
@@ -128,6 +152,15 @@ The implementation of the new Design System resulted in a **year's worth of deve
     </Section>
 
     <Section width="full">
+      {/* <Hero
+        height="fullImage"
+        image={{
+          srcMobile: "/static/img/showcases/comp_tfe03.png",
+        }}
+        headline="Find some inspiration from Techfusion for your next project"
+        textPosition="below"
+        largeHeadline
+      /> */}
       <CtaPaid
         fullWidth
         image={{

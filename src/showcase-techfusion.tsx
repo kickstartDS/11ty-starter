@@ -21,7 +21,7 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <Image
-        src="/static/img/showcases/comp_tfe01.jpg"
+        src="/static/img/showcases/comp_tfe01.png"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -56,7 +56,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_tfe02.jpg"
+        src="/static/img/showcases/comp_tfe03.png"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -99,7 +99,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_tfe03.jpg"
+        src="/static/img/showcases/comp_tfe03.png"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -124,7 +124,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_tfe04.jpg"
+        src="/static/img/showcases/comp_tfe04.png"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
