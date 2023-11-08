@@ -20,7 +20,6 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section
       spaceBefore="none"
-      style="glow"
       width="full"
       content={{
         mode: "list",
@@ -39,15 +38,13 @@ export default (props) => (
         largeHeadline
         overlay
         sub="Tailored Solutions for Seamless Digital Excellence"
-        text=""
-        textPosition="center"
+        text="**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands."
+        textPosition="below"
       />
     </Section>
 
-    <Section style="accent" width="narrow" spaceBefore="none">
-      <Text
-        text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
-      />
+    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
+      <Text text={``} />
     </Section>
 
     <Section

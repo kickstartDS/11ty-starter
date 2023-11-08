@@ -4,8 +4,6 @@ import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Text } from "@kickstartds/ds-agency/text";
-import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
-import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 
 export const data = {
