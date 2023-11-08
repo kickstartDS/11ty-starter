@@ -80,19 +80,20 @@ export default (props) => (
     </Section>
 
     <Section
-      spaceAfter="default"
-      content={{
-        mode: "list",
-      }}
       headline={{
-        text: "Result:",
+        text: "**Result:**",
+        textAlign: "center",
       }}
     >
       <Text
         text={`
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
+        align="center"
+        style="highlight"
       />
+    </Section>
+    <Section spaceBefore="none" width="wide">
       <TestimonialsPaid
         testimonials={[
           {
@@ -111,7 +112,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     <Section
       width="wide"
       inverted
-      style="horizontalGradient"
+      style="boldTransition"
       spaceBefore="small"
       spaceAfter="small"
     >

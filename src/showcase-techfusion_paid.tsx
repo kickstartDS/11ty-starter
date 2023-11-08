@@ -151,16 +151,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
       />
     </Section>
 
-    <Section width="full">
-      {/* <Hero
-        height="fullImage"
-        image={{
-          srcMobile: "/static/img/showcases/comp_tfe03.png",
-        }}
-        headline="Find some inspiration from Techfusion for your next project"
-        textPosition="below"
-        largeHeadline
-      /> */}
+    <Section spaceBefore="small" width="full">
       <CtaPaid
         fullWidth
         image={{
@@ -169,12 +160,11 @@ The implementation of the new Design System resulted in a **year's worth of deve
         }}
         backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
         headline="Find some inspiration from Techfusion for your next project"
-        largeHeadline
       />
     </Section>
 
     <Section
-      style="anchorGlow"
+      style="boldTransition"
       width="wide"
       spaceAfter="none"
       spaceBefore="none"
