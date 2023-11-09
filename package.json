@@ -7,7 +7,9 @@
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "format": "prettier --write .",
-    "test": "tsc --noEmit"
+    "test": "tsc --noEmit",
+    "husky:precommit": "npm test",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
     "@kickstartds/eleventy-plugin-kickstartds": "^0.0.5",
     "@types/node": "^18.16",
     "@types/react": "^18.2.22",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   }
