@@ -4,6 +4,7 @@ import { BlogHead } from "@kickstartds/ds-agency/blog-head";
 import { BlogAside } from "@kickstartds/ds-agency/blog-aside";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {

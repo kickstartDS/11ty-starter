@@ -2,6 +2,7 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { StatsPaid } from "@kickstartds/ds-agency/stats-paid";
 import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
@@ -17,7 +18,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section spaceBefore="none" width="full">
       <Hero
         height="fullImage"
@@ -34,19 +35,26 @@ export default (props) => (
       />
     </Section>
 
+    <Section width="full" spaceAfter="none" spaceBefore="none">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
+      />
+    </Section>
+
     <Section
       headline={{
         text: "We empower Businesses with the Tools they need to thrive in the Digital Landscape.",
         sub: "Our crystal clear mission:",
         switchOrder: true,
-        width: "default",
+        width: "wide",
         align: "center",
       }}
       content={{
         width: "default",
         align: "right",
       }}
-      style="horizontalGradient"
+      style="boldTransition"
       width="wide"
     >
       <Text
@@ -101,7 +109,7 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
         textAlign: "center",
       }}
       backgroundColor="accent"
-      style="symmetricGlow"
+      style="stagelights"
       width="wide"
     >
       <StatsPaid
@@ -133,51 +141,61 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
 
     <Section
       headline={{
-        text: "Super cool Agency Life here",
+        text: "Take a look inside our super cool Agency Life yourself",
+        sub: "Including, table soccer, italian coffee and all that fancy stuff",
+        textAlign: "center",
       }}
+      width="max"
       backgroundColor="accent"
-      width="wide"
     >
       <Gallery
         images={[
           {
-            alt: "Alt text Image 1",
-            caption: "Caption Image 1",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency, here one of our smartest developer",
+            url: "/static/img/aboutus/01.jpg",
           },
           {
-            alt: "Alt text Image 2",
-            caption: "Caption Image 2",
-            url: "/static/img/team.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/02.jpg",
           },
           {
-            alt: "Alt text Image 3",
-            caption: "Caption Image 3",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/03.jpg",
           },
           {
-            alt: "Alt text Image 4",
-            caption: "Caption Image 4",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/04.jpg",
           },
           {
-            alt: "Alt text Image 5",
-            caption: "Caption Image 5",
-            url: "/static/img/team.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/05.jpg",
           },
           {
-            alt: "Alt text Image 6",
-            caption: "Caption Image 6",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/06.jpg",
+          },
+          {
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/07.jpg",
+          },
+          {
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/08.jpg",
+          },
+          {
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/09.jpg",
           },
         ]}
         layout="largeTiles"
       />
     </Section>
 
-    <Section inverted>
+    <Section width="full" spaceBefore="none">
       <CtaPaid
         align="left"
+        backgroundColor="#06081f"
+        backgroundImage="/static/img/bg/bg_schrill.svg"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
         buttons={[
           {

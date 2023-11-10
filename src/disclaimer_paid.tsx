@@ -87,11 +87,12 @@ The other demo, built entirely using our [**open-source** modules](https://www.k
       content={{
         align: "center",
         mode: "list",
-        width: "max",
+        width: "wide",
       }}
     >
       <CtaPaid
         align="left"
+        fullWidth
         backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
         headline="By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements."
         sub="Browse the different demos and Storybook to feel it yourself"
@@ -150,7 +151,6 @@ While we've strived to provide a comprehensive demonstration, please bear in min
             desktopImageLast: false,
             mobileImageLast: false,
           },
-          ratio: "none",
           src: "/static/img/deco/contact-us-person-smart.png",
           vAlign: "center",
         }}

@@ -2,6 +2,7 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Stats } from "@kickstartds/ds-agency/stats";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -15,13 +16,29 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
-    <Section width="default">
+  <PageWrapper floatingHeader>
+    <Section width="default" style="boldTransition">
       <Cta
         align="left"
         headline="Crafting Digital Brilliance at **Systemics**"
         sub="Elevating **Headless** Experiences through Innovative **Design Systems**"
         text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
+      />
+    </Section>
+
+    <Section
+      width="wide"
+      spaceBefore="none"
+      spaceAfter="small"
+      backgroundColor="bold"
+      content={{
+        width: "wide",
+        align: "center",
+      }}
+    >
+      <Image
+        src="/static/img/deco/office-devider-dotted.png"
+        alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
       />
     </Section>
 
@@ -37,7 +54,8 @@ export default (props) => (
         width: "default",
         align: "right",
       }}
-      backgroundColor="accent"
+      backgroundColor="bold"
+      style="anchorGlow"
       width="wide"
     >
       <Text
@@ -45,7 +63,14 @@ export default (props) => (
       />
     </Section>
 
-    <Section>
+    <Section
+      headline={{
+        text: "Our Secret Sauce",
+        sub: "The technology behind all success",
+        width: "default",
+        align: "left",
+      }}
+    >
       <Text
         layout="multiColumn"
         text={`
@@ -58,21 +83,30 @@ We're not just building design systems; we're building value. By combining our e
       />
     </Section>
 
+    <Section width="full" spaceAfter="none" spaceBefore="none">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
+      />
+    </Section>
+
     <Section
       headline={{
         text: "About & History",
       }}
-      backgroundColor="accent"
+      style="accentTransition"
       width="default"
     >
       <Text
         text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
+        style="highlight"
       />
     </Section>
 
     <Section
       headline={{
         text: "Facts & Figures",
+        textAlign: "center",
       }}
       backgroundColor="accent"
       width="wide"
@@ -83,19 +117,19 @@ We're not just building design systems; we're building value. By combining our e
             number: 33,
             title: "Years of Expertise",
             description:
-              "With over 33 years in the industry, we`ve honed our craft and forged a reputation for **headless excellence** designed in systems.",
+              "With over 33 years in the industry, we`ve honed our craft and forged a reputation for headless excellence designed in systems.",
           },
           {
             number: 200,
             title: "Successful Projects",
             description:
-              "**We`re so great**, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
+              "We`re so great, that we`ve collaborated with diverse clients, across industries, delivering impactful solutions that drive results",
           },
           {
             number: 99,
             title: "Client Satisfaction",
             description:
-              "Thanks to **NPS, our client-centric** approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
+              "Thanks to NPS, our client-centric approach ensures we meet and exceed expectations, reflected in our high satisfaction rate",
           },
         ]}
       />
@@ -103,49 +137,55 @@ We're not just building design systems; we're building value. By combining our e
 
     <Section
       headline={{
-        text: "Super cool Agency Life here",
+        text: "Take a look inside our super cool Agency Life yourself",
+        sub: "Including, table soccer, italian coffee and all that fancy stuff",
       }}
-      backgroundColor="accent"
-      width="wide"
+      width="max"
     >
       <Gallery
         images={[
           {
-            alt: "Alt text Image 1",
-            caption: "Caption Image 1",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency, here one of our smartest developer",
+            url: "/static/img/aboutus/01.jpg",
           },
           {
-            alt: "Alt text Image 2",
-            caption: "Caption Image 2",
-            url: "/static/img/team.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/02.jpg",
           },
           {
-            alt: "Alt text Image 3",
-            caption: "Caption Image 3",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/03.jpg",
           },
           {
-            alt: "Alt text Image 4",
-            caption: "Caption Image 4",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/04.jpg",
           },
           {
-            alt: "Alt text Image 5",
-            caption: "Caption Image 5",
-            url: "/static/img/team.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/05.jpg",
           },
           {
-            alt: "Alt text Image 6",
-            caption: "Caption Image 6",
-            url: "/static/img/agency.png",
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/06.jpg",
+          },
+          {
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/07.jpg",
+          },
+          {
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/08.jpg",
+          },
+          {
+            alt: "An artificial view inside our cool Agency",
+            url: "/static/img/aboutus/09.jpg",
           },
         ]}
         layout="largeTiles"
       />
     </Section>
 
-    <Section inverted>
+    <Section inverted style="stagelights" backgroundColor="accent">
       <Cta
         align="left"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
