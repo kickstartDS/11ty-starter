@@ -30,7 +30,6 @@ export default (props) => (
     </Section>
 
     <Section
-      backgroundColor="accent"
       width="wide"
       content={{
         mode: "list",
@@ -40,16 +39,22 @@ export default (props) => (
       <Headline
         align="left"
         text="Open Source vs. Premium Experience"
-        sub="The two showcases in this demo represent the range of possibilities with kickstartDS. "
+        sub="The Purpose of this Demo"
         level="h2"
         style="h2"
         spaceAfter="minimum"
       />
-    </Section>
-
-    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
       <Text
         text={`
+This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
+          `}
+      />
+    </Section>
+
+    <Section width="narrow" spaceBefore="none">
+      <Text
+        text={`
+## The two showcases in this demo represent the range of possibilities with kickstartDS.
 ### Open Source Demo
 The website you are browsing is the **first demo**. It is built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrating the robust capabilities you can leverage at no cost. It's a testament to the value that kickstartDS can deliver even with zero investment.
 
@@ -61,7 +66,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="horizontalGradient" spaceBefore="small">
+    <Section style="boldTransition" spaceBefore="small">
       <Text
         text={`
 ### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
@@ -69,7 +74,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="horizontalGradient" spaceBefore="none">
+    <Section style="bold" spaceBefore="none">
       <Button
         variant="primary"
         label="Browse Premium Demo"

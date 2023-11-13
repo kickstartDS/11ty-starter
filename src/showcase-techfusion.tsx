@@ -28,7 +28,7 @@ export default (props) => (
 
     <Section
       width="wide"
-      style="anchorGlow"
+      style="symmetricGlow"
       content={{
         width: "default",
       }}
@@ -50,13 +50,13 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
     </Section>
 
     <Section
-      backgroundColor="accent"
+      backgroundColor=""
       width="full"
       spaceAfter="none"
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_tfe03.png"
+        src="/static/img/showcases/comp_tfe02.png"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -70,12 +70,12 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
     >
       <Text
         text={`
-### Our Solution: 
+### **Our Solution:** 
 We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
           `}
       />
     </Section>
-    <Section width="wide" spaceBefore="small">
+    <Section width="wide" spaceBefore="small" style="accentTransition">
       <Testimonials
         testimonials={[
           {
@@ -124,12 +124,12 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_tfe04.png"
+        src="/static/img/showcases/comp_tfe03.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
 
-    <Section width="wide" inverted>
+    <Section width="wide" inverted backgroundColor="accent" style="anchorGlow">
       <Cta
         align="center"
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."

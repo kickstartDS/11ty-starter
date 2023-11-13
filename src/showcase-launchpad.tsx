@@ -19,7 +19,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_audio01.jpg"
@@ -30,8 +30,10 @@ export default (props) => (
     <Section
       backgroundColor="accent"
       width="wide"
+      style="anchorGlow"
       content={{
         mode: "list",
+        width: "narrow",
       }}
       spaceAfter="default"
       headline={{
@@ -108,7 +110,8 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
 
     <Section
-      backgroundColor="accent"
+      backgroundColor="bold"
+      style="horizontalGradient"
       width="narrow"
       content={{
         mode: "list",
@@ -116,7 +119,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     >
       <Text
         text={`
-## **Result:** 
+## Result: 
 With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
           `}
       />

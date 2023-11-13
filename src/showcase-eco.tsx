@@ -19,7 +19,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_eco01.jpg"
@@ -139,7 +139,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       />
     </Section>
 
-    <Section inverted>
+    <Section inverted style="accent">
       <Cta
         align="left"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
