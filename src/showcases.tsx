@@ -1,7 +1,7 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
-import { LogosPaid } from "@kickstartds/ds-agency/logos-paid";
+import { Logos } from "@kickstartds/ds-agency/logos";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
@@ -151,7 +151,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         textAlign: "center",
       }}
     >
-      <LogosPaid
+      <Logos
         align="center"
         logos={[
           {

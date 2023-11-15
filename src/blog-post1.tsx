@@ -70,6 +70,7 @@ So, if you're tired of being held back by traditional CMS and are ready to take 
 **P.S. Still not convinced? Why not check out some of our [Use Cases](/showcases) for some brain-awakening insight? Or give us a call, we promise we won't bite (unlike the dragons in those fantasy novels). Trust us, we know our headless stuff!**
         `}
       />
+
       <BlogAside
         author={{
           byline: "CEO at Company",
