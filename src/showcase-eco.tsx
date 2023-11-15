@@ -139,7 +139,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       />
     </Section>
 
-    <Section inverted style="accent">
+    <Section inverted backgroundColor="accent">
       <Cta
         align="left"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "

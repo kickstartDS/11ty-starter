@@ -3,6 +3,8 @@ import { Button } from "@kickstartds/ds-agency/button";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Headline } from "@kickstartds/ds-agency/headline";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Image } from "@kickstartds/ds-agency/image";
+import { Features } from "@kickstartds/ds-agency/features";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -49,9 +51,13 @@ export default (props) => (
 This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
           `}
       />
+      <Image
+        src="/static/img/deco/disclaimer-devider-dotted.png"
+        alt="Digital art of two friendly girls standing in front of each other, playing with a huge pile of toy bricks in their center. the scene is surrounded by horizontal light stripes in motion creating a ring around them, light blue, violet and purple colors, light neon-lights, laser-light, wide-angle "
+      />
     </Section>
 
-    <Section width="narrow" spaceBefore="none">
+    <Section spaceBefore="none" width="default">
       <Text
         text={`
 ## The two showcases in this demo represent the range of possibilities with kickstartDS.
@@ -66,46 +72,69 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="boldTransition" spaceBefore="small">
-      <Text
-        text={`
-### By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.        
-        `}
+    <Section
+      style="boldTransition"
+      spaceBefore="small"
+      width="wide"
+      headline={{
+        text: "By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.",
+      }}
+    ></Section>
+
+    <Section backgroundColor="bold" spaceBefore="none">
+      <Features
+        ctas={{
+          style: "button",
+          toggle: true,
+        }}
+        features={[
+          {
+            cta: {
+              label: "Browse premium Demo",
+              target: "#",
+            },
+            icon: "star-outline",
+            text: "Compare the premium feature of the Demo-Website with enriched user experience, demonstrating the potential worth less than 2 hours of development",
+            title: "Demo with enriched Components",
+          },
+          {
+            cta: {
+              label: "Explore paid Content Module",
+              target: "https://www.kickstartds.com/content-module/",
+            },
+            icon: "share",
+            text: "Based on our Open Source library, the Content Module completes your Design Systems components by adding rich components to build beautiful content experiences",
+            title: "Feature 2",
+          },
+          {
+            cta: {
+              label: "See Open Source Components",
+              target: "https://www.kickstartds.com/modules/",
+            },
+            icon: "info",
+            text: "Texttestetete",
+            title: "This Version is purely built atop free Components",
+          },
+          {
+            cta: {
+              label: "Explore its Storybook",
+              target: "#",
+            },
+            icon: "browser",
+            text: "Browsing our Storybook will quickly show you the capabilities kickstartDS brings to you",
+            title: "Discover all Open Source Components",
+          },
+        ]}
+        layout="largeTiles"
+        style="stack"
       />
     </Section>
 
-    <Section style="bold" spaceBefore="none">
-      <Button
-        variant="primary"
-        label="Browse Premium Demo"
-        icon="chevron-right"
-        target="#"
-      />
-      <Button
-        variant="tertiary"
-        label="Explore Storybook"
-        icon="browser"
-        target="#"
-      />
-      <Button
-        variant="secondary"
-        label="See Open Source Components"
-        icon="chevron-right"
-        target="#"
-      />
-      <Button
-        variant="tertiary"
-        label="Explore open source components"
-        icon="browser"
-        target="#"
-      />
-    </Section>
-
-    <Section style="stagelights">
+    <Section>
       <Text
         text={`
-## **The Purpose of this Demo**
-This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
+## The Purpose of this **Demo**
+This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it's a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
 
 ## **Disclaimer**
 While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like Storybook or Sanity.io can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
@@ -113,7 +142,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
       />
     </Section>
 
-    <Section inverted>
+    <Section style="horizontalGradient">
       <Cta
         align="center"
         headline="Wanna know more?"
