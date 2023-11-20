@@ -93,6 +93,23 @@ export default (props) => (
         tags={["Technology", "AI"]}
         teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
       />
+      <BlogTeaser
+        author={{
+          image: "/static/img/people/author-emily.png",
+          name: "Jane Smith",
+          title: "Senior AI Researcher",
+        }}
+        date="12/30/2022"
+        headline="The Future of AI"
+        image="/static/img/agency.png"
+        link={{
+          label: "Read more",
+          url: "/blog-post-1/",
+        }}
+        readingTime="5 min read"
+        tags={["Technology", "AI"]}
+        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+      />
     </Section>
 
     <Section inverted>
