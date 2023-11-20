@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "build-netlify": "netlify build",
     "format": "prettier --write .",
     "test": "tsc --noEmit"
   },
@@ -38,6 +39,8 @@
     "@kickstartds/eleventy-plugin-kickstartds": "^0.0.5",
     "@types/node": "^18.16",
     "@types/react": "^18.2.22",
+    "netlify-cli": "^17.5.1",
+    "netlify-plugin-checklinks": "^4.1.1",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   }
