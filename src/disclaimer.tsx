@@ -1,6 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
 import { Features } from "@kickstartds/ds-agency/features";
@@ -14,7 +13,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section style="anchorGlow">
+    <Section backgroundColor="accent" style="boldTransition">
       <Cta
         align="left"
         headline="**This is a vibrant Simulation** designed to unveil the potential of **kickstartDS**"
@@ -31,32 +30,36 @@ export default (props) => (
     </Section>
 
     <Section
-      width="wide"
       content={{
         mode: "list",
       }}
+      headline={{
+        text: "Open Source vs. Premium Experience",
+        sub: "The Purpose of this Demo",
+      }}
       spaceAfter="small"
     >
-      <Headline
-        align="left"
-        text="Open Source vs. Premium Experience"
-        sub="The Purpose of this Demo"
-        level="h2"
-        style="h2"
-        spaceAfter="minimum"
-      />
       <Text
         text={`
 This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
           `}
       />
+    </Section>
+    <Section
+      width="wide"
+      content={{
+        mode: "list",
+      }}
+      spaceBefore="small"
+      spaceAfter="small"
+    >
       <Image
         src="/static/img/deco/disclaimer-devider-dotted.png"
         alt="Digital art of two friendly girls standing in front of each other, playing with a huge pile of toy bricks in their center. the scene is surrounded by horizontal light stripes in motion creating a ring around them, light blue, violet and purple colors, light neon-lights, laser-light, wide-angle "
       />
     </Section>
 
-    <Section spaceBefore="none" width="default">
+    <Section spaceBefore="none" spaceAfter="small">
       <Text
         text={`
 ## The two showcases in this demo represent the range of possibilities with kickstartDS.
@@ -75,12 +78,14 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       style="boldTransition"
       spaceBefore="small"
       width="wide"
+      content={{
+        width: "default",
+      }}
       headline={{
         text: "By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.",
+        large: true,
       }}
-    ></Section>
-
-    <Section backgroundColor="bold" spaceBefore="none">
+    >
       <Features
         ctas={{
           style: "button",

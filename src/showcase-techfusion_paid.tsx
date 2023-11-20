@@ -59,7 +59,6 @@ export default (props) => (
     </Section>
 
     <Section
-      width="default"
       spaceBefore="none"
       spaceAfter="small"
       backgroundColor="accent"
@@ -116,7 +115,6 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
     </Section>
 
     <Section
-      width="default"
       content={{
         mode: "list",
       }}

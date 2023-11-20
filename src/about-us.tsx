@@ -17,7 +17,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section width="default" style="boldTransition">
+    <Section style="boldTransition">
       <Cta
         align="left"
         headline="Crafting Digital Brilliance at **Systemics**"
@@ -95,7 +95,6 @@ We're not just building design systems; we're building value. By combining our e
         text: "About & History",
       }}
       style="accentTransition"
-      width="default"
     >
       <Text
         text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}

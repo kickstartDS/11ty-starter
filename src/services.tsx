@@ -1,6 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
 import { ImageText } from "@kickstartds/ds-agency/image-text";
@@ -22,32 +21,31 @@ export default (props) => (
       width="wide"
       content={{
         mode: "list",
+        width: "default",
       }}
-      spaceAfter="small"
+      headline={{
+        align: "left",
+        text: "**Headless** Web & **Design System** Services",
+        large: true,
+        width: "default",
+        sub: "Tailored Solutions for Seamless Digital Excellence",
+      }}
     >
-      <Headline
-        align="left"
-        text="**Headless** Web & **Design System** Services"
-        sub="Tailored Solutions for Seamless Digital Excellence"
-        level="h2"
-        style="h1"
-        spaceAfter="minimum"
-      />
-    </Section>
-
-    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
       <Text
+        style="highlight"
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
     </Section>
 
     <Section
       width="wide"
+      headline={{
+        text: "Our Services",
+      }}
       content={{
         mode: "list",
       }}
     >
-      <Headline align="left" text="Our Services" sub="" level="h2" style="h1" />
       <ImageText
         layout="beside-right"
         text={`

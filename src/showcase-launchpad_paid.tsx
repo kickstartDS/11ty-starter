@@ -60,7 +60,6 @@ export default (props) => (
 
     <Section
       backgroundColor="bold"
-      width="default"
       headline={{
         text: "Briefing:",
         textAlign: "center",
@@ -68,7 +67,6 @@ export default (props) => (
       content={{
         mode: "list",
       }}
-      spaceAfter="default"
     >
       <Text
         style="highlight"
