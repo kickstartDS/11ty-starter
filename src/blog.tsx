@@ -1,7 +1,6 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { BlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
-import { Divider } from "@kickstartds/base/lib/divider";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
