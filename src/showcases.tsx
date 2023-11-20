@@ -1,6 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { Logos } from "@kickstartds/ds-agency/logos";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
@@ -19,17 +18,12 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section
-      width="default"
-      content={{
-        mode: "list",
+      headline={{
+        text: "Transformations powered by **💗**, **Innovation** & **Design Systems**",
+        sub: "Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁",
+        large: true,
       }}
     >
-      <Headline
-        text="Transformations powered by **💗**, **Innovation** & **Design Systems**"
-        sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
-        level="h1"
-        style="h1"
-      />
       <Text
         text={`
 Welcome to our showcase of success stories. Here, you'll discover how we've partnered with diverse organizations to revolutionize their digital landscapes. From creating bespoke design systems to implementing headless CMSs, our solutions have empowered brands to streamline processes, enhance user experiences, and foster brand consistency. Dive in to explore how we've turned challenges into opportunities, and visions into reality.
@@ -123,7 +117,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section style="default" width="wide">
+    <Section width="wide">
       <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"
@@ -195,7 +189,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
             src: "/static/img/logoipsum-244.svg",
           },
         ]}
-        logosPerRow={4}
         tagline=""
       />
     </Section>

@@ -337,10 +337,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section
-      width="default"
-      content={{
-        width: "default",
-      }}
       headline={{
         text: "Headless CMS for the modern web",
         sub: "Frequently asked questions",

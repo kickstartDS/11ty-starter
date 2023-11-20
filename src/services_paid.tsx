@@ -1,6 +1,5 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
 import { ImageText } from "@kickstartds/ds-agency/image-text";
@@ -43,17 +42,15 @@ export default (props) => (
       />
     </Section>
 
-    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
-      <Text text={``} />
-    </Section>
-
     <Section
       width="wide"
+      headline={{
+        text: "Our Services",
+      }}
       content={{
         mode: "list",
       }}
     >
-      <Headline align="left" text="Our Services" sub="" level="h2" style="h1" />
       <ImageText
         layout="beside-right"
         text={`

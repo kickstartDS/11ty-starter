@@ -1,8 +1,6 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Button } from "@kickstartds/ds-agency/button";
 import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
-import { Headline } from "@kickstartds/ds-agency/headline";
 import { Text } from "@kickstartds/ds-agency/text";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 
@@ -52,20 +50,14 @@ export default (props) => (
       width="wide"
       content={{
         mode: "list",
+        width: "default",
       }}
-      spaceAfter="small"
+      headline={{
+        text: "Open Source vs. Premium Experience",
+        sub: "The two showcases in this demo represent the range of possibilities with kickstartDS. ",
+        large: true,
+      }}
     >
-      <Headline
-        align="left"
-        text="Open Source vs. Premium Experience"
-        sub="The two showcases in this demo represent the range of possibilities with kickstartDS. "
-        level="h2"
-        style="h2"
-        spaceAfter="minimum"
-      />
-    </Section>
-
-    <Section backgroundColor="accent" width="narrow" spaceBefore="none">
       <Text
         text={`
 ### Premium Experience Demo
@@ -75,7 +67,7 @@ It showcases how a modest monthly investment - akin to the cost of a developer h
 
 ### Open Source Demo
 The other demo, built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrates the robust capabilities you can leverage at no cost. It stands as a testament to the value that kickstartDS can deliver even with zero investment.
-        `}
+    `}
       />
     </Section>
 
@@ -93,36 +85,27 @@ The other demo, built entirely using our [**open-source** modules](https://www.k
       <CtaPaid
         align="left"
         fullWidth
-        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
         headline="By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements."
         sub="Browse the different demos and Storybook to feel it yourself"
-      />
-    </Section>
-
-    <Section style="horizontalGradient" spaceBefore="none">
-      <Button
-        variant="primary"
-        label="Browse Premium Demo"
-        icon="chevron-right"
-        target="/index_paid"
-      />
-      <Button
-        variant="tertiary"
-        label="Explore Storybook"
-        icon="browser"
-        target="#"
-      />
-      <Button
-        variant="secondary"
-        label="See Open Source Components"
-        icon="chevron-right"
-        target="/index"
-      />
-      <Button
-        variant="tertiary"
-        label="Explore open source components"
-        icon="browser"
-        target="#"
+        buttons={[
+          {
+            label: "Browse Premium Demo",
+            icon: "chevron-right",
+            target: "/index_paid",
+          },
+          {
+            label: "Explore Storybook",
+            icon: "browser",
+          },
+          {
+            label: "See Open Source Components",
+            icon: "chevron-right",
+          },
+          {
+            label: "Explore open source components",
+            icon: "browser",
+          },
+        ]}
       />
     </Section>
 

@@ -56,7 +56,6 @@ export default (props) => (
         mode: "list",
         gutter: "large",
       }}
-      width="default"
     >
       <BlogTeaser
         author={{

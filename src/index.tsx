@@ -1,5 +1,4 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Button } from "@kickstartds/ds-agency/button";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
@@ -124,7 +123,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section style="accentTransition" width="default">
+    <Section style="accentTransition">
       <Logos
         tagline="Orgs we've helped saving time & money"
         align="center"
@@ -342,10 +341,6 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
     </Section>
 
     <Section
-      width="default"
-      content={{
-        width: "default",
-      }}
       headline={{
         text: "Headless CMS for the modern web",
         sub: "Frequently asked questions",
