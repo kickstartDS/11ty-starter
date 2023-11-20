@@ -35,11 +35,11 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
             target: "_blank",
           },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
-          { label: "Home-Paid", href: "index_paid" },
+          { label: "Home-Paid", href: "/index_paid" },
           { label: "About-Paid", href: "/about-us_paid" },
           { label: "Services-Paid", href: "/services_paid" },
           { label: "Showcases-Paid", href: "/showcases_paid" },
-          { label: "Blog-Paid", href: "/blog_paid" },
+          // { label: "Blog-Paid", href: "/blog_paid" },
           { label: "Disclaimer-Paid", href: "/disclaimer_paid" },
         ]}
       />
