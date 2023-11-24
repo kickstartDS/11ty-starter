@@ -2,8 +2,10 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
-import { ImageText } from "@kickstartds/ds-agency/image-text";
+import { Image } from "@kickstartds/ds-agency/image";
+import { Features } from "@kickstartds/ds-agency/features";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
+import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -42,93 +44,159 @@ export default (props) => (
       />
     </Section>
 
+    <Section style="accentTransition" width="wide" spaceBefore="none">
+      <Features
+        ctas={{
+          style: "intext",
+          toggle: true,
+        }}
+        features={[
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds1",
+            },
+            icon: "move",
+            text: "",
+            title: "Design System Consulting",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds2",
+            },
+            icon: "star-outline",
+            text: "",
+            title: "Design System Creation",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds3",
+            },
+            icon: "info",
+            text: "",
+            title: "Design System Trainings",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds4",
+            },
+            icon: "browser",
+            text: "",
+            title: "Headless Websites",
+          },
+        ]}
+        layout="smallTiles"
+        style="centered"
+      />
+    </Section>
+
     <Section
-      width="wide"
+      width="default"
+      id="ds1"
       headline={{
         text: "Our Services",
       }}
-      content={{
-        mode: "list",
-      }}
     >
-      <ImageText
-        layout="beside-right"
-        text={`
-### Design System **Consulting**
-#### Bringing Clarity to Your Vision
-Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
-        `}
+      <ImageStory
         image={{
-          src: "/static/img/agency.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
+          ratio: "none",
+          src: "/static/img/deco/ds-services-01.png",
+          alt: "A group of designers having a creative meeting in a stylish modern room in a skyscraper, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, ",
         }}
+        headline="Design System **Consulting**"
+        layout="textLeft"
+        sub="Bringing Clarity to Your Vision"
+        text="
+Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. 
+
+We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. 
+
+**Our goal is to empower you** with the knowledge and direction you need to create seamless, consistent, and captivating user experiences."
+        textAlign="left"
+      />
+    </Section>
+
+    <Section width="default" id="ds2">
+      <ImageStory
+        image={{
+          ratio: "none",
+          src: "/static/img/deco/ds-services-02.png",
+          alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
+        }}
+        headline="Design System **Creation**"
+        layout="imageLeft"
+        sub="From Vision to Reality"
+        text="
+Our Design System Creation service is where ideas materialize into tangible results. 
+
+We take your vision, weave it with industry best practices, and craft a comprehensive design system. 
+
+It's not just about visual consistency – it's about **empowering your brand to communicate effectively** and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve."
+        textAlign="left"
+      />
+    </Section>
+
+    <Section width="default" id="ds3">
+      <ImageStory
+        image={{
+          ratio: "none",
+          src: "/static/img/deco/ds-services-03.png",
+          alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
+        }}
+        headline="Design System **Trainings**"
+        largeHeadline
+        layout="textLeft"
+        sub="Empower Your Digital Team"
+        text="
+Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. 
+
+Our training equips your digital teams with the skills they need to harness your design system effectively. 
+
+By promoting collaboration, shared understanding, and continuous learning, **we ensure your design system remains an evolving cornerstone of your digital success.**"
+        textAlign="left"
+      />
+    </Section>
+
+    <Section width="default" id="ds4" style="boldTransition">
+      <ImageStory
+        image={{
+          ratio: "none",
+          src: "/static/img/deco/ds-services-04.png",
+          alt: "A view inside a web developer agency, with some busy people, working in front of a glass whiteboard, layout user interface components, like a film still from blade runner, lens-flare effect, Cinematic, Neon Lights, website design, Neon lighting, lens-flare-effect",
+        }}
+        headline="**Headless** Websites"
+        largeHeadline
+        layout="imageLeft"
+        sub="Unleash the Power of Headless Architecture"
+        text="
+Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. 
+
+Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. 
+
+our content distribution becomes dynamic and responsive, tailored to your users' preferences, making their **journey seamless across devices and platforms.**"
+        textAlign="left"
       />
     </Section>
 
     <Section
-      width="wide"
-      content={{
-        mode: "list",
-      }}
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+      backgroundColor="bold"
     >
-      <ImageText
-        layout="beside-left"
-        text={`
-### Design System **Creation**
-#### From Vision to Reality
-Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system. It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
-        `}
-        image={{
-          src: "/static/img/agency.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
-        }}
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
       />
     </Section>
 
     <Section
-      width="wide"
-      content={{
-        mode: "list",
-      }}
-    >
-      <ImageText
-        layout="beside-right"
-        text={`
-### Design System **Trainings**
-#### Empower Your Digital Team
-Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
-          `}
-        image={{
-          src: "/static/img/agency.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
-        }}
-      />
-    </Section>
-
-    <Section
-      width="wide"
-      backgroundColor="accent"
-      content={{
-        mode: "list",
-      }}
-    >
-      <ImageText
-        layout="beside-left"
-        text={`
-### **Headless** Websites
-#### Unleash the Power of Headless Architecture
-Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. Your content distribution becomes dynamic and responsive, tailored to your users' preferences, making their journey seamless across devices and platforms.
-        `}
-        image={{
-          src: "/static/img/agency.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
-        }}
-      />
-    </Section>
-
-    <Section
+      backgroundColor="bold"
       headline={{
-        text: "**Our Methodology**",
+        text: "Our Methodology",
         sub: "Leveraging Open Source Technology to Minimize Investment and Maximize Speed",
       }}
       content={{
@@ -173,7 +241,7 @@ Discover the future of digital experiences with our Headless Websites service. B
         ]}
       />
       <Text
-        text={`In summary, [**kickstartDS**]() is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
+        text={`In summary, [**kickstartDS**](https://www.kickstartds.com) is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
       />
     </Section>
 

@@ -3,6 +3,7 @@ import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Text } from "@kickstartds/ds-agency/text";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
+import { Button } from "@kickstartds/ds-agency/components/button/index.js";
 
 export const data = {
   title:
@@ -21,18 +22,10 @@ export default (props) => (
       }}
     >
       <VideoCurtain
-        buttons={[
-          {
-            label: "Talk with us!",
-            target: "https://app.lemcal.com/@daniel-ley",
-            icon: "contact",
-          },
-        ]}
         headline="This is a vibrant Simulation designed to unveil the potential of kickstartDS"
-        largeHeadline
         overlay
         sub="A Showcase as testament to the transformative potential of kickstartDS-driven Headless Websites and Design Systems"
-        text="Spoiler: if you are looking for an Agency to serve your Headless or Design System needs - contact us, we are real experts!"
+        text=""
         textPosition="center"
         video={{
           srcDesktop:
@@ -46,7 +39,34 @@ export default (props) => (
     </Section>
 
     <Section
+      backgroundColor="bold"
+      width="narrow"
+      style="horizontalGradient"
+      content={{
+        mode: "list",
+        align: "center",
+      }}
+      buttons={[
+        {
+          label: "Contact us",
+          target: "https://app.lemcal.com/@daniel-ley",
+          icon: "person",
+        },
+      ]}
+    >
+      <Text
+        align="center"
+        style="highlight"
+        text={`
+### Spoiler! 
+
+Although this is just a demo website, if you are looking for an Agency to serve your Headless or Design System needs, contact us, **we are real experts!**`}
+      />
+    </Section>
+
+    <Section
       backgroundColor="accent"
+      style="symmetricGlow"
       width="wide"
       content={{
         mode: "list",
@@ -72,14 +92,14 @@ The other demo, built entirely using our [**open-source** modules](https://www.k
     </Section>
 
     <Section
-      style="horizontalGradient"
+      backgroundColor="bold"
       spaceBefore="none"
       spaceAfter="small"
       width="full"
       content={{
         align: "center",
         mode: "list",
-        width: "wide",
+        width: "default",
       }}
     >
       <CtaPaid
@@ -89,21 +109,19 @@ The other demo, built entirely using our [**open-source** modules](https://www.k
         sub="Browse the different demos and Storybook to feel it yourself"
         buttons={[
           {
-            label: "Browse Premium Demo",
+            label: "Switch to free Demo",
             icon: "chevron-right",
-            target: "/index_paid",
+            target: "/index",
           },
           {
-            label: "Explore Storybook",
+            label: "Browse paid Module",
             icon: "browser",
+            target: "#",
           },
           {
-            label: "See Open Source Components",
+            label: " Explore Open Source Components",
             icon: "chevron-right",
-          },
-          {
-            label: "Explore open source components",
-            icon: "browser",
+            target: "#",
           },
         ]}
       />
