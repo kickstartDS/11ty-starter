@@ -49,12 +49,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       />
     </Section>
 
-    <Section
-      backgroundColor=""
-      width="full"
-      spaceAfter="none"
-      spaceBefore="none"
-    >
+    <Section width="full" spaceAfter="none" spaceBefore="none">
       <Image
         src="/static/img/showcases/comp_tfe02.png"
         alt="Fake Showcase Mockup Image"
