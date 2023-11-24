@@ -12,20 +12,38 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper floatingHeader>
-    <Section backgroundColor="accent" style="boldTransition">
+  <PageWrapper>
+    <Section style="boldTransition">
       <Cta
         align="left"
         headline="**This is a vibrant Simulation** designed to unveil the potential of **kickstartDS**"
         sub="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
-        text={`Spoiler: if you are looking for an Agency to serve your Headless or Design System needs - contact us, we are real experts!`}
+      />
+    </Section>
+
+    <Section
+      backgroundColor="bold"
+      width="default"
+      style="horizontalGradient"
+      content={{
+        mode: "list",
+        align: "center",
+      }}
+    >
+      <Cta
+        align="center"
         buttons={[
           {
-            label: "Talk to us!",
+            disabled: false,
+            label: "Contact us",
             target: "https://app.lemcal.com/@daniel-ley",
-            icon: "contact",
+            icon: "person",
+            variant: "primary",
           },
         ]}
+        headline="Spoiler!"
+        largeHeadline={false}
+        sub="Although this is just a demo website, if you are looking for an Agency to serve your Headless or Design System needs, contact us, we are real experts!"
       />
     </Section>
 
@@ -55,7 +73,7 @@ This demo is intended to provide a firsthand experience of the capabilities of [
     >
       <Image
         src="/static/img/deco/disclaimer-devider-dotted.png"
-        alt="Digital art of two friendly girls standing in front of each other, playing with a huge pile of toy bricks in their center. the scene is surrounded by horizontal light stripes in motion creating a ring around them, light blue, violet and purple colors, light neon-lights, laser-light, wide-angle "
+        alt="Digital art of two friendly girls standing in front of each other, playing with a huge pile of toy bricks in their center. the scene is surrounded by horizontal light stripes in motion creating a ring around them, light blue, violet and purple colors, light neon-lights, laser-light, wide-angle"
       />
     </Section>
 
@@ -82,8 +100,10 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
         width: "default",
       }}
       headline={{
-        text: "By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements.",
+        text: "Comparing both demos, you will **gain** a clear understanding of the **value** proposition offered by **kickstartDS**",
+        sub: "From an Open Source solution with paid enhancements",
         large: true,
+        switchOrder: true,
       }}
     >
       <Features
@@ -94,30 +114,12 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
         features={[
           {
             cta: {
-              label: "Browse premium Demo",
-              target: "#",
-            },
-            icon: "star-outline",
-            text: "Compare the premium feature of the Demo-Website with enriched user experience, demonstrating the potential worth less than 2 hours of development",
-            title: "Demo with enriched Components",
-          },
-          {
-            cta: {
-              label: "Explore paid Content Module",
-              target: "https://www.kickstartds.com/content-module/",
-            },
-            icon: "share",
-            text: "Based on our Open Source library, the Content Module completes your Design Systems components by adding rich components to build beautiful content experiences",
-            title: "Feature 2",
-          },
-          {
-            cta: {
-              label: "See Open Source Components",
+              label: "Learn more on kickstartDS",
               target: "https://www.kickstartds.com/modules/",
             },
             icon: "info",
-            text: "Texttestetete",
-            title: "This Version is purely built atop free Components",
+            text: "Which is built atop the Open Source Components, serving as the baseline for this Demo Design System",
+            title: "You currently browse the free demo",
           },
           {
             cta: {
@@ -125,8 +127,26 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
               target: "#",
             },
             icon: "browser",
-            text: "Browsing our Storybook will quickly show you the capabilities kickstartDS brings to you",
+            text: "Browsing our Storybook will quickly show you the capabilities kickstartDS has to offer",
             title: "Discover all Open Source Components",
+          },
+          {
+            cta: {
+              label: "Switch to premium Demo",
+              target: "/index_paid",
+            },
+            icon: "star",
+            text: "Compare the premium features of the demo-website with enriched user experience, demonstrating the potential worth less than 2 hours of development",
+            title: "Demo with paid Components",
+          },
+          {
+            cta: {
+              label: "Explore paid Content Module",
+              target: "https://www.kickstartds.com/content-module/",
+            },
+            icon: "share",
+            text: "Based on our Open Source Core, the Content Module completes your Design Systems components by adding rich components to build beautiful content experiences",
+            title: "Value-add: Content Module",
           },
         ]}
         layout="largeTiles"
@@ -134,7 +154,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section>
+    <Section style="boldTransition">
       <Text
         text={`
 ## The Purpose of this **Demo**
