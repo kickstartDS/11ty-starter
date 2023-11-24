@@ -54,7 +54,7 @@ export default (props) => (
 Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
         `}
         image={{
-          src: "/static/img/agency.png",
+          src: "/static/img/close-up-young-business-team-working.png",
           alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
         }}
       />
@@ -74,7 +74,7 @@ Design System Consulting at Systemics is your compass in the world of design coh
 Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system. It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
         `}
         image={{
-          src: "/static/img/agency.png",
+          src: "/static/img/close-up-young-business-team-working.png",
           alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
         }}
       />
@@ -94,7 +94,7 @@ Our Design System Creation service is where ideas materialize into tangible resu
 Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
           `}
         image={{
-          src: "/static/img/agency.png",
+          src: "/static/img/close-up-young-business-team-working.png",
           alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
         }}
       />
@@ -115,7 +115,7 @@ Invest in your team's growth with our Design System Trainings. We believe that t
 Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. Your content distribution becomes dynamic and responsive, tailored to your users' preferences, making their journey seamless across devices and platforms.
         `}
         image={{
-          src: "/static/img/agency.png",
+          src: "/static/img/close-up-young-business-team-working.png",
           alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
         }}
       />

@@ -32,7 +32,7 @@ export default (props) => (
           indent: "none",
           src: "https://picsum.photos/seed/kdsvisual/640/270",
           srcDesktop: "/static/img/hero-below.png",
-          srcMobile: "/static/img/hero.png",
+          srcMobile: "/static/img/close-up-young-business-team-working.png",
           srcTablet: "/static/img/hero-below.png",
         }}
         largeHeadline
@@ -134,7 +134,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section style="default" width="wide">
+    <Section width="wide">
       <CtaPaid
         align="left"
         headline="Ready to embark on a transformative digital journey?"

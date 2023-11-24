@@ -39,7 +39,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1",
@@ -65,7 +65,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="The Future of AI"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1/",
@@ -82,7 +82,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="The Future of AI"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1/",
@@ -99,7 +99,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="The Future of AI"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1/",
@@ -125,7 +125,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="The Future of AI"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1/",
@@ -142,7 +142,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="The Future of AI"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1/",
@@ -159,7 +159,7 @@ export default (props) => (
         }}
         date="12/30/2022"
         headline="The Future of AI"
-        image="/static/img/agency.png"
+        image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
           url: "/blog-post-1/",
