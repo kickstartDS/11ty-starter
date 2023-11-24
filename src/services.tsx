@@ -4,6 +4,7 @@ import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
 import { Features } from "@kickstartds/ds-agency/features";
 import { ImageText } from "@kickstartds/ds-agency/image-text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -38,7 +39,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section backgroundColor="accent" width="wide">
+    <Section width="wide">
       <Features
         ctas={{
           style: "link",
@@ -87,11 +88,20 @@ export default (props) => (
       />
     </Section>
 
+    <Section width="full" spaceAfter="none" spaceBefore="none">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
+      />
+    </Section>
+
     <Section
       width="wide"
       id="ds1"
       headline={{
         text: "Our Services",
+        sub: "Tailored Solutions for Seamless Digital Excellence",
+        align: "center",
       }}
       content={{
         mode: "list",

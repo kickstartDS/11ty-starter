@@ -38,7 +38,6 @@ export default (props) => (
         }}
         largeHeadline
         overlay
-        sub="Tailored Solutions for Seamless Digital Excellence"
         text="**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands."
         textPosition="below"
       />
@@ -93,11 +92,20 @@ export default (props) => (
       />
     </Section>
 
+    <Section width="full" spaceAfter="none" spaceBefore="none">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
+      />
+    </Section>
+
     <Section
       width="default"
       id="ds1"
       headline={{
         text: "Our Services",
+        align: "center",
+        sub: "Tailored Solutions for Seamless Digital Excellence",
       }}
     >
       <ImageStory
