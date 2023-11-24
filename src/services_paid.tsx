@@ -43,7 +43,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section style="accentTransition" width="wide" spaceBefore="none">
+    <Section width="wide" spaceBefore="none">
       <Features
         ctas={{
           style: "intext",
