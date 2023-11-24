@@ -39,7 +39,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section width="wide">
+    <Section width="wide" backgroundColor="accent">
       <Features
         ctas={{
           style: "link",
@@ -85,13 +85,6 @@ export default (props) => (
         ]}
         layout="smallTiles"
         style="besideLarge"
-      />
-    </Section>
-
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/bg/bg_divder-blue.svg"
-        alt="Just a divider image, makes no sense, just for deco"
       />
     </Section>
 
@@ -190,6 +183,13 @@ Our experts leverage headless CMS architecture to give you unparalleled flexibil
           src: "/static/img/deco/ds-services-04.png",
           alt: "A view inside a web developer agency, with some busy people, working in front of a glass whiteboard, layout user interface components, like a film still from blade runner, lens-flare effect, Cinematic, Neon Lights, website design, Neon lighting, lens-flare-effect",
         }}
+      />
+    </Section>
+
+    <Section width="full" spaceAfter="none" spaceBefore="none" backgroundColor="bold">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
       />
     </Section>
 
