@@ -240,7 +240,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section backgroundColor="bold" width="full">
+    <Section width="full">
       <CtaPaid
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         fullWidth

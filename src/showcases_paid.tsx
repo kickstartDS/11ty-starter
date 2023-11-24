@@ -3,8 +3,8 @@ import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { Hero } from "@kickstartds/ds-agency/hero";
 import { LogosPaid } from "@kickstartds/ds-agency/logos-paid";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 
 export const data = {
   title:
@@ -31,9 +31,9 @@ export default (props) => (
           alt: undefined,
           indent: "none",
           src: "https://picsum.photos/seed/kdsvisual/640/270",
-          srcDesktop: "/static/img/hero-below.png",
+          srcDesktop: "/static/img/close-up-young-business-team-working.png",
           srcMobile: "/static/img/close-up-young-business-team-working.png",
-          srcTablet: "/static/img/hero-below.png",
+          srcTablet: "/static/img/close-up-young-business-team-working.png",
         }}
         largeHeadline
         overlay
@@ -46,89 +46,44 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       />
     </Section>
 
-    <Section
-      backgroundColor="accent"
-      width="wide"
-      content={{
-        mode: "list",
-      }}
-      headline={{
-        text: "**01**",
-      }}
-    >
-      <Image
-        src="/static/img/showcases/comp_audio01.jpg"
-        alt="Huge Logo of that fake reference customer"
-      />
-      <CtaPaid
-        align="left"
-        buttons={[
+    <Section width="max">
+      <Mosaic
+        tiles={[
           {
-            label: "See Showcase",
-            icon: "chevron-right",
-            target: "/showcase-launchpad_paid",
+            headline: "Speed and Scale",
+            sub: "LaunchPad Audio Innovations",
+            text: "Explore how we empowered LaunchPad, an AI-powered digital audio controller startup, with rapid landing page creation for market testing and a robust foundation for future growth.",
+            image: "/static/img/showcases/preview_audio.png",
+            backgroundColor: "#0101A3",
+            button: {
+              label: "See showcase",
+              icon: "chevron-right",
+              toggle: true,
+            },
           },
-        ]}
-        headline="Speed and Scale"
-        largeHeadline
-        sub="LaunchPad Audio Innovations"
-        text="Explore how we empowered LaunchPad, an AI-powered digital audio controller startup, with rapid landing page creation for market testing and a robust foundation for future growth."
-        fullWidth
-      />
-    </Section>
-
-    <Section
-      width="wide"
-      content={{
-        mode: "list",
-      }}
-      headline={{
-        text: "**02**",
-      }}
-    >
-      <Image
-        src="/static/img/showcases/comp_eco01.jpg"
-        alt="Huge Logo of that fake reference customer"
-      />
-      <CtaPaid
-        align="left"
-        headline="Savigating the Headless Frontier for Brand Consistency"
-        sub="EcoTech Solutions"
-        text={`See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time.`}
-        buttons={[
           {
-            label: "See Showcase",
-            icon: "chevron-right",
-            target: "/showcase-eco_paid",
+            headline: "Savigating the Headless Frontier for Brand Consistency",
+            sub: "EcoTech Solutions",
+            text: "See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time.",
+            image: "/static/img/showcases/preview_eco.png",
+            backgroundColor: "#21331E",
+            button: {
+              label: "See showcase",
+              icon: "chevron-right",
+              toggle: true,
+            },
           },
-        ]}
-      />
-    </Section>
-
-    <Section
-      backgroundColor="accent"
-      width="wide"
-      content={{
-        mode: "list",
-      }}
-      headline={{
-        text: "**03**",
-      }}
-    >
-      <Image
-        src="/static/img/showcases/comp_tfe01.jpg"
-        alt="Huge Logo of that fake reference customer"
-      />
-      <CtaPaid
-        align="left"
-        headline="A Digital Transformation Love Story"
-        sub="TechFusion Enterprises"
-        text={`Discover how we revolutionized TechFusion Enterprises' digital landscape by developing a tailored Design System. Our innovative approach saved them a year's worth of development time and harmonized their user experiences across all platforms.`}
-        buttons={[
           {
-            label: "See Showcase",
-            icon: "chevron-right",
-            target: "/showcase-techfusion_paid",
+            headline: "A Digital Transformation Love Story",
+            sub: "TechFusion Enterprises",
+            text: "Discover how we revolutionized TechFusion Enterprises' digital landscape by developing a tailored Design System. Our innovative approach saved them a year's worth of development time and harmonized their user experiences across all platforms.",
+            image: "/static/img/showcases/preview_tfe.png",
+            backgroundColor: "#670A82",
+            button: {
+              label: "See showcase",
+              icon: "chevron-right",
+              toggle: true,
+            },
           },
         ]}
       />
