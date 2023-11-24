@@ -2,7 +2,9 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Features } from "@kickstartds/ds-agency/features";
 import { ImageText } from "@kickstartds/ds-agency/image-text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -17,7 +19,7 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section
-      backgroundColor="accent"
+      style="accentTransition"
       width="wide"
       content={{
         mode: "list",
@@ -37,10 +39,62 @@ export default (props) => (
       />
     </Section>
 
+    <Section width="wide" backgroundColor="accent">
+      <Features
+        ctas={{
+          style: "link",
+          toggle: true,
+        }}
+        features={[
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds1",
+            },
+            icon: "move",
+            text: "",
+            title: "Design System Consulting",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds2",
+            },
+            icon: "star-outline",
+            text: "",
+            title: "Design System Creation",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds3",
+            },
+            icon: "info",
+            text: "",
+            title: "Design System Trainings",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "#ds4",
+            },
+            icon: "browser",
+            text: "",
+            title: "Headless Websites",
+          },
+        ]}
+        layout="smallTiles"
+        style="besideLarge"
+      />
+    </Section>
+
     <Section
       width="wide"
+      id="ds1"
       headline={{
         text: "Our Services",
+        sub: "Tailored Solutions for Seamless Digital Excellence",
+        align: "center",
       }}
       content={{
         mode: "list",
@@ -51,17 +105,20 @@ export default (props) => (
         text={`
 ### Design System **Consulting**
 #### Bringing Clarity to Your Vision
-Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
+Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. 
+
+We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
         `}
         image={{
-          src: "/static/img/close-up-young-business-team-working.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
+          src: "/static/img/deco/ds-services-01.png",
+          alt: "A group of designers having a creative meeting in a stylish modern room in a skyscraper, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, ",
         }}
       />
     </Section>
 
     <Section
       width="wide"
+      id="ds2"
       content={{
         mode: "list",
       }}
@@ -71,17 +128,20 @@ Design System Consulting at Systemics is your compass in the world of design coh
         text={`
 ### Design System **Creation**
 #### From Vision to Reality
-Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system. It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
+Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system. 
+
+It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
         `}
         image={{
-          src: "/static/img/close-up-young-business-team-working.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
+          src: "/static/img/deco/ds-services-02.png",
+          alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
         }}
       />
     </Section>
 
     <Section
       width="wide"
+      id="ds3"
       content={{
         mode: "list",
       }}
@@ -91,18 +151,21 @@ Our Design System Creation service is where ideas materialize into tangible resu
         text={`
 ### Design System **Trainings**
 #### Empower Your Digital Team
-Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
+Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. 
+
+Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
           `}
         image={{
-          src: "/static/img/close-up-young-business-team-working.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
+          src: "/static/img/deco/ds-services-03.png",
+          alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
         }}
       />
     </Section>
 
     <Section
       width="wide"
-      backgroundColor="accent"
+      id="ds4"
+      style="boldTransition"
       content={{
         mode: "list",
       }}
@@ -112,18 +175,28 @@ Invest in your team's growth with our Design System Trainings. We believe that t
         text={`
 ### **Headless** Websites
 #### Unleash the Power of Headless Architecture
-Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. Your content distribution becomes dynamic and responsive, tailored to your users' preferences, making their journey seamless across devices and platforms.
+Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. 
+
+Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. Your content distribution becomes dynamic and responsive, tailored to your users' preferences, making their journey seamless across devices and platforms.
         `}
         image={{
-          src: "/static/img/close-up-young-business-team-working.png",
-          alt: "Just a decorative illustration of nothing special and very generic to let this demo website shine",
+          src: "/static/img/deco/ds-services-04.png",
+          alt: "A view inside a web developer agency, with some busy people, working in front of a glass whiteboard, layout user interface components, like a film still from blade runner, lens-flare effect, Cinematic, Neon Lights, website design, Neon lighting, lens-flare-effect",
         }}
       />
     </Section>
 
+    <Section width="full" spaceAfter="none" spaceBefore="none" backgroundColor="bold">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
+      />
+    </Section>
+
     <Section
+      backgroundColor="bold"
       headline={{
-        text: "**Our Methodology**",
+        text: "Our Methodology",
         sub: "Leveraging Open Source Technology to Minimize Investment and Maximize Speed",
       }}
       content={{
@@ -168,7 +241,7 @@ Discover the future of digital experiences with our Headless Websites service. B
         ]}
       />
       <Text
-        text={`In summary, [**kickstartDS**]() is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
+        text={`In summary, [**kickstartDS**](https://www.kickstartds.com) is an ideal technology for organizations looking to create a design system that is efficient, agile, scalable, and consistent. By leveraging this technology, organizations can streamline their design processes, enhance collaboration, and ultimately create a more compelling and cohesive digital presence.`}
       />
     </Section>
 
