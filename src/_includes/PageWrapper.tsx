@@ -9,16 +9,37 @@ import { Footer } from "@kickstartds/ds-agency/footer";
 
 export const PageWrapper = ({ floatingHeader = false, children }) => {
   const data = useEleventy();
-  const eleventyNav = navigation.find(data.collections.all);
-  const headerMainNav = eleventyNav.map(({ url, title }) => ({
-    href: url,
-    label: title,
-  }));
+  // const eleventyNav = navigation.find(data.collections.all);
+  // const headerMainNav = eleventyNav.map(({ url, title }) => ({
+  //   href: url,
+  //   label: title,
+  // }));
   const gitHubPageUrl = `https://github.com/kickstartDS/11ty-starter/blob/main/${data.page.inputPath}`;
 
   return (
     <Page>
-      <Header logo={data.logo} floating={floatingHeader} />
+      <Header
+        logo={data.logo}
+        floating={floatingHeader}
+        navItems={[
+          { label: "Home", href: "/" },
+          { label: "About", href: "/about-us" },
+          { label: "Services", href: "/services" },
+          { label: "Showcases", href: "/showcases" },
+          { label: "Blog", href: "/blog" },
+          { label: "Disclaimer", href: "/disclaimer" },
+          {
+            label: "Storybook",
+            href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+          },
+          { label: "Page Source", href: gitHubPageUrl },
+          { label: "Home-Paid", href: "/index_paid" },
+          { label: "About-Paid", href: "/about-us_paid" },
+          { label: "Services-Paid", href: "/services_paid" },
+          { label: "Showcases-Paid", href: "/showcases_paid" },
+          { label: "Disclaimer-Paid", href: "/disclaimer_paid" },
+        ]}
+      />
       {children}
       <Footer
         logo={data.logo}
@@ -39,7 +60,6 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
           { label: "About-Paid", href: "/about-us_paid" },
           { label: "Services-Paid", href: "/services_paid" },
           { label: "Showcases-Paid", href: "/showcases_paid" },
-          // { label: "Blog-Paid", href: "/blog_paid" },
           { label: "Disclaimer-Paid", href: "/disclaimer_paid" },
         ]}
       />
