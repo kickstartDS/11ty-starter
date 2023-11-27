@@ -69,6 +69,7 @@ export default (props) => (
               label: "See showcase",
               icon: "chevron-right",
               toggle: true,
+              target: "/showcase-launchpad_paid",
             },
           },
           {
@@ -81,6 +82,7 @@ export default (props) => (
               label: "See showcase",
               icon: "chevron-right",
               toggle: true,
+              target: "/showcase-eco_paid",
             },
           },
           {
@@ -93,6 +95,7 @@ export default (props) => (
               label: "See showcase",
               icon: "chevron-right",
               toggle: true,
+              target: "/showcase-techfusion_paid",
             },
           },
         ]}
