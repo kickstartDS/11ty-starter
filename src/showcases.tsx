@@ -18,6 +18,8 @@ export const data = {
 export default (props) => (
   <PageWrapper>
     <Section
+      style="accentTransition"
+      spaceAfter="none"
       headline={{
         text: "Transformations powered by **💗**, **Innovation** & **Design Systems**",
         sub: "Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁",
