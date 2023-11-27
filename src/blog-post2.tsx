@@ -21,6 +21,10 @@ export default (props) => (
       width="wide"
       buttons={[
         {
+          label: "Back to overview",
+          target: "/blog",
+        },
+        {
           label: "Next article",
           target: "/blog-post1",
           icon: "chevron-left",
