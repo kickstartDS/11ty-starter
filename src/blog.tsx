@@ -1,6 +1,7 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { BlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { text } from "stream/consumers";
 
@@ -41,14 +42,14 @@ export default (props) => (
           name: "Jane Smith",
           title: "Headless Evangelist and DevRel for real",
         }}
-        date="12/30/2024"
+        date="02/02/2024"
         headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
-        image="/static/img/close-up-young-business-team-working.png"
+        image="/static/img/blog/2150710000.jpg"
         link={{
           label: "Read more",
           url: "/blog-post1/",
         }}
-        readingTime="5 min read"
+        readingTime="6 min read"
         tags={["Headless", "CMS"]}
         teaserText="Dive into the exciting world of headless architecture with Systemics. This article explores our Headless Websites service, a playground of innovation and creativity for brands seeking to redefine their digital journey. Discover how our experts leverage headless CMS architecture to provide unparalleled flexibility while maintaining design integrity. We make content distribution dynamic and responsive, tailoring it to users' preferences for a seamless journey across devices and platforms."
       />
@@ -64,59 +65,50 @@ export default (props) => (
     >
       <BlogTeaser
         author={{
-          image: "/static/img/people/author-emily.png",
-          name: "Jane Smith",
-          title: "Senior AI Researcher",
+          image: "/static/img/people/author-blog-male.png",
+          name: "Jon Greyjoy",
+          title: "Design System Expert",
         }}
-        date="12/30/2022"
-        headline="The Future of AI"
-        image="/static/img/close-up-young-business-team-working.png"
+        date="01/24/2024"
+        headline="Mastering the Art of Design Systems with Systemics: A Journey from Vision to Reality"
+        image="/static/img/blog/2150714059.jpg"
         link={{
           label: "Read more",
-          url: "/blog-post-1/",
+          url: "/blog-post2/",
         }}
-        readingTime="5 min read"
-        tags={["Technology", "AI"]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+        readingTime="8 min read"
+        tags={["Design System", "Frontend", "Services"]}
+        teaserText="In this enlightening article, we delve into how Systemics, your go-to Design System agency, brings clarity and coherence to your brand's digital presence. We discuss our unique approach to Design System Consulting, where we align your vision with actionable strategies for seamless and captivating user experiences. Learn how we transform ideas into tangible results with our Design System Creation service, empowering your brand to communicate effectively across digital platforms."
       />
       <BlogTeaser
         author={{
-          image: "/static/img/people/author-emily.png",
+          image: "/static/img/people/author-blog-female.png",
           name: "Jane Smith",
-          title: "Senior AI Researcher",
+          title: "Headless Evangelist and DevRel for real",
         }}
-        date="12/30/2022"
-        headline="The Future of AI"
-        image="/static/img/close-up-young-business-team-working.png"
+        date="01/18/2024"
+        headline="3.	Investing in Digital Excellence: Systemics' Design System Trainings"
+        image="/static/img/blog/2150849213.jpg"
         link={{
           label: "Read more",
-          url: "/blog-post-1/",
+          url: "/blog-post3/",
         }}
-        readingTime="5 min read"
-        tags={["Technology", "AI"]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+        readingTime="7 min read"
+        tags={["Design System", "Learning", "Training"]}
+        teaserText="Investing in your digital team's growth is crucial for sustainable success. In this article, we highlight Systemics' Design System Trainings, designed to equip your team with the skills they need to harness your design system effectively. Understand how our trainings promote collaboration, shared understanding, and continuous learning, ensuring your design system remains an evolving cornerstone of your digital success."
       />
-      <BlogTeaser
-        author={{
-          image: "/static/img/people/author-emily.png",
-          name: "Jane Smith",
-          title: "Senior AI Researcher",
-        }}
-        date="12/30/2022"
-        headline="The Future of AI"
-        image="/static/img/close-up-young-business-team-working.png"
-        link={{
-          label: "Read more",
-          url: "/blog-post-1/",
-        }}
-        readingTime="5 min read"
-        tags={["Technology", "AI"]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+    </Section>
+
+    <Section width="full" spaceAfter="none" spaceBefore="none">
+      <Image
+        src="/static/img/bg/bg_divder-blue.svg"
+        alt="Just a divider image, makes no sense, just for deco"
       />
     </Section>
 
     <Section
       spaceBefore="small"
+      width="wide"
       headline={{
         text: "More articles",
         align: "center",
@@ -124,54 +116,54 @@ export default (props) => (
     >
       <BlogTeaser
         author={{
-          image: "/static/img/people/author-emily.png",
+          image: "/static/img/people/author-blog-female.png",
           name: "Jane Smith",
-          title: "Senior AI Researcher",
+          title: "Headless Evangelist and DevRel for real",
         }}
-        date="12/30/2022"
-        headline="The Future of AI"
-        image="/static/img/close-up-young-business-team-working.png"
+        date="02/02/2024"
+        headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
+        image="/static/img/blog/2150710000.jpg"
         link={{
           label: "Read more",
-          url: "/blog-post-1/",
+          url: "/blog-post1/",
         }}
-        readingTime="5 min read"
-        tags={["Technology", "AI"]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+        readingTime="6 min read"
+        tags={["Headless", "CMS"]}
+        teaserText="Dive into the exciting world of headless architecture with Systemics. This article explores our Headless Websites service, a playground of innovation and creativity for brands seeking to redefine their digital journey. Discover how our experts leverage headless CMS architecture to provide unparalleled flexibility while maintaining design integrity. We make content distribution dynamic and responsive, tailoring it to users' preferences for a seamless journey across devices and platforms."
       />
       <BlogTeaser
         author={{
-          image: "/static/img/people/author-emily.png",
-          name: "Jane Smith",
-          title: "Senior AI Researcher",
+          image: "/static/img/people/author-blog-male.png",
+          name: "Jon Greyjoy",
+          title: "Design System Expert",
         }}
-        date="12/30/2022"
-        headline="The Future of AI"
-        image="/static/img/close-up-young-business-team-working.png"
+        date="01/24/2024"
+        headline="Mastering the Art of Design Systems with Systemics: A Journey from Vision to Reality"
+        image="/static/img/blog/2150714059.jpg"
         link={{
           label: "Read more",
-          url: "/blog-post-1/",
+          url: "/blog-post2/",
         }}
-        readingTime="5 min read"
-        tags={["Technology", "AI"]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+        readingTime="8 min read"
+        tags={["Design System", "Frontend", "Services"]}
+        teaserText="In this enlightening article, we delve into how Systemics, your go-to Design System agency, brings clarity and coherence to your brand's digital presence. We discuss our unique approach to Design System Consulting, where we align your vision with actionable strategies for seamless and captivating user experiences. Learn how we transform ideas into tangible results with our Design System Creation service, empowering your brand to communicate effectively across digital platforms."
       />
       <BlogTeaser
         author={{
-          image: "/static/img/people/author-emily.png",
+          image: "/static/img/people/author-blog-female.png",
           name: "Jane Smith",
-          title: "Senior AI Researcher",
+          title: "Headless Evangelist and DevRel for real",
         }}
-        date="12/30/2022"
-        headline="The Future of AI"
-        image="/static/img/close-up-young-business-team-working.png"
+        date="01/18/2024"
+        headline="3.	Investing in Digital Excellence: Systemics' Design System Trainings"
+        image="/static/img/blog/2150849213.jpg"
         link={{
           label: "Read more",
-          url: "/blog-post-1/",
+          url: "/blog-post3/",
         }}
-        readingTime="5 min read"
-        tags={["Technology", "AI"]}
-        teaserText="Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table."
+        readingTime="7 min read"
+        tags={["Design System", "Learning", "Training"]}
+        teaserText="Investing in your digital team's growth is crucial for sustainable success. In this article, we highlight Systemics' Design System Trainings, designed to equip your team with the skills they need to harness your design system effectively. Understand how our trainings promote collaboration, shared understanding, and continuous learning, ensuring your design system remains an evolving cornerstone of your digital success."
       />
     </Section>
 

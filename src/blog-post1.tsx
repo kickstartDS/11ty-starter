@@ -20,40 +20,49 @@ export default (props) => (
       <Split layout="sidebarRight">
         <div>
           <BlogHead
-            date="12/30/2022"
-            tags={["Technology", "AI"]}
-            headline="The Future of AI: A Glimpse into the Unseen"
-            image="/static/img/close-up-young-business-team-working.png"
+            date="02/02/2024"
+            tags={["Headless", "CMS"]}
+            headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
+            image="/static/img/blog/2150710000.jpg"
           />
           <Text
             text={`
-  ## Introduction
-  The future of **ArtiEficial Intelligence (AI)** is a topic that has been the subject of much debate. It's a field that's constantly evolving, with new advancements and breakthroughs happening all the time. [Learn more about AI](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
-  ## The Current State of AI
-  Today, AI is already a part of our daily lives. From *smart home devices* to *recommendation algorithms* on our favorite streaming services, AI is everywhere.
+__ tldr: In this enlightening article, we delve into how Systemics, your go-to Design System agency, brings clarity and coherence to your brand's digital presence. We discuss our unique approach to Design System Consulting, where we align your vision with actionable strategies for seamless and captivating user experiences. Learn how we transform ideas into tangible results with our Design System Creation service, empowering your brand to communicate effectively across digital platforms.__
 
-  ## The Potential of AI
-  The potential of AI is immense. It has the ability to revolutionize industries, from healthcare to finance, and everything in between.
+## Mastering the Art of Design Systems with Systemics: **A Journey from Vision to Reality**
 
-  ## The Challenges of AI
-  However, with great potential comes great challenges. Issues such as data privacy and the ethical implications of AI are just some of the hurdles that need to be overcome.
+### Introduction: Unleashing Your Brand's Digital Potential
+Welcome to the digital renaissance, where the paintbrush of branding meets the canvas of code. It's time to channel your inner Michelangelo, folks! Here at Systemics, we're not just an ordinary Headless CMS agency - we're the virtuosos of the digital world, creating harmonious symphonies of design systems that turn your brand's vision into a pixel perfect reality. 
 
-  ## The Role of AI in Society
-  AI has the potential to greatly impact society. It can lead to job creation in new industries, and can also help solve complex societal problems.
+### Unraveling The Magic of Design Systems
+So, what exactly are design systems? Simply put, they're the visual vocabulary of your brand, the DNA that codes your digital identity. But don't let the simplicity fool you. There's more to them than meets the eye. These magic toolkits weave together a coherent, scalable, and streamlined interface, allowing you to communicate your brand's essence effectively across different platforms. 
 
-  ## Conclusion
-  The future of AI is exciting and full of potential. However, it's important that we navigate this future with caution, ensuring that the benefits of AI are accessible to all, while minimizing its potential risks.
+### Systemics: Your Trailblazer in Design System Consulting
+Navigating through the complexities of design systems could be as bewildering as wandering aimlessly in a maze. Fear not! This is where we, as your trusted guide, step in. We at Systemics march to the beat of a unique drum, adopting a consultative approach that aligns your vision with actionable strategies. Our goal? To fabricate seamless and captivating user experiences that are not just visually stunning, but deeply resonant with your brand's ethos. 
+
+### Transforming Ideas into Tangible Results
+Here's the fun part! Our Design System Creation service is no less than a potter's wheel, spinning raw ideas into tangible results. Leaning on the power of headless CMS, we provide you with the agility and adaptability to manage content across multiple platforms effortlessly. How do we do it, you ask? We build on the flexibility of independent content delivery, free from the confines of traditional CMS, which allows us to craft tailor-made digital experiences for your brand. Don't believe us? Click [here](/showcases) for some of our greatest hits. 
+
+### A Symphony of Brand Communication 
+Effective communication is a language, and every brand has its own dialect. Amplifying your brand's unique voice in the cacophony of the digital world can be quite a challenge. That's why we ensure that our design systems are created to be a seamless extension of your brand's communication. Through our work, we unleash the power of your brand's unique narrative, creating a symphony that resonates across the digital landscape. 
+
+### Conclusion: From Vision to Reality, With a **Touch of Sarcasm** and a **Healthy Dose of Fun**
+Long story short, think of us as your brand's personal stylist in the digital world - but with a much cooler job. We're here to ensure that your brand always looks its best, regardless of the platform. So, leave your brand's digital transformation to us, sit back, relax, and let us take you on a journey - from vision to reality, with a healthy dose of sarcasm and a lot of fun!
+
+Still skeptical about embarking on this journey? We get it! But remember, the proof of the pudding is in the eating. So why not [reach out to us](/disclaimer) or [check out our case studies](/showcases) to see the magic we can create together? Because at Systemics, we believe in making work fun, results tangible, and your brand's digital presence a masterpiece!
+
+
           `}
           />
         </div>
         <BlogAside
           author={{
-            name: "Jane Doe",
-            byline: "DS Dev Rel",
+            name: "Jane Smith",
+            byline: "Headless Evangelist and DevRel for real",
             image: "/static/img/people/author-blog-female.png",
-            twitter: "Janedoe",
-            email: "Jane.doe@example.com",
+            twitter: "Janesmith",
+            email: "Jane.smith@example.com",
           }}
           socialSharing={[
             {
@@ -67,8 +76,8 @@ export default (props) => (
               title: "Share on LinkedIn",
             },
           ]}
-          readingTime="5 min read"
-          date="12/30/2024"
+          readingTime="7 min read"
+          date="02/02/2024"
         />
       </Split>
     </Section>

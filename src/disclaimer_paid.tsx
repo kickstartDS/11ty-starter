@@ -30,11 +30,11 @@ export default (props) => (
         textPosition="center"
         video={{
           srcDesktop:
-            "/static/img/videos/_import_6074abda2c1d16.29497953_FPpreview.mp4",
+            "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
           srcMobile:
-            "/static/img/videos/_import_6074abda2c1d16.29497953_FPpreview.mp4",
+            "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
           srcTablet:
-            "/static/img/videos/_import_6074abda2c1d16.29497953_FPpreview.mp4",
+            "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
         }}
       />
     </Section>
