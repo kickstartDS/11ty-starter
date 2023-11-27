@@ -19,7 +19,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section spaceBefore="none" width="full">
+    <Section spaceBefore="none" spaceAfter="none" width="full">
       <Hero
         height="fullImage"
         image={{
@@ -31,30 +31,33 @@ export default (props) => (
         textPosition="below"
         headline="Crafting Digital Brilliance at Systemics"
         sub="Elevating Headless Experiences through Innovative Design Systems"
-        text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
+        // text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
       />
     </Section>
-
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/bg/bg_divder-blue.svg"
-        alt="Just a divider image, makes no sense, just for deco"
+    <Section spaceBefore="none" width="default">
+      <Text
+        text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
+        style="highlight"
+        align="center"
       />
     </Section>
 
     <Section
+      backgroundColor="accent"
       headline={{
         text: "We empower Businesses with the Tools they need to thrive in the Digital Landscape.",
         sub: "Our crystal clear mission:",
         switchOrder: true,
-        width: "wide",
-        align: "center",
+        width: "default",
+        large: true,
+        align: "left",
+        textAlign: "left",
       }}
       content={{
         width: "default",
-        align: "right",
+        align: "center",
       }}
-      style="boldTransition"
+      inverted
       width="wide"
     >
       <Text
@@ -69,9 +72,9 @@ export default (props) => (
         mode: "list",
         gutter: "large",
       }}
-      backgroundColor="bold"
+      backgroundColor="accent"
       width="wide"
-      style="anchorGlow"
+      style="boldTransition"
     >
       <ImageStory
         image={{
@@ -144,6 +147,8 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
         text: "Take a look inside our super cool Agency Life yourself",
         sub: "Including, table soccer, italian coffee and all that fancy stuff",
         textAlign: "center",
+        width: "default",
+        align: "center",
       }}
       width="max"
       backgroundColor="accent"
