@@ -83,7 +83,6 @@ export default (props) => (
               label: "See showcase",
               icon: "chevron-right",
               toggle: true,
-              target: "/showcase-eco_paid",
             },
           },
           {

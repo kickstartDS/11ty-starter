@@ -2,7 +2,6 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { StatsPaid } from "@kickstartds/ds-agency/stats-paid";
 import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Image } from "@kickstartds/ds-agency/image";
 import { Gallery } from "@kickstartds/ds-agency/gallery";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
@@ -31,7 +30,6 @@ export default (props) => (
         textPosition="below"
         headline="Crafting Digital Brilliance at Systemics"
         sub="Elevating Headless Experiences through Innovative Design Systems"
-        // text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
       />
     </Section>
     <Section spaceBefore="none" width="default">
@@ -196,12 +194,17 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
       />
     </Section>
 
-    <Section width="full" spaceBefore="none">
+    <Section
+      style="horizontalGradient"
+      width="wide"
+      spaceBefore="none"
+      spaceAfter="none"
+    >
       <CtaPaid
+        fullWidth
+        largeHeadline
         align="left"
-        backgroundColor="#06081f"
-        backgroundImage="/static/img/bg/bg_schrill.svg"
-        headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
+        headline="Discover the Systemics difference. Join us in creating a Digital Future that's both functional and unforgettable."
         buttons={[
           {
             label: "Contact us",
