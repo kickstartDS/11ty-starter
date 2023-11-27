@@ -2,6 +2,7 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { BlogTeaser } from "@kickstartds/ds-agency/blog-teaser";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { text } from "stream/consumers";
 
 export const data = {
   title: "Systemics, your Design System Agency Insights",
@@ -16,6 +17,7 @@ export default (props) => (
   <PageWrapper>
     <Section
       width="wide"
+      style="accentTransition"
       headline={{
         text: "Welcome to the **Systemics' Blog** – Your digital transformation **compass**!",
         sub: "We are here to guide you through the complex yet exhilarating landscape of digital innovation.",
@@ -29,20 +31,22 @@ export default (props) => (
       style="boldTransition"
       width="wide"
       spaceBefore="small"
-      spaceAfter="small"
+      headline={{
+        text: "Latest Article",
+      }}
     >
       <BlogTeaser
         author={{
-          image: "/static/img/people/author-emily.png",
+          image: "/static/img/people/author-blog-female.png",
           name: "Jane Smith",
-          title: "Black Belt Headless Ninja Warrior",
+          title: "Headless Evangelist and DevRel for real",
         }}
-        date="12/30/2022"
+        date="12/30/2024"
         headline="Unleashing Innovation with Headless Websites: The Future of Digital Experiences"
         image="/static/img/close-up-young-business-team-working.png"
         link={{
           label: "Read more",
-          url: "/blog-post-1",
+          url: "/blog-post1/",
         }}
         readingTime="5 min read"
         tags={["Headless", "CMS"]}
@@ -52,6 +56,7 @@ export default (props) => (
 
     <Section
       spaceBefore="small"
+      style="symmetricGlow"
       content={{
         mode: "list",
         gutter: "large",

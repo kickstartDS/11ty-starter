@@ -50,8 +50,8 @@ export default (props) => (
         <BlogAside
           author={{
             name: "Jane Doe",
-            byline: "Senior Developer",
-            image: "/static/img/people/author-emily.png",
+            byline: "DS Dev Rel",
+            image: "/static/img/people/author-blog-female.png",
             twitter: "Janedoe",
             email: "Jane.doe@example.com",
           }}
@@ -68,7 +68,7 @@ export default (props) => (
             },
           ]}
           readingTime="5 min read"
-          date="12/30/2022"
+          date="12/30/2024"
         />
       </Split>
     </Section>

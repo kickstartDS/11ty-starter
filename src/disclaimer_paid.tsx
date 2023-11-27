@@ -2,8 +2,9 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Features } from "@kickstartds/ds-agency/features";
+import { ImageStory } from "@kickstartds/ds-agency/image-story";
 import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
-import { Button } from "@kickstartds/ds-agency/components/button/index.js";
 
 export const data = {
   title:
@@ -66,76 +67,109 @@ Although this is just a demo website, if you are looking for an Agency to serve 
 
     <Section
       backgroundColor="accent"
-      style="symmetricGlow"
+      style="boldTransition"
       width="wide"
       content={{
         mode: "list",
-        width: "default",
+        width: "wide",
       }}
       headline={{
         text: "Open Source vs. Premium Experience",
-        sub: "The two showcases in this demo represent the range of possibilities with kickstartDS. ",
         large: true,
       }}
     >
-      <Text
+      <ImageStory
+        layout="imageLeft"
         text={`
-### Premium Experience Demo
+## The two showcases in this demo represent the range of possibilities with kickstartDS
+
+###Premium Experience Demo
 You're currently navigating the Premium Experience Demo, enriched by the integration of the [**paid** kickstartDS content component module](https://www.kickstartds.com/content-module/). This premium feature enhances your user experience, demonstrating the potential of a small investment. 
 
 It showcases how a modest monthly investment - akin to the cost of a developer hour - can significantly elevate the look and feel of your website or content-driven application.
 
 ### Open Source Demo
-The other demo, built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrates the robust capabilities you can leverage at no cost. It stands as a testament to the value that kickstartDS can deliver even with zero investment.
-    `}
+The other demo, built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrates the robust capabilities you can leverage at no cost. It stands as a testament to the value that kickstartDS can deliver even with zero investment.`}
+        image={{
+          src: "/static/img/deco/disclaimer-deco.png",
+          alt: "Digital art of two friendly girls standing in front of each other, playing with a huge pile of toy bricks in their center. the scene is surrounded by horizontal light stripes in motion creating a ring around them, light blue, violet and purple colors, light neon-lights, laser-light, wide-angle",
+        }}
       />
     </Section>
 
     <Section
-      backgroundColor="bold"
-      spaceBefore="none"
-      spaceAfter="small"
-      width="full"
+      style="boldTransition"
+      spaceBefore="small"
+      width="wide"
       content={{
-        align: "center",
-        mode: "list",
         width: "default",
       }}
+      headline={{
+        text: "Comparing both demos, you will **gain** a clear understanding of the **value** proposition offered by **kickstartDS**",
+        sub: "From an Open Source solution with paid enhancements",
+        large: true,
+        switchOrder: true,
+      }}
     >
-      <CtaPaid
-        align="left"
-        fullWidth
-        headline="By exploring both demos, you can **gain** a clear understanding of the **value** proposition offered by **kickstartDS**, from open source solutions to paid enhancements."
-        sub="Browse the different demos and Storybook to feel it yourself"
-        buttons={[
+      <Features
+        ctas={{
+          style: "button",
+          toggle: true,
+        }}
+        features={[
           {
-            label: "Switch to free Demo",
-            icon: "chevron-right",
-            target: "/index",
+            cta: {
+              label: "Learn more on kickstartDS",
+              target: "https://www.kickstartds.com/module",
+            },
+            icon: "info",
+            text: "Which is enriched with more complex components based on the **kickstartDS Content Module**",
+            title: "You currently browse the premium demo",
           },
           {
-            label: "Browse paid Module",
+            cta: {
+              label: "Explore its Storybook",
+              target: "#",
+            },
             icon: "browser",
-            target: "#",
+            text: "Browsing our Storybook will quickly show you the capabilities kickstartDS has to offer",
+            title: "Discover all Components",
           },
           {
-            label: " Explore Open Source Components",
-            icon: "chevron-right",
-            target: "#",
+            cta: {
+              label: "Switch to free Demo",
+              target: "/index",
+            },
+            icon: "star-outline",
+            text: "Compare what the free version using Open Source componets only can already offer in regards to this a demo experience",
+            title: "Demo free Version",
+          },
+          {
+            cta: {
+              label: "Explore paid Content Module",
+              target: "https://www.kickstartds.com/content-module/",
+            },
+            icon: "share",
+            text: "Based on our Open Source Core, the Content Module completes your Design Systems components by adding rich components to build beautiful content experiences",
+            title: "Value-add: Content Module",
           },
         ]}
+        layout="largeTiles"
+        style="stack"
       />
     </Section>
 
-    <Section style="stagelights">
+    <Section style="accentTransition">
       <Text
         text={`
-## **The Purpose of this Demo**
-This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it’s a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
+## The Purpose of this Demo
+This demo is intended to provide a firsthand experience of the capabilities of [**kickstartDS**](https://www.kickstartds.com). It's not just a website; it's a demonstration of how we can transform your digital landscape. Please note that while this demo represents a **Design System Agency**, the principles and techniques showcased are applicable to a wide range of industries and use cases.
 
-## **Disclaimer**
+## Important Disclaimer
 While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like Storybook or Sanity.io can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
         `}
+        style="highlight"
+        layout="multiColumn"
       />
     </Section>
 
