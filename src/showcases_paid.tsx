@@ -32,9 +32,9 @@ export default (props) => (
           alt: undefined,
           indent: "none",
           src: "https://picsum.photos/seed/kdsvisual/640/270",
-          srcDesktop: "/static/img/close-up-young-business-team-working.png",
-          srcMobile: "/static/img/close-up-young-business-team-working.png",
-          srcTablet: "/static/img/close-up-young-business-team-working.png",
+          srcDesktop: "/static/img/dsa-business-team-working.png",
+          srcMobile: "/static/img/dsa-business-team-working.png",
+          srcTablet: "/static/img/dsa-business-team-working.png",
         }}
         largeHeadline
         overlay
