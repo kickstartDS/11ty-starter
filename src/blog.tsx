@@ -87,7 +87,7 @@ export default (props) => (
           title: "Headless Evangelist and DevRel for real",
         }}
         date="01/18/2024"
-        headline="3.	Investing in Digital Excellence: Systemics' Design System Trainings"
+        headline="Investing in Digital Excellence: Systemics' Design System Trainings"
         image="/static/img/blog/2150849213.jpg"
         link={{
           label: "Read more",
@@ -155,7 +155,7 @@ export default (props) => (
           title: "Headless Evangelist and DevRel for real",
         }}
         date="01/18/2024"
-        headline="3.	Investing in Digital Excellence: Systemics' Design System Trainings"
+        headline="Investing in Digital Excellence: Systemics' Design System Trainings"
         image="/static/img/blog/2150849213.jpg"
         link={{
           label: "Read more",
@@ -167,7 +167,7 @@ export default (props) => (
       />
     </Section>
 
-    <Section inverted>
+    <Section style="horizontalGradient">
       <Cta
         align="left"
         headline="Ready to ignite your digital transformation journey?"

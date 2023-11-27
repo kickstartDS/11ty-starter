@@ -13,7 +13,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper floatingHeader>
+  <PageWrapper>
     <Section
       spaceBefore="none"
       spaceAfter="none"
@@ -29,12 +29,9 @@ export default (props) => (
         text=""
         textPosition="center"
         video={{
-          srcDesktop:
-            "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
-          srcMobile:
-            "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
-          srcTablet:
-            "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
+          srcDesktop: "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
+          srcMobile: "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
+          srcTablet: "/static/img/videos/freepik_6074abda2c1d16.29497953.mp4",
         }}
       />
     </Section>
