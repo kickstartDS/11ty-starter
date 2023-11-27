@@ -17,7 +17,21 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="wide">
+    <Section
+      width="wide"
+      buttons={[
+        {
+          label: "Next article",
+          target: "/blog-post3",
+          icon: "chevron-left",
+        },
+        {
+          label: "Previous article",
+          target: "/blog-post2",
+          icon: "chevron-right",
+        },
+      ]}
+    >
       <Split layout="sidebarRight">
         <div>
           <BlogHead
@@ -46,7 +60,6 @@ Through headless CMS, it's not just about movement, it's about adaptability. No 
 
 Ready to take that plunge and slide on to a smoother digital experience? Embrace the headless future with us and set new standards in customer experience. Because at Systemics, we're not just about getting you ahead, we’re about helping you become the butter on the hill in your industry's digital journey!
 
-
 ## Maintaining Design Integrity in the Headless Universe
 #### Design Systems: The Unsung Hero in the Headless Universe
 In the realm of Headless CMS, sometimes design and frontend components can feel a bit lost, like a ship adrift in space. That's where our Design Systems come in! They're the unsung heroes, the North Star guiding your frontend safely through the headless universe.
@@ -57,13 +70,10 @@ Our experts, equipped with the mastery of Design Systems, are like skilled archi
 
 So, leap into the headless universe, confident that your design coherence and frontend component harmony are securely anchored by our Design Systems. You might be going headless, but with us, you'll never lose sight of your design identity.
 
-
 ### Breaking Chains, Building Bridges
 So, if you're tired of being held back by traditional CMS and are ready to take your digital presence to the next level, join us at Systemics. It’s time to break the chains and build bridges to a more innovative and flexible digital future. It's time to go headless!
 
 P.S. Still not convinced? Why not check out some of our [Use Cases](/showcases) for some brain-awakening insight? Or give us a call, we promise we won't bite (unlike the dragons in those fantasy novels). **Trust us, we know our headless stuff!**
-            
-
           `}
           />
         </div>

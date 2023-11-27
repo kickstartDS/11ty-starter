@@ -17,7 +17,21 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section width="wide">
+    <Section
+      width="wide"
+      buttons={[
+        {
+          label: "Next article",
+          target: "/blog-post1",
+          icon: "chevron-left",
+        },
+        {
+          label: "Previous article",
+          target: "/blog-post3",
+          icon: "chevron-right",
+        },
+      ]}
+    >
       <Split layout="sidebarRight">
         <div>
           <BlogHead
