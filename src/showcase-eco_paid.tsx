@@ -22,6 +22,7 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section width="full" spaceAfter="small" spaceBefore="none">
       <Hero
+        overlay
         height="fullImage"
         image={{
           srcMobile: "/static/img/showcases/comp_eco01.png",

@@ -21,9 +21,9 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section
-      style="symmetricGlow"
+      style="stagelights"
       width="full"
       content={{
         width: "default",

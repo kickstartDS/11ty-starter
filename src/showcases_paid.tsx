@@ -79,10 +79,10 @@ export default (props) => (
             image: "/static/img/showcases/preview_eco.png",
             backgroundColor: "#21331E",
             button: {
+              target: "/showcase-eco_paid",
               label: "See showcase",
               icon: "chevron-right",
               toggle: true,
-              target: "/showcase-eco_paid",
             },
           },
           {

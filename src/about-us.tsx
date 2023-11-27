@@ -17,11 +17,18 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section style="boldTransition" width="narrow">
-      <Cta
+    <Section
+      headline={{
+        text: "Crafting Digital Brilliance at **Systemics**",
+        large: true,
+        sub: "Elevating Headless Experiences through Innovative Design Systems",
+      }}
+      style="boldTransition"
+      width="default"
+    >
+      <Text
         align="left"
-        headline="Crafting Digital Brilliance at **Systemics**"
-        sub="Elevating Headless Experiences through Innovative Design Systems"
+        style="highlight"
         text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
       />
     </Section>
@@ -52,7 +59,7 @@ export default (props) => (
       }}
       content={{
         width: "default",
-        align: "right",
+        align: "center",
       }}
       backgroundColor="bold"
       style="anchorGlow"
@@ -139,6 +146,8 @@ We're not just building design systems; we're building value. By combining our e
       headline={{
         text: "Take a look inside our super cool Agency Life yourself",
         sub: "Including, table soccer, italian coffee and all that fancy stuff",
+        width: "default",
+        align: "center",
       }}
       width="max"
     >
