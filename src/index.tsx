@@ -35,6 +35,7 @@ export default (props) => (
         headline="We simplify the process of building a **Design System**"
         sub="With your headless experts"
         text={`Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.`}
+        highlightText
         buttons={[
           {
             label: "What can we do for you?",
@@ -376,11 +377,12 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       />
     </Section>
 
-    <Section backgroundColor="accent" width="wide">
+    <Section backgroundColor="accent">
       <Cta
-        align="left"
+        align="center"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        highlightText
         buttons={[
           {
             label: "Contact us",

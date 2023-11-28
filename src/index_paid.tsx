@@ -43,6 +43,7 @@ export default (props) => (
         sub="With your headless experts"
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
         textPosition="center"
+        highlightText
         video={{
           srcDesktop: "/static/img/videos/video-1080p.mp4",
           srcMobile: "/static/img/videos/video-720.mp4",

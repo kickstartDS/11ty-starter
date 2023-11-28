@@ -37,28 +37,28 @@ export default (props) => (
     </Section>
 
     <Section
-      backgroundColor="bold"
-      width="narrow"
-      style="horizontalGradient"
+      width="default"
+      style="symmetricGlow"
       content={{
         mode: "list",
         align: "center",
       }}
-      buttons={[
-        {
-          label: "Contact us",
-          target: "https://app.lemcal.com/@daniel-ley",
-          icon: "person",
-        },
-      ]}
     >
-      <Text
+      <CtaPaid
         align="center"
-        style="highlight"
-        text={`
-### Spoiler! 
-
-Although this is just a demo website, if you are looking for an Agency to serve your Headless or Design System needs, contact us, **we are real experts!**`}
+        buttons={[
+          {
+            disabled: false,
+            label: "Contact us",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "person",
+            variant: "primary",
+          },
+        ]}
+        headline="Spoiler!"
+        largeHeadline={false}
+        highlightText
+        text="Although this is just a demo website, if you are looking for an Agency to serve your Headless or Design System needs, contact us, we are real experts!"
       />
     </Section>
 

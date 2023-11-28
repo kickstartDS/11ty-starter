@@ -13,7 +13,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section style="boldTransition">
+    <Section>
       <Cta
         align="left"
         headline="**This is a vibrant Simulation** designed to unveil the potential of **kickstartDS**"
@@ -43,7 +43,8 @@ export default (props) => (
         ]}
         headline="Spoiler!"
         largeHeadline={false}
-        sub="Although this is just a demo website, if you are looking for an Agency to serve your Headless or Design System needs, contact us, we are real experts!"
+        highlightText
+        text="Although this is just a demo website, if you are looking for an Agency to serve your Headless or Design System needs, contact us, we are real experts!"
       />
     </Section>
 
@@ -154,7 +155,7 @@ It showcases how a modest monthly investment, equivalent to the cost of a develo
       />
     </Section>
 
-    <Section style="boldTransition">
+    <Section>
       <Text
         text={`
 ## The Purpose of this **Demo**
@@ -171,6 +172,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
         align="center"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
+        highlightText
         buttons={[
           {
             label: "Contact us",

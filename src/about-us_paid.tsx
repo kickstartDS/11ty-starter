@@ -19,7 +19,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section spaceBefore="none" spaceAfter="none" width="full">
+    <Section spaceBefore="none" width="full">
       <Hero
         height="fullImage"
         image={{
@@ -31,13 +31,8 @@ export default (props) => (
         textPosition="below"
         headline="Crafting Digital Brilliance at Systemics"
         sub="Elevating Headless Experiences through Innovative Design Systems"
-      />
-    </Section>
-    <Section spaceBefore="none" width="default">
-      <Text
-        text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
-        style="highlight"
-        align="center"
+        text="At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact."
+        highlightText
       />
     </Section>
 

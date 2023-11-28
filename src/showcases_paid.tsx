@@ -20,7 +20,6 @@ export default (props) => (
   <PageWrapper floatingHeader>
     <Section
       spaceBefore="none"
-      spaceAfter="none"
       width="full"
       content={{
         mode: "list",
@@ -41,13 +40,8 @@ export default (props) => (
         headline="Transformations powered by 💗, Innovation & Design Systems"
         sub="Selected showcases from Design Systems and headless Webs of the biggest global Enterprises 😁"
         textPosition="below"
-      />
-    </Section>
-    <Section spaceBefore="none">
-      <Text
         text={`Welcome to our showcase of success stories. Here, you'll discover how we've partnered with diverse organizations to revolutionize their digital landscapes. From creating bespoke design systems to implementing headless CMSs, our solutions have empowered brands to streamline processes, enhance user experiences, and foster brand consistency. Dive in to explore how we've turned challenges into opportunities, and visions into reality.`}
-        align="center"
-        style="highlight"
+        highlightText
       />
     </Section>
 
@@ -102,13 +96,19 @@ export default (props) => (
       />
     </Section>
 
-    <Section backgroundColor="accent" style="anchorGlow" width="wide">
+    <Section
+      spaceAfter="none"
+      backgroundColor="accent"
+      style="anchorGlow"
+      width="wide"
+    >
       <CtaPaid
         fullWidth
         align="center"
         largeHeadline
         headline="Ready to embark on a transformative digital journey?"
-        text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        sub="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        highlightText
         buttons={[
           {
             label: "Contact us",
