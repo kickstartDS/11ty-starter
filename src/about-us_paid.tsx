@@ -147,7 +147,7 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
       backgroundColor="accent"
       style="symmetricGlow"
     >
-      <Slider type="carousel" perView={2} gap={40} arrows nav>
+      <Slider type="carousel" perView={2} gap={40} nav>
         <Image
           alt="An artificial view inside our cool Agency"
           src="/static/img/aboutus/01.jpg"
