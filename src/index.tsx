@@ -23,8 +23,8 @@ export const data = {
 export default (props) => (
   <PageWrapper floatingHeader>
     <Section
+      headerSpacing
       style="stagelights"
-      width="full"
       content={{
         width: "default",
         mode: "list",

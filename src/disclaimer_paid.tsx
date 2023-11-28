@@ -13,7 +13,7 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section
       spaceBefore="none"
       spaceAfter="none"

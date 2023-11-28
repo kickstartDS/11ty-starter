@@ -2,7 +2,8 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { StatsPaid } from "@kickstartds/ds-agency/stats-paid";
 import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Gallery } from "@kickstartds/ds-agency/gallery";
+import { Image } from "@kickstartds/ds-agency/image";
+import { Slider } from "@kickstartds/ds-agency/slider";
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
 import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
@@ -110,7 +111,6 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
         textAlign: "center",
       }}
       backgroundColor="accent"
-      style="stagelights"
       width="wide"
     >
       <StatsPaid
@@ -145,53 +145,51 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
         text: "Take a look inside our super cool Agency Life yourself",
         sub: "Including, table soccer, italian coffee and all that fancy stuff",
         textAlign: "center",
-        width: "default",
         align: "center",
+        width: "default",
       }}
       width="max"
       backgroundColor="accent"
+      style="symmetricGlow"
     >
-      <Gallery
-        images={[
-          {
-            alt: "An artificial view inside our cool Agency, here one of our smartest developer",
-            url: "/static/img/aboutus/01.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/02.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/03.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/04.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/05.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/06.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/07.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/08.jpg",
-          },
-          {
-            alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/09.jpg",
-          },
-        ]}
-        layout="largeTiles"
-      />
+      <Slider type="carousel" perView={2} gap={40} arrows nav>
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/01.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/02.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/03.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/04.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/05.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/06.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/07.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/08.jpg"
+        />
+        <Image
+          alt="An artificial view inside our cool Agency"
+          src="/static/img/aboutus/09.jpg"
+        />
+      </Slider>
     </Section>
 
     <Section

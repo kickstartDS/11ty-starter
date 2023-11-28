@@ -152,45 +152,46 @@ We're not just building design systems; we're building value. By combining our e
       width="max"
     >
       <Gallery
+        layout="largeTiles"
+        lightbox
         images={[
           {
             alt: "An artificial view inside our cool Agency, here one of our smartest developer",
-            url: "/static/img/aboutus/01.jpg",
+            src: "/static/img/aboutus/01.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/02.jpg",
+            src: "/static/img/aboutus/02.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/03.jpg",
+            src: "/static/img/aboutus/03.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/04.jpg",
+            src: "/static/img/aboutus/04.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/05.jpg",
+            src: "/static/img/aboutus/05.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/06.jpg",
+            src: "/static/img/aboutus/06.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/07.jpg",
+            src: "/static/img/aboutus/07.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/08.jpg",
+            src: "/static/img/aboutus/08.jpg",
           },
           {
             alt: "An artificial view inside our cool Agency",
-            url: "/static/img/aboutus/09.jpg",
+            src: "/static/img/aboutus/09.jpg",
           },
         ]}
-        layout="largeTiles"
       />
     </Section>
 
