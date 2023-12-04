@@ -39,6 +39,8 @@ export default (props) => (
     <Section
       width="default"
       style="symmetricGlow"
+      spaceBefore="small"
+      spaceAfter="small"
       content={{
         mode: "list",
         align: "center",
@@ -73,19 +75,20 @@ export default (props) => (
       headline={{
         text: "Open Source vs. Premium Experience",
         large: true,
+        width: "narrow",
       }}
     >
       <ImageStory
         layout="imageLeft"
         text={`
-## The two showcases in this demo represent the range of possibilities with kickstartDS
+### The two showcases in this demo represent the range of possibilities with kickstartDS
 
-###Premium Experience Demo
+#### Premium Experience Demo
 You're currently navigating the Premium Experience Demo, enriched by the integration of the [**paid** kickstartDS content component module](https://www.kickstartds.com/content-module/). This premium feature enhances your user experience, demonstrating the potential of a small investment. 
 
 It showcases how a modest monthly investment - akin to the cost of a developer hour - can significantly elevate the look and feel of your website or content-driven application.
 
-### Open Source Demo
+#### Open Source Demo
 The other demo, built entirely using our [**open-source** modules](https://www.kickstartds.com/modules/), demonstrates the robust capabilities you can leverage at no cost. It stands as a testament to the value that kickstartDS can deliver even with zero investment.`}
         image={{
           src: "/static/img/deco/disclaimer-deco.png",

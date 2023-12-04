@@ -97,6 +97,7 @@ export default (props) => (
     </Section>
 
     <Section
+      spaceBefore="small"
       spaceAfter="none"
       backgroundColor="accent"
       style="anchorGlow"

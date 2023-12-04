@@ -373,7 +373,12 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section style="anchorGlow" width="wide">
+    <Section
+      spaceBefore="none"
+      spaceAfter="none"
+      style="anchorGlow"
+      width="wide"
+    >
       <CtaPaid
         fullWidth
         largeHeadline
