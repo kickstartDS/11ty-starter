@@ -47,7 +47,7 @@ export default (props) => (
       }}
     >
       <CtaPaid
-        align="center"
+        textAlign="center"
         buttons={[
           {
             disabled: false,
@@ -175,19 +175,16 @@ While we've strived to provide a comprehensive demonstration, please bear in min
 
     <Section width="full" spaceBefore="none" spaceAfter="none" inverted>
       <CtaPaid
-        align="left"
         headline="Wanna know more?"
         sub="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         backgroundImage="/static/img/bg/bg_schrill.svg"
         backgroundColor="#B9398D"
+        order={{
+          desktopImageLast: false,
+          mobileImageLast: false,
+        }}
         image={{
-          hAlign: "center",
-          order: {
-            desktopImageLast: false,
-            mobileImageLast: false,
-          },
           src: "/static/img/deco/contact-us-person-smart.png",
-          vAlign: "center",
         }}
         buttons={[
           {

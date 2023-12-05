@@ -112,7 +112,6 @@ export default (props) => (
 
     <Section backgroundColor="bold">
       <Cta
-        align="left"
         headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
         text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."
         buttons={[

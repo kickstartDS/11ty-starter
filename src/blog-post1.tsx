@@ -109,7 +109,7 @@ P.S. Still not convinced? Why not check out some of our [Use Cases](/showcases) 
 
     <Section style="horizontalGradient">
       <Cta
-        align="center"
+        textAlign="center"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         buttons={[

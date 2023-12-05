@@ -105,7 +105,7 @@ export default (props) => (
     >
       <CtaPaid
         fullWidth
-        align="center"
+        textAlign="center"
         largeHeadline
         headline="Ready to embark on a transformative digital journey?"
         sub="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."

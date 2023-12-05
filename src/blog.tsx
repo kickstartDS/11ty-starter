@@ -169,7 +169,6 @@ export default (props) => (
 
     <Section style="horizontalGradient">
       <Cta
-        align="left"
         headline="Ready to ignite your digital transformation journey?"
         sub="Spark the change with Systemics! Let's chat today and redefine your digital tomorrow."
         buttons={[

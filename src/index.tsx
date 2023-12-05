@@ -31,7 +31,6 @@ export default (props) => (
       }}
     >
       <Cta
-        align="left"
         headline="We simplify the process of building a **Design System**"
         sub="With your headless experts"
         text={`Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.`}
@@ -254,7 +253,6 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 
     <Section inverted>
       <Cta
-        align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         buttons={[
           {
@@ -379,7 +377,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 
     <Section backgroundColor="accent">
       <Cta
-        align="center"
+        textAlign="center"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         highlightText

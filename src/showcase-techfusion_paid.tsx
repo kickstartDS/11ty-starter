@@ -170,7 +170,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
     >
       <CtaPaid
         fullWidth
-        align="center"
+        textAlign="center"
         largeHeadline
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         sub="Get in touch today."

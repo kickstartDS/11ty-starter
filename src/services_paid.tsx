@@ -256,7 +256,6 @@ our content distribution becomes dynamic and responsive, tailored to your users'
 
     <Section backgroundColor="accent">
       <Cta
-        align="left"
         headline="**Ready** to craft excellence into your digital journey?"
         sub="Dive into our services and let Systemics redefine the way your brand connects with the digital world."
         buttons={[

@@ -27,7 +27,6 @@ export default (props) => (
       width="default"
     >
       <Text
-        align="left"
         highlight
         text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
       />
@@ -197,7 +196,6 @@ We're not just building design systems; we're building value. By combining our e
 
     <Section inverted style="stagelights" backgroundColor="accent">
       <Cta
-        align="left"
         headline="Discover the **Systemics** difference. Join us in creating a **Digital Future** that's both functional and unforgettable."
         buttons={[
           {

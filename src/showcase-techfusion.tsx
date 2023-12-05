@@ -126,7 +126,7 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
 
     <Section width="wide" inverted backgroundColor="accent" style="anchorGlow">
       <Cta
-        align="center"
+        textAlign="center"
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         sub="Get in touch today."
         buttons={[

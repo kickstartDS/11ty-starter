@@ -48,7 +48,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         alt="Huge Logo of that fake reference customer"
       />
       <Cta
-        align="left"
         headline="Speed and Scale"
         sub="LaunchPad Audio Innovations"
         text={`Explore how we empowered LaunchPad, an AI-powered digital audio controller startup, with rapid landing page creation for market testing and a robust foundation for future growth.`}
@@ -76,7 +75,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         alt="Huge Logo of that fake reference customer"
       />
       <Cta
-        align="left"
         headline="Savigating the Headless Frontier for Brand Consistency"
         sub="EcoTech Solutions"
         text={`See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time.`}
@@ -105,7 +103,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         alt="Huge Logo of that fake reference customer"
       />
       <Cta
-        align="left"
         headline="A Digital Transformation Love Story"
         sub="TechFusion Enterprises"
         text={`Discover how we revolutionized TechFusion Enterprises' digital landscape by developing a tailored Design System. Our innovative approach saved them a year's worth of development time and harmonized their user experiences across all platforms.`}
@@ -121,7 +118,6 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
 
     <Section width="wide">
       <Cta
-        align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         buttons={[

@@ -15,7 +15,6 @@ export default (props) => (
   <PageWrapper>
     <Section>
       <Cta
-        align="left"
         headline="**This is a vibrant Simulation** designed to unveil the potential of **kickstartDS**"
         sub="A Showcase as testament to the transformative potential of **kickstartDS**-driven Headless Websites and **Design Systems**"
       />
@@ -31,7 +30,7 @@ export default (props) => (
       }}
     >
       <Cta
-        align="center"
+        textAlign="center"
         buttons={[
           {
             disabled: false,
@@ -169,7 +168,7 @@ While we've strived to provide a comprehensive demonstration, please bear in min
 
     <Section style="horizontalGradient">
       <Cta
-        align="center"
+        textAlign="center"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         highlightText

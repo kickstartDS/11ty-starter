@@ -114,7 +114,7 @@ So why wait? Explore our [services page](/services) and indulge in a banquet of 
 
     <Section style="horizontalGradient">
       <Cta
-        align="center"
+        textAlign="center"
         headline="Wanna know more?"
         text="Intrigued by what a kickstartDS-driven website can do for your brand? Let's explore how we can shape your digital journey. Get in touch today."
         buttons={[

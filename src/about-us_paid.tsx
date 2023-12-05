@@ -196,7 +196,6 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
       <CtaPaid
         fullWidth
         largeHeadline
-        align="left"
         headline="Discover the Systemics difference. Join us in creating a Digital Future that's both functional and unforgettable."
         buttons={[
           {

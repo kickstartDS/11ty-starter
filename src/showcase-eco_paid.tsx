@@ -119,7 +119,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       <CtaPaid
         fullWidth
         largeHeadline
-        align="center"
+        textAlign="center"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         sub="Connect with us to start your journey."
         buttons={[
