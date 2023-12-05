@@ -34,7 +34,7 @@ export default (props) => (
       }}
     >
       <Text
-        style="highlight"
+        highlight
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
     </Section>
@@ -186,7 +186,12 @@ Our experts leverage headless CMS architecture to give you unparalleled flexibil
       />
     </Section>
 
-    <Section width="full" spaceAfter="none" spaceBefore="none" backgroundColor="bold">
+    <Section
+      width="full"
+      spaceAfter="none"
+      spaceBefore="none"
+      backgroundColor="bold"
+    >
       <Image
         src="/static/img/bg/bg_divder-blue.svg"
         alt="Just a divider image, makes no sense, just for deco"

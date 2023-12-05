@@ -72,7 +72,7 @@ export default (props) => (
         text={`
 TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
           `}
-        style="highlight"
+        highlight
         align="center"
       />
     </Section>
@@ -129,7 +129,7 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
 The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
         align="center"
-        style="highlight"
+        highlight
       />
     </Section>
     <Section spaceBefore="none" width="wide">

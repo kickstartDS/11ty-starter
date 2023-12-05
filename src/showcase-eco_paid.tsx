@@ -55,7 +55,7 @@ export default (props) => (
     >
       <Text
         align="center"
-        style="highlight"
+        highlight
         text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms."
       />
     </Section>
@@ -90,7 +90,7 @@ export default (props) => (
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
         align="center"
-        style="highlight"
+        highlight
       />
     </Section>
     <Section spaceBefore="none" width="wide">

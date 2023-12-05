@@ -44,7 +44,7 @@ export default (props) => (
         text={`
 TechFusion Enterprises, a leading player in the smart home industry, grappled with a fragmented digital landscape. Their use of different UI frontend libraries resulted in significant inconsistencies in the user interface and user experience across their digital platforms. The integration of design tokens into their legacy applications was a daunting challenge.
           `}
-        style="highlight"
+        highlight
         align="center"
       />
     </Section>

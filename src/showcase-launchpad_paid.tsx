@@ -69,7 +69,7 @@ export default (props) => (
       }}
     >
       <Text
-        style="highlight"
+        highlight
         align="center"
         text="LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future."
       />

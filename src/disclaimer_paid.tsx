@@ -168,7 +168,7 @@ This demo is intended to provide a firsthand experience of the capabilities of [
 ## Important Disclaimer
 While we've strived to provide a comprehensive demonstration, please bear in mind that this is a simplified showcase of the potential of [**kickstartDS**](https://www.kickstartds.com). The actual implementation of a **Design System** and **headless CMS** like Storybook or Sanity.io can be tailored to your specific needs and goals, ensuring a custom solution that drives your digital success.
         `}
-        style="highlight"
+        highlight
         layout="multiColumn"
       />
     </Section>
