@@ -27,7 +27,6 @@ export default (props) => (
             "/static/img/colleagues-work-office-using-computers-looking-aside.jpg",
         }}
         overlay
-        largeHeadline
         textPosition="below"
         headline="Crafting Digital Brilliance at Systemics"
         sub="Elevating Headless Experiences through Innovative Design Systems"
@@ -195,7 +194,7 @@ Our journey is one of innovation, collaboration, and a relentless pursuit of exc
     >
       <CtaPaid
         fullWidth
-        largeHeadline
+        highlightText
         headline="Discover the Systemics difference. Join us in creating a Digital Future that's both functional and unforgettable."
         buttons={[
           {

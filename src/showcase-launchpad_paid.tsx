@@ -33,7 +33,7 @@ export default (props) => (
           alt: "Fake Showcase Mockup Image",
         }}
         textPosition="below"
-        largeHeadline
+        highlightText
         headline="Fast-Tracking LaunchPad's Market Presence with Sanity-powered Landing Pages"
         sub="Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth"
       />

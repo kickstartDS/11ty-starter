@@ -35,7 +35,7 @@ export default (props) => (
           indent: "none",
           srcMobile: "/static/img/showcases/comp_tfe01.png",
         }}
-        largeHeadline
+        highlightText
         headline="Harmonizing Digital Experiences for TechFusion Enterprises with a Custom Design System"
         sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
         textPosition="below"
@@ -171,7 +171,7 @@ The implementation of the new Design System resulted in a **year's worth of deve
       <CtaPaid
         fullWidth
         textAlign="center"
-        largeHeadline
+        highlightText
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         sub="Get in touch today."
         buttons={[

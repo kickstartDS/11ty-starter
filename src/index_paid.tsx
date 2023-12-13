@@ -157,7 +157,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
           srcMobile: "/static/img/infos/adapt_kickstartds_mobile.svg",
           srcTablet: "/static/img/infos/adapt_kickstartds.svg",
         }}
-        largeHeadline
+        highlightText
         text="We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
         textPosition="below"
       />
@@ -381,7 +381,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     >
       <CtaPaid
         fullWidth
-        largeHeadline
+        highlightText
         textAlign="center"
         headline="Ready to embark on a transformative digital journey?"
         sub="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."

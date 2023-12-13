@@ -29,7 +29,7 @@ export default (props) => (
           alt: "Fake Showcase Mockup Image",
         }}
         textPosition="below"
-        largeHeadline
+        highlightText
         headline="Powering EcoTech's Digital Transformation with a Design System and Headless CMS"
         sub="Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web"
       />
@@ -118,7 +118,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     >
       <CtaPaid
         fullWidth
-        largeHeadline
+        highlightText
         textAlign="center"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         sub="Connect with us to start your journey."
