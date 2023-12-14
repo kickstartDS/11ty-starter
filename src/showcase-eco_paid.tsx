@@ -67,13 +67,17 @@ export default (props) => (
             headline: "Our Solution:",
             sub: "Design System end to end",
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            image: "/static/img/showcases/comp_eco03.png",
+            image: {
+              src: "/static/img/showcases/comp_eco03.png",
+            },
           },
           {
             headline: "Headless is best:",
             sub: "Easy adoption thanks Design System",
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            image: "/static/img/showcases/comp_eco04.png",
+            image: {
+              src: "/static/img/showcases/comp_eco04.png",
+            },
           },
         ]}
       />

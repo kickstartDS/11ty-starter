@@ -56,7 +56,9 @@ export default (props) => (
             headline: "Speed and Scale",
             sub: "LaunchPad Audio Innovations",
             text: "Explore how we empowered LaunchPad, an AI-powered digital audio controller startup, with rapid landing page creation for market testing and a robust foundation for future growth.",
-            image: "/static/img/showcases/preview_audio.png",
+            image: {
+              src: "/static/img/showcases/preview_audio.png",
+            },
             backgroundColor: "#0101A3",
             button: {
               label: "See showcase",
@@ -69,7 +71,9 @@ export default (props) => (
             headline: "Savigating the Headless Frontier for Brand Consistency",
             sub: "EcoTech Solutions",
             text: "See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time.",
-            image: "/static/img/showcases/preview_eco.png",
+            image: {
+              src: "/static/img/showcases/preview_eco.png",
+            },
             backgroundColor: "#21331E",
             button: {
               target: "/showcase-eco_paid",
@@ -82,7 +86,9 @@ export default (props) => (
             headline: "A Digital Transformation Love Story",
             sub: "TechFusion Enterprises",
             text: "Discover how we revolutionized TechFusion Enterprises' digital landscape by developing a tailored Design System. Our innovative approach saved them a year's worth of development time and harmonized their user experiences across all platforms.",
-            image: "/static/img/showcases/preview_tfe.png",
+            image: {
+              src: "/static/img/showcases/preview_tfe.png",
+            },
             backgroundColor: "#670A82",
             button: {
               label: "See showcase",

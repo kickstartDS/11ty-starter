@@ -69,7 +69,7 @@ export default (props) => (
       }}
     >
       <Text
-        highlight
+        highlightText
         align="center"
         text="LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future."
       />
@@ -82,12 +82,16 @@ export default (props) => (
           {
             headline: "Our Solution:",
             text: "We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.",
-            image: "/static/img/showcases/comp_audio03.png",
+            image: {
+              src: "/static/img/showcases/comp_audio03.png",
+            },
           },
           {
             headline: "Result:",
             text: "With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.",
-            image: "/static/img/showcases/comp_audio04.png",
+            image: {
+              src: "/static/img/showcases/comp_audio04.png",
+            },
           },
         ]}
       />

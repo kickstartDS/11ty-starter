@@ -94,7 +94,9 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
               toggle: true,
             },
             headline: "Our Solution:",
-            image: "/static/img/showcases/mosaic-2-tfe.png",
+            image: {
+              src: "/static/img/showcases/mosaic-2-tfe.png",
+            },
             sub: "Design System in 5 Days",
             text: "We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.",
           },
@@ -106,7 +108,9 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
               toggle: true,
             },
             headline: "Additional Services:",
-            image: "/static/img/showcases/mosaic-3-tfe.png",
+            image: {
+              src: "/static/img/showcases/mosaic-3-tfe.png",
+            },
             sub: "Help to help yourself",
             text: "We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.",
           },
