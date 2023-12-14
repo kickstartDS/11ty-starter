@@ -27,7 +27,7 @@ export default (props) => (
       width="default"
     >
       <Text
-        highlight
+        highlightText
         text={`At Systemics, we specialize in creating bespoke design systems that bring harmony and consistency to your digital presence. Our expertise extends beyond design, as we seamlessly integrate headless CMS architecture, maximizing the value of both worlds. We work closely with you, understanding your brand's essence and user needs, to craft experiences that leave a lasting impact.`}
       />
     </Section>
@@ -66,7 +66,7 @@ export default (props) => (
     >
       <Text
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
-        highlight
+        highlightText
       />
     </Section>
 
@@ -105,7 +105,7 @@ We're not just building design systems; we're building value. By combining our e
     >
       <Text
         text={`Founded by passionate digital enthusiasts, Systemics emerged from the desire to reshape the digital realm. With a history spanning over a decade, we've continuously evolved to stay at the forefront of design systems, headless CMSs, and cutting-edge development practices. Our journey is one of innovation, collaboration, and a relentless pursuit of excellence.`}
-        highlight
+        highlightText
       />
     </Section>
 

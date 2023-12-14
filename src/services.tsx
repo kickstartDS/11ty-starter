@@ -34,7 +34,7 @@ export default (props) => (
       }}
     >
       <Text
-        highlight
+        highlightText
         text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
     </Section>
