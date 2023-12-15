@@ -212,7 +212,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
       headline={{
         text: "No Agency site without some shiny happy Customer",
-        sub: "AI-generated smiles, as you see them evrywhere nowadays",
+        sub: "AI-generated smiles, as you see them everywhere nowadays",
       }}
     >
       <Testimonials
