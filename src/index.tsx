@@ -51,6 +51,7 @@ export default (props) => (
     </Section>
 
     <Section
+      spotlight
       id="startit"
       headline={{
         text: "Design System Services",
