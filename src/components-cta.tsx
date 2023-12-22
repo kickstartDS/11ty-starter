@@ -2,6 +2,7 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { CtaPaid } from "@kickstartds/ds-agency/cta-paid";
 import { PreviewSection } from "@kickstartds/ds-agency/preview-section";
+import { PageIntro } from "@kickstartds/ds-agency/page-intro";
 
 import { PageWrapper } from "./_includes/PageWrapper";
 
@@ -17,24 +18,21 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    {/* <Section
+    <Section
       content={{
         mode: "list",
         gutter: "none",
       }}
     >
-      <Link href="#" className="g-link">
-        <Icon icon="arrow-left" />
-        All Components
-      </Link>
-
-      <Headline
-        text="Discover the Cta Component"
+      <PageIntro
+        link={{
+          href: "#",
+          label: "All Components",
+        }}
+        headline="Discover the Cta Component"
         sub="7 examples"
-        level="h1"
-        style="h1"
       />
-    </Section> */}
+    </Section>
     <PreviewSection
       preview={{
         title: "Banner",
