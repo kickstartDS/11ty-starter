@@ -35,13 +35,13 @@ export default (props) => (
         title="Video Curtain"
         text="3 Examples"
         image="/static/img/component_screenshots/video-curtain.png"
-        target="#"
+        target="/components-video_curtain"
       />
       <ComponentTeaser
         title="Features"
         text="5 Examples"
         image="/static/img/component_screenshots/features.png"
-        target="#"
+        target="/components-features"
       />
       <ComponentTeaser
         title="Gallery"

@@ -119,7 +119,7 @@ export default (props) => (
       spaceBefore="none"
       spaceAfter="none"
       preview={{
-        title: "Text On Image With Overlay",
+        title: "Text Box On Full Screen",
         label: "Paid",
         link: {
           label: "View in Storybook",
