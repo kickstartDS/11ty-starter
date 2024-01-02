@@ -26,11 +26,11 @@ export default (props) => (
     >
       <PageIntro
         link={{
-          href: "#",
+          href: "/components-overview",
           label: "All Components",
         }}
         headline="Discover the Cta Component"
-        sub="7 examples"
+        sub="9 examples"
       />
     </Section>
     <PreviewSection
