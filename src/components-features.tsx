@@ -1,8 +1,6 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Hero } from "@kickstartds/ds-agency/hero";
 import { PreviewSection } from "@kickstartds/ds-agency/preview-section";
 import { PageIntro } from "@kickstartds/ds-agency/page-intro";
-
 import { PageWrapper } from "./_includes/PageWrapper";
 import { Features } from "@kickstartds/ds-agency/features";
 
@@ -25,13 +23,11 @@ export default (props) => (
           label: "All Components",
         }}
         headline="Discover the Hero Component"
-        sub="3 examples"
+        sub="5 examples"
       />
     </Section>
     <PreviewSection
       width="wide"
-      spaceBefore="none"
-      spaceAfter="none"
       preview={{
         title: "Icon Centered",
         label: "Paid",
@@ -111,8 +107,6 @@ export default (props) => (
     </PreviewSection>
     <PreviewSection
       width="wide"
-      spaceBefore="none"
-      spaceAfter="none"
       preview={{
         title: "Stack With Button",
         label: "Paid",
@@ -174,8 +168,6 @@ export default (props) => (
     </PreviewSection>
     <PreviewSection
       width="narrow"
-      spaceBefore="none"
-      spaceAfter="none"
       preview={{
         title: "List View",
         label: "Paid",
@@ -255,8 +247,6 @@ export default (props) => (
     </PreviewSection>
     <PreviewSection
       width="default"
-      spaceBefore="none"
-      spaceAfter="none"
       preview={{
         title: "Icon Beside With Link In Text",
         label: "Paid",
@@ -336,8 +326,6 @@ export default (props) => (
     </PreviewSection>
     <PreviewSection
       width="default"
-      spaceBefore="none"
-      spaceAfter="none"
       preview={{
         title: "Icon Intext With Link",
         label: "Paid",

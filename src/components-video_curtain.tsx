@@ -1,10 +1,8 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Hero } from "@kickstartds/ds-agency/hero";
 import { PreviewSection } from "@kickstartds/ds-agency/preview-section";
 import { PageIntro } from "@kickstartds/ds-agency/page-intro";
-
+import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
 import { PageWrapper } from "./_includes/PageWrapper";
-import { VideoCurtain } from "@kickstartds/ds-agency/components/video-curtain/index.js";
 
 export const data = {
   title:

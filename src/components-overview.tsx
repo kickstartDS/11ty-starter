@@ -1,6 +1,6 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { PageWrapper } from "./_includes/PageWrapper";
-import { ComponentTeaser } from "@kickstartds/ds-agency/components/teaser-component/index.js";
+import { ComponentTeaser } from "@kickstartds/ds-agency/teaser-component";
 
 export const data = {
   title:
@@ -9,8 +9,9 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper>
+  <PageWrapper floatingHeader>
     <Section
+      headerSpacing
       headline={{
         text: "Explore Over 40 Unique Use Cases Across 16 Components",
         width: "default",
@@ -18,6 +19,7 @@ export default (props) => (
         align: "center",
       }}
       width="wide"
+      spotlight
     >
       <ComponentTeaser
         title="CTA"
@@ -47,25 +49,25 @@ export default (props) => (
         title="Gallery"
         text="4 Examples"
         image="/static/img/component_screenshots/gallery.png"
-        target="#"
+        target="/components-gallery"
       />
       <ComponentTeaser
         title="Teaser Card"
         text="2 Examples"
         image="/static/img/component_screenshots/teaser.png"
-        target="#"
+        target="/components-teaser_card"
       />
       <ComponentTeaser
         title="Testimonials"
         text="7 Examples"
         image="/static/img/component_screenshots/testimonials.png"
-        target="#"
+        target="/components-testimonials"
       />
       <ComponentTeaser
         title="Logos"
         text="6 Examples"
         image="/static/img/component_screenshots/logos.png"
-        target="#"
+        target="/components-logos"
       />
       <ComponentTeaser
         title="Stats"
