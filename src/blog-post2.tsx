@@ -68,7 +68,7 @@ Effective communication is a language, and every brand has its own dialect. Ampl
 ### Conclusion: From Vision to Reality, With a **Touch of Sarcasm** and a **Healthy Dose of Fun**
 Long story short, think of us as your brand's personal stylist in the digital world - but with a much cooler job. We're here to ensure that your brand always looks its best, regardless of the platform. So, leave your brand's digital transformation to us, sit back, relax, and let us take you on a journey - from vision to reality, with a healthy dose of sarcasm and a lot of fun!
 
-Still skeptical about embarking on this journey? We get it! But remember, the proof of the pudding is in the eating. So why not [reach out to us](https://about.design-system.agency/) or [check out our case studies](/showcases) to see the magic we can create together? Because at Systemics, we believe in making work fun, results tangible, and your brand's digital presence a masterpiece!
+Still skeptical about embarking on this journey? We get it! But remember, the proof of the pudding is in the eating. So why not [reach out to us](https://about.design-system.agency) or [check out our case studies](/showcases) to see the magic we can create together? Because at Systemics, we believe in making work fun, results tangible, and your brand's digital presence a masterpiece!
           `}
           />
         </div>
