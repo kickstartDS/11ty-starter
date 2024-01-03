@@ -28,45 +28,82 @@ export default (props) => (
     </Section>
 
     <PreviewSection
-      headline={{
-        text: "Design System Services",
-        align: "center",
-      }}
       preview={{
-        title: "Simple",
+        title: "Product Tiles",
         label: "Paid",
         link: {
           label: "View in Storybook",
           href: "#",
         },
       }}
+      headline={{
+        text: "Discover the Extensive Range of Our Software Solutions",
+        sub: "Tailored solutions to meet every digital need",
+        switchOrder: true,
+        align: "center",
+      }}
+      buttons={[
+        {
+          label: "See more",
+          target: "#",
+        },
+      ]}
     >
       <TeaserCard
-        displayButton={false}
-        headline="Accelerating Digital Experiences with Headless CMS"
-        image="/static/img/close-up-young-business-team-working.png"
+        headline="Castaway"
+        text="Transforming Ideas into Code"
+        image="/static/img/logos/castaway.svg"
         target="#"
-        text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
+        displayButton={false}
       />
       <TeaserCard
-        displayButton={false}
-        headline="Unleashing Web Speed with Headless CMS"
-        image="/static/img/full-shot-different-people-working-together.png"
+        headline="Communigate"
+        text="Empowering Innovation, One Line at a Time"
+        image="/static/img/logos/communigate.svg"
         target="#"
-        text="Discover a new level of speed and scalability with our Headless CMS-driven websites and web applications, all thanks to our unique composable architecture."
+        displayButton={false}
+      />
+      <TeaserCard
+        headline="AP Solutions"
+        text="Coding the Future, Today"
+        image="/static/img/logos/ap.svg"
+        target="#"
+        displayButton={false}
+      />
+      <TeaserCard
+        headline="HighDensity"
+        text="Where Technology Meets Creativity"
+        image="/static/img/logos/highdensity.svg"
+        target="#"
+        displayButton={false}
+      />
+      <TeaserCard
+        headline="Major.ly"
+        text="Simplifying Complexity, One Click at a Time"
+        image="/static/img/logos/majorly.svg"
+        target="#"
+        displayButton={false}
+      />
+      <TeaserCard
+        headline="UniversalTech"
+        text="Driving Progress with Every Pixel"
+        image="/static/img/logos/universaltech.svg"
+        target="#"
+        displayButton={false}
       />
     </PreviewSection>
 
     <PreviewSection
       headline={{
-        text: "Exploring the Power of Headless CMS",
+        text: "Exploring the Power of **Headless CMS**",
         sub: "Unleashing Efficiency, Scalability, and Performance in Web Development",
         large: true,
         align: "center",
+        width: "default",
       }}
       width="wide"
       preview={{
-        title: "With Button",
+        title: "Page Nav",
         label: "Paid",
         link: {
           label: "View in Storybook",
@@ -98,18 +135,19 @@ export default (props) => (
     </PreviewSection>
 
     <PreviewSection
-      width="wide"
-      headline={{
-        text: "Happy Customers Showcases",
-        sub: "We can create something shining for you too!",
-      }}
       preview={{
-        title: "With Label",
+        title: "Showcase Preview",
         label: "Paid",
         link: {
           label: "View in Storybook",
           href: "#",
         },
+      }}
+      width="wide"
+      headline={{
+        text: "Happy Customers Showcases",
+        sub: "We can create something shining for you too!",
+        switchOrder: true,
       }}
     >
       <TeaserCard

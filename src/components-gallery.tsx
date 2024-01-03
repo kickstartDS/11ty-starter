@@ -36,7 +36,7 @@ export default (props) => (
         },
       }}
       headline={{
-        text: "Explore Our Visual Journey",
+        text: "Explore Our **Visual Journey**",
         sub: "Dive into our collection of captivating images",
       }}
     >
@@ -150,6 +150,7 @@ export default (props) => (
       headline={{
         text: "Discover Our Picture Portfolio",
         sub: "A glimpse into the visual experiences we offer",
+        switchOrder: true,
       }}
     >
       <Gallery

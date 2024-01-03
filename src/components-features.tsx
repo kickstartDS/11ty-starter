@@ -37,10 +37,11 @@ export default (props) => (
         },
       }}
       headline={{
-        text: "Explore Our Feature Set",
+        text: "Explore Our **Feature Set**",
         sub: "Dive into the wide array of functionalities we provide",
         align: "center",
         large: true,
+        switchOrder: true,
       }}
     >
       <Features
@@ -183,6 +184,7 @@ export default (props) => (
       headline={{
         text: "Discover What We Bring to the Table",
         sub: "A look into the unique features we offer",
+        switchOrder: true,
       }}
     >
       <Features
@@ -257,7 +259,7 @@ export default (props) => (
         },
       }}
       headline={{
-        text: "Experience Our Feature-Rich Solutions",
+        text: "Experience Our **Feature-Rich** Solutions",
         sub: "Get to know the diverse functionalities we have in store",
       }}
     >

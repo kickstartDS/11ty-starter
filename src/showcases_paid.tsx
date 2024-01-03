@@ -142,43 +142,43 @@ export default (props) => (
         logos={[
           {
             alt: "Logo 1",
-            src: "/static/img/logoipsum-212.svg",
+            src: "/static/img/logos/logoipsum-212.svg",
           },
           {
             alt: "Logo 2",
-            src: "/static/img/logoipsum-217.svg",
+            src: "/static/img/logos/logoipsum-217.svg",
           },
           {
             alt: "Logo 3",
-            src: "/static/img/logoipsum-239.svg",
+            src: "/static/img/logos/logoipsum-239.svg",
           },
           {
             alt: "Logo 4",
-            src: "/static/img/logoipsum-244.svg",
+            src: "/static/img/logos/logoipsum-244.svg",
           },
           {
             alt: "Logo 5",
-            src: "/static/img/logoipsum-250.svg",
+            src: "/static/img/logos/logoipsum-250.svg",
           },
           {
             alt: "Logo 6",
-            src: "/static/img/logoipsum-286.svg",
+            src: "/static/img/logos/logoipsum-286.svg",
           },
           {
             alt: "Logo 7",
-            src: "/static/img/logoipsum-212.svg",
+            src: "/static/img/logos/logoipsum-212.svg",
           },
           {
             alt: "Logo 8",
-            src: "/static/img/logoipsum-217.svg",
+            src: "/static/img/logos/logoipsum-217.svg",
           },
           {
             alt: "Logo 9",
-            src: "/static/img/logoipsum-239.svg",
+            src: "/static/img/logos/logoipsum-239.svg",
           },
           {
             alt: "Logo 10",
-            src: "/static/img/logoipsum-244.svg",
+            src: "/static/img/logos/logoipsum-244.svg",
           },
         ]}
         logosPerRow={4}
