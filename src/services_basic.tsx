@@ -2,10 +2,9 @@ import { Section } from "@kickstartds/ds-agency/section";
 import { Cta } from "@kickstartds/ds-agency/cta";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Image } from "@kickstartds/ds-agency/image";
 import { Features } from "@kickstartds/ds-agency/features";
-import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
-import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
+import { ImageText } from "@kickstartds/ds-agency/image-text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
 
 export const data = {
@@ -18,35 +17,32 @@ export const data = {
 };
 
 export default (props) => (
-  <PageWrapper floatingHeader>
+  <PageWrapper>
     <Section
-      spaceBefore="none"
-      width="full"
+      style="accentTransition"
+      width="wide"
       content={{
         mode: "list",
+        width: "default",
+      }}
+      headline={{
+        align: "left",
+        text: "**Headless** Web & **Design System** Services",
+        large: true,
+        width: "default",
+        sub: "Tailored Solutions for Seamless Digital Excellence",
       }}
     >
-      <Hero
-        headline="Headless Web & Design System Services"
-        height="fullImage"
-        image={{
-          indent: "none",
-          src: "/static/img/deco/hero_services.png",
-          srcDesktop: "/static/img/deco/hero_services.png",
-          srcMobile: "/static/img/deco/hero_services.png",
-          srcTablet: "/static/img/deco/hero_services.png",
-        }}
-        overlay
-        text="**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands."
+      <Text
         highlightText
-        textPosition="below"
+        text={`**We believe** that well-crafted design systems are the cornerstone of exceptional user experiences. Our team is dedicated to providing clients with tailored solutions that bridge the gap between creativity and functionality, ultimately reshaping the way users engage with brands.`}
       />
     </Section>
 
-    <Section width="wide" spaceBefore="none">
+    <Section width="wide" backgroundColor="accent">
       <Features
         ctas={{
-          style: "intext",
+          style: "link",
           toggle: true,
         }}
         features={[
@@ -88,103 +84,105 @@ export default (props) => (
           },
         ]}
         layout="smallTiles"
-        style="centered"
-      />
-    </Section>
-
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/bg/bg_divder-blue.svg"
-        alt="Just a divider image, makes no sense, just for deco"
+        style="besideLarge"
       />
     </Section>
 
     <Section
+      width="wide"
       id="ds1"
       headline={{
         text: "Our Services",
-        align: "center",
         sub: "Tailored Solutions for Seamless Digital Excellence",
+        align: "center",
+      }}
+      content={{
+        mode: "list",
       }}
     >
-      <ImageStory
+      <ImageText
+        layout="beside-right"
+        text={`
+### Design System **Consulting**
+#### Bringing Clarity to Your Vision
+Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. 
+
+We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
+        `}
         image={{
-          ratio: "none",
           src: "/static/img/deco/ds-services-01.png",
           alt: "A group of designers having a creative meeting in a stylish modern room in a skyscraper, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, ",
         }}
-        headline="Design System **Consulting**"
-        layout="textLeft"
-        sub="Bringing Clarity to Your Vision"
-        text="
-Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals. 
-
-We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. 
-
-**Our goal is to empower you** with the knowledge and direction you need to create seamless, consistent, and captivating user experiences."
-        textAlign="left"
       />
     </Section>
 
-    <Section id="ds2">
-      <ImageStory
+    <Section
+      width="wide"
+      id="ds2"
+      content={{
+        mode: "list",
+      }}
+    >
+      <ImageText
+        layout="beside-left"
+        text={`
+### Design System **Creation**
+#### From Vision to Reality
+Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system. 
+
+It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
+        `}
         image={{
-          ratio: "none",
           src: "/static/img/deco/ds-services-02.png",
           alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
         }}
-        headline="Design System **Creation**"
-        layout="imageLeft"
-        sub="From Vision to Reality"
-        text="
-Our Design System Creation service is where ideas materialize into tangible results. 
-
-We take your vision, weave it with industry best practices, and craft a comprehensive design system. 
-
-It's not just about visual consistency – it's about **empowering your brand to communicate effectively** and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve."
-        textAlign="left"
       />
     </Section>
 
-    <Section id="ds3">
-      <ImageStory
+    <Section
+      width="wide"
+      id="ds3"
+      content={{
+        mode: "list",
+      }}
+    >
+      <ImageText
+        layout="beside-right"
+        text={`
+### Design System **Trainings**
+#### Empower Your Digital Team
+Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. 
+
+Our training equips your digital teams with the skills they need to harness your design system effectively. By promoting collaboration, shared understanding, and continuous learning, we ensure your design system remains an evolving cornerstone of your digital success.
+          `}
         image={{
-          ratio: "none",
           src: "/static/img/deco/ds-services-03.png",
           alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
         }}
-        headline="Design System **Trainings**"
-        largeHeadline
-        layout="textLeft"
-        sub="Empower Your Digital Team"
-        text="
-Invest in your team's growth with our Design System Trainings. We believe that the true value of a design system lies not only in its components but in the hands that wield them. 
-
-Our training equips your digital teams with the skills they need to harness your design system effectively. 
-
-By promoting collaboration, shared understanding, and continuous learning, **we ensure your design system remains an evolving cornerstone of your digital success.**"
-        textAlign="left"
       />
     </Section>
 
-    <Section id="ds4" style="boldTransition">
-      <ImageStory
+    <Section
+      width="wide"
+      id="ds4"
+      style="boldTransition"
+      content={{
+        mode: "list",
+      }}
+    >
+      <ImageText
+        layout="beside-left"
+        text={`
+### **Headless** Websites
+#### Unleash the Power of Headless Architecture
+Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. 
+
+Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. Your content distribution becomes dynamic and responsive, tailored to your users' preferences, making their journey seamless across devices and platforms.
+        `}
         image={{
-          ratio: "none",
           src: "/static/img/deco/ds-services-04.png",
           alt: "A view inside a web developer agency, with some busy people, working in front of a glass whiteboard, layout user interface components, like a film still from blade runner, lens-flare effect, Cinematic, Neon Lights, website design, Neon lighting, lens-flare-effect",
         }}
-        headline="**Headless** Websites"
-        largeHeadline
-        layout="imageLeft"
-        sub="Unleash the Power of Headless Architecture"
-        text="
-Discover the future of digital experiences with our Headless Websites service. By decoupling content from presentation, we offer you a playground of innovation and creativity. 
-
-Our experts leverage headless CMS architecture to give you unparalleled flexibility while maintaining design integrity. 
-
-our content distribution becomes dynamic and responsive, tailored to your users' preferences, making their **journey seamless across devices and platforms.**"
-        textAlign="left"
       />
     </Section>
 

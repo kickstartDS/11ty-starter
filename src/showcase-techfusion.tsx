@@ -1,10 +1,11 @@
 import { Section } from "@kickstartds/ds-agency/section";
-import { Cta } from "@kickstartds/ds-agency/cta";
-import { Testimonials } from "@kickstartds/ds-agency/testimonials";
+import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
-import { Image } from "@kickstartds/ds-agency/image";
+import { Mosaic } from "@kickstartds/ds-agency/mosaic";
+import { Hero } from "@kickstartds/ds-agency/hero";
 import { PageWrapper } from "./_includes/PageWrapper";
+import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
 
 export const data = {
   title:
@@ -19,24 +20,51 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/showcases/comp_tfe01.png"
-        alt="Fake Showcase Mockup Image"
+    <Section
+      spaceBefore="none"
+      spaceAfter="none"
+      width="full"
+      content={{
+        mode: "list",
+      }}
+    >
+      <Hero
+        height="fullImage"
+        image={{
+          alt: "Fake Showcase Mockup Image",
+          indent: "none",
+          srcMobile: "/static/img/showcases/comp_tfe01.png",
+        }}
+        highlightText
+        headline="Harmonizing Digital Experiences for TechFusion Enterprises with a Custom Design System"
+        sub="Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency"
+        textPosition="below"
       />
     </Section>
 
     <Section
-      width="wide"
-      style="symmetricGlow"
-      content={{
-        width: "default",
-      }}
-      spaceAfter="default"
+      style="accentTransition"
+      spaceAfter="none"
+      spaceBefore="none"
+      width="full"
+    >
+      <Hero
+        height="fullImage"
+        image={{
+          alt: "Fake Showcase Mockup Image",
+          indent: "none",
+          srcMobile: "/static/img/showcases/comp_tfe02.png",
+        }}
+      />
+    </Section>
+
+    <Section
+      spaceBefore="none"
+      spaceAfter="small"
+      backgroundColor="accent"
       headline={{
-        text: "Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**",
-        sub: "Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency",
-        large: true,
+        text: "Briefing:",
+        sub: "Harmonize Techfusions Digital Landscape",
         textAlign: "center",
       }}
     >
@@ -49,29 +77,67 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
       />
     </Section>
 
-    <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/static/img/showcases/comp_tfe02.png"
-        alt="Fake Showcase Mockup Image"
+    <Section
+      width="full"
+      spaceBefore="none"
+      spaceAfter="default"
+      backgroundColor="accent"
+      style="boldTransition"
+    >
+      <Mosaic
+        tiles={[
+          {
+            button: {
+              icon: undefined,
+              label: "Book a meeting",
+              target: undefined,
+              toggle: true,
+            },
+            headline: "Our Solution:",
+            image: {
+              src: "/static/img/showcases/mosaic-2-tfe.png",
+            },
+            sub: "Design System in 5 Days",
+            text: "We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.",
+          },
+          {
+            button: {
+              icon: undefined,
+              label: "Book a meeting",
+              target: undefined,
+              toggle: true,
+            },
+            headline: "Additional Services:",
+            image: {
+              src: "/static/img/showcases/mosaic-3-tfe.png",
+            },
+            sub: "Help to help yourself",
+            text: "We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.",
+          },
+        ]}
       />
     </Section>
 
     <Section
-      width="wide"
       content={{
-        width: "default",
+        mode: "list",
+      }}
+      headline={{
+        text: "**Result:**",
         align: "center",
+        textAlign: "center",
       }}
     >
       <Text
         text={`
-### **Our Solution:** 
-We partnered with TechFusion to develop a tailored Design System using **kickstartDS**. This **code-first framework** accelerated the setup process, seamlessly integrating with their existing component libraries like Bootstrap and MUI. Our innovative approach ensured brand consistency, even for legacy products, transforming their digital landscape.
+The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
           `}
+        align="center"
+        highlightText
       />
     </Section>
-    <Section width="wide" spaceBefore="small" style="accentTransition">
-      <Testimonials
+    <Section spaceBefore="none" width="wide">
+      <TestimonialsPaid
         testimonials={[
           {
             image: {
@@ -87,46 +153,29 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
       />
     </Section>
 
-    <Section
-      backgroundColor="accent"
-      width="full"
-      spaceAfter="none"
-      spaceBefore="none"
-    >
-      <Image
-        src="/static/img/showcases/comp_tfe03.png"
-        alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-
-    <Section backgroundColor="accent">
-      <Text
-        text={`
-## **Result:** 
-The implementation of the new Design System resulted in a **year's worth of development time saved**. Coding new components within their tech stack became significantly more efficient, eliminating the need for time-consuming customization of MUI components.
-
-**Additional Services:**
-
-We empowered TechFusion's marketing and digital teams through comprehensive **training on Design Systems**. Their frontend developers were trained to use [**kickstartDS**](https://www.kickstartds.com), enabling them to take over the development of new components effectively.
-          `}
+    <Section spaceBefore="small" width="full">
+      <CtaPaid
+        fullWidth
+        image={{
+          src: "/static/img/showcases/comp_tfe03.png",
+          padding: false,
+        }}
+        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
+        headline="Find some inspiration from Techfusion for your next project"
       />
     </Section>
 
     <Section
-      backgroundColor="accent"
-      width="full"
+      style="boldTransition"
+      width="wide"
       spaceAfter="none"
       spaceBefore="none"
+      inverted
     >
-      <Image
-        src="/static/img/showcases/comp_tfe03.jpg"
-        alt="Fake Showcase Mockup Image"
-      />
-    </Section>
-
-    <Section width="wide" inverted backgroundColor="accent" style="anchorGlow">
-      <Cta
+      <CtaPaid
+        fullWidth
         textAlign="center"
+        highlightText
         headline="**Ready to harmonize** your Digital Experiences? Let's collaborate to create a tailored **Design System** for your brand."
         sub="Get in touch today."
         buttons={[
@@ -152,13 +201,13 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       }}
     >
       <TeaserCard
-        target="/showcase-launchpad"
+        target="/showcase-launchpad_paid"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
-        target="/showcase-eco"
+        target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"

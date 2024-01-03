@@ -3,9 +3,8 @@ import { Cta } from "@kickstartds/ds-agency/cta";
 import { Testimonials } from "@kickstartds/ds-agency/testimonials";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
 import { Text } from "@kickstartds/ds-agency/text";
+import { Image } from "@kickstartds/ds-agency/image";
 import { PageWrapper } from "./_includes/PageWrapper";
-import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
-import { Mosaic } from "@kickstartds/ds-agency/components/mosaic/index.js";
 
 export const data = {
   title:
@@ -20,83 +19,63 @@ export const data = {
 
 export default (props) => (
   <PageWrapper floatingHeader>
-    <Section
-      style="accentTransition"
-      width="full"
-      spaceAfter="small"
-      spaceBefore="none"
-    >
-      <Hero
-        height="fullImage"
-        image={{
-          srcMobile: "/static/img/showcases/comp_audio01.png",
-          alt: "Fake Showcase Mockup Image",
-        }}
-        textPosition="below"
-        highlightText
-        headline="Fast-Tracking LaunchPad's Market Presence with Sanity-powered Landing Pages"
-        sub="Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth"
+    <Section width="full" spaceAfter="none" spaceBefore="none">
+      <Image
+        src="/static/img/showcases/comp_audio01.jpg"
+        alt="Fake Showcase Mockup Image"
       />
     </Section>
 
     <Section
-      width="max"
+      backgroundColor="accent"
+      width="wide"
+      style="anchorGlow"
+      content={{
+        mode: "list",
+        width: "narrow",
+      }}
+      spaceAfter="default"
+      headline={{
+        text: "Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**",
+        sub: "Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth",
+      }}
+    >
+      <Text
+        text={`
+### Briefing:
+LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future.
+          `}
+      />
+    </Section>
+
+    <Section
+      backgroundColor="accent"
+      width="full"
       content={{
         mode: "list",
       }}
       spaceAfter="none"
       spaceBefore="none"
-      backgroundColor="accent"
-      style="boldTransition"
     >
-      <Hero
-        height="fullImage"
-        image={{
-          srcMobile: "/static/img/showcases/comp_audio02.png",
-          alt: "Fake Showcase Mockup Image",
-        }}
+      <Image
+        src="/static/img/showcases/comp_audio02.jpg"
+        alt="Fake Showcase Mockup Image"
       />
     </Section>
 
     <Section
-      backgroundColor="bold"
-      headline={{
-        text: "Briefing:",
-        textAlign: "center",
-      }}
+      width="wide"
       content={{
         mode: "list",
       }}
     >
       <Text
-        highlightText
-        align="center"
-        text="LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future."
+        text={`
+### Our Solution: 
+We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
+          `}
       />
     </Section>
-
-    <Section style="symmetricGlow" width="full">
-      <Mosaic
-        layout="alternate"
-        tiles={[
-          {
-            headline: "Our Solution:",
-            text: "We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.",
-            image: {
-              src: "/static/img/showcases/comp_audio03.png",
-            },
-          },
-          {
-            headline: "Result:",
-            text: "With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.",
-            image: {
-              src: "/static/img/showcases/comp_audio04.png",
-            },
-          },
-        ]}
-      />
-    </Section>
-
     <Section spaceBefore="small">
       <Testimonials
         testimonials={[
@@ -114,7 +93,53 @@ export default (props) => (
       />
     </Section>
 
-    <Section backgroundColor="bold">
+    <Section
+      backgroundColor="accent"
+      width="full"
+      content={{
+        mode: "list",
+      }}
+      spaceAfter="none"
+      spaceBefore="none"
+    >
+      <Image
+        src="/static/img/showcases/comp_audio03.jpg"
+        alt="Fake Showcase Mockup Image"
+      />
+    </Section>
+
+    <Section
+      backgroundColor="bold"
+      style="horizontalGradient"
+      width="narrow"
+      content={{
+        mode: "list",
+      }}
+    >
+      <Text
+        text={`
+## Result: 
+With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
+          `}
+      />
+    </Section>
+
+    <Section
+      backgroundColor="accent"
+      width="full"
+      content={{
+        mode: "list",
+      }}
+      spaceAfter="none"
+      spaceBefore="none"
+    >
+      <Image
+        src="/static/img/showcases/comp_audio04.jpg"
+        alt="Fake Showcase Mockup Image"
+      />
+    </Section>
+
+    <Section inverted>
       <Cta
         headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
         text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."
@@ -141,13 +166,13 @@ export default (props) => (
       }}
     >
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="/showcase-techfusion"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-eco_paid"
+        target="/showcase-eco"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"

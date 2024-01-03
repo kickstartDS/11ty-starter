@@ -1,8 +1,6 @@
-import path from "node:path";
 import "@kickstartds/ds-agency/global.client.js";
 
 import { useEleventy } from "@kickstartds/eleventy-plugin-kickstartds/useEleventy";
-import { navigation } from "@11ty/eleventy-navigation";
 import { PageWrapper as Page } from "@kickstartds/ds-agency/page-wrapper";
 import { Header } from "@kickstartds/ds-agency/header";
 import { Footer } from "@kickstartds/ds-agency/footer";
@@ -22,45 +20,35 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
         logo={data.logo}
         floating={floatingHeader}
         navItems={[
-          { label: "Home", href: "/" },
+          { label: "Home", href: "/index" },
           { label: "About", href: "/about-us" },
           { label: "Services", href: "/services" },
           { label: "Showcases", href: "/showcases" },
           { label: "Blog", href: "/blog" },
-          { label: "Disclaimer", href: "/disclaimer" },
           {
             label: "Storybook",
             href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
           },
           { label: "Page Source", href: gitHubPageUrl },
-          { label: "Home-Paid", href: "/index_paid" },
-          { label: "About-Paid", href: "/about-us_paid" },
-          { label: "Services-Paid", href: "/services_paid" },
-          { label: "Showcases-Paid", href: "/showcases_paid" },
-          { label: "Disclaimer-Paid", href: "/disclaimer_paid" },
         ]}
       />
       {children}
       <Footer
         logo={data.logo}
         navItems={[
-          { label: "Home", href: "/" },
+          { label: "Home", href: "/index" },
           { label: "About", href: "/about-us" },
           { label: "Services", href: "/services" },
           { label: "Showcases", href: "/showcases" },
           { label: "Blog", href: "/blog" },
-          { label: "Disclaimer", href: "/disclaimer" },
           {
             label: "Storybook",
             href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
             target: "_blank",
           },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
-          { label: "Home-Paid", href: "/index_paid" },
-          { label: "About-Paid", href: "/about-us_paid" },
-          { label: "Services-Paid", href: "/services_paid" },
-          { label: "Showcases-Paid", href: "/showcases_paid" },
-          { label: "Disclaimer-Paid", href: "/disclaimer_paid" },
+          //TBD add Link properly
+          { label: "Disclaimer", href: "https://about.design-system.agency/" },
         ]}
       />
     </Page>

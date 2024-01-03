@@ -1,14 +1,14 @@
 import { Section } from "@kickstartds/ds-agency/section";
 import { Faq } from "@kickstartds/ds-agency/faq";
 import { TeaserCard } from "@kickstartds/ds-agency/teaser-card";
-import { VideoCurtain } from "@kickstartds/ds-agency/video-curtain";
-import { TestimonialsPaid } from "@kickstartds/ds-agency/testimonials-paid";
-import { PageWrapper } from "./_includes/PageWrapper";
-import { CtaPaid } from "@kickstartds/ds-agency/components/cta-paid/index.js";
-import { ImageStory } from "@kickstartds/ds-agency/components/image-story/index.js";
-import { Hero } from "@kickstartds/ds-agency/components/hero/index.js";
+import { Text } from "@kickstartds/ds-agency/text";
 import { Image } from "@kickstartds/ds-agency/image";
-import { LogosPaid } from "@kickstartds/ds-agency/components/logos-paid/index.js";
+import { Logos } from "@kickstartds/ds-agency/logos";
+import { Cta } from "@kickstartds/ds-agency/cta";
+import { Testimonials } from "@kickstartds/ds-agency/testimonials";
+import { PageWrapper } from "./_includes/PageWrapper";
+import { Features } from "@kickstartds/ds-agency/components/features/index.js";
+import { ImageText } from "@kickstartds/ds-agency/image-text";
 
 export const data = {
   title:
@@ -23,160 +23,200 @@ export const data = {
 export default (props) => (
   <PageWrapper floatingHeader>
     <Section
-      spaceBefore="none"
-      spaceAfter="none"
-      width="full"
+      headerSpacing
+      style="stagelights"
       content={{
+        width: "default",
         mode: "list",
       }}
     >
-      <VideoCurtain
+      <Cta
+        headline="We simplify the process of building a **Design System**"
+        sub="With your headless experts"
+        text={`Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.`}
+        highlightText
         buttons={[
           {
-            icon: "chevron-down",
             label: "What can we do for you?",
             target: "#startit",
+            icon: "chevron-down",
+          },
+          {
+            label: "Book a meeting",
+            target: "https://app.lemcal.com/@daniel-ley",
+            icon: "date",
           },
         ]}
-        headline="Simplify the process of building your Design System"
-        overlay
-        sub="With your headless experts"
-        text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
-        textPosition="center"
-        highlightText
-        video={{
-          srcDesktop: "/static/img/videos/video-1080p.mp4",
-          srcMobile: "/static/img/videos/video-720.mp4",
-          srcTablet: "/static/img/videos/video-1080p.mp4",
-        }}
-      />
-    </Section>
-
-    <Section width="max">
-      <LogosPaid
-        align="center"
-        tagline="Orgs we've helped saving time & money"
-        logos={[
-          {
-            alt: "Logo 1",
-            src: "/static/img/logos/logoipsum-212.svg",
-          },
-          {
-            alt: "Logo 2",
-            src: "/static/img/logos/logoipsum-217.svg",
-          },
-          {
-            alt: "Logo 3",
-            src: "/static/img/logos/logoipsum-239.svg",
-          },
-          {
-            alt: "Logo 4",
-            src: "/static/img/logos/logoipsum-244.svg",
-          },
-          {
-            alt: "Logo 5",
-            src: "/static/img/logos/logoipsum-250.svg",
-          },
-          {
-            alt: "Logo 6",
-            src: "/static/img/logos/logoipsum-286.svg",
-          },
-        ]}
-        logosPerRow={6}
       />
     </Section>
 
     <Section
-      id="startit"
       spotlight
+      id="startit"
       headline={{
         text: "Design System Services",
         sub: "Crafting Consistency, Fostering Growth",
         switchOrder: true,
-        width: "default",
-        align: "center",
-        textAlign: "center",
         large: true,
       }}
-      width="full"
+      width="wide"
+      content={{
+        mode: "list",
+        gutter: "large",
+      }}
     >
-      <ImageStory
-        padding
-        layout="imageLeft"
-        text={`
-**Here at Systemics, we bring a range of design system services that can make a difference:**
-
-### 1. Design System **Consulting**
-Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
-<br/><br/>
-
-### 2. Design System **Creation & Development**
-We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
-<br/><br/>
-
-### 3. Headless **CMS & Websites**
-We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
-<br/><br/>
-
-### 4. Design System **Training**
-We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
-<br/><br/>
-
-**Ready to make your digital journey exceptional?**
-<br/><br/>`}
+      <ImageText
         image={{
-          src: "/static/img/deco/coding_01_framed.png",
-          alt: "Just a decorative illustration",
+          alt: "Photorealistic photography of a hyper modern design & web development agency, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle",
+          src: "/static/img/deco/contact-us-person-smart.png",
         }}
-        buttons={[
+        layout="beside-left"
+        text="
+**Ready to make your digital journey exceptional?**
+
+## Here at Systemics, we bring a range of design system services that can make a difference."
+      />
+      <Features
+        ctas={{
+          style: "intext",
+          toggle: true,
+        }}
+        features={[
           {
-            label: "Reach out today!",
-            icon: "chevron-right",
-            target: "https://app.lemcal.com/@daniel-ley",
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "place",
+            text: "Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools!",
+            title: "Design System Consulting",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "first-page",
+            text: "We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms.",
+            title: "Design System Development",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "browser",
+            text: "We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.",
+            title: "Headless CMS & Websites",
+          },
+          {
+            cta: {
+              label: "Read more",
+              target: "/services",
+            },
+            icon: "person",
+            text: "We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.",
+            title: "Design System Training",
           },
         ]}
+        layout="smallTiles"
+        style="stack"
       />
     </Section>
 
-    <Section width="full">
-      <Hero
-        buttons={[
+    <Section style="accentTransition">
+      <Logos
+        tagline="Orgs we've helped saving time & money"
+        align="center"
+        logos={[
           {
-            icon: "person",
-            label: "Book a meeting",
-            target: undefined,
+            alt: "Logo 1",
+            src: "img/logoipsum-212.svg",
+          },
+          {
+            alt: "Logo 2",
+            src: "img/logoipsum-217.svg",
+          },
+          {
+            alt: "Logo 3",
+            src: "img/logoipsum-239.svg",
+          },
+          {
+            alt: "Logo 4",
+            src: "img/logoipsum-244.svg",
+          },
+          {
+            alt: "Logo 5",
+            src: "img/logoipsum-250.svg",
+          },
+          {
+            alt: "Logo 6",
+            src: "img/logoipsum-286.svg",
           },
         ]}
-        headline="Our Approach to Design Systems"
-        sub="Own a design system without investing years of development."
-        height="fullImage"
-        image={{
-          alt: "Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation",
-          indent: "none",
-          src: "",
-          srcDesktop: "/static/img/infos/adapt_kickstartds.svg",
-          srcMobile: "/static/img/infos/adapt_kickstartds_mobile.svg",
-          srcTablet: "/static/img/infos/adapt_kickstartds.svg",
-        }}
-        highlightText
-        text="We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
-        textPosition="below"
       />
     </Section>
 
     <Section
       width="wide"
-      style="accentTransition"
+      backgroundColor="accent"
+      content={{
+        mode: "list",
+      }}
+      headline={{
+        text: "Our **Approach** to Design Systems",
+        sub: "Own a design system without investing years of development.",
+      }}
+    >
+      <Text
+        text={`
+We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
+        highlightText
+      />
+      <Image
+        src="/static/img/infos/adapt_kickstartds_mobile_clear.svg"
+        alt="Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation "
+      />
+    </Section>
+
+    <Section
+      width="wide"
+      headline={{
+        text: "Happy Customers Showcases",
+        sub: "We can create something shining for you too!",
+      }}
+    >
+      <TeaserCard
+        target="/showcase-techfusion"
+        headline="Transformation Love Story"
+        text="See how we saved TechFusions a year's worth of development time"
+        image="/static/img/showcases/comp_tfe01.jpg"
+      />
+      <TeaserCard
+        target="/showcase-launchpad"
+        headline="Speed and Scale"
+        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
+        image="/static/img/showcases/comp_audio01.jpg"
+      />
+      <TeaserCard
+        target="/showcase-eco"
+        headline="Saving Time and Money"
+        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
+        image="/static/img/showcases/comp_eco01.jpg"
+      />
+    </Section>
+
+    <Section
+      width="wide"
       content={{
         mode: "list",
       }}
       headline={{
         text: "No Agency site without some shiny happy Customer",
         sub: "AI-generated smiles, as you see them everywhere nowadays",
-        textAlign: "left",
       }}
     >
-      <TestimonialsPaid
+      <Testimonials
         testimonials={[
           {
             image: {
@@ -212,45 +252,9 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section
-      backgroundColor="accent"
-      style="boldTransition"
-      width="wide"
-      headline={{
-        text: "Happy Customers Showcases",
-        sub: "We can create something shining for you too!",
-      }}
-    >
-      <TeaserCard
-        target="/showcase-techfusion_paid"
-        headline="Transformation Love Story"
-        text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
-      />
-      <TeaserCard
-        target="/showcase-launchpad_paid"
-        headline="Speed and Scale"
-        label="Freshest Fruit"
-        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
-      />
-      <TeaserCard
-        target="/showcase-eco_paid"
-        headline="Saving Time and Money"
-        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
-      />
-    </Section>
-
-    <Section width="full">
-      <CtaPaid
+    <Section inverted>
+      <Cta
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        fullWidth
-        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
-        image={{
-          src: "/static/img/contact-person.png",
-          padding: false,
-        }}
         buttons={[
           {
             label: "Contact us",
@@ -276,8 +280,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         text: "Design Systems, all you need to know",
         sub: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development.",
         large: true,
-        align: "left",
-        width: "default",
       }}
     >
       <Faq
@@ -374,18 +376,12 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       />
     </Section>
 
-    <Section
-      spaceBefore="none"
-      spaceAfter="none"
-      style="anchorGlow"
-      width="wide"
-    >
-      <CtaPaid
-        fullWidth
-        highlightText
+    <Section backgroundColor="accent">
+      <Cta
         textAlign="center"
         headline="Ready to embark on a transformative digital journey?"
-        sub="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
+        highlightText
         buttons={[
           {
             label: "Contact us",
