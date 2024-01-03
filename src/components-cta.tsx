@@ -18,12 +18,7 @@ export const data = {
 
 export default (props) => (
   <PageWrapper>
-    <Section
-      content={{
-        mode: "list",
-        gutter: "none",
-      }}
-    >
+    <Section>
       <PageIntro
         link={{
           href: "/components-overview",
@@ -41,10 +36,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      width="default"
-      content={{
-        mode: "list",
       }}
     >
       <Cta
@@ -71,9 +62,6 @@ export default (props) => (
         },
       }}
       width="wide"
-      content={{
-        mode: "list",
-      }}
     >
       <Cta
         buttons={[
@@ -98,10 +86,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      width="default"
-      content={{
-        mode: "list",
       }}
     >
       <Cta
@@ -128,9 +112,6 @@ export default (props) => (
         },
       }}
       width="full"
-      content={{
-        mode: "list",
-      }}
     >
       <CtaPaid
         backgroundImage="/static/img/bg_dot-carpet-blue.svg"
@@ -172,9 +153,6 @@ export default (props) => (
         },
       }}
       width="full"
-      content={{
-        mode: "list",
-      }}
     >
       <CtaPaid
         buttons={[
@@ -215,9 +193,6 @@ export default (props) => (
         },
       }}
       width="wide"
-      content={{
-        mode: "list",
-      }}
     >
       <CtaPaid
         backgroundColor="#001856"
@@ -257,9 +232,6 @@ export default (props) => (
       backgroundColor="accent"
       spaceAfter="none"
       spaceBefore="none"
-      content={{
-        mode: "list",
-      }}
     >
       <CtaPaid
         buttons={[
@@ -291,6 +263,7 @@ This tool accelerates our development, saving you valuable time and helping us d
         textAlign="left"
       />
     </PreviewSection>
+
     <PreviewSection
       preview={{
         title: "Colored Banner",
@@ -301,9 +274,6 @@ This tool accelerates our development, saving you valuable time and helping us d
         },
       }}
       width="full"
-      content={{
-        mode: "list",
-      }}
     >
       <CtaPaid
         backgroundColor="#a30051"
@@ -332,6 +302,7 @@ This tool accelerates our development, saving you valuable time and helping us d
         textAlign="left"
       />
     </PreviewSection>
+
     <PreviewSection
       preview={{
         title: "Align Bottom",
@@ -342,9 +313,6 @@ This tool accelerates our development, saving you valuable time and helping us d
         },
       }}
       width="wide"
-      content={{
-        mode: "list",
-      }}
     >
       <CtaPaid
         backgroundImage="/static/img/grid-bg.svg"
@@ -376,6 +344,6 @@ This tool accelerates our development, saving you valuable time and helping us d
 We understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements."
         textAlign="left"
       />
-    </PreviewSection>{" "}
+    </PreviewSection>
   </PageWrapper>
 );

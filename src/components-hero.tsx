@@ -38,9 +38,6 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
-      }}
     >
       <Hero
         buttons={[
@@ -80,9 +77,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Hero
@@ -124,9 +118,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Hero

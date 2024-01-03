@@ -22,7 +22,7 @@ export default (props) => (
           href: "/components-overview",
           label: "All Components",
         }}
-        headline="Discover the Hero Component"
+        headline="Discover the Features Component"
         sub="5 examples"
       />
     </Section>
@@ -36,8 +36,11 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Explore Our Feature Set",
+        sub: "Dive into the wide array of functionalities we provide",
+        align: "center",
+        large: true,
       }}
     >
       <Features
@@ -115,8 +118,9 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Uncover Our Capabilities",
+        sub: "Discover the extensive features that set us apart",
       }}
     >
       <Features
@@ -176,15 +180,13 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Discover What We Bring to the Table",
+        sub: "A look into the unique features we offer",
       }}
     >
       <Features
-        ctas={{
-          style: "intext",
-          toggle: false,
-        }}
+        ctas={{ style: "intext", toggle: false }}
         features={[
           {
             cta: {
@@ -246,7 +248,6 @@ export default (props) => (
       />
     </PreviewSection>
     <PreviewSection
-      width="default"
       preview={{
         title: "Icon Beside With Link In Text",
         label: "Paid",
@@ -255,8 +256,9 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Experience Our Feature-Rich Solutions",
+        sub: "Get to know the diverse functionalities we have in store",
       }}
     >
       <Features
@@ -325,7 +327,6 @@ export default (props) => (
       />
     </PreviewSection>
     <PreviewSection
-      width="default"
       preview={{
         title: "Icon Intext With Link",
         label: "Paid",
@@ -334,8 +335,9 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Delve into Our Offerings",
+        sub: "Unveiling the features that make us stand out",
       }}
     >
       <Features

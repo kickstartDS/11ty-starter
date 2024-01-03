@@ -27,7 +27,6 @@ export default (props) => (
       />
     </Section>
     <PreviewSection
-      width="default"
       preview={{
         title: "Small Squares With Lightbox",
         label: "Paid",
@@ -36,8 +35,9 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Explore Our Visual Journey",
+        sub: "Dive into our collection of captivating images",
       }}
     >
       <Gallery
@@ -93,8 +93,11 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Unveil Our Photographic Showcase",
+        sub: "Discover the stories behind our diverse gallery",
+        align: "center",
+        large: true,
       }}
     >
       <Gallery
@@ -136,7 +139,6 @@ export default (props) => (
     </PreviewSection>
 
     <PreviewSection
-      width="default"
       preview={{
         title: "Free Aspect Ratio",
         label: "Paid",
@@ -145,8 +147,9 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Discover Our Picture Portfolio",
+        sub: "A glimpse into the visual experiences we offer",
       }}
     >
       <Gallery
@@ -203,8 +206,9 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
+      headline={{
+        text: "Step into Our Image Gallery",
+        sub: "Experience the world through our lens",
       }}
     >
       <Gallery

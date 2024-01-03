@@ -22,7 +22,6 @@ export default (props) => (
 
     <Section
       backgroundColor="bold"
-      width="default"
       style="horizontalGradient"
       content={{
         mode: "list",

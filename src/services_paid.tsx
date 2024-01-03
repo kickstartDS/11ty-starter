@@ -100,7 +100,6 @@ export default (props) => (
     </Section>
 
     <Section
-      width="default"
       id="ds1"
       headline={{
         text: "Our Services",
@@ -127,7 +126,7 @@ We align your vision with actionable strategies, ensuring your design system bec
       />
     </Section>
 
-    <Section width="default" id="ds2">
+    <Section id="ds2">
       <ImageStory
         image={{
           ratio: "none",
@@ -147,7 +146,7 @@ It's not just about visual consistency – it's about **empowering your brand to
       />
     </Section>
 
-    <Section width="default" id="ds3">
+    <Section id="ds3">
       <ImageStory
         image={{
           ratio: "none",
@@ -168,7 +167,7 @@ By promoting collaboration, shared understanding, and continuous learning, **we 
       />
     </Section>
 
-    <Section width="default" id="ds4" style="boldTransition">
+    <Section id="ds4" style="boldTransition">
       <ImageStory
         image={{
           ratio: "none",

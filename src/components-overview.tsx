@@ -53,7 +53,7 @@ export default (props) => (
       />
       <ComponentTeaser
         title="Teaser Card"
-        text="2 Examples"
+        text="3 Examples"
         image="/static/img/component_screenshots/teaser.png"
         target="/components-teaser_card"
       />
@@ -73,38 +73,37 @@ export default (props) => (
         title="Stats"
         text="4 Examples"
         image="/static/img/component_screenshots/stats.png"
-        target="#"
+        target="/components-stats"
       />
-
       <ComponentTeaser
         title="Image Story"
         text="1 Example"
         image="/static/img/component_screenshots/image-story.png"
-        target="#"
+        target="/components-image_story"
       />
       <ComponentTeaser
         title="Mosaic"
         text="2 Examples"
         image="/static/img/component_screenshots/mosaic.png"
-        target="#"
+        target="/components-mosaic"
       />
       <ComponentTeaser
-        title="Faq"
+        title="FAQ"
         text="2 Examples"
         image="/static/img/component_screenshots/faq.png"
-        target="#"
+        target="/components-faq"
       />
       <ComponentTeaser
         title="Text"
         text="4 Examples"
         image="/static/img/component_screenshots/text.png"
-        target="#"
+        target="/components-text"
       />
       <ComponentTeaser
         title="Image Text"
         text="2 Examples"
         image="/static/img/component_screenshots/image-text.png"
-        target="#"
+        target="/components-image_text"
       />
     </Section>
   </PageWrapper>

@@ -23,12 +23,11 @@ export default (props) => (
           href: "/components-overview",
           label: "All Components",
         }}
-        headline="Discover the Gallery Component"
+        headline="Discover the Logos Component"
         sub="6 examples"
       />
     </Section>
     <PreviewSection
-      width="default"
       preview={{
         title: "Centered With Button",
         label: "Free",
@@ -36,9 +35,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Logos
@@ -81,7 +77,6 @@ export default (props) => (
     </PreviewSection>
 
     <PreviewSection
-      width="default"
       preview={{
         title: "Left Aligned With Text Link",
         label: "Free",
@@ -89,9 +84,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Logos
@@ -134,7 +126,6 @@ export default (props) => (
     </PreviewSection>
 
     <PreviewSection
-      width="default"
       preview={{
         title: "With Tagline And Button",
         label: "Paid",
@@ -142,9 +133,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <LogosPaid
@@ -196,9 +184,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <LogosPaid
@@ -275,9 +260,6 @@ export default (props) => (
           href: "#",
         },
       }}
-      content={{
-        mode: "list",
-      }}
     >
       <LogosPaid
         align="center"
@@ -320,7 +302,6 @@ export default (props) => (
     </PreviewSection>
 
     <PreviewSection
-      width="default"
       preview={{
         title: "With Text Link",
         label: "Paid",
@@ -328,9 +309,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <LogosPaid
@@ -369,7 +347,7 @@ export default (props) => (
           },
           {
             alt: "Logo 7",
-            src: "/static/img/logoipsum-212.svg",
+            src: "/static/img/logoipsum-244.svg",
           },
         ]}
         logosPerRow={5}

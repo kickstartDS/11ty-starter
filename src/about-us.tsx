@@ -24,7 +24,6 @@ export default (props) => (
         sub: "Elevating Headless Experiences through Innovative Design Systems",
       }}
       style="boldTransition"
-      width="default"
     >
       <Text
         highlightText

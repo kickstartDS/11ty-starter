@@ -37,7 +37,6 @@ export default (props) => (
     </Section>
 
     <Section
-      width="default"
       style="symmetricGlow"
       spaceBefore="small"
       spaceAfter="small"

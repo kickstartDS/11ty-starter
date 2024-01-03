@@ -22,8 +22,8 @@ export default (props) => (
           href: "/components-overview",
           label: "All Components",
         }}
-        headline="Discover the Gallery Component"
-        sub="4 examples"
+        headline="Discover the Teaser Card Component"
+        sub="3 examples"
       />
     </Section>
 
@@ -32,7 +32,6 @@ export default (props) => (
         text: "Design System Services",
         align: "center",
       }}
-      width="default"
       preview={{
         title: "Simple",
         label: "Paid",
@@ -40,9 +39,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TeaserCard
@@ -76,9 +72,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TeaserCard
@@ -117,9 +110,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TeaserCard

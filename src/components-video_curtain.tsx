@@ -22,10 +22,11 @@ export default (props) => (
           href: "/components-overview",
           label: "All Components",
         }}
-        headline="Discover the Hero Component"
+        headline="Discover the Video Curtain Component"
         sub="3 examples"
       />
     </Section>
+
     <PreviewSection
       width="full"
       spaceBefore="none"
@@ -37,9 +38,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <VideoCurtain
@@ -60,6 +58,7 @@ export default (props) => (
         }}
       />
     </PreviewSection>
+
     <PreviewSection
       width="full"
       spaceBefore="none"
@@ -71,9 +70,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <VideoCurtain
@@ -96,6 +92,7 @@ export default (props) => (
         }}
       />
     </PreviewSection>
+
     <PreviewSection
       width="full"
       spaceBefore="none"
@@ -107,9 +104,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <VideoCurtain

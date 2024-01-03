@@ -23,8 +23,8 @@ export default (props) => (
           href: "/components-overview",
           label: "All Components",
         }}
-        headline="Discover the Gallery Component"
-        sub="4 examples"
+        headline="Discover the Testimonials Component"
+        sub="7 examples"
       />
     </Section>
     <PreviewSection
@@ -33,7 +33,6 @@ export default (props) => (
         sub: "Voices of Our Clients: Experiencing the Impact of Design Systems",
         align: "center",
       }}
-      width="default"
       preview={{
         title: "Simple",
         label: "Free",
@@ -41,9 +40,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Testimonials
@@ -67,7 +63,6 @@ export default (props) => (
         sub: "We can also create something brilliant for you!",
         align: "center",
       }}
-      width="default"
       preview={{
         title: "With Title",
         label: "Free",
@@ -75,9 +70,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Testimonials
@@ -102,7 +94,6 @@ export default (props) => (
         sub: "Hear what our AI-generated customers have to say",
         textAlign: "left",
       }}
-      width="default"
       preview={{
         title: "List Layout",
         label: "Free",
@@ -110,9 +101,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <Testimonials
@@ -157,7 +145,6 @@ export default (props) => (
         sub: "Showcasing Further Triumphs in Client Satisfaction",
         textAlign: "left",
       }}
-      width="default"
       preview={{
         title: "Slider Layout",
         label: "Paid",
@@ -165,9 +152,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TestimonialsPaid
@@ -213,7 +197,6 @@ export default (props) => (
         sub: "Further Illustrations of Our Clientele's Achievements",
         textAlign: "left",
       }}
-      width="default"
       preview={{
         title: "With Rating",
         label: "Paid",
@@ -221,9 +204,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TestimonialsPaid
@@ -272,7 +252,6 @@ export default (props) => (
         sub: "AI-generated smiles, as you see them everywhere nowadays",
         textAlign: "left",
       }}
-      width="default"
       preview={{
         title: "List Layout",
         label: "Paid",
@@ -280,9 +259,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TestimonialsPaid
@@ -331,7 +307,6 @@ export default (props) => (
         sub: "More Examples of Successful Collaborations with Our Clients",
         textAlign: "left",
       }}
-      width="default"
       preview={{
         title: "Alternating Layout",
         label: "Paid",
@@ -339,9 +314,6 @@ export default (props) => (
           label: "View in Storybook",
           href: "#",
         },
-      }}
-      content={{
-        mode: "list",
       }}
     >
       <TestimonialsPaid
