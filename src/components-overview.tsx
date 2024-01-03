@@ -13,7 +13,8 @@ export default (props) => (
     <Section
       headerSpacing
       headline={{
-        text: "Explore Over 40 Unique Use Cases Across 16 Components",
+        text: "40+ Unique Use Cases, 14 Dynamic Components",
+        sub: "Dive into the versatility and diversity of our Design System",
         width: "default",
         large: true,
         align: "center",
