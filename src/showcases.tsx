@@ -39,7 +39,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       width="wide"
       content={{
         mode: "slider",
-        tileWidth: "wide",
+        tileWidth: "largest",
       }}
       headline={{
         text: "**01** Launchpad Audio Innivations",
@@ -84,7 +84,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       width="wide"
       content={{
         mode: "slider",
-        tileWidth: "wide",
+        tileWidth: "largest",
       }}
       headline={{
         text: "**02** EcoTech Solutions",
@@ -129,7 +129,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       width="wide"
       content={{
         mode: "slider",
-        tileWidth: "wide",
+        tileWidth: "largest",
       }}
       headline={{
         text: "**03** TechFusion Enterprises",
