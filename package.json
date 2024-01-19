@@ -28,9 +28,10 @@
     "url": "https://github.com/5t3ph/smol-11ty-starter/issues"
   },
   "dependencies": {
-    "@kickstartds/base": "^3.0.0-next.7",
-    "@kickstartds/core": "^3.0.0-next.5",
-    "@kickstartds/ds-agency": "^2.1.10"
+    "@kickstartds/base": "2.3.0-beta.0",
+    "@kickstartds/blog": "2.3.0-beta.0",
+    "@kickstartds/core": "3.0.0-beta.0",
+    "@kickstartds/ds-agency": "^3.1.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
