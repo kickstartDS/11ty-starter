@@ -72,7 +72,7 @@ We partnered with TechFusion to develop a tailored Design System using **kicksta
     </Section>
     <Section width="wide" spaceBefore="small" style="accentTransition">
       <Testimonials
-        testimonials={[
+        items={[
           {
             image: {
               src: "/static/img/people/author-john.png",

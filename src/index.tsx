@@ -81,7 +81,7 @@ export default (props) => (
           style: "intext",
           toggle: true,
         }}
-        features={[
+        items={[
           {
             cta: {
               label: "Read more",
@@ -128,7 +128,7 @@ export default (props) => (
       <Logos
         tagline="Orgs we've helped saving time & money"
         align="center"
-        logos={[
+        items={[
           {
             alt: "Logo 1",
             src: "/static/img/logos/logoipsum-212.svg",
@@ -236,7 +236,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
     >
       <Testimonials
-        testimonials={[
+        items={[
           {
             image: {
               src: "/static/img/people/author-emily.png",
