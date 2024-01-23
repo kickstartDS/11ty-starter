@@ -184,11 +184,12 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       style="boldTransition"
       content={{
         mode: "slider",
-        tileWidth: "medium",
+        tileWidth: "large",
       }}
       headline={{
         text: "Happy Customers Showcases",
         sub: "We can create something shining for you too!",
+        align: "center",
       }}
     >
       <TeaserCard
@@ -198,8 +199,8 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
         button={{
-          displayButton: true,
           label: "See Showcase",
+          chevron: true,
         }}
       />
       <TeaserCard
@@ -208,8 +209,8 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         button={{
-          displayButton: true,
           label: "See Showcase",
+          chevron: true,
         }}
         image="/static/img/showcases/comp_audio01.jpg"
       />
@@ -220,8 +221,8 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"
         button={{
-          displayButton: true,
           label: "See Showcase",
+          chevron: true,
         }}
       />
     </Section>

@@ -166,16 +166,24 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
       }}
     >
       <TeaserCard
-        target="/showcase-techfusion"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
+        target="/showcase-techfusion"
+        button={{
+          label: "Go to page",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-eco"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"
+        target="/showcase-eco"
+        button={{
+          label: "Go to page",
+          hidden: true,
+        }}
       />
     </Section>
 

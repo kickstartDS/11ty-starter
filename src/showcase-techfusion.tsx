@@ -152,16 +152,24 @@ We empowered TechFusion's marketing and digital teams through comprehensive **tr
       }}
     >
       <TeaserCard
-        target="/showcase-launchpad"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
+        target="/showcase-launchpad"
+        button={{
+          label: "Go to page",
+          hidden: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-eco"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"
+        target="/showcase-eco"
+        button={{
+          label: "Go to page",
+          hidden: true,
+        }}
       />
     </Section>
 
