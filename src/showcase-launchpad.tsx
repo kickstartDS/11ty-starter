@@ -78,7 +78,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
     </Section>
     <Section spaceBefore="small">
       <Testimonials
-        items={[
+        testimonial={[
           {
             image: {
               src: "/static/img/people/author-alex.png",

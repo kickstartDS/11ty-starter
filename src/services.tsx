@@ -45,7 +45,7 @@ export default (props) => (
           style: "link",
           toggle: true,
         }}
-        items={[
+        feature={[
           {
             cta: {
               label: "Read more",
