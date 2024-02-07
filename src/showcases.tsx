@@ -42,7 +42,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         tileWidth: "largest",
       }}
       headline={{
-        text: "**01** Launchpad Audio Innivations",
+        text: "**01** Launchpad Audio Innovations",
       }}
     >
       <Image
@@ -111,7 +111,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       }}
     >
       <Cta
-        headline="Savigating the Headless Frontier for Brand Consistency"
+        headline="Navigating the Headless Frontier for Brand Consistency"
         text={`See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time.`}
         buttons={[
           {
@@ -200,7 +200,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     >
       <Logos
         align="center"
-        items={[
+        logo={[
           {
             alt: "Logo 1",
             src: "/static/img/logos/logoipsum-212.svg",
