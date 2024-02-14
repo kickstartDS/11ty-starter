@@ -34,7 +34,7 @@ export default (props) => (
       spaceAfter="default"
       inverted
       headline={{
-        text: "Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Headless CMS**",
+        text: "Powering EcoTech Solutions' Digital Transformation with a **Design System** and **Storyblok**",
         sub: "**Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web**",
       }}
     >
@@ -43,6 +43,36 @@ export default (props) => (
 ### Briefing:
 EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms.
           `}
+      />
+    </Section>
+
+    <Section
+      backgroundColor="bold"
+      inverted
+      width="full"
+      content={{
+        mode: "list",
+        width: "default",
+      }}
+      spaceAfter="small"
+      spaceBefore="small"
+    >
+      <Cta
+        headline="Do you need a **Storyblok CMS** starter?"
+        text="We offer free template to kickstart your next website project!"
+        textAlign="center"
+        buttons={[
+          {
+            label: "See free CMS Starters",
+            target: "https://about.design-system.agency/starter/",
+            icon: "chevron-right",
+          },
+          {
+            label: "About this Demo",
+            target: "https://about.design-system.agency/",
+            icon: "info",
+          },
+        ]}
       />
     </Section>
 
@@ -138,7 +168,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
 
     <Section inverted backgroundColor="accent">
       <Cta
-        headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
+        headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and **Storyblok CMS**? "
         text="Connect with us to start your journey."
         buttons={[
           {

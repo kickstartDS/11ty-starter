@@ -36,7 +36,7 @@ export default (props) => (
       }}
       spaceAfter="default"
       headline={{
-        text: "Fast-Tracking LaunchPad's Market Presence with **Sanity-powered Landing Pages**",
+        text: "Fast-Tracking LaunchPad's Market Presence with **StaticCMS-powered Landing Pages**",
         sub: "Rapid Creation of Marketing Landing Pages atop a Design System for Quick Market Testing and Future Growth",
       }}
     >
@@ -45,6 +45,35 @@ export default (props) => (
 ### Briefing:
 LaunchPad Audio Innovations, an AI-powered digital audio controller startup, needed to quickly establish visibility and test their ads in the market. However, as a young startup, they also needed a solution that would empower them to scale in the future.
           `}
+      />
+    </Section>
+
+    <Section
+      backgroundColor="accent"
+      width="full"
+      content={{
+        mode: "list",
+        width: "default",
+      }}
+      spaceAfter="small"
+      spaceBefore="small"
+    >
+      <Cta
+        headline="Do you need a **StaticCMS** starter?"
+        text="We offer free template to kickstart your next website project!"
+        textAlign="center"
+        buttons={[
+          {
+            label: "See free CMS Starters",
+            target: "https://about.design-system.agency/starter/",
+            icon: "chevron-right",
+          },
+          {
+            label: "About this Demo",
+            target: "https://about.design-system.agency/",
+            icon: "info",
+          },
+        ]}
       />
     </Section>
 
@@ -72,7 +101,7 @@ LaunchPad Audio Innovations, an AI-powered digital audio controller startup, nee
       <Text
         text={`
 ### Our Solution: 
-We set up a content-driven Design System and a Sanity-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
+We set up a content-driven Design System and a StaticCMS-powered website and landing page builder for LaunchPad Audio Innovations. This approach allowed them to create marketing landing pages at lightning speed, enabling rapid market testing and gaining crucial visibility.
           `}
       />
     </Section>
@@ -119,7 +148,7 @@ We set up a content-driven Design System and a Sanity-powered website and landin
       <Text
         text={`
 ## Result: 
-With our Sanity-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
+With our StaticCMS-powered solution, LaunchPad was able to streamline their development and design process. This not only allowed them to scale faster but also enabled them to focus on their primary objective - building a standout product in the market. Even though a Design System was not their immediate need, they now have a robust foundation for future growth.
           `}
       />
     </Section>
@@ -141,7 +170,7 @@ With our Sanity-powered solution, LaunchPad was able to streamline their develop
 
     <Section inverted>
       <Cta
-        headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a Sanity-powered **Landing Page Builder**?"
+        headline="**Ready to fast-track** your startup's market presence with a tailored Design System and a StaticCMS-powered **Landing Page Builder**?"
         text="Connect with us to launch your next idea in less than two weeks. Being ready to learn and scale fast."
         buttons={[
           {

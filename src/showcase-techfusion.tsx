@@ -35,7 +35,7 @@ export default (props) => (
       spaceAfter="default"
       headline={{
         text: "Harmonizing **Digital Experiences** for TechFusion Enterprises with a Custom **Design System**",
-        sub: "Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency",
+        sub: "Streamlining Development, Enhancing User Experience, and Boosting Brand Consistency thourgh Netlify Create/Stackbit",
         large: true,
         textAlign: "center",
       }}
@@ -46,6 +46,35 @@ TechFusion Enterprises, a leading player in the smart home industry, grappled wi
           `}
         highlightText
         align="center"
+      />
+    </Section>
+
+    <Section
+      backgroundColor="accent"
+      width="full"
+      content={{
+        mode: "list",
+        width: "default",
+      }}
+      spaceAfter="small"
+      spaceBefore="small"
+    >
+      <Cta
+        headline="Do you need a **Netlify Create / Stackbit** starter?"
+        text="We offer free template to kickstart your next website project!"
+        textAlign="center"
+        buttons={[
+          {
+            label: "See free CMS Starters",
+            target: "https://about.design-system.agency/starter/",
+            icon: "chevron-right",
+          },
+          {
+            label: "About this Demo",
+            target: "https://about.design-system.agency/",
+            icon: "info",
+          },
+        ]}
       />
     </Section>
 
