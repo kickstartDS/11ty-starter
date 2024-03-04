@@ -2,6 +2,11 @@
 
 This project is a starter/template for building static websites using the [11ty](https://www.11ty.dev/) (Eleventy) static site generator. It provides a nearly opinionless foundation to continue building on, making it perfect for simple multi-page sites. This project is pre-configured with [@kickstartds/ds-agency](https://github.com/kickstartDS/ds-agency) for global styles and components and uses [@kickstartds/eleventy-plugin-kickstartds](https://github.com/kickstartDS/eleventy-plugin-kickstartds) for additional Eleventy features.
 
+## Deploy your own
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kickstartDS/11ty-starter)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FkickstartDS%2F11ty-starter)
+
 ## Features
 
 - Minimal setup: Just enough to get you started with 11ty.
