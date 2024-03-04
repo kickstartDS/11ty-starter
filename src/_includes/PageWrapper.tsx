@@ -28,7 +28,7 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
           { label: "Blog", href: "/blog" },
           {
             label: "Storybook",
-            href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+            href: "https://storybook.basic.design-system.agency/",
           },
           { label: "Page Source", href: gitHubPageUrl },
         ]}
@@ -45,7 +45,7 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
           { label: "Blog", href: "/blog" },
           {
             label: "Storybook",
-            href: "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+            href: "https://storybook.basic.design-system.agency/",
             target: "_blank",
           },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
