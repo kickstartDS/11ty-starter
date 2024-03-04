@@ -1,0 +1,121 @@
+.dsa-disclaimer {
+  $breakpoint: 41em;
+
+  position: sticky;
+  bottom: var(--l-section--content-padding);
+  pointer-events: none;
+  margin-top: var(--ks-spacing-m);
+
+  > .l-section {
+    background-color: transparent;
+  }
+
+  &__box {
+    background-color: var(--ks-background-color-default);
+    color: var(--ks-text-color-default);
+    border-radius: var(--ks-border-radius-card);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ks-spacing-m);
+    text-align: center;
+    pointer-events: all;
+
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+      text-align: left;
+      padding: var(--ks-spacing-xxs);
+    }
+  }
+
+  &__banner {
+    --dsa-headline--color: var(--ks-text-color-default-inverted);
+
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    margin: 0;
+    position: relative;
+    transform-origin: center center;
+    justify-content: center;
+  }
+
+  .dsa-headline__headline {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: var(--ks-spacing-s);
+    background-color: var(--ks-background-color-secondary);
+
+    @media (min-width: $breakpoint) {
+      transform: rotate(30deg);
+      border-radius: var(--ks-border-radius-card);
+    }
+  }
+
+  .dsa-headline__subheadline {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    transform: rotate(15deg);
+
+    @media (min-width: $breakpoint) {
+      transform: rotate(16deg) translate(12px, 10px);
+    }
+    @media (min-width: 45em) {
+      transform: rotate(16deg) translate(7px, -3px);
+    }
+    @media (min-width: 48em) {
+      transform: rotate(16deg) translate(7px, 20px);
+    }
+    @media (min-width: 51em) {
+      transform: rotate(16deg) translate(4px, 12px);
+    }
+    @media (min-width: 62em) {
+      transform: rotate(16deg) translate(-6px, 25px);
+    }
+    @media (min-width: 75em) {
+      transform: rotate(16deg) translate(-20px, 45px);
+    }
+  }
+
+  .c-button-group {
+    --c-button-group--vertical-gutter: var(--ks-spacing-stack-xs);
+
+    margin-bottom: var(--ks-spacing-s);
+
+    @media (min-width: $breakpoint) {
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+
+  .l-container--rich-text {
+    flex: 1;
+  }
+
+  .dsa-text {
+    --dsa-text--font: var(--ks-font-display-s);
+    padding: var(--ks-spacing-s) 0;
+
+    h3 {
+      display: none;
+
+      @media (min-width: $breakpoint) {
+        display: block;
+        --dsa-text--font: var(--ks-font-display-xs);
+      }
+    }
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__show-button {
+    cursor: pointer;
+    pointer-events: all;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-left: var(--l-section--content-padding);
+    transform: rotate(-16deg);
+  }
+}
