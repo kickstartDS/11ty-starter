@@ -117,7 +117,7 @@ We're not just building design systems; we're building value. By combining our e
       width="wide"
     >
       <Stats
-        items={[
+        stat={[
           {
             number: 33,
             title: "Years of Expertise",
