@@ -10,10 +10,6 @@
     "format": "prettier --write .",
     "test": "tsc --noEmit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/5t3ph/smol-11ty-starter.git"
-  },
   "keywords": [
     "11ty",
     "11ty-starter",
@@ -22,10 +18,10 @@
     "eleventy-sample",
     "11ty-template"
   ],
-  "author": "5t3ph",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/5t3ph/smol-11ty-starter/issues"
+  "license": "(MIT OR Apache-2.0)",
+  "author": {
+    "name": "Jonas Ulrich",
+    "email": "jonas.ulrich@kickstartds.com"
   },
   "dependencies": {
     "@kickstartds/base": "2.3.0-beta.1",
