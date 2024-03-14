@@ -24,10 +24,10 @@
     "email": "jonas.ulrich@kickstartds.com"
   },
   "dependencies": {
-    "@kickstartds/base": "2.3.0-beta.1",
-    "@kickstartds/blog": "2.3.0-beta.1",
-    "@kickstartds/core": "3.0.0-beta.0",
-    "@kickstartds/ds-agency": "^3.2.0"
+    "@kickstartds/base": "^4.0.2",
+    "@kickstartds/blog": "^4.0.2",
+    "@kickstartds/core": "^4.0.2",
+    "@kickstartds/ds-agency": "^3.6.17"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
