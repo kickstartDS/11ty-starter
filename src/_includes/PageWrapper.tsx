@@ -5,6 +5,7 @@ import { PageWrapper as Page } from "@kickstartds/ds-agency/page-wrapper";
 import { Header } from "@kickstartds/ds-agency/header";
 import { Footer } from "@kickstartds/ds-agency/footer";
 import { Disclaimer } from "./disclaimer/Disclaimer";
+import { HeadlineLevelProvider } from "./headline/HeadlineLevelContext";
 
 export const PageWrapper = ({ floatingHeader = false, children }) => {
   const data = useEleventy();
@@ -30,10 +31,9 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
             label: "Storybook",
             href: "https://storybook.basic.design-system.agency/",
           },
-          { label: "Page Source", href: gitHubPageUrl },
         ]}
       />
-      {children}
+      <HeadlineLevelProvider>{children}</HeadlineLevelProvider>
       <Disclaimer />
       <Footer
         logo={data.logo}
@@ -50,7 +50,10 @@ export const PageWrapper = ({ floatingHeader = false, children }) => {
           },
           { label: "Page Source", href: gitHubPageUrl, target: "_blank" },
           //TBD add Link properly
-          { label: "Disclaimer", href: "https://about.design-system.agency/" },
+          {
+            label: "Disclaimer",
+            href: "https://about.design-system.agency/",
+          },
         ]}
       />
     </Page>
